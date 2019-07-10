@@ -1,0 +1,87 @@
+<header>
+    <mat-toolbar>
+        <div class="container flex">
+            <a routerLink="/" class="valign-wrapper">
+                <img class="header-logo mr-0" src="assets/img/logos/openslides.png">
+                <span class="title">OpenSlides</span>
+            </a>
+            <span class="fill-remaining-space"></span>
+            <app-main-menu fxLayout="row" fxShow="false" fxShow.gt-sm></app-main-menu>
+            <div fxFlexOffset="10px" class="valign-wrapper">
+                <app-language-controller></app-language-controller>
+            </div>
+            <button fxFlexOffset="10px" mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+    </mat-toolbar>
+</header>
+<mat-menu x-position="before" #menu="matMenu" id="main-menu">
+    <app-main-menu></app-main-menu>
+</mat-menu>
+
+<div class="content-container">
+    <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+    <div class="blue-row">
+        <div class="container">
+            <div *ngIf="router.url != '/contact'">
+                <div class="contact-div">
+                    <h1>Treten Sie mit uns in Kontakt</h1>
+                    <p class="margined">Sollten Sie Fragen zu OpenSlides haben oder eine persönliche Beratung wünschen - wir unterstützen Sie gern.</p>
+                    <div class="mt-1"></div>
+                    <div fxLayout="row wrap" fxLayoutAlign="space-around" fxLayoutAlign.lt-sm="center" class="text-center" appWrappable>
+                        <a href="mailto:info@openslides.org" fxFlex.lt-sm="100%" class="valign-wrapper" fxLayoutAlign="center center">
+                            <mat-icon>mail_outline</mat-icon>&nbsp;&nbsp;info@openslides.org
+                        </a>
+                        <a href="callto:+493028877707" fxFlex.lt-sm="100%" class="valign-wrapper" fxLayoutAlign="center center">
+                            <mat-icon>phone</mat-icon>&nbsp;&nbsp;+49 30 288 777 07
+                        </a>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+            </div>
+            <div fxLayout="row" fxLayout.lt-md="row wrap" fxLayoutAlign="space-between" appWrappable wrapMarginY="22px">
+                <div fxFlex="27" fxFlex.lt-md="100%" class="text-left">
+                    KERNENTWICKLER-TEAM
+                    <br><br>
+                    Kontaktieren Sie die drei Gründer und Kernentwickler Oskar Hahn, Norman Jäckel und Emanual Schütze
+                    <br><br>
+                    <a href="mailto:support@openslides.org">support@openslides.org</a>
+                </div>
+                <div fxFlex="27" fxFlex.lt-md="100%" fxFlexOffset.gt-sm="9" class="text-left">
+                    SUPPORT
+                    <br><br>
+                    Emanuel Schütze, Intevation GmbH<br>
+                    Neuer Graben 17, 49074 Osnabrück<br>
+                    <br>
+                    <a href="mailto:emanuel.schuetze@intevation.de">emanuel.schuetze@intevation.de</a><br>
+                    <a href="callto:+49541335083746">+49 541 335083-746</a>
+                </div>
+                <div fxFlex="27" fxFlexOffset="9"></div>
+            </div>
+            <div class="bottom-footer mt-2 valign-wrapper" fxLayout="row wrap" appWrappable>
+                <div fxLayout="row">
+                    <a routerLink="/privacy">Datenschutz</a>
+                    <span class="divider">|</span>
+                    <a routerLink="/impressum">Impressum</a>
+                </div>
+                <!-- <span class="fill-remaining-space"></span>
+                <div fxLayout="row" class="logo-container">
+                    <a href="https://www.instagram.com/">
+                        <img class="mr-0 logo" src="assets/img/logos/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://twitter.com/IntevationGmbH">
+                        <img class="logo" src="assets/img/logos/twitter.png" alt="Twitter">
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="last-row">
+        <span>OpenSlides ist Freie Software, lizensiert unter der MIT.</span><br>
+        <span>&copy; 2011-2019 OpenSlides-Team</span>
+    </div>
+</footer>

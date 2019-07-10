@@ -1,0 +1,219 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fill-remaining-space {
+    flex: 1 1 auto;
+}
+
+.os-button.mat-flat-button {
+    text-transform: uppercase;
+    background-color: #2699fb;
+    color: #fff;
+    font-size: small;
+    border: 1.5px solid transparent;
+
+    &.white {
+        background-color: #fff;
+        color: #2699fb;
+    }
+
+    &.white-reversed {
+        border: 1.5px solid #fff;
+    }
+
+    &.white-black {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+.wrappable {
+    margin-top: -25px;
+
+    & > * {
+        margin-top: 25px;
+    }
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.flex {
+    display: flex;
+
+    &.force {
+        display: flex !important;
+    }
+
+    &.col {
+        flex-direction: column;
+    }
+}
+
+.valign-wrapper {
+    display: flex !important;
+
+    &.col {
+        justify-content: center;
+    }
+    &:not(.col) {
+        align-items: center;
+    }
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.mt-1 {
+    margin-top: 30px !important;
+}
+
+.mt-2 {
+    margin-top: 70px !important;
+}
+
+.ml-0 {
+    margin-left: 10px !important;
+}
+
+.ml-1 {
+    margin-left: 30px !important;
+}
+
+.mr-0 {
+    margin-right: 10px !important;
+}
+
+.mr-1 {
+    margin-right: 30px !important;
+}
+
+.mb-0 {
+    margin-bottom: 10px !important;
+}
+
+.mb-1 {
+    margin-bottom: 30px !important;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+
+    &.flex {
+        &:not(.col) {
+            justify-content: center;
+        }
+        &.col {
+            align-items: center;
+        }
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mat-list-base .mat-list-item {
+    color: inherit;
+    height: auto !important;
+    text-align: left;
+}
+
+.main-container {
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+
+        &.smaller {
+            max-width: 1040px;
+        }
+
+        &.tiny {
+            max-width: 940px;
+        }
+    }
+}
+
+@media (max-width: 767.99px) {
+    .wrap-mobile {
+        flex-wrap: wrap;
+    }
+    .center-mobile {
+        text-align: center;
+
+        &.flex {
+            &:not(.col) {
+                justify-content: center;
+            }
+            &.col {
+                align-items: center;
+            }
+        }
+    }
+}
