@@ -1,0 +1,62 @@
+.price-col {
+    font-size: 1.01em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 33%;
+    }
+
+    .price-col-header {
+        background-color: #2699fb;
+        color: #fff;
+        padding: 1.5rem 2rem;
+        text-align: center;
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .price-col-body {
+        padding: 1.5rem;
+        border: 1px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        .price-col-price {
+            text-align: center;
+            color: #2699fb;
+
+            h1 {
+                font-weight: bold;
+            }
+        }
+
+        mat-divider {
+            margin: 25px 0;
+        }
+
+        mat-list {
+            padding-top: 0;
+            flex-grow: 1;
+
+            mat-list-item {
+                margin: 5px 0;
+
+                mat-icon {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

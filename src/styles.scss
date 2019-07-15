@@ -1,4 +1,12 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+$breakpoint-sm-up: 576px;
+$breakpoint-md-up: 768px;
+$breakpoint-lg-up: 992px;
+$breakpoint-xl-up: 1200px;
+$breakpoint-sm-down: 575px;
+$breakpoint-md-down: 767px;
+$breakpoint-lg-down: 991px;
+$breakpoint-xl-down: 1199px;
 
 body {
     margin: 0;
@@ -9,6 +17,11 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+tbd {
+    display: inline-block;
+    color: red;
 }
 
 .fill-remaining-space {
@@ -127,6 +140,10 @@ h2 {
     margin-bottom: 30px !important;
 }
 
+.mb-2 {
+    margin-bottom: 70px !important;
+}
+
 .text-left {
     text-align: left;
 }
@@ -144,14 +161,57 @@ h2 {
     }
 }
 
+.icon-wrapper {
+    display: flex;
+
+    &.col {
+        justify-content: center;
+    }
+    &:not(.col) {
+        align-items: center;
+    }
+
+    .icon {
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .mat-icon {
+        margin-right: 10px;
+    }
+}
+
 .text-right {
     text-align: right;
+
+    &.flex {
+        &:not(.col) {
+            justify-content: flex-end;
+        }
+        &.col {
+            align-items: flex-end;
+        }
+    }
 }
 
 .mat-list-base .mat-list-item {
     color: inherit;
     height: auto !important;
     text-align: left;
+}
+
+.mat-icon.inline {
+    font-size: smaller;
+    height: auto;
+    width: auto;
+}
+
+.evenly-spaced > * {
+    flex: 1;
+}
+
+.shaded {
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -166,27 +226,55 @@ h2 {
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
+
+    &.no-padding {
+        padding-right: initial;
+        padding-left: initial;
+    }
 }
 
-@media (min-width: 576px) {
+.pos-rel {
+    position: relative;
+}
+
+.screenshots-slideshow .slideshow-container {
+    padding-top: 63.3064516%;   // force correct aspect ratio on images, since auto height isnt possible
+}
+
+.blue-links a, .blue-link {
+    color: #2699fb;
+
+    &:hover {
+        color: #057ae1;
+    }
+}
+
+@media (min-width: $breakpoint-sm-up) {
     .container {
         max-width: 540px;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md-up) {
     .container {
         max-width: 720px;
     }
-}
 
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
+    .hide-md-up {
+        display: none !important;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $breakpoint-xl-up) {
+    .container {
+        max-width: 960px;
+    }
+    .hide-xl-up {
+        display: none !important;
+    }
+}
+
+@media (min-width: $breakpoint-xl-up) {
     .container {
         max-width: 1140px;
 
@@ -200,9 +288,13 @@ h2 {
     }
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: $breakpoint-md-down) {
     .wrap-mobile {
         flex-wrap: wrap;
+
+        &.evenly-spaced > * {
+            flex: auto;
+        }
     }
     .center-mobile {
         text-align: center;
@@ -214,6 +306,24 @@ h2 {
             &.col {
                 align-items: center;
             }
+        }
+    }
+
+    .hide-md-down {
+        display: none !important;
+    }
+}
+
+@media (max-width: $breakpoint-xl-down) {
+    .hide-xl-down {
+        display: none !important;
+    }
+
+    .wrap-tablet {
+        flex-wrap: wrap;
+
+        &.evenly-spaced > * {
+            flex: auto;
         }
     }
 }

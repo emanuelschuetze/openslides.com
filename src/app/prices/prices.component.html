@@ -1,0 +1,97 @@
+<div class="container main-container">
+    <h2 class="mb-1">
+        Wählen Sie ein Hosting-Paket passend zu Ihrer Veranstaltungsgröße:
+    </h2>
+    <div fxLayout="row" class="wrap-mobile mb-0" appWrappable wrapMargin="2rem">
+        <div class="price-col">
+            <div class="price-col-header">
+                <h2>Single</h2>
+                <p>
+                    nur für administrative Nutzung<br>
+                    ohne Teilnehmerzugriff
+                </p>
+            </div>
+            <div class="price-col-body">
+                <div class="price-col-price">
+                    <h1>19 €</h1>
+                    <span>pro Monat/Veranstaltung*</span>
+                </div>
+                <mat-divider></mat-divider>
+                <mat-list>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon>max. <b>&nbsp;5&nbsp;</b> Nutzerkonten</mat-list-item>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon>Standard-Domain *.openslides.com</mat-list-item>
+                </mat-list>
+                <mat-divider></mat-divider>
+                <div class="text-center">
+                    <a routerLink="/order" [queryParams]="{tariff: 'single'}" mat-flat-button class="os-button">Jetzt bestellen</a>
+                </div>
+            </div>
+        </div>
+        <div class="price-col">
+            <div class="price-col-header">
+                <h2>Basic</h2>
+                <p>
+                    für Veranstaltungen mit <b>geringer</b> digitaler Nutzung
+                </p>
+            </div>
+            <div class="price-col-body">
+                <div class="price-col-price">
+                    <h1>49 €</h1>
+                    <span>pro Monat/Veranstaltung*</span>
+                </div>
+                <mat-divider></mat-divider>
+                <mat-list>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon>max. <b>&nbsp;50&nbsp;</b> Nutzerkonten</mat-list-item>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon>eigene Domain möglich</mat-list-item>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon>Plugin-Erweiterung möglich</mat-list-item>
+                </mat-list>
+                <mat-divider></mat-divider>
+                <div class="text-center">
+                    <a routerLink="/order" [queryParams]="{tariff: 'basic'}" mat-flat-button class="os-button">Jetzt bestellen</a>
+                </div>
+            </div>
+        </div>
+        <div class="price-col">
+            <div class="price-col-header">
+                <h2>Enterprise</h2>
+                <p>
+                    für Veranstaltungen mit <b>großer</b> digitaler Nutzung
+                </p>
+            </div>
+            <div class="price-col-body">
+                <div class="price-col-price">
+                    <h1>99 €</h1>
+                    <span>pro Monat/Veranstaltung*</span>
+                </div>
+                <mat-divider></mat-divider>
+                <mat-list>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon>max. <b>&nbsp;500&nbsp;</b> Nutzerkonten</mat-list-item>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon>eigene Domain möglich</mat-list-item>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon>Plugin-Erweiterung möglich</mat-list-item>
+                </mat-list>
+                <mat-divider></mat-divider>
+                <div class="text-center">
+                    <a routerLink="/order" [queryParams]="{tariff: 'enterprise'}" mat-flat-button class="os-button">Jetzt bestellen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <i>* zzgl. 49 € einmalige Einrichtungsgebühr</i>
+    <div class="mt-1">
+        <b>Für alle Hosting-Pakete gelten folgende Leistungen:</b>
+    </div>
+    <mat-list fxLayout="row" class="wrap-mobile mt-0 mb-1">
+        <div>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> regelmäßige Updates</mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> E-Mail-Versand von Einladungs-E-Mails möglich</mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> individueller Support nach Aufwand (125 € / Stunde, viertelstundengenaue Abrechnung)</mat-list-item>
+        </div>
+        <div>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten</mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> sichere Daten: Abschluss einer Vereinbarung zur Auftragsverarbeitung</mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> sicherer Betrieb: jede Veranstaltung läuft als abgekapselte OpenSlides-Instanz mit eigener Datenbank</mat-list-item>
+        </div>
+    </mat-list>
+    <div>10% Rabatt bei Vorauszahlung von 12 Monaten.</div>
+    <div class="mt-2"><i>Alle Preisangaben gelten zzgl. der gesetzlich gültigen Umsatzsteuer.</i></div>
+</div>

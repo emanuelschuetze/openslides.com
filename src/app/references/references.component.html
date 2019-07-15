@@ -9,6 +9,10 @@
         <div fxLayout="row wrap" appWrappable wrapMarginX="20px">
             <div class="reference-container valign-wrapper flex text-center" *ngFor="let ref of cat.refs">
                 <img [src]="'assets/img/references/' + ref.src" [alt]="ref.name">
+                <div class="overlay">
+                    <b>{{ref.name}}</b>
+                    <span>{{ref.event}}</span>
+                </div>
             </div>
         </div>
     </div>

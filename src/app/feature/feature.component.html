@@ -1,0 +1,25 @@
+<div class="container main-container">
+    <div class="mb-1">
+        <div class="text-right flex hide-md-down">
+            <a  mat-menu-item *ngFor="let route of routeOrder" [routerLink]="['/feature/' + route]"
+                [ngClass]="router.url.endsWith('/' + route) ? 'active' : ''">
+                {{ featuresByRoute[route].title }}
+            </a>
+        </div>
+        <mat-select class="submenu hide-md-up" [value]="activeRoute">
+            <mat-option *ngFor="let route of routeOrder" [routerLink]="['/feature/' + route]"
+                [ngClass]="router.url.endsWith('/' + route) ? 'active' : ''" [value]="route">
+                {{ featuresByRoute[route].title }}
+            </mat-option>
+        </mat-select>
+    </div>
+    <h1 class="valign-wrapper title">
+        <mat-icon class="inline mr-1">{{ currentFeature.icon }}</mat-icon>
+        <span>{{ currentFeature.title }}</span>
+    </h1>
+    <p>{{ currentFeature.intro }}</p>
+    <slideshow class="screenshots-slideshow" [autoPlay]="true" autoPlayInterval="5000" [imageUrls]="currentFeature.images"></slideshow>
+    <mat-list>
+        <mat-list-item *ngFor="let detail of currentFeature.details"><mat-icon matListIcon>arrow_right</mat-icon>{{ detail }}</mat-list-item>
+    </mat-list>
+</div>

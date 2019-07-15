@@ -1,0 +1,25 @@
+#order-form {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block !important; // whyever it is flex...
+
+    input,
+    select,
+    mat-form-field {
+        width: 100%;
+    }
+
+    .error-div {
+        border-radius: 4px;
+        border: 1px solid red;
+        color: red;
+        padding: 10px 20px;
+    }
+}
+
+::ng-deep {
+    .mat-form-field-infix {
+        width: auto !important;
+    }
+}

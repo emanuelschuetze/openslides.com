@@ -1,6 +1,23 @@
-<button mat-menu-item (click)="navigate('/', 'anchor-solutions')">Lösungen</button>
-<button mat-menu-item (click)="navigate('/', 'anchor-references')">Referenzen</button>
-<button mat-menu-item (click)="navigate('/', 'anchor-download')">Download</button>
-<button mat-menu-item (click)="navigate('/', 'anchor-news')">News</button>
-<button mat-menu-item routerLink="/contact">Kontakt</button>
-<button mat-menu-item class="login-btn" routerLink="/login">Anmelden</button>
+<a  mat-menu-item routerLink="/prices"
+    [ngClass]="router.url.endsWith('/prices') ? 'active' : ''">
+    Preise
+</a>
+<a  mat-menu-item routerLink="/" fragment="anchor-features"
+    [ngClass]="currentSection == 'anchor-transparency' || currentSection == 'anchor-features' ? 'active' : ''">
+    Features
+</a>
+<a  mat-menu-item routerLink="/" fragment="anchor-references"
+    [ngClass]="currentSection == 'anchor-references' ? 'active' : ''">
+    Referenzen
+</a>
+<!-- <a mat-menu-item routerLink="/" fragment="anchor-download" [ngClass]="currentSection == 'anchor-download' ? 'active' : ''">Download</a> -->
+<a  mat-menu-item routerLink="/" fragment="anchor-news"
+    [ngClass]="currentSection == 'anchor-news' ? 'active' : ''">
+    News
+</a>
+<a  mat-menu-item routerLink="/contact"
+    [ngClass]="router.url.endsWith('/contact') ? 'active' : ''">
+    Kontakt
+</a>
+<!--<a mat-menu-item class="login-btn" routerLink="/login">Anmelden</a>-->
+<!-- <a mat-menu-item class="login-btn" routerLink="/login" [ngClass]="router.url.endsWith('/login') ? 'active' : ''">Anmelden</a> -->
