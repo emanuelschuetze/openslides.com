@@ -31,16 +31,17 @@ export class FeatureComponent implements OnInit {
                 { url: `${this.path}agenda-edit_de.png`, caption: 'Lorem ipsum' }
             ],
             details: [
-                'Redelisten für jeden Tagesordnungspunkt.',
-                'Die aktuelle Redeliste stets im Blick (als Überblendung oder auf einem 2. Projektor).',
-                'Countdowns zur Redezeitbeschränkung.',
-                'Automatische Nummerierung von Tagesordnungspunkten.',
-                'Zeitplanung: Dauer pro Tagesordnungspunkt schätzen.',
-                'Inoffizielle Tagesordnungspunkte (z. B. Pausen) in die Tagesordnung integrieren.',
-                'Abgeschlossene Tagesordnungspunkte markieren und verstecken.',
-                'Tagesordnung als PDF exportieren.',
-                'Projektor über die Seitenleiste steuern.',
-                'Tagesordnung per Drag&Drop sortieren.'
+                'Redelisten für jeden Tagesordnungspunkt',
+                'Flexibles Hinzufügen von Tagesordnungspunkten für jegliche Inhalte',
+                'Die aktuelle Redeliste stets im Blick (als Überblendung oder auf einem 2. Projektor)',
+                'Countdowns zur Redezeitbeschränkung',
+                'Automatische Nummerierung von Tagesordnungspunkten',
+                'Zeitplanung: Dauer pro Tagesordnungspunkt schätzen',
+                'Inoffizielle Tagesordnungspunkte (z. B. Pausen) in die Tagesordnung integrieren',
+                'Abgeschlossene Tagesordnungspunkte markieren und verstecken',
+                'Individuelle Sichtbarkeiten für jeden Tagesordnungspunkt',
+                'Tagesordnung als PDF exportieren',
+                'Tagesordnung per Drag&Drop sortieren'
             ]
         },
         motions: {
@@ -54,17 +55,18 @@ export class FeatureComponent implements OnInit {
                 { url: `${this.path}motions-pdf_de.png`, caption: 'Lorem ipsum' }
             ],
             details: [
-                'Anträge mit Zeilennummern verwalten.',
-                'Anpassbare Antrag-Statusmeldungen und -Arbeitsabläufe.',
-                'Sachgebiete, Antragsblöcke und Schlagwörter verwalten.',
-                'Erforderlichen Unterstützern pro Antrag definieren.',
-                'Unterstützung für Änderungsanträge und Änderungsempfehlungen.',
-                'Anzeigen/Verstecken von Anträgen in der Tagesordnung.',
-                'Versionshistorie zur Verwaltung der Antragsänderungen.',
-                'HTML-Inline-Editor zum Formatieren von Antragstext und -begründung.',
-                'Kommentarfelder für Anträge erlauben.',
-                'Abstimmungsergebnisse erfassen.',
-                'Anträge als PDF, CSV und DOCX exportieren.'
+                'Anpassbare Antrag-Statusmeldungen und -Arbeitsabläufe',
+                'Anträge in Antragsblöcken und Schlagwörter verwalten',
+                'Anträge automatisch nummerieren in Sachgebieten und Untersachgebieten',
+                'Sortierung von Anträgen in einer Aufrufliste',
+                'Erforderlichen Unterstützern pro Antrag definieren',
+                'Änderungsanträge und Änderungsempfehlungen auf Basis von Zeilennummern erstellen',
+                'Unterstützung von Satzungsanträgen',
+                'Anzeigen/Verstecken von Anträgen in der Tagesordnung',
+                'HTML-Inline-Editor zum Formatieren von Antragstext und -begründung',
+                'Kommentarfelder für Anträge erlauben',
+                'Abstimmungsergebnisse erfassen',
+                'Anträge als PDF, CSV und XLSX exportieren'
             ]
         },
         elections: {
@@ -78,19 +80,19 @@ export class FeatureComponent implements OnInit {
                 { url: `${this.path}elections-ballot-pdf_de.png`, caption: 'Lorem ipsum' }
             ],
             details: [
-                'Kandidaten aus der Teilnehmenden-Liste vorschlagen.',
-                'Personalisierte Wahlscheine für geheime Wahlen drucken.',
-                'Unterstützte Wahlverfahren: Ja/Nein/Enthaltung oder eine Stimme pro Kandidat.',
-                'Calculated percentages on different 100% bases.',
-                'Mehrere Wahlgänge.',
-                'Wahlergebnisse eingeben und mit Diagramm projizieren.',
-                'Wahlen (mit allen Ergebnissen) als PDF exportieren.'
+                'Kandidaten aus der Teilnehmenden-Liste vorschlagen',
+                'Personalisierte Wahlscheine für geheime Wahlen drucken',
+                'Unterstützte Wahlverfahren: Ja/Nein/Enthaltung oder eine Stimme pro Kandidat',
+                'Wahlergebnisse auf Grundlage verschiedener 100%-Basen',
+                'Mehrere Wahlgänge',
+                'Wahlergebnisse eingeben und mit Diagramm projizieren',
+                'Wahlen (mit allen Ergebnissen) als PDF exportieren'
             ]
         },
         projectors: {
             title: 'Projektoren',
             icon: 'videocam',
-            intro: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            intro: '<tbd>Live dabei: Zeigen sie den Teilnehmern gerade diskutierte Inhalte über Projektoren.</tbd>',
             images: [
                 { url: `${this.path}elections-list_de.png`, caption: 'Lorem ipsum' },
                 { url: `${this.path}elections-detail_de.png`, caption: 'Lorem ipsum' },
@@ -98,19 +100,20 @@ export class FeatureComponent implements OnInit {
                 { url: `${this.path}elections-ballot-pdf_de.png`, caption: 'Lorem ipsum' }
             ],
             details: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                'Präsentation der Inhalte für die Teilnehmenden',
+                'Sofortiges Update bei Änderungen',
+                'Unterstützung mehrerer Projektoren',
+                'Individuelle Projektorgestaltung mit eigenem Logo',
+                'Anordnen von Inhalten in einer Warteschlange',
+                'Projektionshistorie durch einen Verlauf im Überblick behalten',
+                'Unterstützung verschiedener Auflösungen',
+                'Projektion von PDF-, Bild- und Videodateien'
             ]
         },
         miscellaneous: {
             title: 'Weitere Funktionen',
             icon: 'search',
-            intro: 'Lorem ipsum.',
+            intro: '<tbd>Seien Sie neugierig: Entdecken Sie noch viele weitere Funktionen von OpenSlides</tbd>',
             images: [
                 { url: `${this.path}general-users-list_de.png`, caption: 'Lorem ipsum' },
                 { url: `${this.path}general-files-list_de.png`, caption: 'Lorem ipsum' },
@@ -118,18 +121,19 @@ export class FeatureComponent implements OnInit {
                 { url: `${this.path}general-windows-portable.png`, caption: 'Lorem ipsum' }
             ],
             details: [
-                'Mehrere Projektoren erstellen.',
-                'Teilnehmende, Gruppen und Berechtigungen verwalten.',
-                'Dokumentenablage mit PDF-, Bild- und Video-Projektion.',
-                'CSV-Import und -Export für Tagesordnung, Anträge und Teilnehmende.',
-                'Gruppenchat.',
-                'Anpassbare Startseite.',
-                'Volltextsuche.',
-                'Anpassbares Projektor-Template.',
-                'Responsive Design.',
-                'Portable Version für Windows.',
-                'Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, Portugiesisch, Spanisch und Russisch).',
-                'OpenSlides ist eine plattformunabhängige Webanwendung basierend auf Python 3 und Angular 8 mit einer REST-API.'
+                'Live-Änderungen direkt miterleben',
+                'Teilnehmende, Gruppen und Berechtigungen verwalten',
+                'Umfangreiche Dateiverwaltung mit Zugriffsberechtigungen pro Datei und Ordner',
+                'CSV-Import und -Export für Tagesordnung, Anträge und Teilnehmende',
+                'Verwaltung und Gruppierung mithilfe von Schlagwörtern',
+                'Globale Chronik auf Basis von Snapshots',
+                'Globale Volltextsuche',
+                'Umfangreiche Sortier- und Filtermöglichkeiten aller Listen',
+                'Konfigurierbare Themes sowie Erstellung eigener Themes auf Anfrage',
+                'Responsive Design',
+                'Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, Portugiesisch, Spanisch und Russisch)',
+                'Plattformunabhängige Webanwendung basierend auf Python 3 und Angular 8 im modernen Material Design',
+                'Progressive WebApp mit clientseitigem Caching und Lazy Loading für schnelle Ladezeiten'
             ]
         }
     };
