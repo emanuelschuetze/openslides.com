@@ -46,7 +46,8 @@ schema = {
     "required": ["tariff", "domain", "event_name", "organizer", "location", "event_from", "event_to", "hosting_from", "hosting_to", "expected_users", "contact_person", "billing_address"]
 }
 
-@app.route('/api/order', methods=["POST", "GET"])
+@app.route('/api/order', methods=["POST"])
+# @app.route('/api/order', methods=["POST", "GET"]) // DEBUG
 def send_mail():
     data = request.json
     try:
