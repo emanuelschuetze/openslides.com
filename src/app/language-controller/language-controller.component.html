@@ -2,7 +2,7 @@
     <img class="flag" [src]="'assets/img/flags/' + languageService.getCurrentLanguage() + '.png'" [alt]="'flag-' + languageService.getCurrentLanguage()">
 </button>
 <mat-menu x-position="before" #languageMenu="matMenu" id="main-menu">
-    <button *ngFor="let language of languageService.languages" mat-menu-item (click)="languageService.setCurrentLanguage(language.code)" class="valign-wrapper">
+    <button *ngFor="let language of languageService.getLanguages()" mat-menu-item (click)="languageService.setCurrentLanguage(language.code)" class="valign-wrapper">
         <img class="flag" [src]="'assets/img/flags/' + language.code + '.png'" [alt]="'flag-' + language.code">
         <span>{{ language.name }}</span>
         <mat-icon class="no-margin pull-right" *ngIf="language.code == languageService.getCurrentLanguage()">check</mat-icon>

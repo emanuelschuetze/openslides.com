@@ -1,0 +1,102 @@
+<div class="container main-container">
+    <form id="order-form" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+        <div class="text-center">
+            <tbd>Jetzt hier bestellen! Bestellen Sie jetzt für eine Veranstaltung und erhalten sie eine zweite gratis dazu!</tbd>
+        </div>
+        <h3 class="mb-0">Details</h3>
+        <div fxLayout="row wrap" appWrappable wrapMargin="4%">
+            <mat-form-field fxFlex.gt-sm="46">
+                <mat-label>OpenSlides-Tarif</mat-label>
+                <mat-select formControlName="tariff" required>
+                    <mat-option value="single">Single (19 € / Monat)</mat-option>
+                    <mat-option value="basic">Basic (49 € / Monat)</mat-option>
+                    <mat-option value="enterprise">Enterprise (99 € / Monat)</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field fxFlex.gt-sm="46">
+                <input required type="text" matInput formControlName="domain" placeholder="Wunschdomain">
+                <span matSuffix *ngIf="orderForm.get('tariff').value == 'single'">.openslides.com</span>
+            </mat-form-field>
+        </div>
+        <mat-form-field>
+            <input required type="text" matInput formControlName="event_name" placeholder="Veranstaltungsname">
+        </mat-form-field>
+        <mat-form-field>
+            <input required type="text" matInput formControlName="organizer" placeholder="Veranstalter">
+        </mat-form-field>
+        <div fxLayout="row wrap" appWrappable wrapMargin="4%">
+            <mat-form-field fxFlex.gt-sm="61">
+                <input required type="text" matInput formControlName="location" placeholder="Veranstaltungsort">
+            </mat-form-field>
+            <mat-form-field fxFlex.gt-sm="31">
+                <input required type="number" matInput formControlName="expected_users" min="1" placeholder="Erwartete Teilnehmeranzahl">
+            </mat-form-field>
+        </div>
+        <div fxLayout="row wrap" appWrappable wrapMargin="4%">
+            <mat-form-field fxFlex.gt-sm="46">
+                <input required matInput [matDatepicker]="eventFromPicker" placeholder="Veranstaltungsbeginn" formControlName="event_from">
+                <mat-datepicker-toggle matSuffix [for]="eventFromPicker"></mat-datepicker-toggle>
+                <mat-datepicker #eventFromPicker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field fxFlex.gt-sm="46">
+                <input required matInput [matDatepicker]="eventToPicker" placeholder="Veranstaltungsende" formControlName="event_to">
+                <mat-datepicker-toggle matSuffix [for]="eventToPicker"></mat-datepicker-toggle>
+                <mat-datepicker #eventToPicker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div fxLayout="row wrap" appWrappable wrapMargin="4%" class="mb-1">
+            <mat-form-field fxFlex.gt-sm="46">
+                <input required matInput [matDatepicker]="hostingFromPicker" placeholder="Hosting von" formControlName="hosting_from">
+                <mat-datepicker-toggle matSuffix [for]="hostingFromPicker"></mat-datepicker-toggle>
+                <mat-datepicker #hostingFromPicker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field fxFlex.gt-sm="46">
+                <input required matInput [matDatepicker]="hostingToPicker" placeholder="Hosting bis" formControlName="hosting_to">
+                <mat-datepicker-toggle matSuffix [for]="hostingToPicker"></mat-datepicker-toggle>
+                <mat-datepicker #hostingToPicker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <h3 class="mb-0">Ansprechpartner</h3>
+        <div formGroupName="contact_person" class="mb-1">
+            <mat-form-field>
+                <input required type="text" matInput formControlName="name" placeholder="Name">
+            </mat-form-field>
+            <div fxLayout="row wrap" appWrappable wrapMargin="4%">
+                <mat-form-field fxFlex.gt-sm="46">
+                    <input required type="email" matInput formControlName="email" placeholder="E-Mail">
+                </mat-form-field>
+                <mat-form-field fxFlex.gt-sm="46">
+                    <input required type="tel" matInput formControlName="phone" placeholder="Telefon">
+                </mat-form-field>
+            </div>
+        </div>
+        <h3 class="mb-0">Rechnungsadresse</h3>
+        <div formGroupName="billing_address">
+            <mat-form-field>
+                <input required type="text" matInput formControlName="name" placeholder="Name">
+            </mat-form-field>
+            <mat-form-field>
+                <input required type="text" matInput formControlName="street" placeholder="Straße + Hausnummer">
+            </mat-form-field>
+            <mat-form-field>
+                <input type="text" matInput formControlName="extra" placeholder="Adresszusatz">
+            </mat-form-field>
+            <div fxLayout="row wrap" appWrappable wrapMargin="4%">
+                <mat-form-field fxFlex.gt-sm="23">
+                    <input required type="text" matInput formControlName="zipcode" placeholder="PLZ">
+                </mat-form-field>
+                <mat-form-field fxFlex.gt-sm="69">
+                    <input required type="text" matInput formControlName="city" placeholder="Ort">
+                </mat-form-field>
+            </div>
+            <mat-form-field>
+                <input required type="text" matInput formControlName="country" placeholder="Land">
+            </mat-form-field>
+        </div>
+        <button type="submit" [disabled]="!orderForm.valid" mat-flat-button class="os-button">Anfrage schicken</button>
+        <div class="error-div mt-1" *ngIf="error">
+            Fehler:<br>
+            {{ error }}
+        </div>
+    </form>
+</div>

@@ -1,23 +1,19 @@
-import { Component } from '@angular/core';
-import { ViewportScroller } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-@Component({
-  selector: 'app-main-menu',
-  templateUrl: './main-menu.component.html',
-  styleUrls: ['./main-menu.component.scss']
-})
-export class MainMenuComponent {
-    constructor(private scroller: ViewportScroller, private router: Router) {
-        this.scroller.setOffset([0, 64]);
-    };
+import { ScrollSpyService } from '../scroll-spy.service';
 
-    public async navigate(url: string, fragment: string) {
-        await this.router.navigate([url]);
-        this.scrollTo(fragment);
-    }
-    
-    public scrollTo(to: string) {
-        this.scroller.scrollToAnchor(to);
+@Component({
+    selector: 'app-main-menu',
+    templateUrl: './main-menu.component.html',
+    styleUrls: ['./main-menu.component.scss']
+})
+export class MainMenuComponent implements OnInit {
+    public currentSection = '';
+
+    public constructor(private scrollSpyService: ScrollSpyService, public router: Router) {}
+
+    public ngOnInit(): void {
+        this.scrollSpyService.sectionChange.subscribe((id: string) => (this.currentSection = id));
     }
 }

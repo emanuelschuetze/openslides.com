@@ -1,13 +1,16 @@
+<div appScrollSpy>
 <div class="full-width-img-wrapper flex col" style="height: 728px">
     <img class="full-width-img" src="assets/img/dgb-bundeskongress2018-mit-openslides-leinwand.jpg">
     <div class="fill-remaining-space valign-wrapper main-paragraph flex col text-center">
         <div class="container">
-            <h1><b>Managen Sie Versammlungen digital</b></h1>
-            <p>OpenSlides ist die umfassende Lösung zur digitalen Organisation Ihrer Tagungen und Konferenzen.
-                Verwalten und projezieren Sie mit unserem webbasierten Präsentations- und Versammlungssystem
-                Tagesordnungen, Anträge und Wahlen, Dokumente, Rede- oder Teilnahmelisten - übersichtlich,
-                zeitgemäß und immer auf dem neuesten Stand.</p>
-            <button routerLink="/download" mat-flat-button class="os-button" id="test-now-btn">Jetzt kostenlos testen</button>
+            <h1><b>Managen Sie Ver&shy;samm&shy;lungen digital</b></h1>
+            <p>
+                OpenSlides ist die umfassende Lösung zur digitalen Organisation Ihrer Tagungen und Konferenzen.
+                Verwalten und projizieren Sie mit unserem webbasierten Präsentations- und Versammlungssystem
+                Tagesordnungen, Anträge und Wahlen, Dokumente, Rede- oder Teilnahmelisten &ndash; übersichtlich,
+                zeitgemäß und immer auf dem neuesten Stand.
+            </p>
+            <a href="https://demo.openslides.org/login/" target="_blank" mat-flat-button class="os-button" id="test-now-btn">Jetzt kostenlos testen</a>
         </div>
     </div>
     <div class="in-media container">
@@ -19,21 +22,21 @@
         <div class="media-logos text-center">--- Hier Logos einfügen ---</div>
     </div>
 </div>
-<div class="container smaller section text-center" id="anchor-solutions">
-    <h1><b>Maximale Flexibilität und Transparenz</b></h1>
+<div class="container smaller section text-center" id="anchor-transparency">
+    <h1><b>Maximale Flexibilität und Trans&shy;parenz</b></h1>
     <p>
         Schaffen Sie die Voraussetzungen für eine offene Kommunikation, ohne das Ziel aus den Augen zu verlieren.
         OpenSlides gibt Ihnen dafür ein modernes und mächtiges Werkzeug an die Hand. Erweitern Sie Ihre
-        Tagungsordnung live, reagieren Sie auf Antragsänderungen und Wahlen in Echtzeit und geben Sie Ihren
-        Delegierten zur Abstimmung kontrollierten Zugriff auf das System.
+        Tagungsordnung live, reagieren Sie auf Antragsänderungen und Wahlen in Echtzeit und <tbd>geben Sie Ihren
+        Delegierten zur Abstimmung kontrollierten Zugriff auf das System</tbd>.
     </p>
     <div class="mt-1">&nbsp;</div>
-    <div fxLayout="row" fxLayoutGap="10px" class="wrap-mobile denser-paragraphs">
+    <div class="flex evenly-spaced wrap-mobile denser-paragraphs" appWrappable>
         <div>
             <img style="background-color: orange; width: 150px; height: 150px;">
             <h2>Vereinfachte Interaktion</h2>
             <p>
-                Beziehen Sie das Plenum aktiv mit ein. Öffnen Sie den mobilen Zugriff auf OpenSlides - zur
+                Beziehen Sie das Plenum aktiv mit ein. Öffnen Sie den mobilen Zugriff auf OpenSlides &ndash; zur
                 Einsicht wichtiger Dokumente, zum Einreichen von Anträgen oder Abrufen von Wahlergebnissen etc.
             </p>
         </div>
@@ -42,7 +45,7 @@
             <h2>Schnellere Ergebnisse</h2>
             <p>
                 Beschleunigen Sie Prozesse durch eine nahtlose Steuerung mit nur einer Software. OpenSlides
-                strafft das Verfahren - von der Vorbereitung über Anträge und Wahlen bis zum Beschlussprotokoll.
+                strafft das Verfahren &ndash; von der Vorbereitung über Anträge und Wahlen bis zum Beschlussprotokoll.
             </p>
         </div>
         <div>
@@ -56,78 +59,97 @@
     </div>
 </div>
 <div class="mt-1">&nbsp;</div>
-<div class="container section center-mobile">
-    <div class="wrap-mobile" fxLayout="row" appWrappable wrapMargin="50px">
-        <div fxFlex.gt-sm="50" class="switch-flex-order">
-            <h1>Tagesordnung</h1>
+<div class="container section center-mobile" id="anchor-features">
+    <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
+        <div class="switch-flex-order">
+            <h1>Tages&shy;ordnung</h1>
             <p>
                 Ergänzen, ändern oder verschieben Sie automatisch nummerierte Tagesordnungspunkte per Drag & Drop im
                 laufenden Betrieb. Verknüpfen Sie die einzelnen Punkte mit Redelisten sowie Redezeiten und
                 integrieren Sie für eine bessere Zeitplanung auch inoffizielle Einträge wie Pausen.
             </p>
-            <button routerLink="/solutions" mat-flat-button class="os-button">Mehr erfahren</button>
+            <button routerLink="/feature/agenda" mat-flat-button class="os-button">Mehr erfahren</button>
         </div>
-        <div fxFlex.gt-sm="50" class="switch-flex-order">
+        <div class="switch-flex-order">
             <img class="screenshot" src="assets/img/features/agenda-list_de.png">
         </div>
     </div>
 </div>
 <div class="section blue-upwards flex center-mobile">
     <div class="container">
-        <div class="wrap-mobile" fxLayout="row" appWrappable wrapMargin="50px">
-            <div fxFlex.gt-sm="50">
+        <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
+            <div>
                 <img class="screenshot" src="assets/img/features/agenda-list_de.png">
             </div>
-            <div fxFlex.gt-sm="50">
+            <div>
                 <h1>Anträge</h1>
                 <p>
                     Erfassen Sie Anträge mit Antragsteller, ausführlichem Antragstext, aktuellem Status und dem
                     Abstimmungsergebnis in einer einzigen Liste. Die Sortierung nach Schlagworten, Sachgebieten oder
-                    Antragsblöcken sowie eine komfortable Versionshistorie erlauben eine übersichtliche Verwaltung
+                    Antragsblöcken sowie eine komfortable <tbd>Versionshistorie</tbd> erlauben eine übersichtliche Verwaltung
                     aller Anträge und ihrer Änderungen.
                 </p>
-                <button routerLink="/solutions" mat-flat-button class="os-button">Mehr erfahren</button>
+                <button routerLink="/feature/motions" mat-flat-button class="os-button">Mehr erfahren</button>
             </div>
         </div>
     </div>
 </div>
 <div class="container section center-mobile">
-    <div class="wrap-mobile" fxLayout="row" appWrappable wrapMargin="50px">
-        <div fxFlex.gt-sm="50" class="switch-flex-order">
+    <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
+        <div class="switch-flex-order">
             <h1>Wahlen</h1>
             <p>
                 Schlagen Sie Kandidaten aus der aktuellen Teilnehmerliste vor, generieren Sie ad-hoc personalisierte
-                Stimmzettel für geheime Wahlen. OpenSlides unterstützt auch mehrere Wahlgänge und lässt sich um ein
-                elektronisches Abstimmungssystem erweitern.
+                Stimmzettel für geheime Wahlen. OpenSlides unterstützt auch mehrere Wahlgänge und <tbd>lässt sich um ein
+                elektronisches Abstimmungssystem erweitern</tbd>.
             </p>
-            <button routerLink="/solutions" mat-flat-button class="os-button">Mehr erfahren</button>
+            <button routerLink="/feature/elections" mat-flat-button class="os-button">Mehr erfahren</button>
         </div>
-        <div fxFlex.gt-sm="50" class="switch-flex-order">
+        <div class="switch-flex-order">
             <img class="screenshot" src="assets/img/features/agenda-list_de.png">
         </div>
     </div>
 </div>
-<div class="container tiny text-center" id="puzzle-container">
+<div class="section blue-upwards flex center-mobile">
+    <div class="container">
+        <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
+            <div>
+                <img class="screenshot" src="assets/img/features/agenda-list_de.png">
+            </div>
+            <div>
+                <h1>Projek&shy;toren</h1>
+                <p><tbd>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac felis ut arcu mattis
+                    efficitur quis ut enim. In eu sapien nunc. Nullam faucibus quam quis dolor commodo, a
+                    ornare velit tincidunt. Nulla congue erat eget ipsum tempor condimentum. Ut vestibulum eros
+                    at luctus lacinia. Phasellus vulputate viverra velit sed.
+                </tbd></p>
+                <button routerLink="/feature/projectors" mat-flat-button class="os-button">Mehr erfahren</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section container tiny text-center" id="puzzle-container">
     <img style="background-color: orange; width: 200px; height: 200px;">
-    <h1>Vielseitig und erweiterbar</h1>
+    <h1>Vielseitig <tbd>und erweiterbar</tbd></h1>
     <p>
         OpenSlides ist für die Arbeit mit multiplen Bildschirmen konzipiert und mit einer mächtigen
         Projektorsteuerung versehen. Das Backend erlaubt die Bearbeitung der Folien, während sämtliche
-        Projektoren in einem frei wählbaren Vollbild laufen. Auch die Darstellung der mobilen Ansicht
-        lässt sich je nach Gruppe und Berechtigung anpassen.
+        Projektoren in einem frei wählbaren Vollbild laufen. <tbd>Auch die Darstellung der mobilen Ansicht
+        lässt sich je nach Gruppe und Berechtigung anpassen.</tbd>
     </p>
     <p>
-        Die Verwaltung der Delegierten, ihrer Anwesenheit und Zugehörigkeit zu einzelnen Gremien sowie das
+        Die Verwaltung der Delegierten, ihrer Anwesenheit und <tbd>Zugehörigkeit zu einzelnen Gremien</tbd> sowie das
         ausgefeilte Rechtemanagement sind unkompliziert und intuitiv. Jeder Bereich von OpenSlides kann für
         einzelne Gruppen oder Teilnehmende freigeschalten oder gesperrt werden.
     </p>
     <p>
-        Egal ob Dateiablage, Gruppenchat oder Kommentarfunktion - OpenSlides ist mit einer Vielzahl
-        praxistauglicher Werkzeuge ausgestattet und lässt sich mittels externer Plugins schnell und einfach
-        um weitere Funktionen erweitern. Darüber hinaus entwickeln wir für Premiumkunden auch maßgeschneiderte
+        Egal ob Dateiablage, <tbd>Gruppenchat</tbd> oder Kommentarfunktion &ndash; OpenSlides ist mit einer Vielzahl
+        praxistauglicher Werkzeuge ausgestattet und <tbd>lässt sich mittels externer Plugins schnell und einfach
+        um weitere Funktionen erweitern</tbd>. Darüber hinaus entwickeln wir für Premiumkunden auch maßgeschneiderte
         Lösungen.
     </p>
-    <button routerLink="/solutions" mat-flat-button class="os-button">Mehr erfahren</button>
+    <button routerLink="/feature/miscellaneous" mat-flat-button class="os-button">Weitere Funktionen</button>
 </div>
 <div class="blue-container center-mobile">
     <div class="container tiny">
@@ -136,59 +158,14 @@
                 <mat-icon>person</mat-icon>
             </div>
             <div>
-                <h1>Professionelle Beratung</h1>
+                <h1>Profes&shy;sionelle Beratung</h1>
                 <p>
                     Sei es beim Hosting, bei der Einrichtung und Anpassung, für Schulungen oder die Unterstützung vor
-                    Ort - wir helfen Ihnen dabei, OpenSlides auf Ihrer Versammlung schnell und effektiv einzusetzen.
+                    Ort &ndash; wir helfen Ihnen dabei, OpenSlides auf Ihrer Versammlung schnell und effektiv einzusetzen.
                 </p>
                 <button routerLink="/contact" mat-flat-button class="os-button white-black">Kontaktieren Sie uns</button>
             </div>
         </div>
-    </div>
-</div>
-<div class="container smaller section big text-center" id="anchor-references">
-    <div fxLayout="row wrap" class="flex text-center">
-        <div class="reference-container" *ngFor="let ref of references">
-            <div>
-                <img [src]="ref.img" [alt]="ref.name">
-            </div>
-        </div>
-    </div>
-    <h1 class="mt-2">
-        <i>"Wir sehen in OpenSlides ein innovatives Open-Source-Produkt, das dabei hilft, unsere demokratischen, innerparteilichen Strukturen in das digitale Zeitalter zu transportieren."</i>
-    </h1>
-    <div class="mt-1">
-        <span>BÜNDNIS 90/DIE GRÜNEN, Landesverband Hamburg</span>
-    </div>
-    <div class="mt-1">
-        <button routerLink="/references" mat-flat-button class="os-button">Weitere Referenzen</button>
-    </div>
-</div>
-<div class="section gigantic blue-strip">
-    <div class="container flex">
-        <img class="screenshot" src="assets/img/features/agenda-list_de.png">
-    </div>
-</div>
-<div class="section container wrap-mobile" fxLayout="row" fxLayoutGap="50px" id="open-source-div">
-    <div class="text-right switch-flex-order">
-        <h1>Open Source</h1>
-        <p>
-            Wir haben uns zu den Grundsätzen eines quelloffenen, freien und kostenlosen Austauschs unserer
-            Software verpflichtet und tragen diesen Anspruch auch im Namen. OpenSlides wird unter MIT-Lizenz
-            zur Verfügung gestellt. Hilf mit, den Quellcode zu verbreiten und weiter zu verbessern.
-        </p>
-        <a href="https://github.com/OpenSlides/OpenSlides" mat-flat-button class="os-button github-button">
-            <img class="inline-logo" src="assets/img/logos/github.png" alt="GitHub">
-            <span>GitHub</span>
-        </a>
-        <a href="https://www.transifex.com/openslides/openslides/" mat-flat-button class="os-button mr-0">
-            <mat-icon class="mr-0">language</mat-icon>
-            <span>Transifex</span>
-        </a>
-        <button routerLink="/" mat-flat-button class="os-button">Mehr erfahren</button>
-    </div>
-    <div class="mr-1 switch-flex-order">
-        <img style="background-color: orange; width: 200px; height: 200px;">
     </div>
 </div>
 <div class="section blue-container no-padding" id="anchor-download">
@@ -209,11 +186,10 @@
                         <mat-list-item><mat-icon matListIcon>check</mat-icon>für immer kostenlos</mat-list-item>
                     </div>
                 </mat-list>
-                <button routerLink="/download" mat-flat-button class="os-button white mr-0 mb-0 ml-0">
-                    <mat-icon class="mr-0">save_alt</mat-icon>
-                    <span>Download</span>
-                </button>
-                <button routerLink="/download" mat-flat-button class="os-button white-reversed">Andere Version</button>
+                <a href="https://github.com/OpenSlides/OpenSlides" mat-flat-button class="os-button github-button">
+                    <img class="inline-logo" src="assets/img/logos/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
             </div>
             <div>
                 <div class="squares reverse mt-1"></div>
@@ -230,23 +206,130 @@
                         <mat-list-item><mat-icon matListIcon>check</mat-icon>professioneller Support</mat-list-item>
                     </div>
                 </mat-list>
-                <button routerLink="/contact" mat-flat-button class="os-button white">
-                    <mat-icon class="mr-0">person</mat-icon>
-                    <span>Kontaktieren Sie uns</span>
+                <button routerLink="/prices" mat-flat-button class="os-button white">
+                    <!-- <mat-icon class="mr-0">person</mat-icon> -->
+                    <span>Angebote ansehen</span>
                 </button>
             </div>
         </div>
     </div>
 </div>
-<div class="section container text-center" id="anchor-news">
-    --- Awards & Newsfeed (?) ---
+<div class="container smaller section big text-center" id="anchor-references">
+    <div fxLayout="row wrap" class="flex text-center">
+        <div class="reference-container" *ngFor="let ref of references">
+            <div>
+                <img [src]="ref.img" [alt]="ref.name" [title]="ref.name">
+            </div>
+        </div>
+    </div>
+    <!-- <h1 class="mt-2">
+        <i>"Wir sehen in OpenSlides ein innovatives Open-Source-Produkt, das dabei hilft, unsere demokratischen, innerparteilichen Strukturen in das digitale Zeitalter zu transportieren."</i>
+    </h1>
+    <div class="mt-1">
+        <span>BÜNDNIS 90/DIE GRÜNEN, Landesverband Hamburg</span>
+    </div> -->
+    <slideshow minHeight="500px"
+            [autoPlay]="false"
+            autoPlayInterval="8000"
+            [imageUrls]="quotes"
+            captionBackground="transparent"
+            captionColor="#000">
+    </slideshow>
+    <div class="mt-1">
+        <button routerLink="/references" mat-flat-button class="os-button">Weitere Referenzen</button>
+    </div>
+</div>
+<div class="section pos-rel">
+    <div class="container tiny no-padding shaded">
+        <slideshow class="screenshots-slideshow"
+                [autoPlay]="true"
+                autoPlayInterval="8000"
+                [imageUrls]="images">
+        </slideshow>
+    </div>
+    <div class="blue-strip"></div>
+</div>
+<div class="section">
+    <div class="container wrap-mobile" fxLayout="row" fxLayoutGap="50px" id="open-source-div">
+        <div class="text-right switch-flex-order">
+            <h1>Open Source</h1>
+            <p>
+                Wir haben uns zu den Grundsätzen eines quelloffenen, freien und kostenlosen Austauschs unserer
+                Software verpflichtet und tragen diesen Anspruch auch im Namen. OpenSlides wird unter MIT-Lizenz
+                zur Verfügung gestellt. Hilf mit, den Quellcode zu verbreiten und weiter zu verbessern.
+                <tbd>TODO: Transifex erwähnen?</tbd>
+            </p>
+            <a href="https://github.com/OpenSlides/OpenSlides" mat-flat-button class="os-button github-button">
+                <img class="inline-logo" src="assets/img/logos/github.png" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.transifex.com/openslides/openslides/" mat-flat-button class="os-button mr-0">
+                <mat-icon class="mr-0">language</mat-icon>
+                <span>Transifex</span>
+            </a>
+            <!-- <button routerLink="/" mat-flat-button class="os-button">Mehr erfahren</button> -->
+        </div>
+        <div class="mr-1 switch-flex-order">
+            <img style="background-color: orange; width: 200px; height: 200px;">
+        </div>
+    </div>
+</div>
+<div class="section blue-container" id="anchor-news">
+    <div class="container">
+        <h1>News</h1>
+        <div class="flex evenly-spaced wrap-mobile white-links" appWrappable>
+            <div>
+                <h3 class="icon-wrapper"><mat-icon>new_releases</mat-icon> Pressemitteilungen</h3>
+                <div><i>20.09.2018:</i> <a target="_blank" href="http://files.openslides.org/press/2.3/PM-OpenSlides-2.3.pdf">OpenSlides 2.3 mit integrierter elektronischer Abstimmung</a></div>
+                <div><i>06.06.2018:</i> <a target="_blank" href="http://files.openslides.org/press/2.2/PM-OpenSlides-2.2.pdf">OpenSlides 2.2 reif für Großveranstaltungen</a></div>
+            </div>
+            <div>
+                <h3 class="icon-wrapper"><mat-icon>dashboard</mat-icon> Artikel und Publikationen</h3>
+                <div><i>05.02.2019:</i> <a [routerLink]="['/dgb-bundeskongress']" >Erfolgreiche Digitalisierung: DGB-Bundeskongress mit OpenSlides</a></div>
+            </div>
+            <div>
+                <h3 class="icon-wrapper"><mat-icon>stars</mat-icon> In den Medien</h3>
+                <div><i>08.06.2018:</i> <a target="_blank" href="https://www.pro-linux.de/news/1/25970/openslides-22-ver%C3%B6ffentlicht.html">Pro-Linux-Meldung zu OpenSlides 2.2</a></div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="section container">
-    <h1>Newsletter</h1>
+    <h1 id="anchor-newsletter">Newsletter</h1>
     <p>
         Bleiben Sie über die Entwicklung von OpenSlides auf dem Laufenden, erhalten Sie praxistaugliche Tipps
         und aktuelle Neuigkeiten rund um die digitale Organisation von Veranstaltungen und virtueller
         Versammlungen.
     </p>
-    <button routerLink="/contact" mat-flat-button class="os-button">Jetzt anmelden</button>
+    <!-- <button routerLink="/contact" mat-flat-button class="os-button">Jetzt anmelden</button> -->
+    <div appWrappable wrapMargin="3%" class="flex wrap-mobile evenly-spaced blue-links">
+        <div>
+            <h3 class="icon-wrapper"><mat-icon>email</mat-icon> Mailinglisten</h3>
+            <b>announcement@openslides.org</b><br>
+            Offizielle Ankündigungen<br>
+            <a target="_blank" href="http://mail.openslides.org/listinfo/announcement/">&raquo; Abonnieren</a> &nbsp;
+            <a target="_blank" href="http://mail.openslides.org/pipermail/announcement/">&raquo; Archiv</a>
+            <br><br>
+            <b>users-de@openslides.org</b><br>
+            Für Anwender und Entwickler (Deutsch)<br>
+            <a target="_blank" href="http://mail.openslides.org/listinfo/users-de/">&raquo; Abonnieren</a> &nbsp;
+            <a target="_blank" href="http://mail.openslides.org/pipermail/users-de/">&raquo; Archiv</a>
+            <br><br>
+            <b>users-en@openslides.org</b><br>
+            Für Anwender und Entwickler (Englisch)<br>
+            <a target="_blank" href="http://mail.openslides.org/listinfo/users-en/">&raquo; Abonnieren</a> &nbsp;
+            <a target="_blank" href="http://mail.openslides.org/pipermail/users-en/">&raquo; Archiv</a>
+        </div>
+        <div>
+            <h3 class="icon-wrapper"><mat-icon>chat_bubble</mat-icon> IRC</h3>
+            <p>
+                Chat mit unseren OpenSlides-Entwicklern über IRC Netzwerk <code>freenode</code>.
+            <p>
+            Kanal:<br>
+            <a href="http://webchat.freenode.net/?channels=openslides&uio=d4s" target="_blank">
+                <code>#openslides</code>
+            </a>
+        </div>
+    </div>
+</div>
 </div>
