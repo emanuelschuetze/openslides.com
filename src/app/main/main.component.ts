@@ -1,21 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ReferenceService } from '../reference.service';
+
 @Component({
     selector: 'app-main',
     templateUrl: './main.component.html',
     styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-    public references = [
-        { img: 'assets/img/references/gruene-logo.png', name: 'Bündnis 90/Die Grünen' },
-        { img: 'assets/img/references/spd-logo.png', name: 'SPD' },
-        { img: 'assets/img/references/linke-logo.png', name: 'Die LINKE' },
-        { img: 'assets/img/references/piraten-logo.png', name: 'PiratenPartei' },
-        { img: 'assets/img/references/gruene-jugend-logo.png', name: 'Grüne Jugend' },
-        { img: 'assets/img/references/jusos-logo.png', name: 'JUSOS' },
-        { img: 'assets/img/references/linksjugend-logo.png', name: 'linksjugend' },
-        { img: 'assets/img/references/pog-logo.png', name: 'Piraten ohne Grenzen' }
-    ];
     public images = [
         { caption: '<b>Lorem</b> ipsum', href: '/feature/agenda', url: 'assets/img/features/agenda-list_de.png' },
         { caption: 'Lorem ipsum', href: '/feature/motions', url: 'assets/img/features/agenda-list-of-speakers_de.png' },
@@ -47,6 +39,8 @@ export class MainComponent implements OnInit {
         }
     ];
     public quotes: { caption: string; url: string }[] = [];
+
+    public constructor(public refService: ReferenceService) {}
 
     public ngOnInit(): void {
         this.quotes = this.quotesSource.map(quote => ({

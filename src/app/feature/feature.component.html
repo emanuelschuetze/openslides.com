@@ -14,12 +14,12 @@
         </mat-select>
     </div>
     <h1 class="valign-wrapper title">
-        <mat-icon class="inline mr-1">{{ currentFeature.icon }}</mat-icon>
+        <!-- <mat-icon class="inline mr-1">{{ currentFeature.icon }}</mat-icon> -->
         <span>{{ currentFeature.title }}</span>
     </h1>
     <p>{{ currentFeature.intro }}</p>
-    <slideshow class="screenshots-slideshow" [autoPlay]="true" autoPlayInterval="5000" [imageUrls]="currentFeature.images"></slideshow>
-    <mat-list>
+    <mat-list class="mb-1">
         <mat-list-item *ngFor="let detail of currentFeature.details"><mat-icon matListIcon>arrow_right</mat-icon>{{ detail }}</mat-list-item>
     </mat-list>
+    <slideshow class="screenshots-slideshow" [autoPlay]="false" autoPlayInterval="5000" [imageUrls]="currentFeature.images"></slideshow>
 </div>

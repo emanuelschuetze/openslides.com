@@ -4,16 +4,10 @@
         OpenSlides war bereits auf zahlreichen Veranstaltungen erfolgreich im Einsatz. Hier eine Auswahl an
         Referenzen. Wir würden uns freuen, wenn wir auch Ihre Organisation hier nennen dürfen.
     </p>
-    <div *ngFor="let cat of references">
+    <div *ngFor="let cat of refService.references">
         <h2>{{ cat.name }}</h2>
-        <div fxLayout="row wrap" appWrappable wrapMarginX="20px">
-            <div class="reference-container valign-wrapper flex text-center" *ngFor="let ref of cat.refs">
-                <img [src]="'assets/img/references/' + ref.src" [alt]="ref.name">
-                <div class="overlay">
-                    <b>{{ref.name}}</b>
-                    <span>{{ref.event}}</span>
-                </div>
-            </div>
+        <div fxLayout="row wrap" appWrappable wrapMarginX="15px">
+            <app-reference-container *ngFor="let ref of cat.refs" [ref]="ref"></app-reference-container>
         </div>
     </div>
 </div>

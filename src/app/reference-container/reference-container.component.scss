@@ -1,0 +1,54 @@
+:host {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @media (max-width: 1199px) {
+        width: 204px;
+    }
+    @media (max-width: 575px) {
+        width: 41%;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0.7rem;
+        margin: 0.3rem;
+        border-radius: 2px;
+        font-size: 16px;
+
+        span {
+            font-size: 13px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+    }
+
+    &:hover .overlay {
+        display: flex;
+    }
+}

@@ -24,16 +24,18 @@ import { SlideshowModule } from 'ng-simple-slideshow';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
-import { DgbBundeskongressComponent } from './dgb-bundeskongress/dgb-bundeskongress.component';
+import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { FeatureComponent } from './feature/feature.component';
 import { LanguageControllerComponent } from './language-controller/language-controller.component';
 import { ImpressumComponent } from './legal-notice/legal-notice.component';
-import { MainMenuComponent } from './main-menu/main-menu.component';
+import { MainMenuComponent } from './main/main-menu/main-menu.component';
 import { MainComponent } from './main/main.component';
+import { NewsComponent } from './news/news.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { OrderComponent } from './order/order.component';
 import { PricesComponent } from './prices/prices.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { ReferenceContainerComponent } from './reference-container/reference-container.component';
 import { ReferencesComponent } from './references/references.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { WrappableDirective } from './wrappable.directive';
@@ -67,7 +69,9 @@ export const MOMENT_FORMATS = {
         OrderComponent,
         FeatureComponent,
         OrderSuccessComponent,
-        DgbBundeskongressComponent
+        DgbBundeskongressComponent,
+        ReferenceContainerComponent,
+        NewsComponent
     ],
     imports: [
         BrowserModule,

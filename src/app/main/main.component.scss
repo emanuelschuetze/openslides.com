@@ -124,9 +124,17 @@ p {
     z-index: -1;
 }
 
-.white-links a {
-    font-weight: bold;
+.float-right {
+    float: right;
+}
+
+.d-inline-block {
     display: inline-block;
+}
+
+.news-links a {
+    font-weight: bold;
+    display: block;
     margin-top: 3px;
     margin-bottom: 12px;
     margin-left: 7px;
@@ -212,8 +220,27 @@ img.screenshot {
     margin-right: 8px;
 }
 
-#open-source-div {
-    margin-top: 7rem;
+// wrapper for iframe for youtube video (16:9)
+.iframe-wrapper-wrapper {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .iframe-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        height: 0;
+        padding-top: 56.25%;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 // maybe TODO: schöner text mit button unter slideshow statt drinnen
@@ -228,50 +255,50 @@ img.screenshot {
 //     }
 // }
 
-::ng-deep .quote-container {
-    padding-left: 35px;
-    padding-right: 35px;
+.quote-slideshow ::ng-deep {
+    .slideshow-container {
+        // box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
 
-    h1 {
-        @media (max-width: 1199px) {
-            font-size: 38px;
+        .caption {
+            height: 100%;
+            box-sizing: border-box;
+
+            .quote-container {
+                padding-left: 35px;
+                padding-right: 35px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+
+                h1 {
+                    @media (max-width: 1199px) {
+                        font-size: 38px;
+                    }
+                    @media (max-width: 767px) {
+                        font-size: 30px;
+                    }
+                    @media (max-width: 464px) {
+                        font-size: 26px;
+                    }
+                    @media (max-width: 372px) {
+                        font-size: 22px;
+                    }
+                }
+            }
         }
-        @media (max-width: 767px) {
-            font-size: 30px;
-        }
-        @media (max-width: 464px) {
-            font-size: 26px;
-        }
-        @media (max-width: 372px) {
-            font-size: 22px;
+
+        .arrow-container .arrow {
+            border-color: #2699fb !important;
         }
     }
 }
 
 @media (max-width: 767.99px) {
-    .reference-container img {
-        width: 160px;
-    }
-
     .switch-flex-order {
         order: 2;
 
         & + .switch-flex-order {
             order: 1;
-        }
-    }
-
-    #open-source-div {
-        justify-content: center;
-
-        .text-right {
-            text-align: center;
-        }
-        .mr-1 {
-            margin-right: 0 !important;
-        }
-        img {
-            margin-bottom: 10px;
         }
     }
 }
