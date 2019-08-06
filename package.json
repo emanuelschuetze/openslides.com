@@ -11,7 +11,8 @@
     "e2e": "ng e2e",
     "prettify-check": "prettier --config ./.prettierrc --list-different \"src/{app,environments}/**/*{.ts,.js,.json,.css,.scss}\"",
     "prettify-write": "prettier --config ./.prettierrc --write \"src/{app,environments}/**/*{.ts,.js,.json,.css,.scss}\"",
-    "cleanup": "npm run lint-write; npm run prettify-write"
+    "cleanup": "npm run lint-write; npm run prettify-write",
+    "cleanup-win": "npm run lint-write & npm run prettify-write"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +28,7 @@
     "@angular/platform-browser": "~8.0.3",
     "@angular/platform-browser-dynamic": "~8.0.3",
     "@angular/router": "~8.0.3",
+    "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "ng-simple-slideshow": "^1.2.9",
     "rxjs": "~6.4.0",
