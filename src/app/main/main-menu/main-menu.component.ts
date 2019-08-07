@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { ScrollSpyService } from '../scroll-spy.service';
+import { ScrollSpyService } from '../../scroll-spy.service';
 
 @Component({
     selector: 'app-main-menu',

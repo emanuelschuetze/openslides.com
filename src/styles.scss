@@ -63,7 +63,11 @@ tbd {
 }
 
 .no-padding {
-    padding: 0;
+    padding: 0 !important;
+}
+
+.full-width {
+    width: 100%;
 }
 
 .pull-left {
@@ -247,6 +251,11 @@ h2 {
     &:hover {
         color: #057ae1;
     }
+}
+
+.white-links a, .white-link {
+    color: #fff;
+    font-weight: bold;
 }
 
 @media (min-width: $breakpoint-sm-up) {

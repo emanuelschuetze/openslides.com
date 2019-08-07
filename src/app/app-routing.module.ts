@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes, UrlSegment } from '@angular/router';
 
 import { ContactComponent } from './contact/contact.component';
-import { DgbBundeskongressComponent } from './dgb-bundeskongress/dgb-bundeskongress.component';
+import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { FeatureComponent } from './feature/feature.component';
 import { LanguageService, LanguageUrlMatcher } from './language.service';
 import { ImpressumComponent } from './legal-notice/legal-notice.component';
 import { MainComponent } from './main/main.component';
+import { NewsComponent } from './news/news.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { OrderComponent } from './order/order.component';
 import { PricesComponent } from './prices/prices.component';
@@ -28,6 +29,11 @@ const routes: Routes = [
             { path: '', component: MainComponent, pathMatch: 'full' },
             { path: 'contact', component: ContactComponent },
             { path: 'legalnotice', component: ImpressumComponent },
+            {
+                path: 'news',
+                component: NewsComponent,
+                children: [{ path: 'dgb-bundeskongress', component: DgbBundeskongressComponent }]
+            },
             { path: 'privacy', component: PrivacyComponent },
             { path: 'references', component: ReferencesComponent },
             { path: 'prices', component: PricesComponent },
@@ -43,7 +49,6 @@ const routes: Routes = [
                 path: 'feature',
                 children: [{ matcher: FeatureUrlMatcher, component: FeatureComponent }, { path: '**', redirectTo: '' }]
             },
-            { path: 'dgb-bundeskongress', component: DgbBundeskongressComponent },
             { path: '**', redirectTo: '' }
         ]
     },
