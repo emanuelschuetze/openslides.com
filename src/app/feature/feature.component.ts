@@ -92,7 +92,7 @@ export class FeatureComponent implements OnInit {
         projectors: {
             title: 'Projektoren',
             icon: 'videocam',
-            intro: '<tbd>Live dabei: Zeigen sie den Teilnehmern gerade diskutierte Inhalte über Projektoren.</tbd>',
+            intro: 'Live dabei: Zeigen Sie den Teilnehmenden gerade diskutierte Inhalte auf den Projektionsflächen.',
             images: [
                 { url: `${this.path}elections-list_de.png`, caption: 'Lorem ipsum' },
                 { url: `${this.path}elections-detail_de.png`, caption: 'Lorem ipsum' },
@@ -113,7 +113,7 @@ export class FeatureComponent implements OnInit {
         miscellaneous: {
             title: 'Weitere Funktionen',
             icon: 'search',
-            intro: '<tbd>Seien Sie neugierig: Entdecken Sie noch viele weitere Funktionen von OpenSlides</tbd>',
+            intro: 'Seien Sie neugierig: Entdecken Sie noch viele weitere Funktionen von OpenSlides.',
             images: [
                 { url: `${this.path}general-users-list_de.png`, caption: 'Lorem ipsum' },
                 { url: `${this.path}general-files-list_de.png`, caption: 'Lorem ipsum' },

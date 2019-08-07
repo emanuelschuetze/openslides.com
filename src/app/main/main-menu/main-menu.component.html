@@ -10,13 +10,12 @@
     [ngClass]="currentSection == 'anchor-references' ? 'active' : ''">
     Referenzen
 </a>
-<!-- <a mat-menu-item routerLink="/" fragment="anchor-download" [ngClass]="currentSection == 'anchor-download' ? 'active' : ''">Download</a> -->
 <a  mat-menu-item routerLink="/" fragment="anchor-news"
     [ngClass]="currentSection == 'anchor-news' ? 'active' : ''">
     News
 </a>
-<a  mat-menu-item routerLink="/contact"
-    [ngClass]="router.url.endsWith('/contact') ? 'active' : ''">
+<a  mat-menu-item routerLink="/" fragment="anchor-contact"
+    [ngClass]="currentSection == 'anchor-contact' ? 'active' : ''">
     Kontakt
 </a>
 <!--<a mat-menu-item class="login-btn" routerLink="/login">Anmelden</a>-->
