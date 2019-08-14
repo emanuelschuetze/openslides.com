@@ -17,7 +17,17 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    
+    &:hover {
+        text-decoration: underline;
+    
+    }
+
+    img, .mat-icon {
+        text-decoration: none;
+    }
 }
+
 
 tbd {
     display: inline-block;

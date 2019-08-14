@@ -31,8 +31,10 @@ const routes: Routes = [
             { path: 'legalnotice', component: ImpressumComponent },
             {
                 path: 'news',
-                component: NewsComponent,
-                children: [{ path: 'dgb-bundeskongress', component: DgbBundeskongressComponent }]
+                children: [
+                    { path: '', component: NewsComponent, pathMatch: 'full' },
+                    { path: 'dgb-bundeskongress', component: DgbBundeskongressComponent }
+                ]
             },
             { path: 'privacy', component: PrivacyComponent },
             { path: 'references', component: ReferencesComponent },

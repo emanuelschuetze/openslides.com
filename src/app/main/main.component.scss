@@ -141,7 +141,6 @@ p {
 }
 
 .github-button {
-    border: 1.5px solid #000;
     background-color: #fff;
     color: #000;
     margin-right: 10px;
@@ -203,17 +202,36 @@ img.screenshot {
     line-height: 1.2;
 }
 
-.icon-as-img {
+.icon-as-img-md {
     flex-grow: 1;
-    margin-bottom: -50px;
+    margin-bottom: -20px;
 
     mat-icon {
-        font-size: 300px;
-        width: 300px;
-        height: 300px;
-        margin-top: -46px;
+        font-size: 120px;
+        width: 120px;
+        height: 120px;
     }
 }
+
+.icon-as-img-sm {
+    flex-grow: 1;
+    margin-bottom: -20px;
+
+    mat-icon{
+        font-size: 60px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* colors */
+.grey {
+    color: rgba(0,0,0,.54);
+}
+.os-blue {
+    color: #317796;
+}
+
 
 .inline-logo {
     height: 20px;
