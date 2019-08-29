@@ -84,4 +84,4 @@ def send_mail():
     return { "success": True }
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port="5001")    # 5001 to be able to run besides OpenSlides
