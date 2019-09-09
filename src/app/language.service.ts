@@ -9,11 +9,11 @@ interface Language {
 // Define here new languages...
 export const languages: Language[] = [
     { code: 'en', name: 'English' },
-    { code: 'de', name: 'Deutsch' },
-    { code: 'es', name: 'Español' },
-    { code: 'pt', name: 'Português' },
-    { code: 'cs', name: 'Český' },
-    { code: 'ru', name: 'русский' }
+    { code: 'de', name: 'Deutsch' }
+    // { code: 'es', name: 'Español' },
+    // { code: 'pt', name: 'Português' },
+    // { code: 'cs', name: 'Český' },
+    // { code: 'ru', name: 'русский' }
 ];
 
 /**

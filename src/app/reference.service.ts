@@ -17,7 +17,7 @@ export interface CategoryObject {
 export class ReferenceService {
     public references: CategoryObject[] = [
         {
-            name: 'Gewerkschaften',
+            name: 'Unions',
             refs: [
                 {
                     name: 'Deutscher Gewerkschaftsbund (DGB)',
@@ -60,7 +60,7 @@ export class ReferenceService {
             ]
         },
         {
-            name: 'Parteien',
+            name: 'Parties',
             refs: [
                 {
                     name: 'BÜNDNIS 90/DIE GRÜNEN',
@@ -93,7 +93,7 @@ export class ReferenceService {
             ]
         },
         {
-            name: 'Verbände, Vereine und mehr',
+            name: 'Organisations, assosciations and more',
             refs: [
                 {
                     name: 'Amnesty International',

@@ -1,11 +1,10 @@
 <div class="container main-container">
-    <h1>Referenzen</h1>
-    <p>
-        OpenSlides war bereits auf zahlreichen Veranstaltungen erfolgreich im Einsatz. Hier eine Auswahl an
-        Referenzen. Wir würden uns freuen, wenn wir auch Ihre Organisation hier nennen dürfen.
+    <h1 translate>Referenzen</h1>
+    <p translate>
+        OpenSlides was already used successfully on a multitude of different events. Here is a selection of references. We would be happy to also list you organisation here.
     </p>
     <div *ngFor="let cat of refService.references">
-        <h2>{{ cat.name }}</h2>
+        <h2>{{ cat.name | translate }}</h2>
         <div fxLayout="row wrap" appWrappable wrapMarginX="15px">
             <app-reference-container *ngFor="let ref of cat.refs" [ref]="ref"></app-reference-container>
         </div>

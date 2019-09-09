@@ -1,6 +1,7 @@
 from flask import Flask, request
 from jsonschema import validate
 from flask_mail import Mail, Message
+import sqlite3 as sql
 
 app = Flask(__name__)
 app.config.from_pyfile("config.py")
@@ -45,9 +46,15 @@ schema = {
     },
     "required": ["tariff", "domain", "event_name", "organizer", "location", "event_from", "event_to", "hosting_from", "hosting_to", "expected_users", "contact_person", "billing_address"]
 }
+schema_mail = {
+    "type": "object",
+    "properties": {
+        "mail_address": { "type": "string", "format": "email" }
+    }
+}
 
 @app.route('/api/order', methods=["POST"])
-# @app.route('/api/order', methods=["POST", "GET"]) // DEBUG
+# @app.route('/api/order', methods=["POST", "GET"])  # DEBUG
 def send_mail():
     data = request.json
     try:
@@ -83,5 +90,28 @@ def send_mail():
     mail.send(msg)
     return { "success": True }
 
+@app.route('/api/add_newsletter', methods=["POST"])
+def save_mail():
+    data = request.json
+    try:
+        validate(data, schema_mail)
+    except Exception as e:
+        return { "success": False, "error": e.message }
+    # from pdb import set_trace; set_trace()
+    try:
+        with sql.connect("database.db") as con:
+            cur = con.cursor()
+            cur.execute("INSERT INTO mail_addresses (mail_address, created) VALUES (:mail_address, datetime('now'))", data)
+            con.commit()
+    except sql.IntegrityError as e:
+        con.rollback()
+        return { "success": False, "error": "Address already exists" }
+    except Exception as e:
+        con.rollback()
+        return { "success": False, "error": e.message }
+    finally:
+        con.close()
+    return { "success": True }
+
 if __name__ == "__main__":
-    app.run(port="5001")    # 5001 to be able to run besides OpenSlides
+    app.run()

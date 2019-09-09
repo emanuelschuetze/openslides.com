@@ -5,7 +5,7 @@ interface FeatureDescription {
     title: string;
     icon: string;
     intro: string;
-    images: { url: string; caption: string }[];
+    images: { url: string; caption?: string }[];
     details: string[];
 }
 
@@ -15,125 +15,120 @@ interface FeatureDescription {
     styleUrls: ['./feature.component.scss']
 })
 export class FeatureComponent implements OnInit {
-    private path = 'assets/img/features/';
+    private path = 'assets/img/features/new/';
     public activeRoute = '';
     public featuresByRoute: { [route: string]: FeatureDescription } = {
         agenda: {
-            title: 'Tagesordnung',
+            title: 'Agenda',
             icon: 'calendar_today',
             intro:
-                'Bleiben Sie flexibel: Ergänzen, ändern oder verschieben Sie Tagesordnungspunkte im laufenden Betrieb.',
+                'Stay flexible: Complement, amend or move automatically numbered agenda points in the running system.',
             images: [
-                { url: `${this.path}agenda-list_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}agenda-list-of-speakers_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}agenda-list-of-speakers-projector_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}agenda-projector_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}agenda-edit_de.png`, caption: 'Lorem ipsum' }
+                { url: `${this.path}agenda_overview_de.png` },
+                { url: `${this.path}agenda_new-item_de.png` },
+                { url: `${this.path}agenda_los_de.png` },
+                { url: `${this.path}agenda-los-projected_de.png` }
             ],
             details: [
-                'Redelisten für jeden Tagesordnungspunkt',
-                'Flexibles Hinzufügen von Tagesordnungspunkten für jegliche Inhalte',
-                'Die aktuelle Redeliste stets im Blick (als Überblendung oder auf einem 2. Projektor)',
-                'Countdowns zur Redezeitbeschränkung',
-                'Automatische Nummerierung von Tagesordnungspunkten',
-                'Zeitplanung: Dauer pro Tagesordnungspunkt schätzen',
-                'Inoffizielle Tagesordnungspunkte (z. B. Pausen) in die Tagesordnung integrieren',
-                'Abgeschlossene Tagesordnungspunkte markieren und verstecken',
-                'Individuelle Sichtbarkeiten für jeden Tagesordnungspunkt',
-                'Tagesordnung als PDF exportieren',
-                'Tagesordnung per Drag&Drop sortieren'
+                'Lists of speakers for every agenda point',
+                'Flexible adding of agenda points for every kind of content',
+                'The current list of speakers always in view (as an overlay or on a second projector)',
+                'Countdowns to limit speaking time',
+                'Automatic numbering of agenda points',
+                'Time management: Estimate the duration of each agenda point',
+                'Integrate inofficial agenda points (e.g. breaks) into the agenda',
+                'Mark and hide closed agenda points',
+                'Individual visibilities for each agenda point',
+                'Export the agenda as PDF',
+                'Sort the agenda via drag&drop'
             ]
         },
         motions: {
-            title: 'Anträge',
+            title: 'Motions',
             icon: 'note',
-            intro: 'Sparen Sie Papier: Erfassen und verwalten Sie Anträge und Abstimmungsergebnisse digital.',
+            intro: 'Save paper: Log and manage motions and voting results digitally.',
             images: [
-                { url: `${this.path}motions-list_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}motions-detail_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}motions-projector_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}motions-pdf_de.png`, caption: 'Lorem ipsum' }
+                { url: `${this.path}motions_overview_de.png` },
+                { url: `${this.path}motions_detail_de.png` },
+                { url: `${this.path}motions_projected_de.png` },
+                { url: `${this.path}motions_pdf_de.png` }
             ],
             details: [
-                'Anpassbare Antrag-Statusmeldungen und -Arbeitsabläufe',
-                'Anträge in Antragsblöcken und Schlagwörter verwalten',
-                'Anträge automatisch nummerieren in Sachgebieten und Untersachgebieten',
-                'Sortierung von Anträgen in einer Aufrufliste',
-                'Erforderlichen Unterstützern pro Antrag definieren',
-                'Änderungsanträge und Änderungsempfehlungen auf Basis von Zeilennummern erstellen',
-                'Unterstützung von Satzungsanträgen',
-                'Anzeigen/Verstecken von Anträgen in der Tagesordnung',
-                'HTML-Inline-Editor zum Formatieren von Antragstext und -begründung',
-                'Kommentarfelder für Anträge erlauben',
-                'Abstimmungsergebnisse erfassen',
-                'Anträge als PDF, CSV und XLSX exportieren'
+                'Customizable motion status messages and work flows',
+                'Manage motions with motion blocks and tags',
+                'Automatically number motions in categories and subcategories',
+                'Sort motions in a calling list',
+                'Define for each motion how many supporters are needed',
+                'Create amendments and change recommendations on basis of line numbers',
+                'Support of statute motions',
+                'Show/hide motions in the agenda',
+                'Inline HTML editor to format the motion text and reasoning',
+                'Allow motion comment fields',
+                'Log voting results',
+                'Export motions as PDF, CSV or XLSX'
             ]
         },
         elections: {
-            title: 'Wahlen',
+            title: 'Elections',
             icon: 'pie_chart',
-            intro: 'Beschleunigen Sie das Prozedere: Generieren Sie ad-hoc Stimmzettel für Ihre geheime Wahlen.',
+            intro: 'Streamline the procedure: Generate ad-hoc ballots for your secret elections.',
             images: [
-                { url: `${this.path}elections-list_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}elections-detail_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}elections-projector_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}elections-ballot-pdf_de.png`, caption: 'Lorem ipsum' }
+                { url: `${this.path}elections_overview_de.png` },
+                { url: `${this.path}elections_projected_de.png` },
+                { url: `${this.path}elections_pdf_de.png` }
             ],
             details: [
-                'Kandidaten aus der Teilnehmenden-Liste vorschlagen',
-                'Personalisierte Wahlscheine für geheime Wahlen drucken',
-                'Unterstützte Wahlverfahren: Ja/Nein/Enthaltung oder eine Stimme pro Kandidat',
-                'Wahlergebnisse auf Grundlage verschiedener 100%-Basen',
-                'Mehrere Wahlgänge',
-                'Wahlergebnisse eingeben und mit Diagramm projizieren',
-                'Wahlen (mit allen Ergebnissen) als PDF exportieren'
+                'Propose candidates off the participants list',
+                'Print personalized ballots for secret elections',
+                'Supported election modes: Yes/no/abstention or one vote per candidates',
+                'Election results on different bases for 100%',
+                'Multiple election gears',
+                'Enter election results and project them with a diagram',
+                'Export elections (with all results) as PDF'
             ]
         },
         projectors: {
-            title: 'Projektoren',
+            title: 'Projectors',
             icon: 'videocam',
-            intro: 'Live dabei: Zeigen Sie den Teilnehmenden gerade diskutierte Inhalte auf den Projektionsflächen.',
+            intro: 'Always live: Show the aprticipants currently discussed contents on the projector canvasas.',
             images: [
-                { url: `${this.path}elections-list_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}elections-detail_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}elections-projector_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}elections-ballot-pdf_de.png`, caption: 'Lorem ipsum' }
+                { url: `${this.path}projectors_overview_de.png` },
+                { url: `${this.path}projectors_detail_de.png` }
             ],
             details: [
-                'Präsentation der Inhalte für die Teilnehmenden',
-                'Sofortiges Update bei Änderungen',
-                'Unterstützung mehrerer Projektoren',
-                'Individuelle Projektorgestaltung mit eigenem Logo',
-                'Anordnen von Inhalten in einer Warteschlange',
-                'Projektionshistorie durch einen Verlauf im Überblick behalten',
-                'Unterstützung verschiedener Auflösungen',
-                'Projektion von PDF-, Bild- und Videodateien'
+                'Presentation of the contents for the participants',
+                'Instant update on changes',
+                'Support of multiple projectors',
+                'Individual projector design with your own logo',
+                'Order contents in a queue',
+                'Keep an eye on the projections with the history',
+                'Support of multiple resolutions',
+                'Projection of PDF, image and video files'
             ]
         },
         miscellaneous: {
-            title: 'Weitere Funktionen',
+            title: 'Other functions',
             icon: 'search',
-            intro: 'Seien Sie neugierig: Entdecken Sie noch viele weitere Funktionen von OpenSlides.',
+            intro: 'Be curious: Discover many more functions of OpenSlides.',
             images: [
-                { url: `${this.path}general-users-list_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}general-files-list_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}general-chat-frontpage_de.png`, caption: 'Lorem ipsum' },
-                { url: `${this.path}general-windows-portable.png`, caption: 'Lorem ipsum' }
+                { url: `${this.path}miscellanious_participants_de.png` },
+                { url: `${this.path}miscellanious_files_de.png` },
+                { url: `${this.path}miscellanious_history_de.png` }
             ],
             details: [
-                'Live-Änderungen direkt miterleben',
-                'Teilnehmende, Gruppen und Berechtigungen verwalten',
-                'Umfangreiche Dateiverwaltung mit Zugriffsberechtigungen pro Datei und Ordner',
-                'CSV-Import und -Export für Tagesordnung, Anträge und Teilnehmende',
-                'Verwaltung und Gruppierung mithilfe von Schlagwörtern',
-                'Globale Chronik auf Basis von Snapshots',
-                'Globale Volltextsuche',
-                'Umfangreiche Sortier- und Filtermöglichkeiten aller Listen',
-                'Konfigurierbare Themes sowie Erstellung eigener Themes auf Anfrage',
-                'Responsive Design',
-                'Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, Portugiesisch, Spanisch und Russisch)',
-                'Plattformunabhängige Webanwendung basierend auf Python 3 und Angular 8 im modernen Material Design',
-                'Progressive WebApp mit clientseitigem Caching und Lazy Loading für schnelle Ladezeiten'
+                'Directly witness live changes',
+                'Manage participants, groups and permissions',
+                'Extensive file management system with access permissions per file and folder',
+                'CSV import and export for the agenda, motions and participants',
+                'Management and grouping by tags',
+                'Global history on snapshot basis',
+                'Global full text search',
+                'Extensive sorting and filtering of all lists possible',
+                'Configurable themes and creation of custom themes on request',
+                'Responsive design',
+                'Multilingual (English, German, French, Czech, Portuguese, Spanish and Russian)',
+                'Platform-indipendent web application based on Python 3 and Angular 8 in the modern Material Design',
+                'Progressive WebApp with client-side caching and lazy loading for fast loading times'
             ]
         }
     };

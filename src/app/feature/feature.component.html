@@ -1,25 +1,26 @@
 <div class="container main-container">
+    <tbd>TODO: Seitenverhältnis der slideshow anpassen, slideshow 1:2 neben text (evtl)</tbd>
     <div class="mb-1">
         <div class="text-right flex hide-md-down">
             <a  mat-menu-item *ngFor="let route of routeOrder" [routerLink]="['/feature/' + route]"
                 [ngClass]="router.url.endsWith('/' + route) ? 'active' : ''">
-                {{ featuresByRoute[route].title }}
+                {{ featuresByRoute[route].title | translate }}
             </a>
         </div>
         <mat-select class="submenu hide-md-up" [value]="activeRoute">
             <mat-option *ngFor="let route of routeOrder" [routerLink]="['/feature/' + route]"
                 [ngClass]="router.url.endsWith('/' + route) ? 'active' : ''" [value]="route">
-                {{ featuresByRoute[route].title }}
+                {{ featuresByRoute[route].title | translate }}
             </mat-option>
         </mat-select>
     </div>
     <h1 class="valign-wrapper title">
         <!-- <mat-icon class="inline mr-1">{{ currentFeature.icon }}</mat-icon> -->
-        <span>{{ currentFeature.title }}</span>
+        <span>{{ currentFeature.title | translate }}</span>
     </h1>
-    <p>{{ currentFeature.intro }}</p>
+    <p>{{ currentFeature.intro | translate }}</p>
     <mat-list class="mb-1">
-        <mat-list-item *ngFor="let detail of currentFeature.details"><mat-icon matListIcon>arrow_right</mat-icon>{{ detail }}</mat-list-item>
+        <mat-list-item *ngFor="let detail of currentFeature.details"><mat-icon matListIcon>arrow_right</mat-icon>{{ detail | translate }}</mat-list-item>
     </mat-list>
     <slideshow class="screenshots-slideshow" [autoPlay]="false" autoPlayInterval="5000" [imageUrls]="currentFeature.images"></slideshow>
 </div>
