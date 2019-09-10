@@ -1,0 +1,4 @@
+location / {
+    include uwsgi_params;
+    uwsgi_pass unix:/path/to/api/folder/uwsgi.sock;
+}
