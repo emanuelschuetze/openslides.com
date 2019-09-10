@@ -2,8 +2,7 @@
     <mat-toolbar>
         <div class="container flex wrap-mobile">
             <a routerLink="/" class="valign-wrapper">
-                <img class="header-logo mr-0" src="assets/img/logos/openslides.png">
-                <span class="title">OpenSlides</span>
+                <img class="header-logo mr-0" src="assets/img/logos/openslides-logo.svg">
             </a>
             <span class="fill-remaining-space"></span>
             <app-main-menu class="flex hide-xl-down"></app-main-menu>
@@ -29,7 +28,7 @@
 <footer class="footer">
     <div class="blue-row">
         <div class="container" id="anchor-contact">
-            <ng-container *ngIf="!router.url.endsWith('/contact')">
+            <ng-container>
                 <div class="contact-div">
                     <h1 translate>Get in touch with us</h1>
                     <p class="margined" translate>If you have questions about OpenSlides or want a personal consultation &ndash; we will happily assist you.</p>

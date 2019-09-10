@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Router, UrlSegment } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 interface Language {
     code: string;
@@ -10,10 +11,6 @@ interface Language {
 export const languages: Language[] = [
     { code: 'en', name: 'English' },
     { code: 'de', name: 'Deutsch' }
-    // { code: 'es', name: 'Español' },
-    // { code: 'pt', name: 'Português' },
-    // { code: 'cs', name: 'Český' },
-    // { code: 'ru', name: 'русский' }
 ];
 
 /**
@@ -30,7 +27,20 @@ export function LanguageUrlMatcher(url: UrlSegment[]): { consumed: UrlSegment[] 
     providedIn: 'root'
 })
 export class LanguageService implements CanActivate {
-    public constructor(private router: Router) {}
+    public constructor(
+        protected translate: TranslateService,
+        private router: Router
+    ) {
+        // manually add the supported languages
+        translate.addLangs(['en', 'de']);
+        // this language will be used as a fallback when a translation isn't found in the current language
+        translate.setDefaultLang('en');
+        // get the browsers default language
+        const browserLang = translate.getBrowserLang();
+        console.log(browserLang);
+        // try to use the browser language if it is available. If not, uses english.
+        translate.use(translate.getLangs().includes(browserLang) ? browserLang : 'en');
+    }
 
     /**
      * get detected browser language code
@@ -77,6 +87,8 @@ export class LanguageService implements CanActivate {
                     .slice(2)
             )
         ); // slice(2) cause the url is /xx/page so the array is ["", "xx", "page"] and we only want to keep the page, not the language
+        console.log(lang);
+        this.translate.use(lang).subscribe();
     }
 
     /**

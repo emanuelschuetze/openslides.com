@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes, UrlSegment } from '@angular/router';
 
-import { ContactComponent } from './contact/contact.component';
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { FeatureComponent } from './feature/feature.component';
 import { LanguageService, LanguageUrlMatcher } from './language.service';
@@ -27,7 +26,6 @@ const routes: Routes = [
         matcher: LanguageUrlMatcher,
         children: [
             { path: '', component: MainComponent, pathMatch: 'full' },
-            { path: 'contact', component: ContactComponent },
             { path: 'legalnotice', component: ImpressumComponent },
             {
                 path: 'news',

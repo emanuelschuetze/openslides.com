@@ -25,7 +25,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { FeatureComponent } from './feature/feature.component';
 import { LanguageControllerComponent } from './language-controller/language-controller.component';
@@ -69,7 +68,6 @@ export function createTranslateLoader(http: HttpClient) {
         PrivacyComponent,
         ImpressumComponent,
         ReferencesComponent,
-        ContactComponent,
         PricesComponent,
         OrderComponent,
         FeatureComponent,

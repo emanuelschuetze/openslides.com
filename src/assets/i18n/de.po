@@ -1,0 +1,423 @@
+# Translators:
+# Emanuel Schütze <emanuel.schuetze@intevation.de>, 2019
+# 
+msgid ""
+msgstr ""
+"Last-Translator: Emanuel Schütze <emanuel.schuetze@intevation.de>, 2019\n"
+"Language-Team: German (https://www.transifex.com/openslides/teams/14270/de/)\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"mime-version: 1.0\n"
+
+msgid "* plus 49 € one-off installation payment"
+msgstr ""
+
+msgid "10% discount when paying 12 months in advance."
+msgstr ""
+
+msgid ""
+"<span translate>You want to host OpenSlides own your own server? Take a look"
+" at our</span><span>&nbsp;</span><a class=\"inline\" routerLink=\"/\" "
+"fragment=\"anchor-getting-started\" translate>selfhosted section</a>."
+msgstr ""
+
+msgid ""
+"<tbd>Senden Sie uns das ausgefüllte Formular. Wir bestätigen Ihre "
+"Anfrage.</tbd>"
+msgstr ""
+
+msgid ""
+"Accelerate processes via neatless controlling with only one software. "
+"OpenSlides streamlines the procedure &ndash; from the preparation to motions"
+" and elections up to the final protocol."
+msgstr ""
+
+msgid ""
+"Actively integrate the plenum. Open the mobile access to OpenSlides &ndash; "
+"for insight of important documents, submission of motions or recalling of "
+"election results etc."
+msgstr ""
+
+msgid "Address extra"
+msgstr ""
+
+msgid "Agenda"
+msgstr "Tagesordnung"
+
+msgid "All prices are VAT exclusive."
+msgstr ""
+
+msgid "Articles and publications"
+msgstr "Artikel und Publikationen"
+
+msgid "Billing address"
+msgstr "Rechnungsadresse"
+
+msgid ""
+"Capture motions with applicant and text. Assign categories and motion "
+"numbers. Log the resolution and polling results during the motion "
+"discussion. The flexible filterung helps you while searching in all motions "
+"and their changes."
+msgstr ""
+
+msgid "Choose a hosting package that fits your assembly size:"
+msgstr ""
+
+msgid "Choose package"
+msgstr "Paket wählen"
+
+msgid "City"
+msgstr "Ort"
+
+msgid ""
+"Complement, amend or move automatically numbered agenda points via drag & "
+"drop in the running system. Connect single points with lists of speakers and"
+" speaking times and integrate inofficial entries like breaks for better "
+"scheduling."
+msgstr ""
+
+msgid "Contact"
+msgstr "Kontakt"
+
+msgid "Contact person"
+msgstr "Ansprechpartner"
+
+msgid "Country"
+msgstr ""
+
+msgid ""
+"Create the conditions for open communication without losing track of your "
+"primary goal. OpenSlides provides you for that with a modern and powerful "
+"tool. Extend your agenda live, react to motion changes in real time and give"
+" your delegates controlled access to the system."
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "Development and editing:"
+msgstr ""
+
+msgid "Download and selfhosted"
+msgstr ""
+
+msgid "E-Mail"
+msgstr ""
+
+msgid "Elections"
+msgstr "Wahlen"
+
+msgid "Email dispatch of invitations possible"
+msgstr ""
+
+msgid "Error:"
+msgstr ""
+
+msgid "Event end"
+msgstr "Veranstaltungsende"
+
+msgid "Event name"
+msgstr "Veranstaltungsname"
+
+msgid "Event start"
+msgstr "Veranstaltungsbeginn"
+
+msgid "Expected users"
+msgstr "Erwartete Teilnehmeranzahl"
+
+msgid "Faster results"
+msgstr ""
+
+msgid "Features"
+msgstr "Funktionen"
+
+msgid "For all hosting packages we offer the following services:"
+msgstr "Für alle Hosting-Pakete gelten folgende Leistungen:"
+
+msgid "Further development and individual adjustments"
+msgstr ""
+
+msgid "General Inquiries"
+msgstr ""
+
+msgid "Get in touch with us"
+msgstr "Treten Sie mit uns in Kontakt"
+
+msgid "Get started"
+msgstr ""
+
+msgid "Hosting"
+msgstr "Hosting"
+
+msgid "Hosting start"
+msgstr "Hostingbeginn"
+
+msgid ""
+"If you have questions about OpenSlides or want a personal consultation "
+"&ndash; we will happily assist you."
+msgstr ""
+
+msgid "In the press"
+msgstr ""
+
+msgid "Individual service offers"
+msgstr ""
+
+msgid "Install by yourself"
+msgstr ""
+
+msgid "Installation guide"
+msgstr ""
+
+msgid "Legal notice"
+msgstr ""
+
+msgid "Less paper"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+msgid ""
+"Make OpenSlides your central interface to manage and publish all relevant "
+"assembly contents on to a canvas, notebook or smartphone."
+msgstr ""
+
+msgid "Manage your assemblies digitally"
+msgstr ""
+
+msgid ""
+"Managing of Delegate and their attendance as well as the elaborate "
+"permission management are uncomplicated and intuitive. Every area of "
+"OpenSlides can be made accessible for certain groups."
+msgstr ""
+
+msgid "Maximum flexibility and transparency"
+msgstr ""
+
+msgid "More functions"
+msgstr ""
+
+msgid "More references"
+msgstr ""
+
+msgid "Motions"
+msgstr "Anträge"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "News"
+msgstr "Neuigkeiten"
+
+msgid "Newsletter"
+msgstr "Newsletter"
+
+msgid ""
+"No matter if file upload or comment function &ndash; OpenSlides is equipped "
+"with a multitude of practicable tools. Moreover, we develop custom solutions"
+" for our clients."
+msgstr ""
+
+msgid "On-call service"
+msgstr "Telefonrufbereitschaft"
+
+msgid "On-site assistance"
+msgstr ""
+
+msgid "OpenSlides is Free Software, licensed under MIT."
+msgstr "OpenSlides ist Freie Software, lizenziert unter der MIT."
+
+msgid ""
+"OpenSlides is designed for working with multiple screens and comes with a "
+"powerful projector management. The web interface allows the projection and "
+"editing of slides while the projectors are running in full screen."
+msgstr ""
+
+msgid ""
+"OpenSlides is the comprehensive solution for the digital organisation of "
+"your meetings and conferences. Manage and project agendas, motions, "
+"elections, documents, lists of speakers and participants with our web-based "
+"assembly system &ndash; clear, contemporary and always up-to-date."
+msgstr ""
+
+msgid "OpenSlides tariff"
+msgstr ""
+
+msgid "OpenSlides team"
+msgstr ""
+
+msgid ""
+"OpenSlides was already used successfully on a multitude of different events."
+" Here is a selection of references. We would be happy to also list you "
+"organisation here."
+msgstr ""
+
+msgid "Order now"
+msgstr "Jetzt bestellen"
+
+msgid "Organizer"
+msgstr "Veranstalter"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Plugin extension possible"
+msgstr ""
+
+msgid "Preferred domain"
+msgstr "Wunschdomain"
+
+msgid "Presentation and consultation"
+msgstr ""
+
+msgid "Press releases"
+msgstr "Pressemitteilungen"
+
+msgid "Pricing"
+msgstr "Preise"
+
+msgid "Privacy policy"
+msgstr "Datenschutzerklärung"
+
+msgid ""
+"Propose candidates off the list of participants. Generate ad-hoc "
+"personalized ballots for secret elections. Log and project the counted votes"
+" &ndash; for all participants accessible in OpenSlides."
+msgstr ""
+
+msgid "References"
+msgstr "Referenzen"
+
+msgid ""
+"Responsible for the content of these sites in representation of the "
+"OpenSlides initiative:"
+msgstr ""
+
+msgid "Simplified interaction"
+msgstr ""
+
+msgid "Source code"
+msgstr "Quellcode"
+
+msgid "Standard domain"
+msgstr "Standarddomain"
+
+msgid "Start"
+msgstr ""
+
+msgid "Street + number"
+msgstr "Straße und Hausnummer"
+
+msgid "Submit"
+msgstr "Absenden"
+
+msgid "Submit inquiry"
+msgstr ""
+
+msgid "Technical support"
+msgstr ""
+
+msgid "Test now"
+msgstr ""
+
+msgid "Thank you for your inquiry!"
+msgstr ""
+
+msgid "Training"
+msgstr ""
+
+msgid "Versatile and responsive"
+msgstr ""
+
+msgid "View all news"
+msgstr ""
+
+msgid ""
+"We pledged ourselves to the principles of a Open Source, liberal and free of"
+" charge exchange of our software and even represent this in our name. "
+"OpenSlides is usable under the MIT license. Help us to further improve the "
+"code."
+msgstr ""
+
+msgid "We will work on it as fast as possible and then contact you soon."
+msgstr ""
+
+msgid ""
+"You need individual support at your assembly and professional consultation "
+"from the OpenSlides developers? You're missing a function or you want "
+"something changed? Arrange an initial consultation now! Our chargeable "
+"services:"
+msgstr ""
+
+msgid "You successfully registered for our newsletter!"
+msgstr ""
+
+msgid ""
+"You want to host OpenSlides on your own server? We offer our software as "
+"PyPI package and as source code. Please note that we can offer technical "
+"support for our"
+msgstr ""
+
+msgid "You want to stay always up to date? Sign up now for our newsletter:"
+msgstr ""
+
+msgid ""
+"You want to use OpenSlides for your next assembly, but don't want to care "
+"about the technical details? Order a fitting hosting package now!"
+msgstr ""
+
+msgid "Your contact person for consultation and individual service offers"
+msgstr ""
+
+msgid "Zipcode"
+msgstr ""
+
+msgid "custom domain possible"
+msgstr ""
+
+msgid "for events with <b>high</b> digital usage"
+msgstr ""
+
+msgid "for events with <b>low</b> digital usage"
+msgstr ""
+
+msgid "frequent updates"
+msgstr ""
+
+msgid "learn more"
+msgstr ""
+
+msgid "max."
+msgstr ""
+
+msgid "month"
+msgstr ""
+
+msgid "only for administrative purposes<br>no participant access"
+msgstr ""
+
+msgid "only."
+msgstr ""
+
+msgid "per month/event"
+msgstr ""
+
+msgid "plugin extension possible"
+msgstr ""
+
+msgid ""
+"secure business: every event runs as an isolated OpenSlides instance with "
+"its own database"
+msgstr ""
+
+msgid "secure connection: HTTPS with Let's-Encrypt certificates"
+msgstr ""
+
+msgid "secure data: acquisition of a contract for data processing"
+msgstr ""
+
+msgid "users"
+msgstr ""

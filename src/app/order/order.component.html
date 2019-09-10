@@ -1,7 +1,7 @@
 <div class="container main-container">
     <form id="order-form" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
         <div class="text-center" translate>
-            <tbd>Jetzt hier bestellen! Bestellen Sie jetzt für eine Veranstaltung und erhalten sie eine zweite gratis dazu!</tbd>
+            <tbd>Senden Sie uns das ausgefüllte Formular. Wir bestätigen Ihre Anfrage.</tbd>
         </div>
         <h3 class="mb-0" translate>Details</h3>
         <div fxLayout="row wrap" appWrappable wrapMargin="4%">
@@ -52,11 +52,6 @@
                 <mat-datepicker-toggle matSuffix [for]="hostingFromPicker"></mat-datepicker-toggle>
                 <mat-datepicker #hostingFromPicker></mat-datepicker>
             </mat-form-field>
-            <mat-form-field fxFlex.gt-sm="46">
-                <input required matInput [matDatepicker]="hostingToPicker" placeholder="{{ 'Hosting end' | translate }}" formControlName="hosting_to">
-                <mat-datepicker-toggle matSuffix [for]="hostingToPicker"></mat-datepicker-toggle>
-                <mat-datepicker #hostingToPicker></mat-datepicker>
-            </mat-form-field>
         </div>
         <h3 class="mb-0" translate>Contact person</h3>
         <div formGroupName="contact_person" class="mb-1">
@@ -99,7 +94,7 @@
             <span translate>Submit inquiry</span>
         </button>
         <div class="error-div mt-1" *ngIf="error">
-            <span translate>Fehler:</span><br>
+            <span translate>Error:</span><br>
             {{ error }}
         </div>
     </form>
