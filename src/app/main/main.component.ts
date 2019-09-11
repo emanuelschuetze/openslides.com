@@ -1,9 +1,10 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
+import { TranslateService } from '@ngx-translate/core';
 
 import { ReferenceService } from '../reference.service';
-import { FormControl, Validators, FormGroup } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-main',
@@ -48,7 +49,11 @@ export class MainComponent implements OnInit {
     public error: string = null;
     public success = false;
 
-    public constructor(public refService: ReferenceService, public http: HttpClient, public translate: TranslateService) {}
+    public constructor(
+        public refService: ReferenceService,
+        public http: HttpClient,
+        public translate: TranslateService
+    ) {}
 
     public ngOnInit(): void {
         this.quotes = this.quotesSource.map(quote => ({
@@ -67,14 +72,16 @@ export class MainComponent implements OnInit {
     }
 
     public getErrorMessage(): string {
-        return  this.mailInput.hasError('required') ? 'You must enter a value' :
-                this.mailInput.hasError('email') ? 'Not a valid email' :
-                this.error;
+        return this.mailInput.hasError('required')
+            ? 'You must enter a value'
+            : this.mailInput.hasError('email')
+            ? 'Not a valid email'
+            : this.error;
     }
 
     public onSubmit(): void {
         // post the request
-        this.http.post<any>('/api/add_newsletter', { "mail_address": this.mailInput.value }).subscribe(
+        this.http.post<any>('/api/add_newsletter', { mail_address: this.mailInput.value }).subscribe(
             res => {
                 console.log('res:', res);
                 if (res.success === true) {

@@ -1,4 +1,6 @@
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { registerLocaleData } from '@angular/common';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import localeDe from '@angular/common/locales/de';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -19,12 +21,14 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { SlideshowModule } from 'ng-simple-slideshow';
-import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { SlideshowModule } from 'ng-simple-slideshow';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ArticlePaperlessComponent } from './news/article-paperless/article-paperless.component';
+import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { FeatureComponent } from './feature/feature.component';
 import { LanguageControllerComponent } from './language-controller/language-controller.component';
@@ -40,13 +44,8 @@ import { ReferenceContainerComponent } from './reference-container/reference-con
 import { ReferencesComponent } from './references/references.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { WrappableDirective } from './wrappable.directive';
-import { ArticlePaperlessComponent } from './news/article-paperless/article-paperless.component';
-import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
 
-import localeDe from '@angular/common/locales/de';
-import { registerLocaleData } from '@angular/common';
-
-registerLocaleData(localeDe, "de");
+registerLocaleData(localeDe, 'de');
 
 export const MOMENT_FORMATS = {
     parse: {
@@ -59,7 +58,7 @@ export const MOMENT_FORMATS = {
         monthYearA11yLabel: 'MMMM YYYY'
     }
 };
-export function createTranslateLoader(http: HttpClient) {
+export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
@@ -96,7 +95,7 @@ export function createTranslateLoader(http: HttpClient) {
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
-                useFactory: (createTranslateLoader),
+                useFactory: createTranslateLoader,
                 deps: [HttpClient]
             }
         }),

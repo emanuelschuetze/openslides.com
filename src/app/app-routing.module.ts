@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes, UrlSegment } from '@angular/router';
 
-import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { ArticlePaperlessComponent } from './news/article-paperless/article-paperless.component';
 import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
+import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { FeatureComponent } from './feature/feature.component';
 import { LanguageService, LanguageUrlMatcher } from './language.service';
 import { ImpressumComponent } from './legal-notice/legal-notice.component';
