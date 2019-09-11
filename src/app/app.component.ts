@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
 
     public ngOnInit(): void {
         this.scroller.setOffset([0, 64]);
-        this.dateAdapter.setLocale('de');
+        this.dateAdapter.setLocale('en');
     }
 
     /**

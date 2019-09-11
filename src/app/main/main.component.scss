@@ -1,3 +1,5 @@
+@import '../../vars.scss';
+
 .full-width-img-wrapper {
     position: relative;
     overflow: hidden;
@@ -9,7 +11,7 @@
         transform: translateX(-50%);
     }
 
-    @media (max-width: 350px) {
+    @media (max-width: $breakpoint-xs-down) {
         h1 {
             font-size: 40px;
         }
@@ -20,29 +22,10 @@ p {
     line-height: 1.5;
 }
 
-.in-media {
-    z-index: 999;
-    color: #ccc;
-    max-width: 600px;
-
-    mat-divider {
-        border-color: #ccc;
-        transform: translateY(50%);
-    }
-
-    .media-logos {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-}
-
-#test-now-btn {
-    padding: 10px 50px;
-    font-size: inherit;
-
-    @media (max-width: 350px) {
-        padding: 7px 20px;
-    }
+.milky-bg {
+    padding: 18px;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px 0px rgba(0,0,0,1);
 }
 
 .main-paragraph {
@@ -54,12 +37,15 @@ p {
         margin-bottom: 0.67rem;
     }
     p {
-        font-weight: lighter;
         max-width: 900px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
+}
+
+.hosting-logo {
+    width: 80px;
 }
 
 .section {
@@ -77,7 +63,7 @@ p {
     }
 
     &.blue-upwards {
-        background-color: #bce0fd;
+        background-color: $light-blue;
         margin-top: -8rem;
         padding-top: 14rem;
         margin-bottom: 12rem;
@@ -98,7 +84,7 @@ p {
 }
 
 .blue-container {
-    background-color: #2699fb;
+    background-color: $os-active-blue;
     padding: 4rem 0;
     color: #fff;
 }
@@ -120,7 +106,7 @@ p {
     bottom: 25%;
     left: 0;
     right: 0;
-    background-color: #bce0fd;
+    background-color: $light-blue;
     z-index: -1;
 }
 
@@ -151,51 +137,23 @@ p {
     margin-right: auto;
 }
 
-.squares {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.squares::before,
-.squares::after {
-    content: '';
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    background-color: #bce0fd;
-}
-
-.squares::before {
-    top: 0;
-    right: 0;
-}
-
-.squares::after {
-    bottom: 0;
-    left: 0;
-}
-
-.squares.reverse::before {
-    left: 0;
-    right: initial;
-}
-
-.squares.reverse::after {
-    right: 0;
-    left: initial;
-}
-
-#newsletter-container {
-    background-color: #7fc4fd;
-    padding: 3rem;
+.hosting-container {
+    background-color: $os-blue;
     color: #fff;
+    // border-radius: 10px;
+    padding: 25px;
+}
+
+.open-source-container {
+    background-color: $os-grey;
+    color: #fff;
+    // border-radius: 10px;
+    padding: 25px;
 }
 
 img.screenshot {
     width: 100%;
+    box-shadow: 0 0 5px 1px rgba(50, 120, 150, 0.5);
 }
 
 .denser-paragraphs p {
@@ -229,7 +187,7 @@ img.screenshot {
     color: rgba(0,0,0,.54);
 }
 .os-blue {
-    color: #317796;
+    color: $os-blue;
 }
 
 
@@ -261,18 +219,6 @@ img.screenshot {
     }
 }
 
-// maybe TODO: schöner text mit button unter slideshow statt drinnen
-// ::ng-deep .screenshots-slideshow .slideshow-container {
-//     overflow-y: initial !important;
-
-//     .caption {
-//         padding: 15px !important;
-//         top: 100%;
-//         bottom: initial !important;
-//         text-align: center;
-//     }
-// }
-
 .quote-slideshow ::ng-deep {
     .slideshow-container {
         // box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
@@ -289,10 +235,10 @@ img.screenshot {
                 transform: translateY(-50%);
 
                 h1 {
-                    @media (max-width: 1199px) {
+                    @media (max-width: $breakpoint-xl-down) {
                         font-size: 38px;
                     }
-                    @media (max-width: 767px) {
+                    @media (max-width: $breakpoint-md-down) {
                         font-size: 30px;
                     }
                     @media (max-width: 464px) {
@@ -306,12 +252,12 @@ img.screenshot {
         }
 
         .arrow-container .arrow {
-            border-color: #2699fb !important;
+            border-color: $os-active-blue !important;
         }
     }
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: $breakpoint-md-down) {
     .switch-flex-order {
         order: 2;
 
@@ -321,7 +267,7 @@ img.screenshot {
     }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: $breakpoint-xl-down) {
     .section.blue-upwards {
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -331,5 +277,11 @@ img.screenshot {
         .container {
             margin-bottom: initial;
         }
+    }
+}
+
+@media (min-width: $breakpoint-md-up) and (max-width: $breakpoint-xl-down) {
+    .margin-bottom-md {
+        margin-bottom: 2em;
     }
 }

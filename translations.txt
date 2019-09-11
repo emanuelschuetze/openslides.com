@@ -1,0 +1,576 @@
+Managen Sie Ver&shy;samm&shy;lungen digital
+Manage your assemblies digitally
+
+OpenSlides ist die umfassende Lösung zur digitalen Organisation Ihrer Tagungen und Konferenzen. Verwalten und projizieren Sie mit unserem webbasierten Versammlungssystem Tagesordnungen, Anträge, Wahlen, Dokumente, Redelisten und Teilnehmende &ndash; übersichtlich, zeitgemäß und immer auf dem neuesten Stand.
+OpenSlides is the comprehensive solution for the digital organisation of your meetings and conferences. Manage and project agendas, motions, elections, documents, lists of speakers and participants with our web-based assembly system &ndash; clear, contemporary and always up-to-date.
+
+Jetzt testen
+Test now
+
+Getting started
+Getting started
+
+Maximale Flexibilität und Trans&shy;parenz
+Maximum flexibility and transparency
+
+Schaffen Sie die Voraussetzungen für eine offene Kommunikation, ohne das Ziel aus den Augen zu verlieren. OpenSlides gibt Ihnen dafür ein modernes und mächtiges Werkzeug an die Hand. Erweitern Sie Ihre Tagungsordnung live, reagieren Sie auf Antragsänderungen in Echtzeit und geben Sie Ihren Delegierten kontrollierten Zugriff auf das System.
+Create the conditions for open communication without losing track of your primary goal. OpenSlides provides you for that with a modern and powerful tool. Extend your agenda live, react to motion changes in real time and give your delegates controlled access to the system.
+
+Vereinfachte Interaktion
+Simplified interaction
+
+Beziehen Sie das Plenum aktiv mit ein. Öffnen Sie den mobilen Zugriff auf OpenSlides &ndash; zur Einsicht wichtiger Dokumente, zum Einreichen von Anträgen oder Abrufen von Wahlergebnissen etc.
+Actively integrate the plenum. Open the mobile access to OpenSlides &ndash; for insight of important documents, submission of motions or recalling of election results etc.
+
+Schnellere Ergebnisse
+Faster results
+
+Beschleunigen Sie Prozesse durch eine nahtlose Steuerung mit nur einer Software. OpenSlides strafft das Verfahren &ndash; von der Vorbereitung über Anträge und Wahlen bis zum Beschlussprotokoll.
+Accelerate processes via neatless controlling with only one software. OpenSlides streamlines the procedure &ndash; from the preparation to motions and elections up to the final protocol.
+
+Weniger Papier
+Less paper
+
+Machen Sie OpenSlides zu Ihrer zentralen Schnittstelle für die Verwaltung und Veröffentlichung aller relevanten Versammlungsinhalte auf Leinwand, Notebook oder Smartphone.
+Make OpenSlides your central interface to manage and publish all relevant assembly contents on to a canvas, notebook or smartphone.
+
+Tages&shy;ordnung
+Agenda
+
+Ergänzen, ändern oder verschieben Sie automatisch nummerierte Tagesordnungspunkte per Drag & Drop im laufenden Betrieb. Verknüpfen Sie die einzelnen Punkte mit Redelisten sowie Redezeiten und integrieren Sie für eine bessere Zeitplanung auch inoffizielle Einträge wie Pausen.
+Complement, amend or move automatically numbered agenda points via drag & drop in the running system. Connect single points with lists of speakers and speaking times and integrate inofficial entries like breaks for better scheduling.
+
+mehr erfahren
+learn more
+
+Anträge
+Motions
+
+Erfassen Sie Anträge mit Antragsteller und Antragstext. Ordnen Sie Sachgebiete und Antragsnummer zu. Protokollieren Sie Beschluss und Abstimmungsergebnis während der Antragsberatung. Die flexible Filterung der Liste hilft bei der Suche in allen Anträgen und ihren Änderungen.
+Capture motions with applicant and text. Assign categories and motion numbers. Log the resolution and polling results during the motion discussion. The flexible filterung helps you while searching in all motions and their changes.
+
+Wahlen
+Elections
+
+Schlagen Sie Kandidat/innen aus der Liste der Teilnehmenden vor. Generieren Sie ad-hoc personalisierte Stimmzettel für geheime Wahlen. Protokollieren und projizieren Sie die ausgezählten Stimmen &ndash; für jeden Teilnehmenden nachzulesen in OpenSlides.
+Propose candidates off the list of participants. Generate ad-hoc personalized ballots for secret elections. Log and project the counted votes &ndash; for all participants accessible in OpenSlides.
+
+Projek&shy;toren
+Projec&shy;tors
+
+OpenSlides ist für die Arbeit mit multiplen Bildschirmen konzipiert und mit einer mächtigen Projektorsteuerung versehen. Das Webinterface erlaubt das Projizieren und Bearbeitung der Folien, während die Projektoren in Vollbild laufen.
+OpenSlides is designed for working with multiple screens and comes with a powerful projector management. The web interface allows the projection and editing of slides while the projectors are running in full screen.
+
+Vielseitig und responsiv
+Versatile and responsive
+
+Die Verwaltung der Delegierten und ihrer Anwesenheit sowie das ausgefeilte Rechtemanagement sind unkompliziert und intuitiv. Jeder Bereich von OpenSlides kann für einzelne Nutzergruppen freigeschalten werden.
+Managing of Delegate and their attendance as well as the elaborate permission management are uncomplicated and intuitive. Every area of OpenSlides can be made accessible for certain groups.
+
+Egal ob Dateiablage oder Kommentarfunktion &ndash; OpenSlides ist mit einer Vielzahl praxistauglicher Detailwerkzeuge ausgestattet. Darüber hinaus entwickeln wir für Kunden auch maßgeschneiderte Lösungen.
+No matter if file upload or comment function &ndash; OpenSlides is equipped with a multitude of practicable tools. Moreover, we develop custom solutions for our clients.
+
+Weitere Funktionen
+More functions
+
+Hosting
+Hosting
+
+Sie wollen OpenSlides für ihre nächste Veranstaltung nutzen, aber sich nicht um die technischen Details kümmern? Bestellen Sie jetzt ein passendes Hosting-Paket!
+You want to use OpenSlides for your next assembly, but don't want to care about the technical details? Order a fitting hosting package now!
+
+Paket wählen
+Choose package
+
+Individuelle Servicedienst&shy;leistungen
+Individual service offers
+
+Sie benötigen individuellen Support vor Ort und professionelle Beratung vom OpenSlides-Entwickerteam? Ihnen fehlen Funktionen oder haben Anpassungsbedarf? Vereinbaren Sie eine kostenfreie Erstberatung! Unsere kostenpflichtigen Serviceleistungen:
+You need individual support at your assembly and professional consultation from the OpenSlides developers? You're missing a function or you want something changed? Arrange an initial consultation now! Our chargeable services:
+
+Programmvorstellung und Beratung
+Presentation and consultation
+
+Schulung
+Training
+
+Vor-Ort-Service
+On-site asstistance
+
+Technischen Support
+Technical support
+
+Telefonrufbereitschaft
+On-call service
+
+Weiterentwicklung und individuelle Anpassungen
+Further development and individual adjustments
+
+Open Source
+Open Source
+
+Wir haben uns zu den Grundsätzen eines quelloffenen, freien und kostenlosen Austauschs unserer Software verpflichtet und tragen diesen Anspruch auch im Namen. OpenSlides wird unter MIT-Lizenz zur Verfügung gestellt. Hilf mit, den Quellcode weiter zu verbessern.
+We pledged ourselves to the principles of a open source, liberal and free of charge exchange of our software and even represent this in our name. OpenSlides is usable under the MIT license. Help us to further improve the code. 
+
+Selfhosted
+Selfhosted
+
+Sie wollen OpenSlides auf ihrem eigenen Server hosten? Wir bieten unsere Software als PyPI-Paket und als Quellcode-Download an. Beachten Sie, dass wir unseren Technischen Support nur für unsere 
+You want to host OpenSlides on your own server? We offer our software as PyPI package and as source code. Please note that we can offer technical support for our 
+
+Hosting-Lösungen
+hosting solutions
+
+ anbieten können.
+ only.
+
+Zur Installationsanleitung
+Installation guide
+
+Quellcode-Paket
+Source code
+
+Weitere Referenzen
+More references
+
+News
+News
+
+Alle News ansehen
+View all news
+
+Pressemitteilungen
+Press releases
+
+
+Newsletter
+Newsletter
+
+Sie wollen immer auf dem neuesten Stand bleiben? Tragen Sie sich jetzt in unseren Verteiler ein:
+You want to stay always up to date? Sign up now for our newsletter:
+
+Absenden
+Submit
+
+Sie haben sich erfolgreich für unseren Newsletter registriert!
+You successfully registered for our newsletter!
+
+Artikel und Publikationen
+Articles and publications
+
+In den Medien
+In the press
+
+Kontakt
+Contact
+
+Hier
+Here
+
+können Sie sich für unsere Newsletter anmelden.
+you can register for our newsletter.
+
+Quellcode bekommen, Probleme berichten oder Wikiseiten lesen auf
+Get the source code, report problems or read the wiki on
+
+Hilf uns beim Übersetzen der UI oder der Website von OpenSlides über
+Help us to translate the UI or this website via
+
+Kernentwicklerteam
+Core development team
+
+Kontaktieren Sie die drei Gründer und Kernentwickler von OpenSlides: 
+Contact the three founders and core developers of OpenSlides:
+
+und
+and
+
+Professionelle Unterstützung
+Professional support
+
+Sie benötigen Anpassungen oder Unterstützung für den Einsatz von OpenSlides? Schauen Sie sich unsere
+You need adjustments or support to use OpenSlides? Take a look at our
+
+Hosting-Angebote
+hosting offers
+
+an oder fragen Sie unsere Kontaktperson:
+or ask our contact person:
+
+Impressum
+Legal notice
+
+Verantwortlich für den Inhalt dieser Seiten in Vertretung für die OpenSlides-Initiative:
+Responsible for the content of these sites in representation of the OpenSlides initiative:
+
+Entwicklung und Redaktion:
+Development and editing:
+
+Details
+Details
+
+OpenSlides-Tarif
+OpenSlides tariff
+
+Monat
+month
+
+Wunschdomain
+Preferred domain
+
+Veranstaltungsname
+Event name
+
+Veranstalter
+Organizer
+
+Veranstaltungsort
+Location
+
+Erwartete Teilnehmeranzahl
+Expected users
+
+Veranstaltungsbeginn
+Event start
+
+Veranstaltungsende
+Event end
+
+Hosting von
+Hosting start
+
+Hosting bis
+Hosting end
+
+Ansprechpartner
+Contact person
+
+Name
+Name
+
+E-Mail
+Email
+
+Telefon
+Phone
+
+Rechnungsadresse
+Billing address
+
+Straße + Hausnummer
+Street + number
+
+Adresszusatz
+Address extra
+
+PLZ
+Zipcode
+
+Ort
+City
+
+Land
+Country
+
+Fehler:
+Error:
+
+Anfrage schicken
+Submit inquiry
+
+Vielen Dank für Ihre Anfrage!
+Thank you for your inquiry!
+
+Wir werden diese schnellstmöglich bearbeiten und uns dann zeitnah bei Ihnen melden.
+We will work on it as fast as possible and then contact you soon.
+
+Wählen Sie ein Hosting-Paket passend zu Ihrer Veranstaltungsgröße:
+Choose a hosting package that fits your assembly size:
+
+nur für administrative Nutzung<br>ohne Teilnehmerzugriff
+only for administrative purposes<br>no participant access
+
+pro Monat/Veranstaltung
+per month/event
+
+Nutzerkonten
+users
+
+Standard-Domain
+Standard domain
+
+Jetzt bestellen
+Order now
+
+für Veranstaltungen mit <b>geringer</b> digitaler Nutzung
+for events with <b>low</b> digital usage
+
+eigene Domain möglich
+custom domain possible
+
+Plugin-Erweiterung möglich
+plugin extension possible
+
+für Veranstaltungen mit <b>großer</b> digitaler Nutzung
+for events with <b>high</b> digital usage
+
+* zzgl. 49 € einmalige Einrichtungsgebühr
+* plus 49 € one-off installation payment
+
+Für alle Hosting-Pakete gelten folgende Leistungen:
+For all hosting packages we offer the following services:
+
+regelmäßige Updates
+frequent updates
+
+E-Mail-Versand von Einladungs-E-Mails möglich
+Email dispatch of invitations possible
+
+individueller Support nach Aufwand (125 € / Stunde, viertelstundengenaue Abrechnung)
+individual support by expenditure (125 € / hour, quarter-hourly billing)
+
+sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten
+secure connection: HTTPS with Let's-Encrypt certificates
+
+sichere Daten: Abschluss einer Vereinbarung zur Auftragsverarbeitung
+secure data: acquisition of a contract for data processing
+
+sicherer Betrieb: jede Veranstaltung läuft als abgekapselte OpenSlides-Instanz mit eigener Datenbank
+secure business: every event runs as an isolated OpenSlides instance with its own database
+
+10% Rabatt bei Vorauszahlung von 12 Monaten.
+10% discount when paying 12 months in advance.
+
+Alle Preisangaben gelten zzgl. der gesetzlich gültigen Umsatzsteuer.
+All prices are VAT exclusive.
+
+Datenschutz
+Privacy policy
+
+Referenzen
+References
+
+OpenSlides war bereits auf zahlreichen Veranstaltungen erfolgreich im Einsatz. Hier eine Auswahl an Referenzen. Wir würden uns freuen, wenn wir auch Ihre Organisation hier nennen dürfen.
+OpenSlides was already used successfully on a multitude of different events. Here is a selection of references. We would be happy to also list you organisation here.
+
+Gewerkschaften
+Unions
+
+Parteien
+Parties
+
+Verbände, Vereine und mehr
+Organisations, assosciations and more
+
+Bleiben Sie flexibel: Ergänzen, ändern oder verschieben Sie Tagesordnungspunkte im laufenden Betrieb.
+Stay flexible: Complement, amend or move automatically numbered agenda points in the running system.
+
+Projektoren
+Projectors
+
+Weitere Funktionen
+Other functions
+
+Redelisten für jeden Tagesordnungspunkt
+Lists of speakers for every agenda point
+
+Flexibles Hinzufügen von Tagesordnungspunkten für jegliche Inhalte
+Flexible adding of agenda points for every kind of content
+
+Die aktuelle Redeliste stets im Blick (als Überblendung oder auf einem 2. Projektor)
+The current list of speakers always in view (as an overlay or on a second projector)
+
+Countdowns zur Redezeitbeschränkung
+Countdowns to limit speaking time
+
+Automatische Nummerierung von Tagesordnungspunkten
+Automatic numbering of agenda points
+
+Zeitplanung: Dauer pro Tagesordnungspunkt schätzen
+Time management: Estimate the duration of each agenda point
+
+Inoffizielle Tagesordnungspunkte (z. B. Pausen) in die Tagesordnung integrieren
+Integrate inofficial agenda points (e.g. breaks) into the agenda
+
+Abgeschlossene Tagesordnungspunkte markieren und verstecken
+Mark and hide closed agenda points
+
+Individuelle Sichtbarkeiten für jeden Tagesordnungspunkt
+Individual visibilities for each agenda point
+
+Tagesordnung als PDF exportieren
+Export the agenda as PDF
+
+Tagesordnung per Drag&Drop sortieren
+Sort the agenda via drag&drop
+
+Sparen Sie Papier: Erfassen und verwalten Sie Anträge und Abstimmungsergebnisse digital.
+Save paper: Log and manage motions and voting results digitally.
+
+Anpassbare Antrag-Statusmeldungen und -Arbeitsabläufe
+Customizable motion status messages and work flows
+
+Anträge in Antragsblöcken und Schlagwörter verwalten
+Manage motions with motion blocks and tags
+
+Anträge automatisch nummerieren in Sachgebieten und Untersachgebieten
+Automatically number motions in categories and subcategories
+
+Sortierung von Anträgen in einer Aufrufliste
+Sort motions in a calling list
+
+Erforderliche Unterstützern pro Antrag definieren
+Define for each motion how many supporters are needed
+
+Änderungsanträge und Änderungsempfehlungen auf Basis von Zeilennummern erstellen
+Create amendments and change recommendations on basis of line numbers
+
+Unterstützung von Satzungsanträgen
+Support of statute motions
+
+Anzeigen/Verstecken von Anträgen in der Tagesordnung
+Show/hide motions in the agenda
+
+HTML-Inline-Editor zum Formatieren von Antragstext und -begründung
+Inline HTML editor to format the motion text and reasoning
+
+Kommentarfelder für Anträge erlauben
+Allow motion comment fields
+
+Abstimmungsergebnisse erfassen
+Log voting results
+
+Anträge als PDF, CSV und XLSX exportieren
+Export motions as PDF, CSV or XLSX
+
+Beschleunigen Sie das Prozedere: Generieren Sie ad-hoc Stimmzettel für Ihre geheime Wahlen.
+Streamline the procedure: Generate ad-hoc ballots for your secret elections.
+
+Kandidaten aus der Teilnehmenden-Liste vorschlagen
+Propose candidates off the participants list
+
+Personalisierte Wahlscheine für geheime Wahlen drucken
+Print personalized ballots for secret elections
+
+Unterstützte Wahlverfahren: Ja/Nein/Enthaltung oder eine Stimme pro Kandidat
+Supported election modes: Yes/no/abstention or one vote per candidates
+
+Wahlergebnisse auf Grundlage verschiedener 100%-Basen
+Election results on different bases for 100%
+
+Mehrere Wahlgänge
+Multiple election gears
+
+Wahlergebnisse eingeben und mit Diagramm projizieren
+Enter election results and project them with a diagram
+
+Wahlen (mit allen Ergebnissen) als PDF exportieren
+Export elections (with all results) as PDF
+
+Live dabei: Zeigen Sie den Teilnehmenden gerade diskutierte Inhalte auf den Projektionsflächen.
+Always live: Show the aprticipants currently discussed contents on the projector canvasas.
+
+Präsentation der Inhalte für die Teilnehmenden
+Presentation of the contents for the participants
+
+Sofortiges Update bei Änderungen
+Instant update on changes
+
+Unterstützung mehrerer Projektoren
+Support of multiple projectors
+
+Individuelle Projektorgestaltung mit eigenem Logo
+Individual projector design with your own logo
+
+Anordnen von Inhalten in einer Warteschlange
+Order contents in a queue
+
+Projektionshistorie durch einen Verlauf im Überblick behalten
+Keep an eye on the projections with the history
+
+Unterstützung verschiedener Auflösungen
+Support of multiple resolutions
+
+Projektion von PDF-, Bild- und Videodateien
+Projection of PDF, image and video files
+
+Seien Sie neugierig: Entdecken Sie noch viele weitere Funktionen von OpenSlides.
+Be curious: Discover many more functions of OpenSlides.
+
+Live-Änderungen direkt miterleben
+Directly witness live changes
+
+Teilnehmende, Gruppen und Berechtigungen verwalten
+Manage participants, groups and permissions
+
+Umfangreiche Dateiverwaltung mit Zugriffsberechtigungen pro Datei und Ordner
+Extensive file management system with access permissions per file and folder
+
+CSV-Import und -Export für Tagesordnung, Anträge und Teilnehmende
+CSV import and export for the agenda, motions and participants
+
+Verwaltung und Gruppierung mithilfe von Schlagwörtern
+Management and grouping by tags
+
+Globale Chronik auf Basis von Snapshots
+Global history on snapshot basis
+
+Globale Volltextsuche
+Global full text search
+
+Umfangreiche Sortier- und Filtermöglichkeiten aller Listen
+Extensive sorting and filtering of all lists possible
+
+Konfigurierbare Themes sowie Erstellung eigener Themes auf Anfrage
+Configurable themes and creation of custom themes on request
+
+Responsive Design
+Responsive design
+
+Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, Portugiesisch, Spanisch und Russisch)
+Multilingual (English, German, French, Czech, Portuguese, Spanish and Russian)
+
+Plattformunabhängige Webanwendung basierend auf Python 3 und Angular 8 im modernen Material Design
+Platform-indipendent web application based on Python 3 and Angular 8 in the modern Material Design
+
+Progressive WebApp mit clientseitigem Caching und Lazy Loading für schnelle Ladezeiten
+Progressive WebApp with client-side caching and lazy loading for fast loading times
+
+Preise
+Prices
+
+Treten Sie mit uns in Kontakt
+Get in touch with us
+
+Sollten Sie Fragen zu OpenSlides haben oder eine persönliche Beratung wünschen &ndash; wir unterstützen Sie gern.
+If you have questions about OpenSlides or want a personal consultation &ndash; we will happily assist you.
+
+Allgemeine Anfragen
+General Inquiries
+
+Technischer Kundensupport
+Technical support
+
+Ihr Ansprechpartner für Beratung und individuelle Servicedienstleistungen
+Your contact person for consultation and individual service offers
+
+OpenSlides ist Freie Software, lizensiert unter der MIT.
+OpenSlides is Free Software, licensed under MIT.
+
+Datenschutz
+Privacy policy
+
+Impressum
+Legal notice
+
+OpenSlides-Team
+OpenSlides team
+
+Sie wollen OpenSlides lieber auf ihrem eigenen Server hosten? Dann werfen Sie einen Blick auf unseren
+You want to host OpenSlides own your own server? Take a look at our
+
+Selfthosted-Abschnitt
+selfhosted section
+
+Senden Sie uns das ausgefüllte Formular. Wir bestätigen Ihre Anfrage.
+Send us the form below and we will process your inquiry.

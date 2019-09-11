@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ReferenceService } from '../reference.service';
+import { FormControl, Validators, FormGroup } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-main',
@@ -40,7 +43,12 @@ export class MainComponent implements OnInit {
     ];
     public quotes: { caption: string; url: string }[] = [];
 
-    public constructor(public refService: ReferenceService) {}
+    public mailInput = new FormControl('', [Validators.required, Validators.email]);
+    public emailForm = new FormGroup({ email: this.mailInput });
+    public error: string = null;
+    public success = false;
+
+    public constructor(public refService: ReferenceService, public http: HttpClient, public translate: TranslateService) {}
 
     public ngOnInit(): void {
         this.quotes = this.quotesSource.map(quote => ({
@@ -56,5 +64,40 @@ export class MainComponent implements OnInit {
             `,
             url: '#'
         }));
+    }
+
+    public getErrorMessage(): string {
+        return  this.mailInput.hasError('required') ? 'You must enter a value' :
+                this.mailInput.hasError('email') ? 'Not a valid email' :
+                this.error;
+    }
+
+    public onSubmit(): void {
+        // post the request
+        this.http.post<any>('/api/add_newsletter', { "mail_address": this.mailInput.value }).subscribe(
+            res => {
+                console.log('res:', res);
+                if (res.success === true) {
+                    this.success = true;
+                    this.mailInput.reset();
+                } else {
+                    this.error = res.error || 'Ein unbekannter Fehler ist aufgetreten.';
+                    this.mailInput.setErrors([this.error]);
+                }
+            },
+            error => {
+                console.log(error);
+                switch (error.status) {
+                    case 502:
+                    case 504:
+                        this.error = 'Der Server ist momentan nicht erreichbar. Bitte probieren Sie es später nochmal.';
+                        break;
+                    default:
+                        this.error = error.message;
+                        break;
+                }
+                this.mailInput.setErrors([this.error]);
+            }
+        );
     }
 }

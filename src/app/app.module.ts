@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -20,10 +20,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SlideshowModule } from 'ng-simple-slideshow';
+import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { FeatureComponent } from './feature/feature.component';
 import { LanguageControllerComponent } from './language-controller/language-controller.component';
@@ -39,6 +40,13 @@ import { ReferenceContainerComponent } from './reference-container/reference-con
 import { ReferencesComponent } from './references/references.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { WrappableDirective } from './wrappable.directive';
+import { ArticlePaperlessComponent } from './news/article-paperless/article-paperless.component';
+import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
+
+import localeDe from '@angular/common/locales/de';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localeDe, "de");
 
 export const MOMENT_FORMATS = {
     parse: {
@@ -51,6 +59,9 @@ export const MOMENT_FORMATS = {
         monthYearA11yLabel: 'MMMM YYYY'
     }
 };
+export function createTranslateLoader(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
     declarations: [
@@ -64,14 +75,15 @@ export const MOMENT_FORMATS = {
         PrivacyComponent,
         ImpressumComponent,
         ReferencesComponent,
-        ContactComponent,
         PricesComponent,
         OrderComponent,
         FeatureComponent,
         OrderSuccessComponent,
         DgbBundeskongressComponent,
         ReferenceContainerComponent,
-        NewsComponent
+        NewsComponent,
+        ArticlePaperlessComponent,
+        ArticleVirtualAssemblyComponent
     ],
     imports: [
         BrowserModule,
@@ -81,6 +93,13 @@ export const MOMENT_FORMATS = {
         ReactiveFormsModule,
         SlideshowModule,
         HttpClientModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            }
+        }),
 
         MatButtonModule,
         MatCheckboxModule,

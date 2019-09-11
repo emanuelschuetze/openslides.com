@@ -1,18 +1,48 @@
+@import '../../vars.scss';
+
 .price-col {
     font-size: 1.01em;
     display: flex;
     flex-direction: column;
     width: 100%;
 
-    @media (min-width: 768px) {
+    &.single {
+        .price-col-header {
+            background-color: $os-grey;
+        }
+        .price-col-body .price-col-price {
+            color: $os-grey;
+        }
+    }
+
+    &.basic {
+        .price-col-header {
+            background-color: $os-blue;
+        }
+        .price-col-body .price-col-price {
+            color: $os-blue;
+        }
+    }
+
+    &.enterprise {
+        .price-col-header {
+            background-color: $os-turquoise;
+        }
+        .price-col-body .price-col-price {
+            color: $os-turquoise;
+        }
+    }
+
+    @media (min-width: $breakpoint-md-up) {
         width: 33%;
     }
 
     .price-col-header {
-        background-color: #2699fb;
         color: #fff;
         padding: 1.5rem 2rem;
         text-align: center;
+        height: 150px;
+        box-sizing: border-box;
 
         h2 {
             margin-top: 0;
@@ -23,6 +53,7 @@
 
         p {
             margin-bottom: 0;
+            font-size: 18px;
         }
     }
 
@@ -35,7 +66,6 @@
 
         .price-col-price {
             text-align: center;
-            color: #2699fb;
 
             h1 {
                 font-weight: bold;

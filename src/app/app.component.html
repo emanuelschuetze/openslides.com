@@ -1,17 +1,16 @@
 <header>
     <mat-toolbar>
-        <div class="container flex wrap-mobile">
+        <div class="container menu-container flex wrap-mobile">
             <a routerLink="/" class="valign-wrapper">
-                <img class="header-logo mr-0" src="assets/img/logos/openslides.png">
-                <span class="title">OpenSlides</span>
+                <img class="header-logo mr-0" src="assets/img/logos/openslides-logo.svg">
             </a>
             <span class="fill-remaining-space"></span>
-            <app-main-menu class="flex hide-xl-down"></app-main-menu>
+            <app-main-menu class="flex hide-lg-down"></app-main-menu>
             <div class="flex inner-menu-container">
                 <div class="valign-wrapper">
                     <app-language-controller></app-language-controller>
                 </div>
-                <button class="hide-xl-up" mat-button [mat-menu-trigger-for]="menu">
+                <button class="hide-lg-up" mat-button [mat-menu-trigger-for]="menu">
                     <mat-icon>menu</mat-icon>
                 </button>
             </div>
@@ -29,34 +28,33 @@
 <footer class="footer">
     <div class="blue-row">
         <div class="container" id="anchor-contact">
-            <ng-container *ngIf="!router.url.endsWith('/contact')">
+            <ng-container>
                 <div class="contact-div">
-                    <h1>Treten Sie mit uns in Kontakt</h1>
-                    <p class="margined">Sollten Sie Fragen zu OpenSlides haben oder eine persönliche Beratung wünschen
-                        &ndash; wir unterstützen Sie gern.</p>
+                    <h1 translate>Get in touch with us</h1>
+                    <p class="margined" translate>If you have questions about OpenSlides or want a personal consultation &ndash; we will happily assist you.</p>
                     <div class="mt-1"></div>
                 </div>
                 <mat-divider></mat-divider>
                 <div fxLayout="row" fxLayout.lt-md="row wrap" fxLayoutAlign="space-between" appWrappable
                     wrapMarginY="22px">
                     <div fxFlex="27" fxFlex.lt-md="100%" class="text-left">
-                        <b>Allgemeine Anfragen</b><br>
+                        <b translate>General Inquiries</b><br>
                         <a href="mailto:info@openslides.com" class="valign-wrapper">
                             <mat-icon>mail_outline</mat-icon>&nbsp;&nbsp;info@openslides.com
                         </a>
                         <br><br>
-                        <b>Hosting</b><br>
+                        <b translate>Hosting</b><br>
                         <a href="mailto:hosting@openslides.com" class="valign-wrapper">
                             <mat-icon>mail_outline</mat-icon>&nbsp;&nbsp;hosting@openslides.com
                         </a>
                         <br><br>
-                        <b>Technischer Kundensupport</b><br>
+                        <b translate>Technical support</b><br>
                         <a href="mailto:suppport@openslides.com" class="valign-wrapper">
                             <mat-icon>mail_outline</mat-icon>&nbsp;&nbsp;support@openslides.com
                         </a>
                     </div>
                     <div fxFlex="27" fxFlex.lt-md="100%" fxFlexOffset.gt-sm="9" class="text-left">
-                        <b>Ihr Ansprechpartner für Beratung und individuelle Servicedienstleistungen</b>
+                        <b translate>Your contact person for consultation and individual service offers</b>
                         <br><br>
                         Emanuel Schütze<br>
                         Intevation GmbH<br>
@@ -69,11 +67,11 @@
                             <mat-icon>phone</mat-icon>&nbsp;&nbsp;+49 541 335083-746
                         </a>
                     </div>
-                    <div fxFlex="27" fxFlexOffset="9">
+                    <div fxFlex="27" fxFlexOffset.gt-sm="9">
                         <a href="https://www.github.com/OpenSlides/OpenSlides" target="_blank" class="valign-wrapper">
                             <img class="mr-0 logo-sm" src="assets/img/logos/github_white.png" alt="GitHub"> GitHub
                         </a>
-                        <br><br>
+                        <br>
                         <a href="https://twitter.com/openslides" target="_blank" class="valign-wrapper">
                             <img class="mr-0 logo-sm" src="assets/img/logos/twitter_white.png" alt="Twitter"> Twitter
                         </a>
@@ -83,11 +81,11 @@
         </div>
     </div>
     <div class="last-row">
-        <span>OpenSlides ist Freie Software, lizensiert unter der MIT.</span><br>
-        <span>&copy; 2011-{{ currentYear }} OpenSlides-Team</span>
+        <span translate>OpenSlides is Free Software, licensed under MIT.</span><br>
+        <span>&copy; 2011-{{ currentYear }} <span translate>OpenSlides team</span></span>
         <p>
-            <a routerLink="/privacy">Datenschutz</a> ·
-            <a routerLink="/legalnotice">Impressum</a>
+            <a routerLink="/privacy" translate>Privacy policy</a> ·
+            <a routerLink="/legalnotice" translate>Legal notice</a>
         </p>
     </div>
 </footer>

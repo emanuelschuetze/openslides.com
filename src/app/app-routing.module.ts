@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes, UrlSegment } from '@angular/router';
 
-import { ContactComponent } from './contact/contact.component';
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
+import { ArticlePaperlessComponent } from './news/article-paperless/article-paperless.component';
+import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
 import { FeatureComponent } from './feature/feature.component';
 import { LanguageService, LanguageUrlMatcher } from './language.service';
 import { ImpressumComponent } from './legal-notice/legal-notice.component';
@@ -27,13 +28,14 @@ const routes: Routes = [
         matcher: LanguageUrlMatcher,
         children: [
             { path: '', component: MainComponent, pathMatch: 'full' },
-            { path: 'contact', component: ContactComponent },
             { path: 'legalnotice', component: ImpressumComponent },
             {
                 path: 'news',
                 children: [
                     { path: '', component: NewsComponent, pathMatch: 'full' },
-                    { path: 'dgb-bundeskongress', component: DgbBundeskongressComponent }
+                    { path: 'dgb-bundeskongress2018', component: DgbBundeskongressComponent },
+                    { path: '20141125', component: ArticlePaperlessComponent },
+                    { path: '20121119', component: ArticleVirtualAssemblyComponent }
                 ]
             },
             { path: 'privacy', component: PrivacyComponent },

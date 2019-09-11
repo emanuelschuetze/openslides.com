@@ -1,3 +1,5 @@
+@import '../vars.scss';
+
 header {
     position: sticky;
     top: 0;
@@ -8,11 +10,11 @@ header {
     mat-toolbar {
         background-color: rgba(255, 255, 255, 0.95);
 
-        & > .container {
+        .menu-container {
             padding: 0;
 
             & > a {
-                @media (max-width: 350px) {
+                @media (max-width: $breakpoint-xs-down) {
                     width: 100%;
                     justify-content: center;
                 }
@@ -21,13 +23,13 @@ header {
     }
 
     .header-logo {
-        height: 35px;
+        height: 40px;
     }
 
     span.title {
         font: bold 35px/48px Arial, Helvetica, sans-serif;
 
-        @media (min-width: 351px) {
+        @media (min-width: $breakpoint-xs-up) {
             margin-right: 30px;
         }
     }
@@ -37,7 +39,7 @@ footer.footer {
     text-align: center;
 
     .blue-row {
-        background-color: #2699fb;
+        background-color: $os-blue;
         padding: 70px 0;
         color: #fff;
 
@@ -81,12 +83,12 @@ footer.footer {
     }
 
     .last-row {
-        color: #999;
+        color: $os-grey;
         padding: 40px 10px;
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: $breakpoint-sm-down) {
     mat-toolbar {
         height: auto;
 

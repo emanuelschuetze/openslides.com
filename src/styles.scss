@@ -1,31 +1,36 @@
 @import './fonts.scss';
+@import './vars.scss';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-$breakpoint-sm-up: 576px;
-$breakpoint-md-up: 768px;
-$breakpoint-lg-up: 992px;
-$breakpoint-xl-up: 1200px;
-$breakpoint-sm-down: 575px;
-$breakpoint-md-down: 767px;
-$breakpoint-lg-down: 991px;
-$breakpoint-xl-down: 1199px;
 
 body {
     margin: 0;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 a {
     text-decoration: none;
     color: inherit;
     
-    &:hover {
-        text-decoration: underline;
-    
+    &.inline {
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     img, .mat-icon {
         text-decoration: none;
+    }
+}
+
+.inline-links a {
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: underline;
     }
 }
 
@@ -39,25 +44,100 @@ tbd {
     flex: 1 1 auto;
 }
 
+.mat-list-base .mat-list-item {
+    font-size: inherit;
+}
+
 .os-button.mat-flat-button {
-    text-transform: uppercase;
-    background-color: #2699fb;
-    color: #fff;
-    font-size: small;
-    border: 1.5px solid transparent;
+    color: $os-turquoise;
+    border-radius: 0;
+    padding: 3px 25px;
 
-    &.white {
-        background-color: #fff;
-        color: #2699fb;
+    &:not([disabled]) {
+        border: 1px solid $os-turquoise;
     }
 
-    &.white-reversed {
-        border: 1.5px solid #fff;
+    &.transparent-btn {
+        width: 200px;
+        color: #fff;
+        border: 0;
+        font-size: inherit;
+        padding: 8px 25px;
+
+        &.blue {
+            background-color: RGBA(50, 120, 150, 0.85);
+
+            &:hover {
+                background-color: rgb(50, 120, 150);
+            }
+        }
+
+        &.green {
+            background-color: RGBA(49, 169, 173, 0.85);
+
+            &:hover {
+                background-color: rgb(49, 169, 173);
+            }
+        }
+    }
+    
+    &.filled {
+        color: #fff;
+        background-color: $os-turquoise;
+        box-shadow: 1px 1px rgba(0,0,0,0.5);
+        border: none;
+
+        &.light-grey {
+            background-color: $os-light-grey;
+
+            &:hover {
+                color: #fff;
+                background-color: $os-turquoise;
+            }
+        }
+
+        &.grey {
+            background-color: $os-grey;
+
+            &:hover {
+                color: $os-grey;
+            }
+        }
+
+        &.blue {
+            background-color: $os-blue;
+
+            &:hover {
+                color: $os-blue;
+            }
+        }
+
+        &.bordered {
+            box-shadow: none;
+            border: 1px solid $os-turquoise;
+    
+            &.light-grey {
+                border: 1px solid $os-light-grey;
+            }
+    
+            &.grey {
+                border: 1px solid $os-grey;
+            }
+    
+            &.blue {
+                border: 1px solid $os-blue;
+            }
+        }
+
+        &:hover {
+            color: $os-turquoise;
+            background-color: #fff;
+        }
     }
 
-    &.white-black {
-        background-color: #fff;
-        color: #000;
+    &:not(.filled):not(.transparent-btn):not([disabled]):hover {
+        background-color: $os-turquoise;
+        color: #fff;
     }
 }
 
@@ -113,7 +193,7 @@ tbd {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: normal;
     margin-bottom: 0;
     margin-top: 0;
@@ -174,6 +254,10 @@ h2 {
             align-items: center;
         }
     }
+}
+
+.lh-1 {
+    line-height: 1;
 }
 
 .icon-wrapper {
@@ -253,14 +337,17 @@ h2 {
 }
 
 .screenshots-slideshow .slideshow-container {
-    padding-top: 63.3064516%;   // force correct aspect ratio on images, since auto height isnt possible
+    // padding-top: 63.3064516%;   // force correct aspect ratio on images, since auto height isnt possible (16:10)
+    padding-top: 56.25%;   // force correct aspect ratio on images, since auto height isnt possible
+    box-shadow: 0 0 5px 1px rgba(50, 120, 150, 0.5);
+    height: auto !important;
 }
 
 .blue-links a, .blue-link {
-    color: #2699fb;
+    color: $os-active-blue;
 
     &:hover {
-        color: #057ae1;
+        color: $os-active-blue-darken;
     }
 }
 
@@ -285,11 +372,11 @@ h2 {
     }
 }
 
-@media (min-width: $breakpoint-xl-up) {
+@media (min-width: $breakpoint-lg-up) {
     .container {
         max-width: 960px;
     }
-    .hide-xl-up {
+    .hide-lg-up {
         display: none !important;
     }
 }
@@ -305,6 +392,12 @@ h2 {
         &.tiny {
             max-width: 940px;
         }
+    }
+}
+
+@media (min-width: 1400px) {
+    .container.bigger {
+        max-width: 1340px;
     }
 }
 
@@ -330,6 +423,12 @@ h2 {
     }
 
     .hide-md-down {
+        display: none !important;
+    }
+}
+
+@media (max-width: $breakpoint-lg-down) {
+    .hide-lg-down {
         display: none !important;
     }
 }
