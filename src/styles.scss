@@ -372,11 +372,11 @@ h2 {
     }
 }
 
-@media (min-width: $breakpoint-xl-up) {
+@media (min-width: $breakpoint-lg-up) {
     .container {
         max-width: 960px;
     }
-    .hide-xl-up {
+    .hide-lg-up {
         display: none !important;
     }
 }
@@ -423,6 +423,12 @@ h2 {
     }
 
     .hide-md-down {
+        display: none !important;
+    }
+}
+
+@media (max-width: $breakpoint-lg-down) {
+    .hide-lg-down {
         display: none !important;
     }
 }

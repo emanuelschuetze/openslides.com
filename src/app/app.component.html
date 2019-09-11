@@ -1,16 +1,16 @@
 <header>
     <mat-toolbar>
-        <div class="container flex wrap-mobile">
+        <div class="container menu-container flex wrap-mobile">
             <a routerLink="/" class="valign-wrapper">
                 <img class="header-logo mr-0" src="assets/img/logos/openslides-logo.svg">
             </a>
             <span class="fill-remaining-space"></span>
-            <app-main-menu class="flex hide-xl-down"></app-main-menu>
+            <app-main-menu class="flex hide-lg-down"></app-main-menu>
             <div class="flex inner-menu-container">
                 <div class="valign-wrapper">
                     <app-language-controller></app-language-controller>
                 </div>
-                <button class="hide-xl-up" mat-button [mat-menu-trigger-for]="menu">
+                <button class="hide-lg-up" mat-button [mat-menu-trigger-for]="menu">
                     <mat-icon>menu</mat-icon>
                 </button>
             </div>

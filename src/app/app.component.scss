@@ -10,7 +10,7 @@ header {
     mat-toolbar {
         background-color: rgba(255, 255, 255, 0.95);
 
-        & > .container {
+        .menu-container {
             padding: 0;
 
             & > a {
