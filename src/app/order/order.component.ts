@@ -12,7 +12,7 @@ export class OrderComponent implements OnInit {
     private standard = Validators.pattern(/^[A-Za-zäöüß0-9'\.\-\s\,#]+$/);
     private standardNoNumber = Validators.pattern(/^[A-Za-zäöüß'\.\-\s\,#]+$/);
 
-    private orderForm = this.fb.group(
+    public orderForm = this.fb.group(
         {
             tariff: ['', [Validators.required, Validators.pattern(/^(single|basic|enterprise)$/)]],
             domain: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9\-\.]+$/)]],
