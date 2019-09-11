@@ -24,8 +24,8 @@ p {
 
 .milky-bg {
     padding: 18px;
-    background-color: rgba(0,0,0,0.4);
-    box-shadow: 0 0 10px 0px rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 1);
 }
 
 .main-paragraph {
@@ -159,6 +159,18 @@ img.screenshot {
 .denser-paragraphs p {
     line-height: 1.2;
 }
+.center-headings {
+    p {
+        margin-top: 0;
+    }
+    h2 {
+        margin: 0;
+        height: 2.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 .icon-as-img-md {
     flex-grow: 1;
@@ -175,7 +187,7 @@ img.screenshot {
     flex-grow: 1;
     margin-bottom: -20px;
 
-    mat-icon{
+    mat-icon {
         font-size: 60px;
         width: 60px;
         height: 60px;
@@ -184,12 +196,11 @@ img.screenshot {
 
 /* colors */
 .grey {
-    color: rgba(0,0,0,.54);
+    color: rgba(0, 0, 0, 0.54);
 }
 .os-blue {
     color: $os-blue;
 }
-
 
 .inline-logo {
     height: 20px;

@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, Router, UrlSegment, NavigationEnd } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
 import { DateAdapter } from '@angular/material';
+import { ActivatedRouteSnapshot, CanActivate, Router, UrlSegment } from '@angular/router';
+
+import { TranslateService } from '@ngx-translate/core';
 
 interface Language {
     code: string;
@@ -10,10 +11,7 @@ interface Language {
 
 // Define here new languages...
 // IMPORTANT: if you add new languages here, make sure to also add register them at the top of app.module.ts
-export const languages: Language[] = [
-    { code: 'en', name: 'English' },
-    { code: 'de', name: 'Deutsch' }
-];
+export const languages: Language[] = [{ code: 'en', name: 'English' }, { code: 'de', name: 'Deutsch' }];
 
 /**
  * Custom url matcher to manage language prefixes.
@@ -35,11 +33,11 @@ export class LanguageService implements CanActivate {
         private router: Router
     ) {
         this.translate.addLangs(languages.map(e => e.code));
-        this.translate.setDefaultLang('en');    // english is default language
+        this.translate.setDefaultLang('en'); // english is default language
         router.events.subscribe(() => {
             const lang = this.getCurrentLanguage();
             this.translate.use(lang);
-            this.dateAdapter.setLocale(lang);   // not working. TODO: Fix this and remove in app.component.ts
+            this.dateAdapter.setLocale(lang); // not working. TODO: Fix this and remove in app.component.ts
         });
     }
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -7,5 +8,5 @@ import { TranslateService } from '@ngx-translate/core';
     styleUrls: ['./news.component.scss']
 })
 export class NewsComponent {
-    constructor(public translate: TranslateService) {}
+    public constructor(public translate: TranslateService) {}
 }
