@@ -1,26 +1,26 @@
-<a  mat-menu-item routerLink="/prices" translate
+<a  mat-menu-item routerLink="/prices"
     [ngClass]="router.url.endsWith('/prices') ? 'active' : ''">
-    Pricing
+    <span translate>Pricing</span>
 </a>
-<a  mat-menu-item routerLink="/" fragment="anchor-features" translate
+<a  mat-menu-item routerLink="/" fragment="anchor-features"
     [ngClass]="currentSection == 'anchor-features' ? 'active' : ''">
-    Features
+    <span translate>Features</span>
 </a>
-<a  mat-menu-item routerLink="/" fragment="anchor-getting-started" translate
+<a  mat-menu-item routerLink="/" fragment="anchor-getting-started"
     [ngClass]="currentSection == 'anchor-getting-started' ? 'active' : ''">
-    Start
+    <span translate>Start</span>
 </a>
-<a  mat-menu-item routerLink="/" fragment="anchor-references" translate
+<a  mat-menu-item routerLink="/" fragment="anchor-references"
     [ngClass]="currentSection == 'anchor-references' ? 'active' : ''">
-    References
+    <span translate>References</span>
 </a>
-<a  mat-menu-item routerLink="/" fragment="anchor-news" translate
+<a  mat-menu-item routerLink="/" fragment="anchor-news"
     [ngClass]="currentSection == 'anchor-news' ? 'active' : ''">
-    News
+    <span translate>News</span>
 </a>
-<a  mat-menu-item routerLink="/" fragment="anchor-contact" translate
+<a  mat-menu-item routerLink="/" fragment="anchor-contact"
     [ngClass]="currentSection == 'anchor-contact' ? 'active' : ''">
-    Contact
+    <span translate>Contact</span>
 </a>
 <!--<a mat-menu-item class="login-btn" routerLink="/login">Anmelden</a>-->
 <!-- <a mat-menu-item class="login-btn" routerLink="/login" [ngClass]="router.url.endsWith('/login') ? 'active' : ''">Anmelden</a> -->

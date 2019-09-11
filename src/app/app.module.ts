@@ -40,6 +40,13 @@ import { ReferenceContainerComponent } from './reference-container/reference-con
 import { ReferencesComponent } from './references/references.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { WrappableDirective } from './wrappable.directive';
+import { ArticlePaperlessComponent } from './news/article-paperless/article-paperless.component';
+import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
+
+import localeDe from '@angular/common/locales/de';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localeDe, "de");
 
 export const MOMENT_FORMATS = {
     parse: {
@@ -74,7 +81,9 @@ export function createTranslateLoader(http: HttpClient) {
         OrderSuccessComponent,
         DgbBundeskongressComponent,
         ReferenceContainerComponent,
-        NewsComponent
+        NewsComponent,
+        ArticlePaperlessComponent,
+        ArticleVirtualAssemblyComponent
     ],
     imports: [
         BrowserModule,

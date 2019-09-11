@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 
 interface FeatureDescription {
@@ -12,7 +12,8 @@ interface FeatureDescription {
 @Component({
     selector: 'app-feature',
     templateUrl: './feature.component.html',
-    styleUrls: ['./feature.component.scss']
+    styleUrls: ['./feature.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class FeatureComponent implements OnInit {
     private path = 'assets/img/features/new/';

@@ -337,7 +337,10 @@ h2 {
 }
 
 .screenshots-slideshow .slideshow-container {
-    padding-top: 63.3064516%;   // force correct aspect ratio on images, since auto height isnt possible
+    // padding-top: 63.3064516%;   // force correct aspect ratio on images, since auto height isnt possible (16:10)
+    padding-top: 56.25%;   // force correct aspect ratio on images, since auto height isnt possible
+    box-shadow: 0 0 5px 1px rgba(50, 120, 150, 0.5);
+    height: auto !important;
 }
 
 .blue-links a, .blue-link {
@@ -389,6 +392,12 @@ h2 {
         &.tiny {
             max-width: 940px;
         }
+    }
+}
+
+@media (min-width: 1400px) {
+    .container.bigger {
+        max-width: 1340px;
     }
 }
 

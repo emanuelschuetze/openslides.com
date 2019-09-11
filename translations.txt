@@ -571,3 +571,6 @@ You want to host OpenSlides own your own server? Take a look at our
 
 Selfthosted-Abschnitt
 selfhosted section
+
+Senden Sie uns das ausgefüllte Formular. Wir bestätigen Ihre Anfrage.
+Send us the form below and we will process your inquiry.

@@ -2,7 +2,6 @@ import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { DateAdapter } from '@angular/material';
 import { Router } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
 
 /**
  * Enhance array with own functions
@@ -26,18 +25,15 @@ export class AppComponent implements OnInit {
     public constructor(
         private scroller: ViewportScroller,
         private dateAdapter: DateAdapter<any>,
-        public router: Router,
-        translate: TranslateService
+        public router: Router
     ) {
         this.overloadFlatMap();
         this.overloadShuffle();
-        translate.setDefaultLang('en');
-        translate.use('en');
     }
 
     public ngOnInit(): void {
         this.scroller.setOffset([0, 64]);
-        this.dateAdapter.setLocale('de');
+        this.dateAdapter.setLocale('en');
     }
 
     /**

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, Router, UrlSegment } from '@angular/router';
+import { ActivatedRouteSnapshot, CanActivate, Router, UrlSegment, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { DateAdapter } from '@angular/material';
 
 interface Language {
     code: string;
@@ -8,6 +9,7 @@ interface Language {
 }
 
 // Define here new languages...
+// IMPORTANT: if you add new languages here, make sure to also add register them at the top of app.module.ts
 export const languages: Language[] = [
     { code: 'en', name: 'English' },
     { code: 'de', name: 'Deutsch' }
@@ -29,31 +31,16 @@ export function LanguageUrlMatcher(url: UrlSegment[]): { consumed: UrlSegment[] 
 export class LanguageService implements CanActivate {
     public constructor(
         protected translate: TranslateService,
+        private dateAdapter: DateAdapter<any>,
         private router: Router
     ) {
-        // manually add the supported languages
-        translate.addLangs(['en', 'de']);
-        // this language will be used as a fallback when a translation isn't found in the current language
-        translate.setDefaultLang('en');
-        // get the browsers default language
-        const browserLang = translate.getBrowserLang();
-        console.log(browserLang);
-        // try to use the browser language if it is available. If not, uses english.
-        translate.use(translate.getLangs().includes(browserLang) ? browserLang : 'en');
-    }
-
-    /**
-     * get detected browser language code
-     */
-    public getBrowserLanguage(): string {
-        let lang = navigator.language || (<any>navigator).userLanguage; // IE fallback
-        if (lang.indexOf('-') !== -1) {
-            lang = lang.split('-')[0];
-        }
-        if (lang.indexOf('_') !== -1) {
-            lang = lang.split('_')[0];
-        }
-        return lang;
+        this.translate.addLangs(languages.map(e => e.code));
+        this.translate.setDefaultLang('en');    // english is default language
+        router.events.subscribe(() => {
+            const lang = this.getCurrentLanguage();
+            this.translate.use(lang);
+            this.dateAdapter.setLocale(lang);   // not working. TODO: Fix this and remove in app.component.ts
+        });
     }
 
     /**
@@ -69,9 +56,9 @@ export class LanguageService implements CanActivate {
      */
     public getCurrentLanguage(): string {
         try {
-            return this.router.url.match(/^\/(..)/)[1]; // match the language part of the url. At index 1 is the search group result
+            return this.router.url.match(/^\/(..)(\/|#|$)/)[1]; // match the language part of the url. At index 1 is the search group result
         } catch {
-            return this.getBrowserLanguage();
+            return this.translate.getBrowserLang();
         }
     }
 
@@ -87,8 +74,6 @@ export class LanguageService implements CanActivate {
                     .slice(2)
             )
         ); // slice(2) cause the url is /xx/page so the array is ["", "xx", "page"] and we only want to keep the page, not the language
-        console.log(lang);
-        this.translate.use(lang).subscribe();
     }
 
     /**

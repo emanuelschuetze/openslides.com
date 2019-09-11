@@ -1,5 +1,4 @@
 <div class="container main-container">
-    <tbd>TODO: Seitenverhältnis der slideshow anpassen, slideshow 1:2 neben text (evtl)</tbd>
     <div class="mb-1">
         <div class="text-right flex hide-md-down">
             <a  mat-menu-item *ngFor="let route of routeOrder" [routerLink]="['/feature/' + route]"
@@ -19,8 +18,13 @@
         <span>{{ currentFeature.title | translate }}</span>
     </h1>
     <p>{{ currentFeature.intro | translate }}</p>
-    <mat-list class="mb-1">
-        <mat-list-item *ngFor="let detail of currentFeature.details"><mat-icon matListIcon>arrow_right</mat-icon>{{ detail | translate }}</mat-list-item>
-    </mat-list>
-    <slideshow class="screenshots-slideshow" [autoPlay]="false" autoPlayInterval="5000" [imageUrls]="currentFeature.images"></slideshow>
+    <div class="flex wrap-tablet">
+        <mat-list class="mb-1 better-list" style="width:33%">
+            <mat-list-item *ngFor="let detail of currentFeature.details">
+                <mat-icon matListIcon>arrow_right</mat-icon>
+                {{ detail | translate }}
+            </mat-list-item>
+        </mat-list>
+        <slideshow class="screenshots-slideshow fill-remaining-space" [autoPlay]="false" autoPlayInterval="5000" [imageUrls]="currentFeature.images"></slideshow>
+    </div>
 </div>

@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ReferenceService } from '../reference.service';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-main',
@@ -47,7 +48,7 @@ export class MainComponent implements OnInit {
     public error: string = null;
     public success = false;
 
-    public constructor(public refService: ReferenceService, public http: HttpClient) {}
+    public constructor(public refService: ReferenceService, public http: HttpClient, public translate: TranslateService) {}
 
     public ngOnInit(): void {
         this.quotes = this.quotesSource.map(quote => ({

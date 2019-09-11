@@ -219,18 +219,6 @@ img.screenshot {
     }
 }
 
-// maybe TODO: schöner text mit button unter slideshow statt drinnen
-// ::ng-deep .screenshots-slideshow .slideshow-container {
-//     overflow-y: initial !important;
-
-//     .caption {
-//         padding: 15px !important;
-//         top: 100%;
-//         bottom: initial !important;
-//         text-align: center;
-//     }
-// }
-
 .quote-slideshow ::ng-deep {
     .slideshow-container {
         // box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);

@@ -20,7 +20,6 @@ schema = {
         "event_from": { "type": "string", "format": "date" },
         "event_to": { "type": "string", "format": "date" },
         "hosting_from": { "type": "string", "format": "date" },
-        "hosting_to": { "type": "string", "format": "date" },
         "expected_users": { "type": "integer", "minimum": 1},
         "contact_person": {
             "type": "object",
@@ -44,7 +43,7 @@ schema = {
             "required": ["name", "street", "extra", "zipcode", "city", "country"]
         }
     },
-    "required": ["tariff", "domain", "event_name", "organizer", "location", "event_from", "event_to", "hosting_from", "hosting_to", "expected_users", "contact_person", "billing_address"]
+    "required": ["tariff", "domain", "event_name", "organizer", "location", "event_from", "event_to", "hosting_from", "expected_users", "contact_person", "billing_address"]
 }
 schema_mail = {
     "type": "object",
@@ -70,7 +69,7 @@ def send_mail():
         <br>
         Veranstalter: {data["organizer"]}<br>
         Veranstaltungszeitraum: {data["event_from"]} bis {data["event_to"]}<br>
-        Hostingzeitraum: {data["hosting_from"]} bis {data["hosting_to"]}<br>
+        Hosting ab: {data["hosting_from"]}<br>
         Veranstaltungsort: {data["location"]}<br>
         Erwartete Teilnehmeranzahl: {data["expected_users"]}<br>
         <br>
