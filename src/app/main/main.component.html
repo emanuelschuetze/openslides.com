@@ -1,21 +1,26 @@
 <div appScrollSpy>
 
-<!-- Welcome -->
-<div class="full-width-img-wrapper flex col" style="height: 728px">
-    <img class="full-width-img" src="assets/img/dgb-bundeskongress2018-mit-openslides-leinwand.jpg">
-    <div class="fill-remaining-space valign-wrapper main-paragraph flex col text-center">
-        <div class="milky-bg mb-1 text-left">
-            <h1 translate>Manage your assemblies digitally</h1>
-            <p translate>
-                OpenSlides is the comprehensive solution for the digital organisation of your meetings and conferences. Manage and project agendas, motions, elections, documents, lists of speakers and participants with our web-based assembly system &ndash; clear, contemporary and always up-to-date.
-            </p>
+    <!-- Welcome -->
+    <div class="full-width-img-wrapper flex col" style="height: 728px">
+        <img class="full-width-img" src="assets/img/dgb-bundeskongress2018-mit-openslides-leinwand.jpg">
+        <div class="fill-remaining-space valign-wrapper main-paragraph flex col text-center">
+            <div class="milky-bg mb-1 text-left">
+                <h1 translate>Organise your digital event with OpenSlides</h1>
+                <p translate>
+                    OpenSlides is the all-in-one solution for the digital organisation of your assemblies and
+                    conferences. Manage and project agenda, motions, elections, documents, lists of speakers and
+                    participants with our web-based assembly system &ndash; 
+                    pure, modern and always up-to-date.
+                </p>
+            </div>
+            <div>
+                <a href="https://demo.openslides.org/login/" target="_blank" mat-flat-button
+                    class="os-button transparent-btn blue mr-0"><span translate>Test now</span></a>
+                <a routerLink="/" fragment="anchor-getting-started" mat-flat-button
+                    class="os-button transparent-btn green ml-0"><span translate>Get started</span></a>
+            </div>
         </div>
-        <div>
-            <a href="https://demo.openslides.org/login/" target="_blank" mat-flat-button class="os-button transparent-btn blue mr-0"><span translate>Test now</span></a>
-            <a routerLink="/" fragment="anchor-getting-started" mat-flat-button class="os-button transparent-btn green ml-0"><span translate>Get started</span></a>
-        </div>
-    </div>
-    <!-- <div class="in-media container">
+        <!-- <div class="in-media container">
         <div fxLayout="row" fxLayoutGap="12px">
             <mat-divider class="fill-remaining-space"></mat-divider>
             <span>OpenSlides in den Medien</span>
@@ -23,248 +28,276 @@
         </div>
         <div class="media-logos text-center">--- Hier Logos einfügen ---</div>
     </div> -->
-</div>
-
-<!-- What is OpenSlides -->
-<div class="container tiny section">
-    <h1 translate>Maximum flexibility and transparency</h1>
-    <p translate>
-        Create the conditions for open communication without losing track of your primary goal. OpenSlides provides you for that with a modern and powerful tool. Extend your agenda live, react to motion changes in real time and give your delegates controlled access to the system.
-    </p>
-</div>
-<div class="container smaller section big">
-    <div class="iframe-wrapper-wrapper">
-        <div class="iframe-wrapper">
-            <iframe src="https://www.youtube-nocookie.com/embed/SvZ8N2SEzEg" frameborder="0" allowfullscreen></iframe>
-        </div>
     </div>
-    <div class="mt-2 mb-2 flex evenly-spaced wrap-mobile denser-paragraphs" appWrappable wrapMargin="30px">
-        <div class="text-center">
-            <div>
-                <img src="assets/img/group_idea.png" style="height:150px">
-                <h2 class="os-blue" translate>Simplified interaction</h2>
-            </div>
-            <p translate>
-                Actively integrate the plenum. Open the mobile access to OpenSlides &ndash; for insight of important documents, submission of motions or recalling of election results etc.
-            </p>
-        </div>
-        <div class="text-center">
-            <div>
-                <img src="assets/img/time_goes_by.png" style="height:150px">
-                <h2 class="os-blue" translate>Faster results</h2>
-            </div>
-            <p translate>
-                Accelerate processes via neatless controlling with only one software. OpenSlides streamlines the procedure &ndash; from the preparation to motions and elections up to the final protocol.
-            </p>
-        </div>
-        <div class="text-center">
-            <div>
-                <img src="assets/img/eco_leaf.png" style="height:150px">
-                <h2 class="os-blue margin-bottom-md" translate>Less paper</h2>
-            </div>
-            <p translate>
-                Make OpenSlides your central interface to manage and publish all relevant assembly contents on to a canvas, notebook or smartphone.
-            </p>
-        </div>
-    </div>
-</div>
 
-<!-- Features -->
-<div id="anchor-features">
-    <div class="container section center-mobile">
-        <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
-            <div>
-                <img class="screenshot" src="assets/img/features/new/agenda_overview_de.png">
+    <!-- What is OpenSlides -->
+    <div class="container tiny section">
+        <h1 translate>Earn a maximum of flexibility and transparency</h1>
+        <p translate>
+            Create the right conditions for open communication without losing the focus. 
+            For this purpose OpenSlides provides you a modern and powerful tool.
+            Supplement your agenda immediately, react to motion changes in real time and
+            give your delegates controlled access to the system.
+        </p>
+    </div>
+    <div class="container smaller section big">
+        <div class="iframe-wrapper-wrapper">
+            <div class="iframe-wrapper">
+                <iframe src="https://www.youtube-nocookie.com/embed/SvZ8N2SEzEg" frameborder="0"
+                    allowfullscreen></iframe>
             </div>
-            <div>
-                <h1 class="lh-1" translate>Agenda</h1>
+        </div>
+        <div class="mt-2 mb-2 flex evenly-spaced wrap-mobile denser-paragraphs" appWrappable wrapMargin="30px">
+            <div class="text-center">
+                <div>
+                    <img src="assets/img/group_idea.png" style="height:150px">
+                    <h2 class="os-blue" translate>Simpler interaction</h2>
+                </div>
                 <p translate>
-                    Complement, amend or move automatically numbered agenda points via drag & drop in the running system. Connect single points with lists of speakers and speaking times and integrate inofficial entries like breaks for better scheduling.
+                    Actively integrate the plenum. Open the mobile access to OpenSlides &ndash; for get important
+                    documents, submit and read motions or check election results.
                 </p>
-                <a routerLink="/feature/agenda" mat-flat-button class="os-button"><span translate>
-                    learn more
-                </span></a>
+            </div>
+            <div class="text-center">
+                <div>
+                    <img src="assets/img/time_goes_by.png" style="height:150px">
+                    <h2 class="os-blue" translate>Faster results</h2>
+                </div>
+                <p translate>
+                    Accelerate your processes via consistently management with only one software. 
+                    OpenSlides consolidates the procedure &ndash; starting with the preparations of motions and elections up to the final protocol.
+                </p>
+            </div>
+            <div class="text-center">
+                <div>
+                    <img src="assets/img/eco_leaf.png" style="height:150px">
+                    <h2 class="os-blue margin-bottom-md" translate>Lesser paper</h2>
+                </div>
+                <p translate>
+                    Assimilate OpenSlides and get a central interface to manage and publish all relevant assembly contents to a projector, notebook or smartphone.
+                </p>
             </div>
         </div>
     </div>
-    <div class="section flex center-mobile text-right"><!-- class="blue-upwards" for blue stripes -->
-        <div class="container">
+
+    <!-- Features -->
+    <div id="anchor-features">
+        <div class="container section center-mobile">
             <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
-                <div class="switch-flex-order">
-                    <h1 class="lh-1" translate>Motions</h1>
+                <div>
+                    <img class="screenshot" src="assets/img/features/new/agenda_overview_de.png">
+                </div>
+                <div>
+                    <h1 class="lh-1" translate>Agenda</h1>
                     <p translate>
-                        Capture motions with applicant and text. Assign categories and motion numbers. Log the resolution and polling results during the motion discussion. The flexible filterung helps you while searching in all motions and their changes.
+                        Complement, change or move automatically numbered agenda items via drag & drop in the running
+                        system. Connect single items with lists of speakers and speaking times and show inofficial
+                        items like breaks for better scheduling.
                     </p>
-                    <a routerLink="/feature/motions" mat-flat-button class="os-button"><span translate>
-                        learn more
-                    </span></a>
-                </div>
-                <div class="switch-flex-order">
-                    <img class="screenshot" src="assets/img/features/new/motions_overview_de.png">
+                    <a routerLink="/feature/agenda" mat-flat-button class="os-button"><span translate>
+                            learn more
+                        </span></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container section center-mobile">
-        <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
-            <div>
-                <img class="screenshot" src="assets/img/features/new/elections_overview_de.png">
-            </div>
-            <div>
-                <h1 class="lh-1" translate>Elections</h1>
-                <p translate>
-                    Propose candidates off the list of participants. Generate ad-hoc personalized ballots for secret elections. Log and project the counted votes &ndash; for all participants accessible in OpenSlides.
-                </p>
-                <a routerLink="/feature/elections" mat-flat-button class="os-button"><span translate>learn more</span></a>
+        <div class="section flex center-mobile text-right">
+            <!-- class="blue-upwards" for blue stripes -->
+            <div class="container">
+                <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
+                    <div class="switch-flex-order">
+                        <h1 class="lh-1" translate>Motions</h1>
+                        <p translate>
+                            Capture motions with applicant and text. Assign categories and motion numbers. Log the
+                            resolution and polling results during the motion discussion. The flexible filtering helps
+                            you while searching in all motions and their changes.
+                        </p>
+                        <a routerLink="/feature/motions" mat-flat-button class="os-button"><span translate>
+                                learn more
+                            </span></a>
+                    </div>
+                    <div class="switch-flex-order">
+                        <img class="screenshot" src="assets/img/features/new/motions_overview_de.png">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="section flex center-mobile text-right"><!-- class="blue-upwards" for blue stripes -->
-        <div class="container">
+        <div class="container section center-mobile">
             <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
-                <div class="switch-flex-order">
-                    <h1 class="lh-1">Projec&shy;tors</h1>
+                <div>
+                    <img class="screenshot" src="assets/img/features/new/elections_overview_de.png">
+                </div>
+                <div>
+                    <h1 class="lh-1" translate>Elections</h1>
                     <p translate>
-                        OpenSlides is designed for working with multiple screens and comes with a powerful projector management. The web interface allows the projection and editing of slides while the projectors are running in full screen.
+                        Propose candidates off the list of participants. Generate ad-hoc personalized ballots for secret
+                        elections. Log and project the counted votes &ndash; for all participants accessible in
+                        OpenSlides.
                     </p>
-                    <a routerLink="/feature/projectors" mat-flat-button class="os-button"><span translate>
-                        learn more
-                    </span></a>
-                </div>
-                <div class="switch-flex-order">
-                    <img class="screenshot" src="assets/img/features/new/projectors_overview_de.png">
+                    <a routerLink="/feature/elections" mat-flat-button class="os-button"><span translate>learn
+                            more</span></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container section big center-mobile">
-        <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
-            <div>
-                <img class="full-width" src="assets/img/responsive-design.png">
+        <div class="section flex center-mobile text-right">
+            <!-- class="blue-upwards" for blue stripes -->
+            <div class="container">
+                <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
+                    <div class="switch-flex-order">
+                        <h1 class="lh-1">Projec&shy;tors</h1>
+                        <p translate>
+                            OpenSlides is designed for working with multiple screens and comes with a powerful projector
+                            management. The web interface allows the projection and editing of slides while the
+                            projectors are running in full screen.
+                        </p>
+                        <a routerLink="/feature/projectors" mat-flat-button class="os-button"><span translate>
+                                learn more
+                            </span></a>
+                    </div>
+                    <div class="switch-flex-order">
+                        <img class="screenshot" src="assets/img/features/new/projectors_overview_de.png">
+                    </div>
+                </div>
             </div>
-            <div>
-                <h1 translate>Versatile and responsive</h1>
-                <p translate>
-                    Managing of Delegate and their attendance as well as the elaborate permission management are uncomplicated and intuitive. Every area of OpenSlides can be made accessible for certain groups.
-                </p>
-                <p translate>
-                    No matter if file upload or comment function &ndash; OpenSlides is equipped with a multitude of practicable tools. Moreover, we develop custom solutions for our clients.
-                </p>
-                <a routerLink="/feature/miscellaneous" mat-flat-button class="os-button"><span translate>
-                    More functions
-                </span></a>
+        </div>
+        <div class="container section big center-mobile">
+            <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
+                <div>
+                    <img class="full-width" src="assets/img/responsive-design.png">
+                </div>
+                <div>
+                    <h1 translate>Multifunctional and responsive</h1>
+                    <p translate>
+                        Managing of Delegate and their attendance as well as the elaborate permission management are
+                        uncomplicated and intuitive. Every area of OpenSlides can be made accessible for certain groups.
+                    </p>
+                    <p translate>
+                        No matter if file upload or comment function &ndash; OpenSlides is equipped with a multitude of
+                        practicable tools. Moreover, we develop custom solutions for our clients.
+                    </p>
+                    <a routerLink="/feature/miscellaneous" mat-flat-button class="os-button">
+                        <span translate>More features</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Hosting / Professional Services -->
-<div class="container section big center-mobile" id="anchor-getting-started">
-    <div class="flex evenly-spaced wrap-tablet" appWrappable wrapMargin="50px">
-        <div class="flex wrap-mobile hosting-container">
-            <div class="mr-0">
-                <img class="hosting-logo" src="assets/img/host.png">
+    <!-- Hosting / Professional Services -->
+    <div class="container section big center-mobile" id="anchor-getting-started">
+        <div class="flex evenly-spaced wrap-tablet" appWrappable wrapMargin="50px">
+            <div class="flex wrap-mobile hosting-container">
+                <div class="mr-0">
+                    <img class="hosting-logo" src="assets/img/host.png">
+                </div>
+                <div>
+                    <h1 class="lh-1" translate>Hosting</h1>
+                    <p translate>
+                        You want to use OpenSlides for your next assembly, but don't want to care about the technical
+                        details? Order a fitting hosting package now!
+                    </p>
+                    <a routerLink="/prices" mat-flat-button class="os-button filled">
+                        <mat-icon class="mr-0">shopping_cart</mat-icon>
+                        <span translate>Choose package</span>
+                    </a>
+                    <h3 class="mt-1" translate>Individual service offers</h3>
+                    <p translate>
+                        You need individual support at your assembly and professional consultation from the OpenSlides
+                        developers? You're missing a function or you want something changed? Arrange an initial
+                        consultation now! Our chargeable services:
+                    </p>
+                    <mat-list class="mb-0 no-padding">
+                        <mat-list-item>
+                            <mat-icon matListIcon>arrow_right</mat-icon>
+                            <span translate>Introduction and consultation</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <mat-icon matListIcon>arrow_right</mat-icon>
+                            <span translate>Training</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <mat-icon matListIcon>arrow_right</mat-icon>
+                            <span translate>On-site assistance</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <mat-icon matListIcon>arrow_right</mat-icon>
+                            <span translate>Technical support</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <mat-icon matListIcon>arrow_right</mat-icon>
+                            <span translate>On-call service</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <mat-icon matListIcon>arrow_right</mat-icon>
+                            <span translate>Further development and individual adjustments</span>
+                        </mat-list-item>
+                    </mat-list>
+                    <a routerLink="/" fragment="anchor-contact" mat-flat-button class="os-button filled mt-1">
+                        <mat-icon class="mr-0">person</mat-icon>
+                        <span translate>Contact</span>
+                    </a>
+                </div>
             </div>
-            <div>
-                <h1 class="lh-1" translate>Hosting</h1>
-                <p translate>
-                    You want to use OpenSlides for your next assembly, but don't want to care about the technical details? Order a fitting hosting package now!
-                </p>
-                <a routerLink="/prices" mat-flat-button class="os-button filled">
-                    <mat-icon class="mr-0">shopping_cart</mat-icon>
-                    <span translate>Choose package</span>
-                </a>
-                <h3 class="mt-1" translate>Individual service offers</h3>
-                <p translate>
-                    You need individual support at your assembly and professional consultation from the OpenSlides developers? You're missing a function or you want something changed? Arrange an initial consultation now! Our chargeable services:
-                </p>
-                <mat-list class="mb-0 no-padding">
-                    <mat-list-item>
-                        <mat-icon matListIcon>arrow_right</mat-icon>
-                        <span translate>Presentation and consultation</span>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <mat-icon matListIcon>arrow_right</mat-icon>
-                        <span translate>Training</span>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <mat-icon matListIcon>arrow_right</mat-icon>
-                        <span translate>On-site assistance</span>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <mat-icon matListIcon>arrow_right</mat-icon>
-                        <span translate>Technical support</span>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <mat-icon matListIcon>arrow_right</mat-icon>
-                        <span translate>On-call service</span>
-                    </mat-list-item>
-                    <mat-list-item>
-                        <mat-icon matListIcon>arrow_right</mat-icon>
-                        <span translate>Further development and individual adjustments</span>
-                    </mat-list-item>
-                </mat-list>
-                <a routerLink="/" fragment="anchor-contact" mat-flat-button class="os-button filled mt-1">
-                    <mat-icon class="mr-0">person</mat-icon>
-                    <span translate>Contact</span>
-                </a>                
+            <div class="flex wrap-mobile open-source-container">
+                <div class="mr-0">
+                    <img class="hosting-logo" src="assets/img/self_host02.png">
+                </div>
+                <div>
+                    <h1 class="lh-1" translate>Install by yourself</h1>
+                    <p translate>
+                        We pledged ourselves to the principles of a Open Source, liberal and free of charge exchange of
+                        our software and even represent this in our name. OpenSlides is usable under the MIT license.
+                        Help us to further improve the code.
+                    </p>
+                    <a href="https://github.com/OpenSlides/OpenSlides" mat-flat-button
+                        class="os-button filled light-grey">
+                        <img class="inline-logo" src="assets/img/logos/github.png">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.transifex.com/openslides/openslides/" mat-flat-button
+                        class="os-button filled light-grey ml-0">
+                        <mat-icon class="mr-0">language</mat-icon>
+                        <span>Transifex</span>
+                    </a>
+                    <h3 class="mt-1" translate>Download and selfhosted</h3>
+                    <p>
+                        <span translate>You want to host OpenSlides on your own server? We offer our software as PyPI
+                            package and as source code. Please note that we can offer technical support for our
+                        </span><a class="inline" routerLink="/prices">hosting solutions</a><span translate> only.</span>
+                        <br>
+                        <a href="https://github.com/OpenSlides/OpenSlides/blob/master/README.rst#installation"
+                            class="inline" target="_blank">&raquo;&#32; <span translate>Installation guide</span></a>
+                    </p>
+                    <a href="https://pypi.org/project/openslides/" target="_blank" mat-flat-button
+                        class="os-button filled light-grey">
+                        <mat-icon class="mr-0">all_inbox</mat-icon>
+                        <span>PyPI</span>
+                    </a>
+                    <a href="https://files.openslides.org/releases/2.3/openslides-2.3.tar.gz" target="_blank"
+                        mat-flat-button class="os-button filled light-grey ml-0">
+                        <mat-icon class="mr-0">get_app</mat-icon>
+                        <span translate>Source code</span>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="flex wrap-mobile open-source-container">
-            <div class="mr-0">
-                <img class="hosting-logo" src="assets/img/self_host02.png">
-            </div>
-            <div>
-                <h1 class="lh-1" translate>Install by yourself</h1>
-                <p translate>
-                    We pledged ourselves to the principles of a Open Source, liberal and free of charge exchange of our software and even represent this in our name. OpenSlides is usable under the MIT license. Help us to further improve the code. 
-                </p>
-                <a href="https://github.com/OpenSlides/OpenSlides" mat-flat-button class="os-button filled light-grey">
-                    <img class="inline-logo" src="assets/img/logos/github.png">
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.transifex.com/openslides/openslides/" mat-flat-button class="os-button filled light-grey ml-0">
-                    <mat-icon class="mr-0">language</mat-icon>
-                    <span>Transifex</span>
-                </a>
-                <h3 class="mt-1" translate>Download and selfhosted</h3>
-                <p>
-                    <span translate>You want to host OpenSlides on your own server? We offer our software as PyPI package and as source code. Please note that we can offer technical support for our </span><a class="inline" routerLink="/prices">hosting solutions</a><span translate> only.</span>
-                    <br>
-                    <a href="https://github.com/OpenSlides/OpenSlides/blob/master/README.rst#installation" class="inline" target="_blank">&raquo;&#32; <span translate>Installation guide</span></a>
-                </p>
-                <a href="https://pypi.org/project/openslides/" target="_blank" mat-flat-button class="os-button filled light-grey">
-                    <mat-icon class="mr-0">all_inbox</mat-icon>
-                    <span>PyPI</span>
-                </a>
-                <a href="https://files.openslides.org/releases/2.3/openslides-2.3.tar.gz" target="_blank" mat-flat-button class="os-button filled light-grey ml-0">
-                    <mat-icon class="mr-0">get_app</mat-icon>
-                    <span translate>Source code</span>
-                </a>
-            </div>
+    </div>
+
+    <!-- References -->
+    <div class="container section text-center" id="anchor-references">
+        <div fxLayout="row wrap" class="flex text-center" appWrappable wrapMarginX="15px">
+            <app-reference-container *ngFor="let ref of refService.frontpageRefs" [ref]="ref"></app-reference-container>
         </div>
-    </div>
-</div>
+        <div class="mt-1 mb-2">
+            <a routerLink="/references" mat-flat-button class="os-button">
+                <span translate>More references</span>
+            </a>
+        </div>
 
-<!-- References -->
-<div class="container section text-center" id="anchor-references">
-    <div fxLayout="row wrap" class="flex text-center" appWrappable wrapMarginX="15px">
-        <app-reference-container *ngFor="let ref of refService.frontpageRefs" [ref]="ref"></app-reference-container>
-    </div>
-    <div class="mt-1 mb-2">
-        <a routerLink="/references" mat-flat-button class="os-button">
-            <span translate>More references</span>
-        </a>
+        <slideshow class="quote-slideshow" minHeight="500px" [autoPlay]="true" autoPlayInterval="10000"
+            [imageUrls]="quotes" captionBackground="transparent" captionColor="#000">
+        </slideshow>
     </div>
 
-    <slideshow class="quote-slideshow"
-            minHeight="500px"
-            [autoPlay]="true"
-            autoPlayInterval="10000"
-            [imageUrls]="quotes"
-            captionBackground="transparent"
-            captionColor="#000">
-    </slideshow>
 </div>
 
 <!-- News -->
@@ -289,28 +322,27 @@
             <div><i>{{ "2019-02-05" | date:'shortDate':'':translate.currentLang }}:</i> <a class="inline" routerLink="/news/dgb-bundeskongress" >Erfolgreiche Digitalisierung: DGB-Bundeskongress mit OpenSlides</a></div>
         </div>
     </div>
-</div>
 
-<!-- Newsletter -->
-<div class="section container">
-    <h1 id="anchor-newsletter" translate>Newsletter</h1>
-    <p translate>
-        You want to stay always up to date? Sign up now for our newsletter:
-    </p>
-    <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
-        <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="20px" class="valign-wrapper">
-            <mat-form-field fxFlex.gt-xs="80%" fxFlexFill>
-                <input matInput type="email" placeholder="E-Mail-Adresse" [formControl]="mailInput" required>
-                <mat-error>{{ getErrorMessage() }}</mat-error>
-            </mat-form-field>
-            <div fxFlex.gt-xs="20%">
-                <button mat-flat-button type="submit" class="os-button full-width">
-                    <span translate>Submit</span>
-                </button>
+    <!-- Newsletter -->
+    <div class="section container">
+        <h1 id="anchor-newsletter" translate>Newsletter</h1>
+        <p translate>
+            You want to stay always up to date? Sign up now for our newsletter:
+        </p>
+        <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+            <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="20px" class="valign-wrapper">
+                <mat-form-field fxFlex.gt-xs="80%" fxFlexFill>
+                    <input matInput type="email" placeholder="E-Mail-Adresse" [formControl]="mailInput" required>
+                    <mat-error>{{ getErrorMessage() }}</mat-error>
+                </mat-form-field>
+                <div fxFlex.gt-xs="20%">
+                    <button mat-flat-button type="submit" class="os-button full-width">
+                        <span translate>Submit</span>
+                    </button>
+                </div>
             </div>
-        </div>
-        <p *ngIf="success" translate>You successfully registered for our newsletter!</p>
-    </form>
-</div>
+            <p *ngIf="success" translate>You successfully registered for our newsletter!</p>
+        </form>
+    </div>
 
 </div>
