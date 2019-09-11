@@ -1,5 +1,5 @@
-<a  mat-menu-item routerLink="/prices"
-    [ngClass]="router.url.endsWith('/prices') ? 'active' : ''">
+<a  mat-menu-item routerLink="/pricing"
+    [ngClass]="router.url.endsWith('/pricing') ? 'active' : ''">
     <span translate>Pricing</span>
 </a>
 <a  mat-menu-item routerLink="/" fragment="anchor-features"
@@ -22,5 +22,3 @@
     [ngClass]="currentSection == 'anchor-contact' ? 'active' : ''">
     <span translate>Contact</span>
 </a>
-<!--<a mat-menu-item class="login-btn" routerLink="/login">Anmelden</a>-->
-<!-- <a mat-menu-item class="login-btn" routerLink="/login" [ngClass]="router.url.endsWith('/login') ? 'active' : ''">Anmelden</a> -->

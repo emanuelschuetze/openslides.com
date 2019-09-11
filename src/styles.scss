@@ -14,7 +14,7 @@ a {
     color: inherit;
     
     &.inline {
-        font-weight: bold;
+        font-weight: 400;
 
         &:hover {
             text-decoration: underline;
@@ -27,13 +27,16 @@ a {
 }
 
 .inline-links a {
-    font-weight: bold;
+    font-weight: 400;
 
     &:hover {
         text-decoration: underline;
     }
 }
 
+b {
+    font-weight: 400;
+}
 
 tbd {
     display: inline-block;
@@ -47,6 +50,10 @@ tbd {
 .mat-list-base .mat-list-item {
     font-size: inherit;
 }
+.mat-list-item-content {
+    align-items: normal !important;
+    padding: 0 !important;
+}
 
 .os-button.mat-flat-button {
     color: $os-turquoise;
@@ -58,7 +65,7 @@ tbd {
     }
 
     &.transparent-btn {
-        width: 200px;
+        min-width: 200px;
         color: #fff;
         border: 0;
         font-size: inherit;

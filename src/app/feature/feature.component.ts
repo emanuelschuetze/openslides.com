@@ -16,7 +16,7 @@ interface FeatureDescription {
     encapsulation: ViewEncapsulation.None
 })
 export class FeatureComponent implements OnInit {
-    private path = 'assets/img/features/new/';
+    private path = 'assets/img/features/';
     public activeRoute = '';
     public featuresByRoute: { [route: string]: FeatureDescription } = {
         agenda: {

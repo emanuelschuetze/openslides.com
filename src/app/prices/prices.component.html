@@ -17,12 +17,12 @@
                 </div>
                 <mat-divider></mat-divider>
                 <mat-list>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>max.</span> <b>&nbsp;5&nbsp;</b> <span translate>users</span></mat-list-item>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>max.</span> <b>&nbsp;5&nbsp;</b> <span translate>user accounts</span></mat-list-item>
                     <mat-list-item><mat-icon matListIcon>check</mat-icon><span><span translate>Standard domain </span><span>*.openslides.com </span></span></mat-list-item>
                 </mat-list>
                 <mat-divider></mat-divider>
                 <div class="text-center">
-                    <a routerLink="/order" [queryParams]="{tariff: 'single'}" mat-flat-button class="os-button filled bordered grey">
+                    <a routerLink="/order" [queryParams]="{package: 'single'}" mat-flat-button class="os-button filled bordered grey">
                         <span translate>Order now</span>
                     </a>
                 </div>
@@ -42,13 +42,13 @@
                 </div>
                 <mat-divider></mat-divider>
                 <mat-list>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>max.</span> <b>&nbsp;50&nbsp;</b> <span translate>users</span></mat-list-item>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>custom domain possible</span></mat-list-item>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>Plugin extension possible</span></mat-list-item>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>max.</span> <b>&nbsp;50&nbsp;</b> <span translate>user accounts</span></mat-list-item>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span><span translate>Standard domain </span><span>*.openslides.com </span></span></mat-list-item>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>plugin extension possible</span></mat-list-item>
                 </mat-list>
                 <mat-divider></mat-divider>
                 <div class="text-center">
-                    <a routerLink="/order" [queryParams]="{tariff: 'basic'}" mat-flat-button class="os-button filled bordered blue">
+                    <a routerLink="/order" [queryParams]="{package: 'basic'}" mat-flat-button class="os-button filled bordered blue">
                         <span translate>Order now</span>
                     </a>
                 </div>
@@ -68,13 +68,13 @@
                 </div>
                 <mat-divider></mat-divider>
                 <mat-list>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>max.</span> <b>&nbsp;500&nbsp;</b> <span translate>users</span></mat-list-item>
+                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>max.</span> <b>&nbsp;500&nbsp;</b> <span translate>user accounts</span></mat-list-item>
                     <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>custom domain possible</span></mat-list-item>
                     <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>plugin extension possible</span></mat-list-item>
                 </mat-list>
                 <mat-divider></mat-divider>
                 <div class="text-center">
-                    <a routerLink="/order" [queryParams]="{tariff: 'enterprise'}" mat-flat-button class="os-button filled bordered">
+                    <a routerLink="/order" [queryParams]="{package: 'enterprise'}" mat-flat-button class="os-button filled bordered">
                         <span translate>Order now</span>
                     </a>
                 </div>
@@ -92,12 +92,15 @@
             <mat-list-item><mat-icon matListIcon>check</mat-icon> individual support by expenditure (125 € / hour, quarter-hourly billing)</mat-list-item>
         </div>
         <div>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure connection: HTTPS with Let's-Encrypt certificates</span></mat-list-item>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure data: acquisition of a contract for data processing</span></mat-list-item>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure business: every event runs as an isolated OpenSlides instance with its own database</span></mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure connection: HTTPS with Let's Encrypt certificates</span></mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure data: Completion of a contract for data processing</span></mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure operation: every event runs as an isolated OpenSlides instance with its own database</span></mat-list-item>
         </div>
     </mat-list>
-    <div class="mt-1" translate><span translate>You want to host OpenSlides own your own server? Take a look at our</span><span>&nbsp;</span><a class="inline" routerLink="/" fragment="anchor-getting-started" translate>selfhosted section</a>.</div>
+    <div class="mt-1">
+        <span translate>You want to install OpenSlides on your own server?</span>
+        <span>&nbsp;<a class="inline" routerLink="/" fragment="anchor-getting-started" translate>Lern more ...</a></span>
+    </div>
     <div class="mt-1" translate>10% discount when paying 12 months in advance.</div>
     <div class="mt-2"><i translate>All prices are VAT exclusive.</i></div>
 </div>
