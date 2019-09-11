@@ -33,7 +33,7 @@ export class MainComponent implements OnInit {
             author: 'Evangelischer Kirchenkreis Krefeld-Viersen',
             text:
                 // tslint:disable-next-line
-                "OpenSlides unterstützt uns schon bei der Planung unserer Kreissynoden durch die strukturierte Eingabe der Tagesordnung, der Anträge und Wahlen. Während der Veranstaltung bleiben wir immer flexibel und können situationsbedingt 'Folien' ein- und ausblenden."
+                "OpenSlides unterstützt uns schon bei der Planung. Während der Veranstaltung bleiben wir immer flexibel und können situationsbedingt 'Folien' ein- und ausblenden."
         },
         {
             author: 'Sächsische Landesärztekammer',
@@ -60,7 +60,7 @@ export class MainComponent implements OnInit {
             caption: `
                 <div class="quote-container">
                     <h1>
-                        <i>"${quote.text}"</i>
+                        <i>»${quote.text}«</i>
                     </h1>
                     <div class="mt-1">
                         <span>${quote.author}</span>

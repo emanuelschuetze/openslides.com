@@ -40,7 +40,7 @@ const routes: Routes = [
             },
             { path: 'privacy', component: PrivacyComponent },
             { path: 'references', component: ReferencesComponent },
-            { path: 'prices', component: PricesComponent },
+            { path: 'pricing', component: PricesComponent },
             {
                 path: 'order',
                 children: [

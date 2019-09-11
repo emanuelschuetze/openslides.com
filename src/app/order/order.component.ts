@@ -14,17 +14,14 @@ export class OrderComponent implements OnInit {
 
     public orderForm = this.fb.group(
         {
-            tariff: ['', [Validators.required, Validators.pattern(/^(single|basic|enterprise)$/)]],
+            package: ['', [Validators.required, Validators.pattern(/^(single|basic|enterprise)$/)]],
             domain: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9\-\.]+$/)]],
             event_name: ['', [Validators.required, this.standard]],
-            organizer: ['', [Validators.required, this.standard]],
-            location: ['', [Validators.required, this.standard]],
-            event_from: ['', [Validators.required]],
-            event_to: ['', [Validators.required]],
-            hosting_from: ['', [Validators.required]],
-            hosting_to: ['', [Validators.required]],
-            expected_users: ['', [Validators.required, Validators.min(1)]],
+            event_location: ['', [Validators.required, this.standard]],
+            event_date: ['', [Validators.required, this.standard]],
+            expected_users: ['', [Validators.required, this.standard]],
             contact_person: this.fb.group({
+                organisation: ['', [Validators.required, this.standard]],
                 name: ['', [Validators.required, this.standardNoNumber]],
                 email: ['', [Validators.required, Validators.email]],
                 phone: [
@@ -46,9 +43,6 @@ export class OrderComponent implements OnInit {
                 city: ['', [Validators.required, this.standardNoNumber]],
                 country: ['', [Validators.required, this.standardNoNumber]]
             })
-        },
-        {
-            validators: [this.dateLessThan('event_from', 'event_to'), this.dateLessThan('hosting_from', 'hosting_to')]
         }
     );
     public error = null;
@@ -61,22 +55,16 @@ export class OrderComponent implements OnInit {
     ) {}
 
     public ngOnInit(): void {
-        // if tariff is given in get params, set it
-        const t = this.route.snapshot.queryParamMap.get('tariff');
+        // if package is given in get params, set it
+        const t = this.route.snapshot.queryParamMap.get('package');
         if (t) {
-            this.orderForm.get('tariff').setValue(t);
+            this.orderForm.get('package').setValue(t);
         }
     }
 
     public onSubmit(): void {
         const data = this.orderForm.value;
-        // format the dates in DD.MM.YYYY since time is irrelevant
-        const dateFields = ['event_from', 'event_to', 'hosting_from', 'hosting_to'];
-        for (const key of dateFields) {
-            if (data[key] && data[key].format) {
-                data[key] = data[key].format('DD.MM.YYYY');
-            }
-        }
+    
         // post the request
         // TODO typing..
         this.http.post<any>('/api/order', data).subscribe(
@@ -93,7 +81,7 @@ export class OrderComponent implements OnInit {
                 switch (error.status) {
                     case 502:
                     case 504:
-                        this.error = 'Der Server ist momentan nicht erreichbar. Bitte probieren Sie es später nochmal.';
+                        this.error = 'Der Server ist momentan nicht erreichbar. Bitte probieren Sie es später noch einmal.';
                         break;
                     default:
                         this.error = error.message;
@@ -101,35 +89,5 @@ export class OrderComponent implements OnInit {
                 }
             }
         );
-    }
-
-    /**
-     * compares the given date inputs and sets errors according to their states
-     * @param from the key of the "from" control
-     * @param to the key of the "to" control
-     * @return null if no error was set, otherwise the error
-     */
-    public dateLessThan(from: string, to: string): (group: FormGroup) => { negativeDatespan: boolean } | null {
-        return (group: FormGroup) => {
-            const f = group.controls[from];
-            const t = group.controls[to];
-            if (f.value && t.value && f.value > t.value) {
-                let errors = t.errors || {};
-                errors.negativeDatespan = true;
-                t.setErrors(errors);
-                errors = f.errors || {};
-                errors.negativeDatespan = true;
-                f.setErrors(errors);
-                return { negativeDatespan: true };
-            } else {
-                if (t.errors && t.errors.negativeDatespan) {
-                    t.updateValueAndValidity();
-                }
-                if (f.errors && f.errors.negativeDatespan) {
-                    f.updateValueAndValidity();
-                }
-                return null;
-            }
-        };
     }
 }

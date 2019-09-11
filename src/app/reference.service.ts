@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 export interface ReferenceObject {
     name: string;
@@ -14,10 +15,10 @@ export interface CategoryObject {
 @Injectable({
     providedIn: 'root'
 })
-export class ReferenceService {
+export class ReferenceService {   
     public references: CategoryObject[] = [
         {
-            name: 'Unions',
+            name: this.translate.instant('Unions'),
             refs: [
                 {
                     name: 'Deutscher Gewerkschaftsbund (DGB)',
@@ -60,7 +61,7 @@ export class ReferenceService {
             ]
         },
         {
-            name: 'Parties',
+            name: this.translate.instant('Parties'),
             refs: [
                 {
                     name: 'BÜNDNIS 90/DIE GRÜNEN',
@@ -93,7 +94,7 @@ export class ReferenceService {
             ]
         },
         {
-            name: 'Organisations, assosciations and more',
+            name: this.translate.instant('Organisations, assosciations and more'),
             refs: [
                 {
                     name: 'Amnesty International',
@@ -179,7 +180,9 @@ export class ReferenceService {
     ];
     public frontpageRefs: ReferenceObject[];
 
-    public constructor() {
+    public constructor(
+        protected translate: TranslateService
+    ) {
         // get frontpage references and randomize their order
         this.frontpageRefs = this.references
             .flatMap(e => e.refs)
