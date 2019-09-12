@@ -12,3 +12,7 @@
 - Stop the service and update the repository
 - Verify ownerships etc. (is this necessary?)
 - start the service
+
+## Starting
+- dev: python app.py (export FLASK_ENV=development)
+- uwsgi --socket 0.0.0.0:5000 --protocol=http -w app:app
