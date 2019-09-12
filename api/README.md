@@ -5,9 +5,9 @@ For uwsgi `python3-dev` is required.
 
 ## copying of staticfiles:
 on server:
-- rm /srv/www-beta/html/*
-- cp -r /srv/www-beta/.htaccess.bak /srv/www-beta/html/.htaccess
-scp dist/openslides/* web-openslides:/srv/www-beta/html/
+- rm /srv/www/html/*
+- cp -r /srv/www/.htaccess.bak /srv/www/html/.htaccess
+- scp dist/openslides/* web-openslides:/srv/www/html/
 
 ## Setup
 - Install the service (see openslides-backend.service.tpl) in systemd.
