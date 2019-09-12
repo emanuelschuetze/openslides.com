@@ -79,32 +79,27 @@ export class MainComponent implements OnInit {
             : this.error;
     }
 
-    public onSubmit(): void {
-        // post the request
-        this.http.post<any>('/api/add_newsletter', { mail_address: this.mailInput.value }).subscribe(
-            res => {
-                console.log('res:', res);
-                if (res.success === true) {
-                    this.success = true;
-                    this.mailInput.reset();
-                } else {
-                    this.error = res.error || 'Ein unbekannter Fehler ist aufgetreten.';
-                    this.mailInput.setErrors([this.error]);
-                }
-            },
-            error => {
-                console.log(error);
-                switch (error.status) {
-                    case 502:
-                    case 504:
-                        this.error = 'Der Server ist momentan nicht erreichbar. Bitte probieren Sie es später nochmal.';
-                        break;
-                    default:
-                        this.error = error.message;
-                        break;
-                }
-                this.mailInput.setErrors([this.error]);
+    public async onSubmit(): Promise<void> {
+        if (!this.emailForm.valid) {
+            return;
+        }
+        try {
+            await this.http.post<void>('/api/add_newsletter', { mail_address: this.mailInput.value }).toPromise();
+            this.success = true;
+            this.mailInput.reset();
+            this.error = null;
+            this.mailInput.setErrors([]);
+        } catch (error) {
+            switch (error.status) {
+                case 502:
+                case 504:
+                    this.error = 'The server is not reachable at the moment. Please try again later.';
+                    break;
+                default:
+                    this.error = error.error.error || 'An unknwon error occurred.';
+                    break;
             }
-        );
+            this.mailInput.setErrors([this.error]);
+        }
     }
 }

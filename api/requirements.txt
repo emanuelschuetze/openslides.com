@@ -1,2 +1,9 @@
 flask
+flask_mail
+jsonschema
 uwsgi
+
+# Cleanup
+flake8
+black
+isort

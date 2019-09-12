@@ -310,7 +310,7 @@
                     <mat-error>{{ getErrorMessage() }}</mat-error>
                 </mat-form-field>
                 <div fxFlex.gt-xs="20%">
-                    <button mat-flat-button type="submit" class="os-button full-width">
+                    <button mat-flat-button type="submit" [disabled]="!emailForm.valid" class="os-button full-width">
                         <span translate>Submit</span>
                     </button>
                 </div>
