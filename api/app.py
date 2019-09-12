@@ -106,6 +106,7 @@ def handle_validation_error(error):
 
 
 @app.route("/api/order", methods=["POST"])
+@app.route("/order", methods=["POST"])
 def order():
     data = request.json
     validate(data, order_schema)
@@ -165,6 +166,7 @@ def order():
 
 
 @app.route("/api/add_newsletter", methods=["POST"])
+@app.route("/add_newsletter", methods=["POST"])
 def add_newsletter():
     data = request.json
     try:
