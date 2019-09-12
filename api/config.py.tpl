@@ -11,3 +11,6 @@ MAIL_USERNAME = ""
 MAIL_PASSWORD = ""
 #endregion
 MAIL_DEFAULT_SENDER = ""
+
+# Send order emails to
+ORDER_MAIL_RECIPIENTS = []
