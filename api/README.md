@@ -1,5 +1,14 @@
 # Deployment
 
+# Installation of uwsgi
+For uwsgi `python3-dev` is required.
+
+## copying of staticfiles:
+on server:
+- rm /srv/www-beta/html/*
+- cp -r /srv/www-beta/.htaccess.bak /srv/www-beta/html/.htaccess
+scp dist/openslides/* web-openslides:/srv/www-beta/html/
+
 ## Setup
 - Install the service (see openslides-backend.service.tpl) in systemd.
 - create a uwsgi.sock

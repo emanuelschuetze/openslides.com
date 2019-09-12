@@ -114,29 +114,43 @@ def order():
         raise ViewError("Configuration error: No order mail recipients")
 
     msg = Message("OpenSlides-Anfrage", recipients=app.config["ORDER_MAIL_RECIPIENTS"])
-    msg.html = f"""
-        Paket: {data["package"]}<br>
-        Wunschdomain: {data["domain"]}<br>
+    contact_person = data.pop("contact_person")
+    billing_address = data.pop("billing_address")
+    msg.html = (
+        """
+        Paket: {package}<br>
+        Wunschdomain: {domain}<br>
         <br>
-        Veranstaltungsname: {data["event_name"]}<br>
-        Veranstaltungsort: {data["event_location"]}<br>
-        Veranstaltungszeitraum: {data["event_date"]}<br>
-        Erwartete Teilnehmeranzahl: {data["expected_users"]}<br>
+        Veranstaltungsname: {event_name}<br>
+        Veranstaltungsort: {event_location}<br>
+        Veranstaltungszeitraum: {event_date}<br>
+        Erwartete Teilnehmeranzahl: {expected_users}<br>
         <br>
+    """.format(
+            **data
+        )
+        + """
         Ansprechpartner:<br>
-        Veranstalter: {data["contact_person"]["organisation"]}<br>
-        Name: {data["contact_person"]["name"]}<br>
-        E-Mail: {data["contact_person"]["email"]}<br>
-        Telefon: {data["contact_person"]["phone"]}<br>
+        Veranstalter: {organisation}<br>
+        Name: {name}<br>
+        E-Mail: {email}<br>
+        Telefon: {phone}<br>
         <br>
+    """.format(
+            **contact_person
+        )
+        + """
         Rechnungsanschrift:<br>
-        Name: {data["billing_address"]["name"]}<br>
-        Straße: {data["billing_address"]["street"]}<br>
-        Adresszusatz: {data["billing_address"]["extra"]}<br>
-        PLZ: {data["billing_address"]["zipcode"]}<br>
-        Ort: {data["billing_address"]["city"]}<br>
-        Land: {data["billing_address"]["country"]}
-    """
+        Name: {name}<br>
+        Straße: {street}<br>
+        Adresszusatz: {extra}<br>
+        PLZ: {zipcode}<br>
+        Ort: {city}<br>
+        Land: {country}
+    """.format(
+            **billing_address
+        )
+    )
     try:
         mail.send(msg)
     except smtplib.SMTPServerDisconnected:
