@@ -268,55 +268,45 @@
         </slideshow>
     </div>
 
-</div>
 
-<!-- News -->
-<div class="section container" id="anchor-news">
-    <h1 class="d-inline-block" translate>News</h1>
-    <a class="float-right inline" routerLink="/news">
-        <span translate>Show all news</span>
-    </a>
-    <div class="flex evenly-spaced wrap-mobile news-links" appWrappable>
-        <div>
-            <h3 class="icon-wrapper">
-                <mat-icon>new_releases</mat-icon>
-                <span translate>Press releases</span>
-            </h3>
-            <div><i>{{ "2018-09-20" | date:'shortDate':'':translate.currentLang }}:</i> <a target="_blank"
-                    class="inline" href="http://files.openslides.org/press/2.3/PM-OpenSlides-2.3.pdf">OpenSlides 2.3 mit
-                    integrierter elektronischer Abstimmung</a></div>
-        </div>
-        <div>
-            <h3 class="icon-wrapper">
-                <mat-icon>dashboard</mat-icon>
-                <span translate>Articles and publications</span>
-            </h3>
-            <div><i>{{ "2019-02-05" | date:'shortDate':'':translate.currentLang }}:</i> <a class="inline"
-                    routerLink="/news/dgb-bundeskongress">Erfolgreiche Digitalisierung: DGB-Bundeskongress mit
-                    OpenSlides</a></div>
-        </div>
-    </div>
-
-    <!-- Newsletter -->
-    <div class="section container">
-        <h1 id="anchor-newsletter" translate>Newsletter</h1>
-        <p>
-            {{ "You want to get announcements about new OpenSlides releases? Sign up now for our newsletter (sorry, only in German):" | translate }}
-        </p>
-        <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
-            <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="20px" class="valign-wrapper">
-                <mat-form-field fxFlex.gt-xs="80%" fxFlexFill>
-                    <input matInput type="email" placeholder="E-Mail-Adresse" [formControl]="mailInput" required>
-                    <mat-error>{{ getErrorMessage() }}</mat-error>
-                </mat-form-field>
-                <div fxFlex.gt-xs="20%">
-                    <button mat-flat-button type="submit" [disabled]="!emailForm.valid" class="os-button full-width">
-                        <span translate>Submit</span>
-                    </button>
-                </div>
+    <!-- News -->
+    <div class="section container" id="anchor-news">
+        <h1 class="d-inline-block" translate>News</h1>
+        <a class="float-right inline" routerLink="/news">
+            <span translate>Show all news</span>
+        </a>
+        <div class="flex evenly-spaced wrap-mobile news-links" appWrappable>
+            <div>
+                <div><i>{{ "2019-09-13" | date:'shortDate':'':translate.currentLang }}:</i><br>
+                    <b>OpenSlides 3.0 erschienen</b></div>
             </div>
-            <p *ngIf="success" translate>You successfully registered for our newsletter!</p>
-        </form>
-    </div>
+            <div>
+                <div><i>{{ "2019-02-05" | date:'shortDate':'':translate.currentLang }}:</i> <a class="inline"
+                        routerLink="/news/dgb-bundeskongress">Erfolgreiche Digitalisierung: DGB-Bundeskongress mit
+                        OpenSlides</a></div>
+            </div>
+        </div>
 
+        <!-- Newsletter -->
+        <div class="section container">
+            <h2 translate>Newsletter</h2>
+            <p>
+                {{ "You want to get announcements about new OpenSlides releases? Sign up now for our newsletter (sorry, only in German):" | translate }}
+            </p>
+            <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+                <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="20px" class="valign-wrapper">
+                    <mat-form-field fxFlex.gt-xs="80%" fxFlexFill>
+                        <input matInput type="email" placeholder="E-Mail-Adresse" [formControl]="mailInput" required>
+                        <mat-error>{{ getErrorMessage() }}</mat-error>
+                    </mat-form-field>
+                    <div fxFlex.gt-xs="20%">
+                        <button mat-flat-button type="submit" [disabled]="!emailForm.valid" class="os-button full-width">
+                            <span translate>Submit</span>
+                        </button>
+                    </div>
+                </div>
+                <p *ngIf="success" translate>You successfully registered for our newsletter!</p>
+            </form>
+        </div>
+    </div>
 </div>
