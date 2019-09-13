@@ -6,8 +6,9 @@
         <div class="price-col single">
             <div class="price-col-header">
                 <h2>Single</h2>
-                <p translate>
-                    only for administrative purposes<br>no participant access
+                <p>
+                    {{ "only for administrative purposes" | translate }}<br>
+                    {{ "no participant access" | translate }}
                 </p>
             </div>
             <div class="price-col-body">
@@ -31,8 +32,8 @@
         <div class="price-col basic">
             <div class="price-col-header ">
                 <h2>Basic</h2>
-                <p translate>
-                    for events with <b>low</b> digital usage
+                <p>
+                    {{ "for events with low digital usage" | translate }}
                 </p>
             </div>
             <div class="price-col-body">
@@ -57,8 +58,8 @@
         <div class="price-col enterprise">
             <div class="price-col-header">
                 <h2>Enterprise</h2>
-                <p translate>
-                    for events with <b>high</b> digital usage
+                <p>
+                    {{ "for events with high digital usage" | translate }}
                 </p>
             </div>
             <div class="price-col-body">
@@ -89,7 +90,7 @@
         <div>
             <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>frequent updates</span></mat-list-item>
             <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>Email dispatch of invitations possible</span></mat-list-item>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> individual support by expenditure (125 € / hour, quarter-hourly billing)</mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>individual support by expenditure (125 € / hour, quarter-hourly billing)</span></mat-list-item>
         </div>
         <div>
             <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure connection: HTTPS with Let's Encrypt certificates</span></mat-list-item>
@@ -99,7 +100,7 @@
     </mat-list>
     <div class="mt-1">
         <span translate>You want to install OpenSlides on your own server?</span>
-        <span>&nbsp;<a class="inline" routerLink="/" fragment="anchor-getting-started" translate>Lern more ...</a></span>
+        <span>&nbsp;<a class="inline" routerLink="/" fragment="anchor-getting-started" translate>Learn more ...</a></span>
     </div>
     <div class="mt-1" translate>10% discount when paying 12 months in advance.</div>
     <div class="mt-2"><i translate>All prices are VAT exclusive.</i></div>
