@@ -29,15 +29,13 @@ export function LanguageUrlMatcher(url: UrlSegment[]): { consumed: UrlSegment[] 
 export class LanguageService implements CanActivate {
     public constructor(
         protected translate: TranslateService,
-        private dateAdapter: DateAdapter<any>,
         private router: Router
     ) {
         this.translate.addLangs(languages.map(e => e.code));
         this.translate.setDefaultLang('en'); // english is default language
         router.events.subscribe(() => {
             const lang = this.getCurrentLanguage();
-            this.translate.use(lang);
-            this.dateAdapter.setLocale(lang); // not working. TODO: Fix this and remove in app.component.ts
+            this.translate.use(lang).subscribe();
         });
     }
 

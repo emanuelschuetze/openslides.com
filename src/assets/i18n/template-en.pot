@@ -13,7 +13,7 @@ msgstr ""
 msgid ""
 "Accelerate your processes via consistently management with only one "
 "software. OpenSlides consolidates the procedure – starting with the "
-"preparations of motions and elections up to the final protocol."
+"preparations of motions and elections up to the final protocol. "
 msgstr ""
 
 msgid ""
@@ -112,7 +112,7 @@ msgstr ""
 msgid "Expected participants"
 msgstr ""
 
-msgid "Faster results"
+msgid "Fast results"
 msgstr ""
 
 msgid "Features"
@@ -127,6 +127,9 @@ msgstr ""
 msgid "General inquiries"
 msgstr ""
 
+msgid "Get"
+msgstr ""
+
 msgid "Get in touch with us"
 msgstr ""
 
@@ -137,9 +140,6 @@ msgid "Hosting"
 msgstr ""
 
 msgid "In the media"
-msgstr ""
-
-msgid "Individual services"
 msgstr ""
 
 msgid "Install by yourself"
@@ -157,13 +157,13 @@ msgstr ""
 msgid "Learn more"
 msgstr ""
 
+msgid "Learn more ..."
+msgstr ""
+
 msgid "Legal notice"
 msgstr ""
 
-msgid "Lern more ..."
-msgstr ""
-
-msgid "Lesser paper"
+msgid "Less paper"
 msgstr ""
 
 msgid ""
@@ -221,10 +221,11 @@ msgid ""
 msgstr ""
 
 msgid ""
-"OpenSlides is the all-in-one solution for the digital organisation of your "
-"assemblies and conferences. Manage and project agenda, motions, elections, "
-"documents, lists of speakers and participants with our web-based assembly "
-"system – pure, modern and always up-to-date."
+"OpenSlides is the all-in-one solution for running your plenary meetings and "
+"conferences. Show the current presentation on the main screen, while you "
+"show the agenda, motions, list of speakers on others. Working on elections "
+"and documents in parallel with all participants. Web-based and always "
+"up-to-date."
 msgstr ""
 
 msgid "OpenSlides package"
@@ -251,7 +252,7 @@ msgstr ""
 msgid "Organisations, assosciations and more"
 msgstr ""
 
-msgid "Organise your digital event with OpenSlides"
+msgid "Organize your event digitally"
 msgstr ""
 
 msgid "Parties"
@@ -292,19 +293,19 @@ msgstr ""
 msgid "Send us the form below and we will process your inquiry."
 msgstr ""
 
+msgid "Services"
+msgstr ""
+
 msgid "Show all news"
 msgstr ""
 
-msgid "Simpler interaction"
+msgid "Simple interaction"
 msgstr ""
 
 msgid "Source code"
 msgstr ""
 
 msgid "Standard domain"
-msgstr ""
-
-msgid "Start"
 msgstr ""
 
 msgid "Street and number"
@@ -358,7 +359,7 @@ msgstr ""
 
 msgid ""
 "You want to get announcements about new OpenSlides releases? Sign up now "
-"for our newsletter:"
+"for our newsletter (sorry, only in German):"
 msgstr ""
 
 msgid "You want to install OpenSlides on your own server?"
@@ -372,7 +373,7 @@ msgstr ""
 
 msgid ""
 "You want to use OpenSlides for your next assembly, but don't want to care "
-"about the technical details? Order a fitting hosting package now!"
+"about the technical details? Order a hosting package!"
 msgstr ""
 
 msgid "Your contact person for consulting and individual services"
@@ -384,22 +385,25 @@ msgstr ""
 msgid "custom domain possible"
 msgstr ""
 
-msgid "for events with <b>high</b> digital usage"
+msgid "for events with high digital usage"
 msgstr ""
 
-msgid "for events with <b>low</b> digital usage"
+msgid "for events with low digital usage"
 msgstr ""
 
 msgid "frequent updates"
 msgstr ""
 
+msgid "individual support by expenditure (125 € / hour, quarter-hourly billing)"
+msgstr ""
+
 msgid "max."
 msgstr ""
 
-msgid "month"
+msgid "no participant access"
 msgstr ""
 
-msgid "only for administrative purposes<br>no participant access"
+msgid "only for administrative purposes"
 msgstr ""
 
 msgid "per month/event"
