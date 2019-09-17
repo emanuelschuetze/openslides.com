@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { TranslateService } from '@ngx-translate/core';
 
 export interface ReferenceObject {
@@ -15,7 +16,7 @@ export interface CategoryObject {
 @Injectable({
     providedIn: 'root'
 })
-export class ReferenceService {   
+export class ReferenceService {
     public references: CategoryObject[] = [
         {
             name: this.translate.instant('Unions'),
@@ -180,9 +181,7 @@ export class ReferenceService {
     ];
     public frontpageRefs: ReferenceObject[];
 
-    public constructor(
-        protected translate: TranslateService
-    ) {
+    public constructor(protected translate: TranslateService) {
         // get frontpage references and randomize their order
         this.frontpageRefs = this.references
             .flatMap(e => e.refs)

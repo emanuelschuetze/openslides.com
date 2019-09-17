@@ -19,7 +19,7 @@
     </h1>
     <p>{{ currentFeature.intro | translate }}</p>
     <div class="flex wrap-tablet">
-        <mat-list class="mb-1 better-list" style="width:33%">
+        <mat-list class="mb-1 features-list">
             <mat-list-item *ngFor="let detail of currentFeature.details">
                 <mat-icon matListIcon>arrow_right</mat-icon>
                 {{ detail | translate }}

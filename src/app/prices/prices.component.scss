@@ -39,21 +39,23 @@
 
     .price-col-header {
         color: #fff;
-        padding: 1.5rem 2rem;
+        padding: 1.5rem 2rem 5px;
         text-align: center;
-        height: 150px;
         box-sizing: border-box;
 
         h2 {
-            margin-top: 0;
-            margin-bottom: 1rem;
+            margin: 0;
             font-weight: bold;
             font-size: 2em;
         }
 
         p {
-            margin-bottom: 0;
+            margin: 0;
             font-size: 18px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
