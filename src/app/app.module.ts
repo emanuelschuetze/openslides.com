@@ -32,6 +32,7 @@ import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { FeatureComponent } from './feature/feature.component';
 import { ImpressumComponent } from './legal-notice/legal-notice.component';
+import { LocalizedDatePipe } from './localized-date.pipe';
 import { MainMenuComponent } from './main/main-menu/main-menu.component';
 import { MainComponent } from './main/main.component';
 import { NewsComponent } from './news/news.component';
@@ -66,8 +67,8 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
         AppComponent,
         WrappableDirective,
         ScrollSpyDirective,
+        LocalizedDatePipe,
         MainMenuComponent,
-
         MainComponent,
         PrivacyComponent,
         ImpressumComponent,
