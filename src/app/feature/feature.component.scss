@@ -14,13 +14,12 @@
     color: $os-active-blue;
 }
 
-.better-list.mat-list-base .mat-list-item .mat-list-item-content {
-    align-items: flex-start;
-    padding: 0 25px 7px 0;
-    font-size: 17px;
+slideshow {
+    min-width: 50%;
+}
 
-    .mat-list-icon {
-        padding: 0;
-        padding-right: 5px;
+@media (min-width: $breakpoint-lg-up) {
+    .features-list {
+        width: 33%;
     }
 }

@@ -31,39 +31,37 @@ export class OrderComponent implements OnInit {
     }
 
     private createForm(packageName: string): void {
-        this.orderForm = this.fb.group(
-            {
-                package: [packageName, [Validators.required, Validators.pattern(/^(single|basic|enterprise)$/)]],
-                domain: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9\-\.]+$/)]],
-                event_name: ['', [Validators.required, this.standard]],
-                event_location: ['', [Validators.required, this.standard]],
-                event_date: ['', [Validators.required, this.standard]],
-                expected_users: ['', [Validators.required, this.standard]],
-                contact_person: this.fb.group({
-                    organisation: ['', [Validators.required, this.standard]],
-                    name: ['', [Validators.required, this.standardNoNumber]],
-                    email: ['', [Validators.required, Validators.email]],
-                    phone: [
-                        '',
-                        [
-                            Validators.required,
-                            Validators.pattern(
-                                // tslint:disable-next-line
-                                /^(0|\+(9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1))\d{1,14}$/
-                            )
-                        ]
+        this.orderForm = this.fb.group({
+            package: [packageName, [Validators.required, Validators.pattern(/^(single|basic|enterprise)$/)]],
+            domain: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9\-\.]+$/)]],
+            event_name: ['', [Validators.required, this.standard]],
+            event_location: ['', [Validators.required, this.standard]],
+            event_date: ['', [Validators.required, this.standard]],
+            expected_users: ['', [Validators.required, this.standard]],
+            contact_person: this.fb.group({
+                organisation: ['', [Validators.required, this.standard]],
+                name: ['', [Validators.required, this.standardNoNumber]],
+                email: ['', [Validators.required, Validators.email]],
+                phone: [
+                    '',
+                    [
+                        Validators.required,
+                        Validators.pattern(
+                            // tslint:disable-next-line
+                            /^(0|\+(9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1))\d{1,14}$/
+                        )
                     ]
-                }),
-                billing_address: this.fb.group({
-                    name: ['', [Validators.required, this.standard]],
-                    street: ['', [Validators.required, this.standard]],
-                    extra: [''],
-                    zipcode: ['', [Validators.required, Validators.pattern(/^[0-9]{4,5}$/)]],
-                    city: ['', [Validators.required, this.standardNoNumber]],
-                    country: ['', [Validators.required, this.standardNoNumber]]
-                })
-            }
-        );
+                ]
+            }),
+            billing_address: this.fb.group({
+                name: ['', [Validators.required, this.standard]],
+                street: ['', [Validators.required, this.standard]],
+                extra: [''],
+                zipcode: ['', [Validators.required, Validators.pattern(/^[0-9]{4,5}$/)]],
+                city: ['', [Validators.required, this.standardNoNumber]],
+                country: ['', [Validators.required, this.standardNoNumber]]
+            })
+        });
     }
 
     public async onSubmit(): Promise<void> {
@@ -72,7 +70,7 @@ export class OrderComponent implements OnInit {
         try {
             await this.http.post<void>('/api/order', data).toPromise();
             this.router.navigate(['order', 'success']);
-        } catch(error) {
+        } catch (error) {
             switch (error.status) {
                 case 502:
                 case 504:

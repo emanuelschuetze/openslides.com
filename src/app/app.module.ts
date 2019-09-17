@@ -31,7 +31,6 @@ import { ArticlePaperlessComponent } from './news/article-paperless/article-pape
 import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { FeatureComponent } from './feature/feature.component';
-import { LanguageControllerComponent } from './language-controller/language-controller.component';
 import { ImpressumComponent } from './legal-notice/legal-notice.component';
 import { MainMenuComponent } from './main/main-menu/main-menu.component';
 import { MainComponent } from './main/main.component';
@@ -65,7 +64,6 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
 @NgModule({
     declarations: [
         AppComponent,
-        LanguageControllerComponent,
         WrappableDirective,
         ScrollSpyDirective,
         MainMenuComponent,

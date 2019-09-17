@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { DateAdapter } from '@angular/material';
-import { ActivatedRouteSnapshot, CanActivate, Router, UrlSegment } from '@angular/router';
+import { ActivatedRouteSnapshot, CanActivate, NavigationEnd, Router, UrlSegment } from '@angular/router';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -27,15 +26,14 @@ export function LanguageUrlMatcher(url: UrlSegment[]): { consumed: UrlSegment[] 
     providedIn: 'root'
 })
 export class LanguageService implements CanActivate {
-    public constructor(
-        protected translate: TranslateService,
-        private router: Router
-    ) {
+    public constructor(protected translate: TranslateService, private router: Router) {
         this.translate.addLangs(languages.map(e => e.code));
         this.translate.setDefaultLang('en'); // english is default language
-        router.events.subscribe(() => {
-            const lang = this.getCurrentLanguage();
-            this.translate.use(lang).subscribe();
+        this.router.events.subscribe(event => {
+            if (event instanceof NavigationEnd) {
+                const lang = this.getCurrentLanguage();
+                this.translate.use(lang).subscribe();
+            }
         });
     }
 

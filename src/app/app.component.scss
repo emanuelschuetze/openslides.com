@@ -4,7 +4,7 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 999;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 
     mat-toolbar {
@@ -13,24 +13,18 @@ header {
         .menu-container {
             padding: 0;
 
-            & > a {
+            .header-logo {
+                height: 40px;
+
                 @media (max-width: $breakpoint-xs-down) {
-                    width: 100%;
-                    justify-content: center;
+                    height: 37px;
                 }
             }
-        }
-    }
 
-    .header-logo {
-        height: 40px;
-    }
-
-    span.title {
-        font: bold 35px/48px Arial, Helvetica, sans-serif;
-
-        @media (min-width: $breakpoint-xs-up) {
-            margin-right: 30px;
+            .menu-button {
+                padding: 0 7px;
+                min-width: 0;
+            }
         }
     }
 }
@@ -85,15 +79,5 @@ footer.footer {
     .last-row {
         color: $os-grey;
         padding: 40px 10px;
-    }
-}
-
-@media (max-width: $breakpoint-sm-down) {
-    mat-toolbar {
-        height: auto;
-
-        .inner-menu-container {
-            margin-left: auto;
-        }
     }
 }

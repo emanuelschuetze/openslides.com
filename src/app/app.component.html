@@ -1,23 +1,20 @@
 <header>
     <mat-toolbar>
-        <div class="container menu-container flex wrap-mobile">
+        <div class="container menu-container valign-wrapper wrap-mobile">
             <a routerLink="/" class="valign-wrapper">
                 <img class="header-logo mr-0" src="assets/img/logos/openslides-logo.svg">
             </a>
             <span class="fill-remaining-space"></span>
             <app-main-menu class="flex hide-lg-down"></app-main-menu>
-            <div class="flex inner-menu-container">
-                <div class="valign-wrapper">
-                    <app-language-controller></app-language-controller>
-                </div>
-                <button class="hide-lg-up" mat-button [mat-menu-trigger-for]="menu">
+            <div class="valign-wrapper">
+                <button class="hide-lg-up menu-button" mat-button [matMenuTriggerFor]="menu">
                     <mat-icon>menu</mat-icon>
                 </button>
             </div>
         </div>
     </mat-toolbar>
 </header>
-<mat-menu x-position="before" #menu="matMenu" id="main-menu">
+<mat-menu xPosition="before" #menu="matMenu" id="main-menu">
     <app-main-menu></app-main-menu>
 </mat-menu>
 
@@ -36,35 +33,35 @@
                 </div>
                 <mat-divider></mat-divider>
                 <div fxLayout="row" fxLayout.lt-md="row wrap" fxLayoutAlign="space-between" appWrappable
-                    wrapMarginY="22px">
+                    wrapMarginY="35px">
                     <div fxFlex="27" fxFlex.lt-md="100%" class="text-left">
                         <b translate>General inquiries</b><br>
                         <a href="mailto:info@openslides.com" class="valign-wrapper">
                             <mat-icon>mail_outline</mat-icon>&nbsp;&nbsp;info@openslides.com
                         </a>
-                        <br><br>
+                        <br>
                         <b translate>Hosting</b><br>
                         <a href="mailto:hosting@openslides.com" class="valign-wrapper">
                             <mat-icon>mail_outline</mat-icon>&nbsp;&nbsp;hosting@openslides.com
                         </a>
-                        <br><br>
+                        <br>
                         <b translate>Technical support</b><br>
                         <a href="mailto:suppport@openslides.com" class="valign-wrapper">
                             <mat-icon>mail_outline</mat-icon>&nbsp;&nbsp;support@openslides.com
                         </a>
                     </div>
-                    <div fxFlex="33" fxFlex.lt-md="100%" fxFlexOffset.gt-sm="9" class="text-left">
+                    <div fxFlex="33" fxFlex.lt-md="100%" fxFlexOffset.gt-sm="9" class="text-left flex col">
                         <b translate>Your contact person for consulting and individual services</b>
-                        <br><br>
+                        <br>
                         Emanuel Schütze<br>
                         Intevation GmbH<br>
                         Neuer Graben 17 · 49074 Osnabrück<br>
                         <br>
                         <a href="mailto:emanuel.schuetze@intevation.de" fxFlex.lt-sm="100%" class="valign-wrapper">
-                            <mat-icon>mail_outline</mat-icon>&nbsp;&nbsp;emanuel.schuetze@openslides.com
+                            <mat-icon class="mr-0">mail_outline</mat-icon><span>emanuel.schuetze<wbr>@openslides.com</span>
                         </a><br>
                         <a href="callto:+49541335083746" fxFlex.lt-sm="100%" class="valign-wrapper">
-                            <mat-icon>phone</mat-icon>&nbsp;&nbsp;+49 541 335083-746
+                            <mat-icon class="mr-0">phone</mat-icon>+49 541 335083-746
                         </a>
                     </div>
                     <div fxFlex="17" fxFlexOffset.gt-sm="9">

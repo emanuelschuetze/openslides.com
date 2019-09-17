@@ -10,11 +10,11 @@
                     {{ "OpenSlides is the all-in-one solution for running your plenary meetings and conferences. Show the current presentation on the main screen, while you show the agenda, motions, list of speakers on others. Working on elections and documents in parallel with all participants. Web-based and always up-to-date." | translate }}
                 </p>
             </div>
-            <div>
+            <div appWrappable wrapMargin="20px">
                 <a href="https://demo.openslides.org/login/" target="_blank" mat-flat-button
-                    class="os-button transparent-btn blue mr-0"><span translate>Test now</span></a>
+                    class="os-button transparent-btn blue"><span translate>Test now</span></a>
                 <a routerLink="/" fragment="anchor-getting-started" mat-flat-button
-                    class="os-button transparent-btn green ml-0"><span translate>Get started</span></a>
+                    class="os-button transparent-btn green"><span translate>Get started</span></a>
             </div>
         </div>
     </div>
@@ -161,92 +161,96 @@
     <!-- Hosting / Professional Services -->
     <div class="container section big center-mobile" id="anchor-getting-started">
         <div class="flex evenly-spaced wrap-tablet" appWrappable wrapMargin="50px">
-            <div class="flex wrap-mobile hosting-container">
-                <div class="mr-0">
+            <div class="hosting-container">
+                <div class="flex wrap-mobile center-mobile" appWrappable>
                     <img class="hosting-logo" src="assets/img/host.png">
-                </div>
-                <div>
-                    <h1 class="lh-1" translate>Order hosting</h1>
-                    <p>
-                        {{ "You want to use OpenSlides for your next assembly, but don't want to care about the technical details? Order a hosting package!" | translate }}
-                    </p>
-                    <a routerLink="/pricing" mat-flat-button class="os-button filled">
-                        <mat-icon class="mr-0">shopping_cart</mat-icon>
-                        <span translate>Choose package</span>
-                    </a>
-                    <h3 class="mt-1" translate>Services</h3>
-                    <p>
-                        {{ "You need individual support at your assembly and professional consultation from the OpenSlides developers? You're missing a function or you want something changed? Arrange an initial consultation now! Our chargeable services:" | translate }}
-                    </p>
-                    <mat-list class="mb-0 no-padding">
-                        <mat-list-item>
-                            <mat-icon matListIcon>arrow_right</mat-icon>
-                            <span translate>Introduction and consulting</span>
-                        </mat-list-item>
-                        <mat-list-item>
-                            <mat-icon matListIcon>arrow_right</mat-icon>
-                            <span translate>Training</span>
-                        </mat-list-item>
-                        <mat-list-item>
-                            <mat-icon matListIcon>arrow_right</mat-icon>
-                            <span translate>On-site assistance</span>
-                        </mat-list-item>
-                        <mat-list-item>
-                            <mat-icon matListIcon>arrow_right</mat-icon>
-                            <span translate>Technical support</span>
-                        </mat-list-item>
-                        <mat-list-item>
-                            <mat-icon matListIcon>arrow_right</mat-icon>
-                            <span translate>On-call service</span>
-                        </mat-list-item>
-                        <mat-list-item>
-                            <mat-icon matListIcon>arrow_right</mat-icon>
-                            <span translate>Further development and individual modifications</span>
-                        </mat-list-item>
-                    </mat-list>
-                    <a routerLink="/" fragment="anchor-contact" mat-flat-button class="os-button filled mt-1">
-                        <mat-icon class="mr-0">person</mat-icon>
-                        <span translate>Contact us</span>
-                    </a>
+                    <div>
+                        <h1 class="lh-1" translate>Order hosting</h1>
+                        <p>
+                            {{ "You want to use OpenSlides for your next assembly, but don't want to care about the technical details? Order a hosting package!" | translate }}
+                        </p>
+                        <a routerLink="/pricing" mat-flat-button class="os-button filled">
+                            <mat-icon class="mr-0">shopping_cart</mat-icon>
+                            <span translate>Choose package</span>
+                        </a>
+                        <h3 class="mt-1" translate>Services</h3>
+                        <p>
+                            {{ "You need individual support at your assembly and professional consultation from the OpenSlides developers? You're missing a function or you want something changed? Arrange an initial consultation now! Our chargeable services:" | translate }}
+                        </p>
+                        <mat-list class="mb-0 no-padding">
+                            <mat-list-item>
+                                <mat-icon matListIcon>arrow_right</mat-icon>
+                                <span translate>Introduction and consulting</span>
+                            </mat-list-item>
+                            <mat-list-item>
+                                <mat-icon matListIcon>arrow_right</mat-icon>
+                                <span translate>Training</span>
+                            </mat-list-item>
+                            <mat-list-item>
+                                <mat-icon matListIcon>arrow_right</mat-icon>
+                                <span translate>On-site assistance</span>
+                            </mat-list-item>
+                            <mat-list-item>
+                                <mat-icon matListIcon>arrow_right</mat-icon>
+                                <span translate>Technical support</span>
+                            </mat-list-item>
+                            <mat-list-item>
+                                <mat-icon matListIcon>arrow_right</mat-icon>
+                                <span translate>On-call service</span>
+                            </mat-list-item>
+                            <mat-list-item>
+                                <mat-icon matListIcon>arrow_right</mat-icon>
+                                <span translate>Further development and individual modifications</span>
+                            </mat-list-item>
+                        </mat-list>
+                        <a routerLink="/" fragment="anchor-contact" mat-flat-button class="os-button filled mt-1">
+                            <mat-icon class="mr-0">person</mat-icon>
+                            <span translate>Contact us</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="flex wrap-mobile open-source-container">
-                <div class="mr-0">
-                    <img class="hosting-logo" src="assets/img/self_host.png">
-                </div>
-                <div>
-                    <h1 class="lh-1" translate>Install by yourself</h1>
-                    <p>
-                        <span translate>You want to install OpenSlides on your own server? We offer our software as PyPI package and as source code. Please note that we can offer technical support for our hosting solutions only.</span>
-                        <br>
-                        <a href="https://github.com/OpenSlides/OpenSlides/blob/master/README.rst#installation"
-                            class="inline" target="_blank">&raquo;&#32; <span translate>Installation guide</span></a>
-                    </p>
-                    <a href="https://pypi.org/project/openslides/" target="_blank" mat-flat-button
-                        class="os-button filled light-grey">
-                        <mat-icon class="mr-0">all_inbox</mat-icon>
-                        <span>PyPI</span>
-                    </a>
-                    <a href="https://files.openslides.org/releases/3.0/openslides-3.0.tar.gz" target="_blank"
-                        mat-flat-button class="os-button filled light-grey ml-0">
-                        <mat-icon class="mr-0">get_app</mat-icon>
-                        <span translate>Source code</span>
-                    </a>
+            <div class="open-source-container">
+                <div class="flex wrap-mobile center-mobile" appWrappable>
+                        <img class="hosting-logo" src="assets/img/self_host.png">
+                    <div>
+                        <h1 class="lh-1" translate>Install by yourself</h1>
+                        <p>
+                            <span translate>You want to install OpenSlides on your own server? We offer our software as PyPI package and as source code. Please note that we can offer technical support for our hosting solutions only.</span>
+                            <br>
+                            <a href="https://github.com/OpenSlides/OpenSlides/blob/master/README.rst#installation"
+                                class="inline" target="_blank">&raquo;&#32; <span translate>Installation guide</span></a>
+                        </p>
+                        <div appWrappable>
+                            <a href="https://pypi.org/project/openslides/" target="_blank" mat-flat-button
+                            class="os-button filled light-grey">
+                            <mat-icon class="mr-0">all_inbox</mat-icon>
+                            <span>PyPI</span>
+                        </a>
+                        <a href="https://files.openslides.org/releases/3.0/openslides-3.0.tar.gz" target="_blank"
+                            mat-flat-button class="os-button filled light-grey">
+                            <mat-icon class="mr-0">get_app</mat-icon>
+                            <span translate>Source code</span>
+                        </a>
+                        </div>
 
-                    <h3 class="mt-2" translate>OpenSlides is Open Source</h3>
-                    <p>
-                        {{ "We pledged ourselves to the principles of a Open Source, liberal and free of charge exchange of our software and even represent this in our name. OpenSlides is usable under the MIT license. Help us to further improve the code." | translate }}
-                    </p>
-                    <a href="https://github.com/OpenSlides/OpenSlides" mat-flat-button
-                        class="os-button filled light-grey">
-                        <img class="inline-logo" src="assets/img/logos/github.png">
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://www.transifex.com/openslides/openslides/" mat-flat-button
-                        class="os-button filled light-grey ml-0">
-                        <mat-icon class="mr-0">language</mat-icon>
-                        <span>Transifex</span>
-                    </a>
+                        <h3 class="mt-2" translate>OpenSlides is Open Source</h3>
+                        <p>
+                            {{ "We pledged ourselves to the principles of a Open Source, liberal and free of charge exchange of our software and even represent this in our name. OpenSlides is usable under the MIT license. Help us to further improve the code." | translate }}
+                        </p>
+                        <div appWrappable>
+                        <a href="https://github.com/OpenSlides/OpenSlides" mat-flat-button
+                            class="os-button filled light-grey">
+                            <img class="inline-logo" src="assets/img/logos/github.png">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.transifex.com/openslides/openslides/" mat-flat-button
+                            class="os-button filled light-grey ml-0">
+                            <mat-icon class="mr-0">language</mat-icon>
+                            <span>Transifex</span>
+                        </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

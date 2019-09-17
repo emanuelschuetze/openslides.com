@@ -22,3 +22,14 @@
     [ngClass]="currentSection == 'anchor-contact' ? 'active' : ''">
     <span translate>Contact</span>
 </a>
+<a mat-menu-item [matMenuTriggerFor]="languageMenu" class="valign-wrapper">
+    <img class="flag" [src]="'assets/img/flags/' + languageService.getCurrentLanguage() + '.png'" [alt]="'flag-' + languageService.getCurrentLanguage()">
+</a>
+
+<mat-menu xPosition="before" #languageMenu="matMenu" id="language-menu">
+    <a *ngFor="let language of languageService.getLanguages()" mat-menu-item (click)="languageService.setCurrentLanguage(language.code)" class="valign-wrapper">
+        <img class="flag" [src]="'assets/img/flags/' + language.code + '.png'" [alt]="'flag-' + language.code">
+        <span>{{ language.name }}</span>
+        <mat-icon class="no-margin pull-right" *ngIf="language.code == languageService.getCurrentLanguage()">check</mat-icon>
+    </a>
+</mat-menu>
