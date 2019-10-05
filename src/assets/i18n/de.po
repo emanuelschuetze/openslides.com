@@ -1,10 +1,11 @@
 # Translators:
 # Katharina <karmitt2@web.de>, 2019
 # Emanuel Schütze <emanuel.schuetze@intevation.de>, 2019
+# Joshua Sangmeister <joshua.sangmeister@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
-"Last-Translator: Emanuel Schütze <emanuel.schuetze@intevation.de>, 2019\n"
+"Last-Translator: Joshua Sangmeister <joshua.sangmeister@gmail.com>, 2019\n"
 "Language-Team: German (https://www.transifex.com/openslides/teams/14270/de/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -41,6 +42,16 @@ msgstr "Tagesordnung"
 msgid "All prices are VAT exclusive."
 msgstr "Alle Preisangaben gelten zzgl. der gesetzlich gültigen Umsatzsteuer."
 
+msgid "Allow motion comment fields"
+msgstr "Kommentarfelder für Anträge erlauben"
+
+msgid ""
+"Always live: Show the aprticipants currently discussed contents on the "
+"projector canvasas."
+msgstr ""
+"Live dabei: Zeigen Sie den Teilnehmenden gerade diskutierte Inhalte auf den "
+"Projektionsflächen."
+
 msgid "Articles and publications"
 msgstr "Artikel und Publikationen"
 
@@ -52,8 +63,22 @@ msgstr ""
 "und Veröffentlichung aller relevanten Versammlungsinhalte auf Leinwand, "
 "Notebook oder Smartphone."
 
+msgid "Automatic numbering of agenda points"
+msgstr "Automatische Nummerierung von Tagesordnungspunkten"
+
+msgid "Automatically number motions in categories and subcategories"
+msgstr "Anträge automatisch nummerieren in Sachgebieten und Untersachgebieten"
+
+msgid "Be curious: Discover many more functions of OpenSlides."
+msgstr ""
+"Seien Sie neugierig: Entdecken Sie noch viele weitere Funktionen von "
+"OpenSlides."
+
 msgid "Billing address"
 msgstr "Rechnungsadresse"
+
+msgid "CSV import and export for participants"
+msgstr "CSV-Import und -Export für Teilnehmende"
 
 msgid ""
 "Capture motions with applicant and text. Assign categories and motion "
@@ -85,6 +110,9 @@ msgstr ""
 " einzelnen Punkte mit Redelisten sowie Redezeiten und integrieren Sie für "
 "eine bessere Zeitplanung auch inoffizielle Einträge wie Pausen."
 
+msgid "Configurable themes and creation of custom themes on request"
+msgstr "Konfigurierbare Themes sowie Erstellung eigener Themes auf Anfrage"
+
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -94,8 +122,16 @@ msgstr "Ansprechpartner"
 msgid "Contact us"
 msgstr "Kontaktieren Sie uns"
 
+msgid "Countdowns to limit speaking time"
+msgstr "Countdowns zur Redezeitbeschränkung"
+
 msgid "Country"
 msgstr "Land"
+
+msgid "Create amendments and change recommendations on basis of line numbers"
+msgstr ""
+"Änderungsanträge und Änderungsempfehlungen auf Basis von Zeilennummern "
+"erstellen"
 
 msgid ""
 "Create the right conditions for open communication without losing the focus."
@@ -109,8 +145,17 @@ msgstr ""
 "reagieren Sie auf Antragsänderungen in Echtzeit und geben Sie Ihren "
 "Delegierten kontrollierten Zugriff auf das System."
 
+msgid "Customizable motion status messages and work flows"
+msgstr "Anpassbare Antrag-Statusmeldungen und -Arbeitsabläufe"
+
+msgid "Define for each motion how many supporters are needed"
+msgstr "Erforderliche Unterstützern pro Antrag definieren"
+
 msgid "Development and editing:"
 msgstr "Entwicklung und Redaktion:"
+
+msgid "Directly witness live changes"
+msgstr "Live-Änderungen direkt miterleben"
 
 msgid "E-Mail"
 msgstr "E-Mail"
@@ -118,11 +163,17 @@ msgstr "E-Mail"
 msgid "Earn a maximum of flexibility and transparency"
 msgstr "Maximale Flexibilität und Transparenz"
 
+msgid "Election results on different bases for 100%"
+msgstr "Wahlergebnisse auf Grundlage verschiedener 100%-Basen"
+
 msgid "Elections"
 msgstr "Wahlen"
 
 msgid "Email dispatch of invitations possible"
 msgstr "E-Mail-Versand von Einladungs-E-Mails möglich"
+
+msgid "Enter election results and project them with a diagram"
+msgstr "Wahlergebnisse eingeben und mit Diagramm projizieren"
 
 msgid "Error:"
 msgstr "Fehler:"
@@ -142,11 +193,31 @@ msgstr "Veranstaltungsname"
 msgid "Expected participants"
 msgstr "Erwartete Teilnehmeranzahl"
 
+msgid "Export elections (with all results) as PDF"
+msgstr "Wahlen (mit allen Ergebnissen) als PDF exportieren"
+
+msgid "Export motions as PDF, CSV or XLSX"
+msgstr "Anträge als PDF, CSV und XLSX exportieren"
+
+msgid "Export the agenda as PDF"
+msgstr "Tagesordnung als PDF exportieren"
+
+msgid ""
+"Extensive file management system with access permissions per file and folder"
+msgstr ""
+"Umfangreiche Dateiverwaltung mit Zugriffsberechtigungen pro Datei und Ordner"
+
+msgid "Extensive sorting and filtering of all lists possible"
+msgstr "Umfangreiche Sortier- und Filtermöglichkeiten aller Listen"
+
 msgid "Fast results"
 msgstr "Schnelle Ergebnisse"
 
 msgid "Features"
 msgstr "Funktionen"
+
+msgid "Flexible adding of agenda points for every kind of content"
+msgstr "Flexibles Hinzufügen von Tagesordnungspunkten für jegliche Inhalte"
 
 msgid "For all hosting packages we offer the following services:"
 msgstr "Für alle Hosting-Pakete gelten folgende Leistungen:"
@@ -166,11 +237,26 @@ msgstr "Treten Sie mit uns in Kontakt"
 msgid "Get started"
 msgstr "Hosting starten"
 
+msgid "Global full text search"
+msgstr "Globale Volltextsuche"
+
+msgid "Global history on snapshot basis"
+msgstr "Globale Chronik auf Basis von Snapshots"
+
 msgid "Hosting"
 msgstr "Hosting"
 
 msgid "In the media"
 msgstr "In den Medien"
+
+msgid "Individual projector design with your own logo and colors"
+msgstr "Individuelle Projektorgestaltung mit eigenem Logo und Farben"
+
+msgid "Individual visibilities for each agenda point"
+msgstr "Individuelle Sichtbarkeiten für jeden Tagesordnungspunkt"
+
+msgid "Inline HTML editor to format the motion text and reasoning"
+msgstr "HTML-Inline-Editor zum Formatieren von Antragstext und -begründung"
 
 msgid "Install by yourself"
 msgstr "Selbst installieren"
@@ -178,11 +264,22 @@ msgstr "Selbst installieren"
 msgid "Installation guide"
 msgstr "Installationsanleitung"
 
+msgid "Instant update on changes"
+msgstr "Sofortige Aktualisierung bei Änderungen"
+
+msgid "Integrate inofficial agenda points (e.g. breaks) into the agenda"
+msgstr ""
+"Inoffizielle Tagesordnungspunkte (z. B. Pausen) in die Tagesordnung "
+"integrieren"
+
 msgid "Introduction and consulting"
 msgstr "Programmvorstellung und Beratung"
 
 msgid "Invoice recipient"
 msgstr "Rechnungsempfänger"
+
+msgid "Keep an eye on the projections with the history"
+msgstr "Projektionshistorie durch einen Verlauf im Überblick behalten"
 
 msgid "Learn more"
 msgstr "Mehr erfahren"
@@ -196,6 +293,18 @@ msgstr "Impressum"
 msgid "Less paper"
 msgstr "Papierlos"
 
+msgid "Lists of speakers for every agenda point"
+msgstr "Redelisten für jeden Tagesordnungspunkt"
+
+msgid "Log voting results"
+msgstr "Abstimmungsergebnisse erfassen"
+
+msgid "Manage motions with motion blocks and tags"
+msgstr "Anträge in Antragsblöcken und Schlagwörter verwalten"
+
+msgid "Manage participants, groups and permissions"
+msgstr "Teilnehmende, Gruppen und Berechtigungen verwalten"
+
 msgid ""
 "Managing of delegates and their attendance as well as the elaborate "
 "permission management are uncomplicated and intuitive. Every area of "
@@ -204,6 +313,9 @@ msgstr ""
 "Die Verwaltung der Delegierten und ihrer Anwesenheit sowie das ausgefeilte "
 "Rechtemanagement sind unkompliziert und intuitiv. Jeder Bereich von "
 "OpenSlides kann für einzelne Nutzergruppen freigeschalten werden."
+
+msgid "Mark and hide closed agenda points"
+msgstr "Abgeschlossene Tagesordnungspunkte markieren und verstecken"
 
 msgid "More features"
 msgstr "Mehr Funktionen"
@@ -216,6 +328,16 @@ msgstr "Anträge"
 
 msgid "Multifunctional and responsive"
 msgstr "Vielseitig und responsiv"
+
+msgid ""
+"Multilingual (English, German, French, Czech, Portuguese, Spanish and "
+"Russian)"
+msgstr ""
+"Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, "
+"Portugiesisch, Spanisch und Russisch)"
+
+msgid "Multiple election gears"
+msgstr "Mehrere Wahlgänge"
 
 msgid "Name"
 msgstr "Name"
@@ -287,6 +409,9 @@ msgstr ""
 "Einsatz. Hier eine Auswahl an Referenzen. Wir würden uns freuen, wenn wir "
 "auch Ihre Organisation hier nennen dürfen."
 
+msgid "Order contents in a queue"
+msgstr "Anordnen von Inhalten in einer Warteschlange"
+
 msgid "Order hosting"
 msgstr "Hosting bestellen"
 
@@ -302,11 +427,21 @@ msgstr "Verbände, Vereine und mehr"
 msgid "Organize your event digitally"
 msgstr "Managen Sie Veranstaltungen digital"
 
+msgid "Other functions"
+msgstr "Weitere Funktionen"
+
 msgid "Parties"
 msgstr "Parteien"
 
 msgid "Phone"
 msgstr "Telefon"
+
+msgid ""
+"Platform independent web application based on Python 3 and Angular 8 in the "
+"modern Material Design"
+msgstr ""
+"Plattformunabhängige Webanwendung basierend auf Python 3 und Angular 8 im "
+"modernen Material Design"
 
 msgid "Preferred domain"
 msgstr "Wunschdomain"
@@ -317,8 +452,21 @@ msgstr "Pressemitteilungen"
 msgid "Pricing"
 msgstr "Preise"
 
+msgid "Print personalized ballots for secret elections"
+msgstr "Personalisierte Wahlscheine für geheime Wahlen drucken"
+
 msgid "Privacy policy"
 msgstr "Datenschutzerklärung"
+
+msgid ""
+"Progressive WebApp with client-side caching and lazy loading for fast "
+"loading times"
+msgstr ""
+"Progressive WebApp mit clientseitigem Caching und Lazy Loading für schnelle "
+"Ladezeiten"
+
+msgid "Projection of PDF, image and video files"
+msgstr "Projektion von PDF-, Bild- und Videodateien"
 
 msgid "Projectors"
 msgstr "Projektoren"
@@ -333,6 +481,9 @@ msgstr ""
 "und projizieren Sie die ausgezählten Stimmen – für jeden Teilnehmenden "
 "nachzulesen in OpenSlides."
 
+msgid "Propose candidates off the participants list"
+msgstr "Kandidaten aus der Teilnehmenden-Liste vorschlagen"
+
 msgid "References"
 msgstr "Referenzen"
 
@@ -342,6 +493,14 @@ msgid ""
 msgstr ""
 "Verantwortlich für den Inhalt dieser Seiten in Vertretung für die "
 "OpenSlides-Initiative:"
+
+msgid "Responsive design"
+msgstr "Responsive Design"
+
+msgid "Save paper: Log and manage motions and voting results digitally."
+msgstr ""
+"Sparen Sie Papier: Erfassen und verwalten Sie Anträge und "
+"Abstimmungsergebnisse digital."
 
 msgid "Send us the form below and we will process your inquiry."
 msgstr ""
@@ -354,14 +513,36 @@ msgstr "Servicedienstleistungen"
 msgid "Show all news"
 msgstr "Alle News anzeigen"
 
+msgid "Show/hide motions in the agenda"
+msgstr "Anzeigen/Verstecken von Anträgen in der Tagesordnung"
+
 msgid "Simple interaction"
 msgstr "Einfache Interaktion"
+
+msgid "Sort motions in a calling list"
+msgstr "Sortierung von Anträgen in einer Aufrufliste"
+
+msgid "Sort the agenda via drag&drop"
+msgstr "Tagesordnung per Drag&Drop sortieren"
 
 msgid "Source code"
 msgstr "Quellcode"
 
 msgid "Standard domain"
 msgstr "Standarddomain"
+
+msgid ""
+"Stay flexible: Complement, amend or move automatically numbered agenda "
+"points in the running system."
+msgstr ""
+"Bleiben Sie flexibel: Ergänzen, ändern oder verschieben Sie "
+"Tagesordnungspunkte im laufenden Betrieb."
+
+msgid ""
+"Streamline the procedure: Generate ad-hoc ballots for your secret elections."
+msgstr ""
+"Beschleunigen Sie das Prozedere: Generieren Sie ad-hoc Stimmzettel für Ihre "
+"geheime Wahlen."
 
 msgid "Street and number"
 msgstr "Straße und Hausnummer"
@@ -372,6 +553,19 @@ msgstr "Absenden"
 msgid "Submit inquiry"
 msgstr "Anfrage absenden"
 
+msgid "Support of multiple projectors"
+msgstr "Unterstützung mehrerer Projektoren"
+
+msgid "Support of multiple resolutions"
+msgstr "Unterstützung verschiedener Auflösungen"
+
+msgid "Support of statute motions"
+msgstr "Unterstützung von Satzungsanträgen"
+
+msgid "Supported election modes: Yes/no/abstention or one vote per candidates"
+msgstr ""
+"Unterstützte Wahlverfahren: Ja/Nein/Enthaltung oder eine Stimme pro Kandidat"
+
 msgid "Technical support"
 msgstr "Technischer Kundensupport"
 
@@ -380,6 +574,16 @@ msgstr "Jetzt ausprobieren"
 
 msgid "Thank you for your inquiry!"
 msgstr "Vielen Dank für Ihre Anfrage!"
+
+msgid ""
+"The current list of speakers always in view (as an overlay or on a second "
+"projector)"
+msgstr ""
+"Die aktuelle Redeliste stets im Blick (als Überblendung oder auf einem 2. "
+"Projektor)"
+
+msgid "Time management: Estimate the duration of each agenda point"
+msgstr "Zeitplanung: Dauer pro Tagesordnungspunkt schätzen"
 
 msgid "Training"
 msgstr "Schulung"
