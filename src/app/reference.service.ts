@@ -35,8 +35,7 @@ export class ReferenceService {
                 {
                     name: 'ver.di Jugend',
                     event: 'ver.di-Bundesjugendkonferenz 2019',
-                    src: 'verdi-jugend-logo.png',
-                    frontpage: true
+                    src: 'verdi-jugend-logo.png'
                 },
                 {
                     name: 'Industriegewerkschaft Bauen Agrar Umwelt',
@@ -57,7 +56,8 @@ export class ReferenceService {
                 {
                     name: 'Gewerkschaft Erziehung und Wissenschaft (GEW)',
                     event: 'Landesvertreterversammlungen 2018 Thüringen, Brandenburg',
-                    src: 'gew-logo.png'
+                    src: 'gew-logo.png',
+                    frontpage: true
                 }
             ]
         },
