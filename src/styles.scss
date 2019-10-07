@@ -7,6 +7,10 @@ body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 20px;
     font-weight: 300;
+
+    &.noscroll {
+        overflow: hidden;
+    }
 }
 
 a {

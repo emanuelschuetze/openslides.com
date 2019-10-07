@@ -31,7 +31,7 @@ msgid "Allow motion comment fields"
 msgstr ""
 
 msgid ""
-"Always live: Show the aprticipants currently discussed contents on the "
+"Always live: Show the participants currently discussed contents on the "
 "projector canvasas."
 msgstr ""
 
@@ -80,7 +80,7 @@ msgid ""
 "speaking times and show inofficial items like breaks for better scheduling."
 msgstr ""
 
-msgid "Configurable themes and creation of custom themes on request"
+msgid "Configurable designs and creation of custom designs on request"
 msgstr ""
 
 msgid "Contact"
@@ -401,7 +401,7 @@ msgid ""
 "loading times"
 msgstr ""
 
-msgid "Projection of PDF, image and video files"
+msgid "Projection of PDF or image files"
 msgstr ""
 
 msgid "Projectors"

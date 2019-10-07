@@ -16,6 +16,38 @@
 
 slideshow {
     min-width: 50%;
+
+    & + .overlay {
+        display: none;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1099;
+        opacity: 0.5;
+    }
+
+    &.lightbox {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 90vw;
+        height: 50.625vw;
+        transform: translate(-50%, -50%);
+        z-index: 1100;
+        min-width: auto;
+
+        & + .overlay {
+            display: block;
+        }
+
+        @media (min-aspect-ratio: 16/9) {
+            height: 90vh;
+            width: 160vh;
+        }
+    }
 }
 
 @media (min-width: $breakpoint-lg-up) {

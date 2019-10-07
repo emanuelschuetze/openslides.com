@@ -59,10 +59,11 @@ const routes: Routes = [
     { path: '**', children: [], canActivate: [LanguageService] } // no error page, just redirect to front page
 ];
 const options: ExtraOptions = {
-    scrollPositionRestoration: 'top', // keeping scrolling positions between pages sucks
+    // enableTracing: true,
+    scrollPositionRestoration: 'enabled',
     anchorScrolling: 'enabled', // why is this not enabled by default?,
-    onSameUrlNavigation: 'reload' // so anchor links work correctly
-    // enableTracing: true
+    onSameUrlNavigation: 'reload', // so anchor links work correctly
+    scrollOffset: [0, 64] // offset to account for top bar
 };
 
 @NgModule({

@@ -18,13 +18,14 @@
         <span>{{ currentFeature.title | translate }}</span>
     </h1>
     <p>{{ currentFeature.intro | translate }}</p>
-    <div class="flex wrap-tablet">
+    <div class="flex wrap-tablet" [class.lightbox]="true">
         <mat-list class="mb-1 features-list">
             <mat-list-item *ngFor="let detail of currentFeature.details">
                 <mat-icon matListIcon>arrow_right</mat-icon>
                 {{ detail | translate }}
             </mat-list-item>
         </mat-list>
-        <slideshow class="screenshots-slideshow fill-remaining-space" [autoPlay]="false" autoPlayInterval="5000" [imageUrls]="currentFeature['images_' + translate.currentLang]" [showDots]="true" dotColor="#2699fb"></slideshow>
+        <slideshow #slideshow class="screenshots-slideshow fill-remaining-space" [class.lightbox]="lightboxMode" [autoPlay]="false" autoPlayInterval="5000" [imageUrls]="currentImages" [showDots]="true" dotColor="#2699fb"></slideshow>
+        <div class="overlay" (click)="toggleLightbox()" (window:keydown)="onKeyDown($event)"></div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener, OnInit } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 import { ScrollSpyService } from './scroll-spy.service';
@@ -7,6 +7,9 @@ import { ScrollSpyService } from './scroll-spy.service';
     selector: '[appScrollSpy]'
 })
 export class ScrollSpyDirective implements OnInit {
+    // will be given if scroll position is lower than element
+    @Input() public footer: string;
+
     private currentSection = null;
     private STICKY_HEADER_HEIGHT = 64;
     private MIN_VISIBLE_PIXELS = 100;
@@ -41,6 +44,14 @@ export class ScrollSpyDirective implements OnInit {
                 max = visiblePerc;
                 maxID = element.id;
             }
+        }
+        if (
+            !maxID &&
+            this.footer &&
+            this._el.nativeElement.offsetTop + this._el.nativeElement.scrollHeight <
+                window.scrollY + 0.75 * window.innerHeight
+        ) {
+            maxID = this.footer;
         }
         if (maxID !== this.currentSection) {
             this.currentSection = maxID;
