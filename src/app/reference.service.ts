@@ -33,6 +33,12 @@ export class ReferenceService {
                     src: 'dgb-jugend-logo.png'
                 },
                 {
+                    name: 'ver.di',
+                    event: 'ver.di-Bundeskongress 2019',
+                    src: 'verdi-logo.png',
+                    frontpage: true
+                },
+                {
                     name: 'ver.di Jugend',
                     event: 'ver.di-Bundesjugendkonferenz 2019',
                     src: 'verdi-jugend-logo.png'
@@ -46,7 +52,6 @@ export class ReferenceService {
                     name: 'Gewerkschaft der Polizei (GdP)',
                     event: 'Bundeskongress 2018, Bundeskonferenzen der Frauen/Senioren/Jugend 2018',
                     src: 'gdp-logo.png',
-                    frontpage: true
                 },
                 {
                     name: 'Gewerkschaft Nahrung Genuss Gaststätten (NGG)',
@@ -76,22 +81,47 @@ export class ReferenceService {
                     src: 'spd-logo.png',
                     frontpage: true
                 },
-                { name: 'FDP', event: 'Landesparteitag Schleswig-Holstein"', src: 'fdp-logo.png', frontpage: true },
-                { name: 'DIE LINKE.', event: 'Kreisparteitag Görlitz', src: 'linke-logo.png' },
+                {
+                    name: 'FDP',
+                    event: 'Landesparteitag Schleswig-Holstein',
+                    src: 'fdp-logo.png',
+                    frontpage: true
+                },
+                {
+                    name: 'DIE LINKE.',
+                    event: 'Kreisparteitag Görlitz',
+                    src: 'linke-logo.png'
+                },
                 {
                     name: 'Piratenpartei Deutschland / Schweiz',
                     event: 'Bundes-, Landes- und Kreisparteitage',
                     src: 'piraten-logo.png'
                 },
-                { name: 'Grüne Jugend', event: 'Bundeskongress', src: 'gruene-jugend-logo.png' },
+                { 
+                    name: 'Grüne Jugend',
+                    event: 'Bundeskongress',
+                    src: 'gruene-jugend-logo.png'
+                },
                 {
                     name: 'Jusos',
                     event: 'Bezirk Hessen Süd / Kreis Nordfriesland / Ortsgruppe Föhr',
                     src: 'jusos-logo.png'
                 },
-                { name: 'Linksjugend', event: 'Landesjugendplenum Sachsen', src: 'linksjugend-logo.png' },
-                { name: 'Piraten ohne Grenzen', event: 'Piratenversammlungen', src: 'pog-logo.png' },
-                { name: 'Junge Generation in der SPÖ Wien', event: 'Landeskonferenz', src: 'jgspoe-logo.png' }
+                {
+                    name: 'Linksjugend',
+                    event: 'Landesjugendplenum Sachsen',
+                    src: 'linksjugend-logo.png'
+                },
+                {
+                    name: 'Piraten ohne Grenzen',
+                    event: 'Piratenversammlungen',
+                    src: 'pog-logo.png'
+                },
+                { 
+                    name: 'Junge Generation in der SPÖ Wien',
+                    event: 'Landeskonferenz',
+                    src: 'jgspoe-logo.png'
+                }
             ]
         },
         {
@@ -109,10 +139,26 @@ export class ReferenceService {
                     src: 'slaek-logo.png',
                     frontpage: true
                 },
-                { name: 'Landesärztekammer Hessen', event: 'Delegiertenversammlungen', src: 'laekh-logo.png' },
-                { name: 'Ärztekammer Saarland', event: 'Vertreterversammlungen', src: 'aeksaar-logo.png' },
-                { name: 'Landesärztekammer Brandenburg', event: 'Kammerversammlungen', src: 'laekb-logo.png' },
-                { name: 'Deutscher Hebammenverband', event: 'Bundesdelegiertentagung 2018', src: 'dhv-logo.png' },
+                {
+                    name: 'Landesärztekammer Hessen',
+                    event: 'Delegiertenversammlungen',
+                    src: 'laekh-logo.png'
+                },
+                {
+                    name: 'Ärztekammer Saarland',
+                    event: 'Vertreterversammlungen',
+                    src: 'aeksaar-logo.png'
+                },
+                { 
+                    name: 'Landesärztekammer Brandenburg',
+                    event: 'Kammerversammlungen',
+                    src: 'laekb-logo.png'
+                },
+                {
+                    name: 'Deutscher Hebammenverband',
+                    event: 'Bundesdelegiertentagung 2018',
+                    src: 'dhv-logo.png'
+                },
                 {
                     name: 'Deutsche Pfadfinderschaft Sankt Georg (DPSG)',
                     event: 'Bundesversammlungen',
@@ -148,8 +194,16 @@ export class ReferenceService {
                     event: 'Studierendenparlament',
                     src: 'asta-uni-saarland-logo.png'
                 },
-                { name: 'Opennet Initiative e.V.', event: 'Jahresversammlung', src: 'opennet-logo.png' },
-                { name: 'Mensa in Deutschland e.V.', event: 'Mitgliederversammlungen', src: 'mensa-logo.png' },
+                {
+                    name: 'Opennet Initiative e.V.',
+                    event: 'Jahresversammlung',
+                    src: 'opennet-logo.png'
+                },
+                {
+                    name: 'Mensa in Deutschland e.V.',
+                    event: 'Mitgliederversammlungen',
+                    src: 'mensa-logo.png'
+                },
                 {
                     name: 'Berufsverband der Kinder- und Jugendärzte e.V.',
                     event: 'Delegiertenversammlungen',
@@ -175,7 +229,11 @@ export class ReferenceService {
                     event: 'innovate!Award-Preisverleihung (mit elektronischer Abstimmung) am 7.11.2013',
                     src: 'innovate2013-logo.png'
                 },
-                { name: 'Gemeinde Neu Wulmstorf', event: 'Gemeinderat', src: 'neu-wulmstorf-logo.png' }
+                { 
+                    name: 'Gemeinde Neu Wulmstorf',
+                    event: 'Gemeinderat',
+                    src: 'neu-wulmstorf-logo.png'
+                }
             ]
         }
     ];
