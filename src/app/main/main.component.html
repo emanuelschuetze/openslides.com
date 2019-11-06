@@ -1,4 +1,4 @@
-<div appScrollSpy>
+<div appScrollSpy footer="anchor-contact">
 
     <!-- Welcome -->
     <div class="full-width-img-wrapper flex col" style="height: 728px">
@@ -98,7 +98,9 @@
                         </a>
                     </div>
                     <div class="switch-flex-order">
-                        <img class="screenshot" src="assets/img/features/motions/motions_overview_{{ translate.currentLang }}.png">
+                        <a routerLink="/feature/motions">
+                            <img class="screenshot" src="assets/img/features/motions/motions_overview_{{ translate.currentLang }}.png">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -106,7 +108,9 @@
         <div class="container section center-mobile">
             <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
                 <div>
-                    <img class="screenshot" src="assets/img/features/elections/elections_overview_{{ translate.currentLang }}.png">
+                    <a routerLink="/feature/elections">
+                        <img class="screenshot" src="assets/img/features/elections/elections_overview_{{ translate.currentLang }}.png">
+                    </a>
                 </div>
                 <div>
                     <h1 class="lh-1" translate>Elections</h1>
@@ -132,7 +136,9 @@
                         </a>
                     </div>
                     <div class="switch-flex-order">
-                        <img class="screenshot" src="assets/img/features/projectors/projectors_overview_{{ translate.currentLang }}.png">
+                        <a routerLink="/feature/projectors">
+                            <img class="screenshot" src="assets/img/features/projectors/projectors_overview_{{ translate.currentLang }}.png">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -239,12 +245,12 @@
                             {{ "We pledged ourselves to the principles of a Open Source, liberal and free of charge exchange of our software and even represent this in our name. OpenSlides is usable under the MIT license. Help us to further improve the code." | translate }}
                         </p>
                         <div appWrappable>
-                        <a href="https://github.com/OpenSlides/OpenSlides" mat-flat-button
+                        <a href="https://github.com/OpenSlides/OpenSlides" target="_blank" mat-flat-button
                             class="os-button filled light-grey">
                             <img class="inline-logo" src="assets/img/logos/github.png">
                             <span>GitHub</span>
                         </a>
-                        <a href="https://www.transifex.com/openslides/openslides/" mat-flat-button
+                        <a href="https://www.transifex.com/openslides/openslides/" target="_blank" mat-flat-button
                             class="os-button filled light-grey ml-0">
                             <mat-icon class="mr-0">language</mat-icon>
                             <span>Transifex</span>

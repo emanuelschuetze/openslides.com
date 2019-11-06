@@ -1,6 +1,8 @@
+import { ViewportScroller } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -11,7 +13,7 @@ import { ReferenceService } from '../reference.service';
     templateUrl: './main.component.html',
     styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit {
+export class MainComponent implements OnInit, AfterViewInit {
     public images = [
         { caption: '<b>Lorem</b> ipsum', href: '/feature/agenda', url: 'assets/img/features/agenda-list_de.png' },
         { caption: 'Lorem ipsum', href: '/feature/motions', url: 'assets/img/features/agenda-list-of-speakers_de.png' },
@@ -46,13 +48,16 @@ export class MainComponent implements OnInit {
 
     public mailInput = new FormControl('', [Validators.required, Validators.email]);
     public emailForm = new FormGroup({ email: this.mailInput });
-    public error: string = null;
+    public error: string;
     public success = false;
+    private fragment: string;
 
     public constructor(
         public refService: ReferenceService,
         public http: HttpClient,
-        public translate: TranslateService
+        public translate: TranslateService,
+        private route: ActivatedRoute,
+        private scroller: ViewportScroller
     ) {}
 
     public ngOnInit(): void {
@@ -69,6 +74,20 @@ export class MainComponent implements OnInit {
             `,
             url: '#'
         }));
+        this.route.fragment.subscribe(fragment => {
+            this.fragment = fragment;
+        });
+    }
+
+    public ngAfterViewInit(): void {
+        // after every image load, jump to the current anchor
+        document.querySelectorAll('img').forEach(img =>
+            img.addEventListener('load', () => {
+                if (this.fragment) {
+                    this.scroller.scrollToAnchor(this.fragment);
+                }
+            })
+        );
     }
 
     public getErrorMessage(): string {

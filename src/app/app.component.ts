@@ -1,4 +1,3 @@
-import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { DateAdapter } from '@angular/material';
 import { Router } from '@angular/router';
@@ -22,17 +21,12 @@ declare global {
 export class AppComponent implements OnInit {
     public currentYear = new Date().getFullYear();
 
-    public constructor(
-        private scroller: ViewportScroller,
-        private dateAdapter: DateAdapter<any>,
-        public router: Router
-    ) {
+    public constructor(private dateAdapter: DateAdapter<any>, public router: Router) {
         this.overloadFlatMap();
         this.overloadShuffle();
     }
 
     public ngOnInit(): void {
-        this.scroller.setOffset([0, 64]);
         this.dateAdapter.setLocale('en');
     }
 

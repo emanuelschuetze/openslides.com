@@ -1,16 +1,22 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 
 import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
 import { TranslateService } from '@ngx-translate/core';
+import { IImage } from 'ng-simple-slideshow';
 
 interface FeatureDescription {
     title: string;
     icon: string;
     intro: string;
-    images_de: { url: string; caption?: string }[];
-    images_en?: { url: string; caption?: string }[];
+    image_names: string[];
     details: string[];
+}
+interface CurrentImagesCache {
+    images: IImage[];
+    lang: string;
+    route: string;
+    lightboxMode: boolean;
 }
 
 @Component({
@@ -20,9 +26,13 @@ interface FeatureDescription {
     encapsulation: ViewEncapsulation.None
 })
 export class FeatureComponent implements OnInit {
-    private path = 'assets/img/features/';
+    @ViewChild('slideshow', { static: false }) public slideshow: any;
+
+    private img_path = 'assets/img/features/';
     public activeRoute = '';
+    public lightboxMode = false;
     public routeOrder = ['agenda', 'motions', 'elections', 'projectors', 'miscellaneous'];
+    private _currentImagesCache: CurrentImagesCache;
 
     public featuresByRoute: { [route: string]: FeatureDescription } = {
         agenda: {
@@ -31,18 +41,7 @@ export class FeatureComponent implements OnInit {
             intro: _(
                 'Stay flexible: Complement, amend or move automatically numbered agenda points in the running system.'
             ),
-            images_de: [
-                { url: `${this.path}agenda/agenda_overview_de.png` },
-                { url: `${this.path}agenda/agenda_new-item_de.png` },
-                { url: `${this.path}agenda/agenda_los_de.png` },
-                { url: `${this.path}agenda/agenda_los-projected_de.png` }
-            ],
-            images_en: [
-                { url: `${this.path}agenda/agenda_overview_en.png` },
-                { url: `${this.path}agenda/agenda_new-item_en.png` },
-                { url: `${this.path}agenda/agenda_los_en.png` },
-                { url: `${this.path}agenda/agenda_los-projected_en.png` }
-            ],
+            image_names: ['overview', 'new-item', 'los', 'los-projected'],
             details: [
                 _('Lists of speakers for every agenda point'),
                 _('Flexible adding of agenda points for every kind of content'),
@@ -61,18 +60,7 @@ export class FeatureComponent implements OnInit {
             title: _('Motions'),
             icon: 'note',
             intro: _('Save paper: Log and manage motions and voting results digitally.'),
-            images_de: [
-                { url: `${this.path}motions/motions_overview_de.png` },
-                { url: `${this.path}motions/motions_detail_de.png` },
-                { url: `${this.path}motions/motions_projected_de.png` },
-                { url: `${this.path}motions/motions_pdf_de.png` }
-            ],
-            images_en: [
-                { url: `${this.path}motions/motions_overview_en.png` },
-                { url: `${this.path}motions/motions_detail_en.png` },
-                { url: `${this.path}motions/motions_projected_en.png` },
-                { url: `${this.path}motions/motions_pdf_en.png` }
-            ],
+            image_names: ['overview', 'detail', 'projected', 'pdf'],
             details: [
                 _('Customizable motion status messages and work flows'),
                 _('Manage motions with motion blocks and tags'),
@@ -92,18 +80,7 @@ export class FeatureComponent implements OnInit {
             title: _('Elections'),
             icon: 'pie_chart',
             intro: _('Streamline the procedure: Generate ad-hoc ballots for your secret elections.'),
-            images_de: [
-                { url: `${this.path}elections/elections_overview_de.png` },
-                { url: `${this.path}elections/elections_detail_de.png` },
-                { url: `${this.path}elections/elections_projected_de.png` },
-                { url: `${this.path}elections/elections_pdf_de.png` }
-            ],
-            images_en: [
-                { url: `${this.path}elections/elections_overview_en.png` },
-                { url: `${this.path}elections/elections_detail_en.png` },
-                { url: `${this.path}elections/elections_projected_en.png` },
-                { url: `${this.path}elections/elections_pdf_en.png` }
-            ],
+            image_names: ['overview', 'detail', 'projected', 'pdf'],
             details: [
                 _('Propose candidates off the participants list'),
                 _('Print personalized ballots for secret elections'),
@@ -117,15 +94,8 @@ export class FeatureComponent implements OnInit {
         projectors: {
             title: _('Projectors'),
             icon: 'videocam',
-            intro: _('Always live: Show the aprticipants currently discussed contents on the projector canvasas.'),
-            images_de: [
-                { url: `${this.path}projectors/projectors_overview_de.png` },
-                { url: `${this.path}projectors/projectors_detail_de.png` }
-            ],
-            images_en: [
-                { url: `${this.path}projectors/projectors_overview_en.png` },
-                { url: `${this.path}projectors/projectors_detail_en.png` }
-            ],
+            intro: _('Always live: Show the participants currently discussed contents on the projector canvasas.'),
+            image_names: ['overview', 'detail'],
             details: [
                 _('Instant update on changes'),
                 _('Support of multiple projectors'),
@@ -133,25 +103,14 @@ export class FeatureComponent implements OnInit {
                 _('Order contents in a queue'),
                 _('Keep an eye on the projections with the history'),
                 _('Support of multiple resolutions'),
-                _('Projection of PDF, image and video files')
+                _('Projection of PDF or image files')
             ]
         },
         miscellaneous: {
             title: _('Other functions'),
             icon: 'search',
             intro: _('Be curious: Discover many more functions of OpenSlides.'),
-            images_de: [
-                { url: `${this.path}miscellanious/miscellanious_participants_de.png` },
-                { url: `${this.path}miscellanious/miscellanious_files_de.png` },
-                { url: `${this.path}miscellanious/miscellanious_history_de.png` },
-                { url: `${this.path}miscellanious/miscellanious_search_de.png` }
-            ],
-            images_en: [
-                { url: `${this.path}miscellanious/miscellanious_participants_en.png` },
-                { url: `${this.path}miscellanious/miscellanious_files_en.png` },
-                { url: `${this.path}miscellanious/miscellanious_history_en.png` },
-                { url: `${this.path}miscellanious/miscellanious_search_en.png` }
-            ],
+            image_names: ['participants', 'files', 'history', 'search'],
             details: [
                 _('Directly witness live changes'),
                 _('Manage participants, groups and permissions'),
@@ -160,9 +119,9 @@ export class FeatureComponent implements OnInit {
                 _('Global history on snapshot basis'),
                 _('Global full text search'),
                 _('Extensive sorting and filtering of all lists possible'),
-                _('Configurable themes and creation of custom themes on request'),
-                _('Responsive design'),
+                _('Configurable designs and creation of custom designs on request'),
                 _('Multilingual (English, German, French, Czech, Portuguese, Spanish and Russian)'),
+                _('Responsive design'),
                 _('Platform independent web application based on Python 3 and Angular 8 in the modern Material Design'),
                 _('Progressive WebApp with client-side caching and lazy loading for fast loading times')
             ]
@@ -171,6 +130,34 @@ export class FeatureComponent implements OnInit {
 
     public get currentFeature(): FeatureDescription {
         return this.featuresByRoute[this.activeRoute];
+    }
+
+    /**
+     * Getter function for the images. We have to cache them since angular checks on object equality and if we just return the map,
+     * angular updates it on each function call, which causes annoying flickering
+     */
+    public get currentImages(): IImage[] {
+        if (
+            this._currentImagesCache &&
+            this._currentImagesCache.lang === this.translate.currentLang &&
+            this._currentImagesCache.route === this.activeRoute &&
+            this._currentImagesCache.lightboxMode === this.lightboxMode
+        ) {
+            return this._currentImagesCache.images;
+        }
+        const img_names = this.currentFeature.image_names;
+        this._currentImagesCache = {
+            // create IImage array from file names and add click action to every image
+            images: img_names.map(name => ({
+                url: `${this.img_path}${this.activeRoute}/${this.activeRoute}_${name}_${this.translate.currentLang}.png`,
+                // only set this when not in lightbox mode, so we don't close the mode by clicking on the image
+                clickAction: this.lightboxMode ? null : this.toggleLightbox.bind(this) // bind is important! else 'this' is set wrong
+            })),
+            lang: this.translate.currentLang,
+            route: this.activeRoute,
+            lightboxMode: this.lightboxMode
+        };
+        return this._currentImagesCache.images;
     }
 
     public constructor(private route: ActivatedRoute, public router: Router, public translate: TranslateService) {}
@@ -182,6 +169,23 @@ export class FeatureComponent implements OnInit {
             }
         });
         this.setActiveRoute();
+    }
+
+    public toggleLightbox(): void {
+        this.lightboxMode = !this.lightboxMode;
+        (document.body as HTMLElement).classList.toggle('noscroll');
+    }
+
+    public onKeyDown(event: KeyboardEvent): void {
+        if (this.lightboxMode) {
+            if (event.key === 'Escape') {
+                this.toggleLightbox();
+            } else if (event.key === 'ArrowLeft') {
+                this.slideshow.onSlide(-1);
+            } else if (event.key === 'ArrowRight') {
+                this.slideshow.onSlide(1);
+            }
+        }
     }
 
     private setActiveRoute(): void {
