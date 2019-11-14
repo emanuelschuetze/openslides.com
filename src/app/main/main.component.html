@@ -313,20 +313,21 @@
             <p>
                 {{ "You want to get announcements about new OpenSlides releases? Sign up now for our newsletter (sorry, only in German):" | translate }}
             </p>
-            <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
-                <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="20px" class="valign-wrapper">
-                    <mat-form-field fxFlex.gt-xs="80%" fxFlexFill>
-                        <input matInput type="email" placeholder="E-Mail-Adresse" [formControl]="mailInput" required>
-                        <mat-error>{{ getErrorMessage() }}</mat-error>
-                    </mat-form-field>
-                    <div fxFlex.gt-xs="20%">
-                        <button mat-flat-button type="submit" [disabled]="!emailForm.valid" class="os-button full-width">
-                            <span translate>Submit</span>
-                        </button>
-                    </div>
+            <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="20px" class="valign-wrapper">
+                <mat-form-field fxFlex.gt-xs="80%" fxFlexFill>
+                    <input matInput type="email" placeholder="E-Mail-Adresse" [formControl]="mailInput" required (keydown)="onKeydown($event)">
+                    <mat-error>{{ getErrorMessage() }}</mat-error>
+                </mat-form-field>
+                <div fxFlex.gt-xs="20%">
+                    <button mat-flat-button type="submit" [disabled]="!mailInput.valid" class="os-button full-width" (click)="onSubmit()">
+                        <span translate>Submit</span>
+                    </button>
                 </div>
-                <p *ngIf="success" translate>You successfully registered for our newsletter!</p>
-            </form>
+            </div>
+            <p *ngIf="success" class="valign-wrapper">
+                <mat-icon class="mr-0">check_circle</mat-icon>
+                <span translate>You successfully registered for our newsletter!</span>
+            </p>
         </div>
     </div>
 </div>

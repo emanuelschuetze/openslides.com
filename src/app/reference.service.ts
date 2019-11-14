@@ -51,7 +51,7 @@ export class ReferenceService {
                 {
                     name: 'Gewerkschaft der Polizei (GdP)',
                     event: 'Bundeskongress 2018, Bundeskonferenzen der Frauen/Senioren/Jugend 2018',
-                    src: 'gdp-logo.png',
+                    src: 'gdp-logo.png'
                 },
                 {
                     name: 'Gewerkschaft Nahrung Genuss Gaststätten (NGG)',
@@ -97,7 +97,7 @@ export class ReferenceService {
                     event: 'Bundes-, Landes- und Kreisparteitage',
                     src: 'piraten-logo.png'
                 },
-                { 
+                {
                     name: 'Grüne Jugend',
                     event: 'Bundeskongress',
                     src: 'gruene-jugend-logo.png'
@@ -117,7 +117,7 @@ export class ReferenceService {
                     event: 'Piratenversammlungen',
                     src: 'pog-logo.png'
                 },
-                { 
+                {
                     name: 'Junge Generation in der SPÖ Wien',
                     event: 'Landeskonferenz',
                     src: 'jgspoe-logo.png'
@@ -149,7 +149,7 @@ export class ReferenceService {
                     event: 'Vertreterversammlungen',
                     src: 'aeksaar-logo.png'
                 },
-                { 
+                {
                     name: 'Landesärztekammer Brandenburg',
                     event: 'Kammerversammlungen',
                     src: 'laekb-logo.png'
@@ -229,7 +229,7 @@ export class ReferenceService {
                     event: 'innovate!Award-Preisverleihung (mit elektronischer Abstimmung) am 7.11.2013',
                     src: 'innovate2013-logo.png'
                 },
-                { 
+                {
                     name: 'Gemeinde Neu Wulmstorf',
                     event: 'Gemeinderat',
                     src: 'neu-wulmstorf-logo.png'

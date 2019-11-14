@@ -1,7 +1,7 @@
 import { ViewportScroller } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 import { TranslateService } from '@ngx-translate/core';
@@ -47,7 +47,6 @@ export class MainComponent implements OnInit, AfterViewInit {
     public quotes: { caption: string; url: string }[] = [];
 
     public mailInput = new FormControl('', [Validators.required, Validators.email]);
-    public emailForm = new FormGroup({ email: this.mailInput });
     public error: string;
     public success = false;
     private fragment: string;
@@ -98,17 +97,25 @@ export class MainComponent implements OnInit, AfterViewInit {
             : this.error;
     }
 
+    public async onKeydown($event: KeyboardEvent): Promise<void> {
+        if ($event.key === 'Enter') {
+            this.onSubmit();
+        }
+    }
+
     public async onSubmit(): Promise<void> {
-        if (!this.emailForm.valid) {
+        if (!this.mailInput.valid) {
             return;
         }
+        this.mailInput.disable();
         try {
             await this.http.post<void>('/api/add_newsletter', { mail_address: this.mailInput.value }).toPromise();
             this.success = true;
-            this.mailInput.reset();
             this.error = null;
-            this.mailInput.setErrors([]);
+            this.mailInput.reset();
+            this.mailInput.enable();
         } catch (error) {
+            this.success = false;
             switch (error.status) {
                 case 502:
                 case 504:
@@ -118,6 +125,7 @@ export class MainComponent implements OnInit, AfterViewInit {
                     this.error = error.error.error || 'An unknwon error occurred.';
                     break;
             }
+            this.mailInput.enable();
             this.mailInput.setErrors([this.error]);
         }
     }
