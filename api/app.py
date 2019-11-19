@@ -186,9 +186,6 @@ def add_newsletter():
         raise ViewError("Address already exists")
     except Exception as e:
         con.rollback()
-        from pdb import set_trace
-
-        set_trace()
         raise ViewError(e.message)
     finally:
         con.close()
