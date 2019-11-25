@@ -1,5 +1,4 @@
 # Translators:
-# Katharina <karmitt2@web.de>, 2019
 # Emanuel Schütze <emanuel.schuetze@intevation.de>, 2019
 # Joshua Sangmeister <joshua.sangmeister@gmail.com>, 2019
 # 
