@@ -24,7 +24,7 @@ email_regex = r"""(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-
 order_schema = {
     "type": "object",
     "properties": {
-        "package": {"type": "string", "pattern": "^(single|basic|enterprise)$"},
+        "package": {"type": "string", "pattern": "^(meeting|conference|congress)$"},
         "domain": {"type": "string", "pattern": r"^[a-zA-Z0-9\-\.]+$"},
         "event_name": {"type": "string", "pattern": standard_pattern},
         "event_location": {"type": "string", "pattern": standard_pattern},

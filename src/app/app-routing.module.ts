@@ -51,7 +51,10 @@ const routes: Routes = [
             },
             {
                 path: 'feature',
-                children: [{ matcher: FeatureUrlMatcher, component: FeatureComponent }, { path: '**', redirectTo: '' }]
+                children: [
+                    { matcher: FeatureUrlMatcher, component: FeatureComponent },
+                    { path: '**', redirectTo: '' }
+                ]
             },
             { path: '**', redirectTo: '' }
         ]

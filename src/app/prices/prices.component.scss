@@ -6,7 +6,7 @@
     flex-direction: column;
     width: 100%;
 
-    &.single {
+    &.grey {
         .price-col-header {
             background-color: $os-grey;
         }
@@ -15,7 +15,7 @@
         }
     }
 
-    &.basic {
+    &.blue {
         .price-col-header {
             background-color: $os-blue;
         }
@@ -24,17 +24,8 @@
         }
     }
 
-    &.enterprise {
-        .price-col-header {
-            background-color: $os-turquoise;
-        }
-        .price-col-body .price-col-price {
-            color: $os-turquoise;
-        }
-    }
-
     @media (min-width: $breakpoint-md-up) {
-        width: 33%;
+        width: 30%;
     }
 
     .price-col-header {
@@ -76,19 +67,6 @@
 
         mat-divider {
             margin: 25px 0;
-        }
-
-        mat-list {
-            padding-top: 0;
-            flex-grow: 1;
-
-            mat-list-item {
-                margin: 5px 0;
-
-                mat-icon {
-                    margin-right: 5px;
-                }
-            }
         }
     }
 }

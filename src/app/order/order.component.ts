@@ -24,15 +24,15 @@ export class OrderComponent implements OnInit {
 
     public ngOnInit(): void {
         let packageName = this.route.snapshot.queryParamMap.get('package');
-        if (!['single', 'basic', 'enterprise'].includes(packageName)) {
-            packageName = 'single';
+        if (!['meeting', 'conference', 'congress'].includes(packageName)) {
+            packageName = 'meeting';
         }
         this.createForm(packageName);
     }
 
     private createForm(packageName: string): void {
         this.orderForm = this.fb.group({
-            package: [packageName, [Validators.required, Validators.pattern(/^(single|basic|enterprise)$/)]],
+            package: [packageName, [Validators.required, Validators.pattern(/^(meeting|conference|congress)$/)]],
             domain: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9\-\.]+$/)]],
             event_name: ['', [Validators.required, this.standard]],
             event_location: ['', [Validators.required, this.standard]],

@@ -103,7 +103,9 @@ export class MainComponent implements OnInit, AfterViewInit {
             return;
         }
         try {
-            await this.http.post<void>('/api/add_newsletter', { mail_address: this.mailInput.value }).toPromise();
+            await this.http
+                .post<void>('/api/add_newsletter', { mail_address: this.mailInput.value })
+                .toPromise();
             this.success = true;
             this.mailInput.reset();
             this.error = null;
