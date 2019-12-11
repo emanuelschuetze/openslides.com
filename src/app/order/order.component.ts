@@ -9,8 +9,8 @@ import { ActivatedRoute, Router } from '@angular/router';
     styleUrls: ['./order.component.scss']
 })
 export class OrderComponent implements OnInit {
-    private standard = Validators.pattern(/^[A-Za-zäöüß0-9'\.\-\s\,#]+$/);
-    private standardNoNumber = Validators.pattern(/^[A-Za-zäöüß'\.\-\s\,#]+$/);
+    private standard = Validators.pattern(/^[A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]+([\ A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]+)*$/);
+    private standardNoNumber = Validators.pattern(/^[A-Za-z\u00C0-\u00FF][A-Za-z\u00C0-\u00FF\'\-\.\,\#]+([\ A-Za-z\u00C0-\u00FF][A-Za-z\u00C0-\u00FF\'\-\.\,\#]+)*$/);
 
     public orderForm: FormGroup;
     public error = null;
@@ -37,7 +37,7 @@ export class OrderComponent implements OnInit {
             event_name: ['', [Validators.required, this.standard]],
             event_location: ['', [Validators.required, this.standard]],
             event_date: ['', [Validators.required, this.standard]],
-            expected_users: ['', [Validators.required, this.standard]],
+            expected_users: ['', [Validators.required]],
             contact_person: this.fb.group({
                 organisation: ['', [Validators.required, this.standard]],
                 name: ['', [Validators.required, this.standardNoNumber]],
