@@ -4,10 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "* plus 49 € one-off installation payment"
-msgstr ""
-
-msgid "10% discount when paying 12 months in advance."
+msgid "5% discount when paying 12 months in advance."
 msgstr ""
 
 msgid ""
@@ -21,10 +18,13 @@ msgid ""
 "get important documents, submit and read motions or check election results."
 msgstr ""
 
+msgid "Additional features:"
+msgstr ""
+
 msgid "Agenda"
 msgstr ""
 
-msgid "All prices are VAT exclusive."
+msgid "All prices plus VAT."
 msgstr ""
 
 msgid "Allow motion comment fields"
@@ -80,7 +80,19 @@ msgid ""
 "speaking times and show inofficial items like breaks for better scheduling."
 msgstr ""
 
+msgid "Conference"
+msgstr ""
+
+msgid "Conference (100 € / month)"
+msgstr ""
+
 msgid "Configurable designs and creation of custom designs on request"
+msgstr ""
+
+msgid "Congress"
+msgstr ""
+
+msgid "Congress (200 € / month)"
 msgstr ""
 
 msgid "Contact"
@@ -114,6 +126,9 @@ msgstr ""
 msgid "Define for each motion how many supporters are needed"
 msgstr ""
 
+msgid "Demo"
+msgstr ""
+
 msgid "Development and editing:"
 msgstr ""
 
@@ -130,9 +145,6 @@ msgid "Election results on different bases for 100%"
 msgstr ""
 
 msgid "Elections"
-msgstr ""
-
-msgid "Email dispatch of invitations possible"
 msgstr ""
 
 msgid "Enter election results and project them with a diagram"
@@ -187,9 +199,6 @@ msgid "Further development and individual modifications"
 msgstr ""
 
 msgid "General inquiries"
-msgstr ""
-
-msgid "Get"
 msgstr ""
 
 msgid "Get in touch with us"
@@ -273,6 +282,15 @@ msgstr ""
 msgid "Mark and hide closed agenda points"
 msgstr ""
 
+msgid "Meeting"
+msgstr ""
+
+msgid "Meeting (50 € / month)"
+msgstr ""
+
+msgid "Minimum term of 3 month."
+msgstr ""
+
 msgid "More features"
 msgstr ""
 
@@ -345,8 +363,7 @@ msgstr ""
 
 msgid ""
 "OpenSlides was already used successfully on a multitude of different "
-"events. Here is a selection of references. We would be happy to list your "
-"organisation here, too."
+"events. Here is a selection of references."
 msgstr ""
 
 msgid "Order contents in a queue"
@@ -454,7 +471,7 @@ msgstr ""
 msgid "Source code"
 msgstr ""
 
-msgid "Standard domain"
+msgid "Start"
 msgstr ""
 
 msgid ""
@@ -487,9 +504,6 @@ msgid "Supported election modes: Yes/no/abstention or one vote per candidates"
 msgstr ""
 
 msgid "Technical support"
-msgstr ""
-
-msgid "Test now"
 msgstr ""
 
 msgid "Thank you for your inquiry!"
@@ -559,34 +573,34 @@ msgstr ""
 msgid "Zipcode"
 msgstr ""
 
-msgid "custom domain possible"
+msgid "continuous updates"
 msgstr ""
 
-msgid "for events with high digital usage"
+msgid "in development, for v3.2"
 msgstr ""
 
-msgid "for events with low digital usage"
+msgid "individual support at cost (125 € / hour, half-hourly billing)"
 msgstr ""
 
-msgid "frequent updates"
-msgstr ""
-
-msgid "individual support by expenditure (125 € / hour, quarter-hourly billing)"
+msgid "integrated electronic voting for motions and elections"
 msgstr ""
 
 msgid "max."
 msgstr ""
 
-msgid "no participant access"
+msgid "participants"
 msgstr ""
 
-msgid "only for administrative purposes"
+msgid "per month"
 msgstr ""
 
 msgid "per month/event"
 msgstr ""
 
-msgid "plugin extension possible"
+msgid "plus VAT"
+msgstr ""
+
+msgid "released"
 msgstr ""
 
 msgid "secure connection: HTTPS with Let's Encrypt certificates"
@@ -600,5 +614,8 @@ msgid ""
 "its own database"
 msgstr ""
 
-msgid "user accounts"
+msgid "sending of invitation emails"
+msgstr ""
+
+msgid "use existing member accounts for login in OpenSlides"
 msgstr ""

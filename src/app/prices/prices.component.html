@@ -5,7 +5,7 @@
     <div class="flex evenly-spaced wrap-tablet mb-0" appWrappable wrapMargin="2rem">
         <div class="price-col grey">
             <div class="price-col-header">
-                <h2>Meeting</h2>
+                <h2 translate>Meeting</h2>
                 <p>
                     <span translate>max.</span> <b>&nbsp;50&nbsp;</b> <span translate>participants</span>
                 </p>
@@ -26,7 +26,7 @@
         </div>
         <div class="price-col blue">
             <div class="price-col-header ">
-                <h2>Conference</h2>
+                <h2 translate>Conference</h2>
                 <p>
                     <span translate>max.</span> <b>&nbsp;500&nbsp;</b> <span translate>participants</span>
                 </p>
@@ -47,9 +47,9 @@
         </div>
         <div class="price-col grey">
             <div class="price-col-header">
-                <h2>Congress</h2>
+                <h2 translate>Congress</h2>
                 <p>
-                    <span translate>max.</span> &nbsp;<b translate>1.000</b>&nbsp; <span translate>participants</span>
+                    <span translate>max.</span> <b>&nbsp;1.000&nbsp;</b> <span translate>participants</span>
                 </p>
             </div>
             <div class="price-col-body">
@@ -69,7 +69,7 @@
     </div>
     <p>
         <small>
-            {{ 'Plus 50 € setup fee for a maturity of less than 3 months.' | translate }}
+            {{ 'Minimum term of 3 month.' | translate }}
             {{ 'All prices plus VAT.' | translate }}
             {{ '5% discount when paying 12 months in advance.' | translate }}
         </small>
@@ -77,7 +77,7 @@
 
     <div class="mt-2 mb-2">
         <span translate>You want to install OpenSlides on your own server?</span>
-        <span>&nbsp;<a class="inline" routerLink="/" fragment="anchor-getting-started" translate>Learn more ...</a></span>
+        <span>&nbsp;<a class="inline" routerLink="/" fragment="getting-started" translate>Learn more ...</a></span>
     </div>
 
     <div class="mt-1">
@@ -85,9 +85,9 @@
     </div>
     <mat-list fxLayout="row" class="better-list wrap-mobile mt-0 mb-1">
         <div>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>frequent updates</span></mat-list-item>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>Email dispatch of invitations possible</span></mat-list-item>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>individual support by expenditure (125 € / hour, half-hourly billing)</span></mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>continuous updates</span></mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>sending of invitation emails</span></mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>individual support at cost (125 € / hour, half-hourly billing)</span></mat-list-item>
         </div>
         <div>
             <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure connection: HTTPS with Let's Encrypt certificates</span></mat-list-item>
@@ -95,5 +95,17 @@
             <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure operation: every event runs as an isolated OpenSlides instance with its own database</span></mat-list-item>
         </div>
     </mat-list>
+
+    <div class="mt-1">
+        <p><b translate>Additional features:</b></p>
+        <p>
+            <b>» Single Sign-On via SAML (50 € <span translate>per month</span>)</b> ·
+            <span translate>use existing member accounts for login in OpenSlides</span>
+        </p>
+        <p>
+            <b>» eVoting (<span translate>in development, for v3.2</span>)</b> ·
+            <span translate>integrated electronic voting for motions and elections</span>
+        </p>
+    </div>
 
 </div>

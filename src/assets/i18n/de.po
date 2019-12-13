@@ -1,10 +1,11 @@
 # Translators:
-# Emanuel Schütze <emanuel.schuetze@intevation.de>, 2019
+# Katharina <karmitt2@web.de>, 2019
 # Joshua Sangmeister <joshua.sangmeister@gmail.com>, 2019
+# Emanuel Schütze <emanuel.schuetze@intevation.de>, 2019
 # 
 msgid ""
 msgstr ""
-"Last-Translator: Joshua Sangmeister <joshua.sangmeister@gmail.com>, 2019\n"
+"Last-Translator: Emanuel Schütze <emanuel.schuetze@intevation.de>, 2019\n"
 "Language-Team: German (https://www.transifex.com/openslides/teams/14270/de/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,11 +13,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "mime-version: 1.0\n"
 
-msgid "* plus 49 € one-off installation payment"
-msgstr "* zzgl. 49 € einmalige Einrichtungsgebühr"
-
-msgid "10% discount when paying 12 months in advance."
-msgstr "10% Rabatt bei Vorauszahlung von 12 Monaten."
+msgid "5% discount when paying 12 months in advance."
+msgstr "5% Rabatt bei Vorauszahlung von 12 Monaten."
 
 msgid ""
 "Accelerate your processes via consistently management with only one "
@@ -35,11 +33,14 @@ msgstr ""
 "OpenSlides – zur Einsicht wichtiger Dokumente, zum Einreichen von Anträgen "
 "oder Abrufen von Wahlergebnissen."
 
+msgid "Additional features:"
+msgstr "Zusatzfunktionen:"
+
 msgid "Agenda"
 msgstr "Tagesordnung"
 
-msgid "All prices are VAT exclusive."
-msgstr "Alle Preisangaben gelten zzgl. der gesetzlich gültigen Umsatzsteuer."
+msgid "All prices plus VAT."
+msgstr "Alle Preise zzgl. der gesetzlich gültigen Umsatzsteuer."
 
 msgid "Allow motion comment fields"
 msgstr "Kommentarfelder für Anträge erlauben"
@@ -109,8 +110,20 @@ msgstr ""
 " einzelnen Punkte mit Redelisten sowie Redezeiten und integrieren Sie für "
 "eine bessere Zeitplanung auch inoffizielle Einträge wie Pausen."
 
+msgid "Conference"
+msgstr "Tagung"
+
+msgid "Conference (100 € / month)"
+msgstr "Tagung (100 € / Monat)"
+
 msgid "Configurable designs and creation of custom designs on request"
 msgstr "Konfigurierbares Design sowie Erstellung eigener Designs auf Anfrage"
+
+msgid "Congress"
+msgstr "Kongress"
+
+msgid "Congress (200 € / month)"
+msgstr "Kongress (200 € / Monat)"
 
 msgid "Contact"
 msgstr "Kontakt"
@@ -150,6 +163,9 @@ msgstr "Anpassbare Antrag-Statusmeldungen und -Arbeitsabläufe"
 msgid "Define for each motion how many supporters are needed"
 msgstr "Erforderliche Unterstützern pro Antrag definieren"
 
+msgid "Demo"
+msgstr "Demo"
+
 msgid "Development and editing:"
 msgstr "Entwicklung und Redaktion:"
 
@@ -167,9 +183,6 @@ msgstr "Wahlergebnisse auf Grundlage verschiedener 100%-Basen"
 
 msgid "Elections"
 msgstr "Wahlen"
-
-msgid "Email dispatch of invitations possible"
-msgstr "E-Mail-Versand von Einladungs-E-Mails möglich"
 
 msgid "Enter election results and project them with a diagram"
 msgstr "Wahlergebnisse eingeben und mit Diagramm projizieren"
@@ -226,9 +239,6 @@ msgstr "Weiterentwicklung und individuelle Anpassungen"
 
 msgid "General inquiries"
 msgstr "Allgemeine Anfragen"
-
-msgid "Get"
-msgstr "Starten"
 
 msgid "Get in touch with us"
 msgstr "Treten Sie mit uns in Kontakt"
@@ -316,6 +326,15 @@ msgstr ""
 msgid "Mark and hide closed agenda points"
 msgstr "Abgeschlossene Tagesordnungspunkte markieren und verstecken"
 
+msgid "Meeting"
+msgstr "Sitzung"
+
+msgid "Meeting (50 € / month)"
+msgstr "Sitzung (50 € / Monat)"
+
+msgid "Minimum term of 3 month."
+msgstr "Mindestlaufzeit von 3 Monaten."
+
 msgid "More features"
 msgstr "Mehr Funktionen"
 
@@ -401,12 +420,10 @@ msgstr "OpenSlides-Team"
 
 msgid ""
 "OpenSlides was already used successfully on a multitude of different events."
-" Here is a selection of references. We would be happy to list your "
-"organisation here, too."
+" Here is a selection of references."
 msgstr ""
 "OpenSlides war bereits auf zahlreichen Veranstaltungen erfolgreich im "
-"Einsatz. Hier eine Auswahl an Referenzen. Wir würden uns freuen, wenn wir "
-"auch Ihre Organisation hier nennen dürfen."
+"Einsatz. Hier eine Auswahl an Referenzen."
 
 msgid "Order contents in a queue"
 msgstr "Anordnen von Inhalten in einer Warteschlange"
@@ -527,8 +544,8 @@ msgstr "Tagesordnung per Drag&Drop sortieren"
 msgid "Source code"
 msgstr "Quellcode"
 
-msgid "Standard domain"
-msgstr "Standarddomain"
+msgid "Start"
+msgstr "Starten"
 
 msgid ""
 "Stay flexible: Complement, amend or move automatically numbered agenda "
@@ -567,9 +584,6 @@ msgstr ""
 
 msgid "Technical support"
 msgstr "Technischer Kundensupport"
-
-msgid "Test now"
-msgstr "Jetzt ausprobieren"
 
 msgid "Thank you for your inquiry!"
 msgstr "Vielen Dank für Ihre Anfrage!"
@@ -662,38 +676,37 @@ msgstr ""
 msgid "Zipcode"
 msgstr "PLZ"
 
-msgid "custom domain possible"
-msgstr "eigene Domain möglich"
+msgid "continuous updates"
+msgstr "kontinuierliche Updates"
 
-msgid "for events with high digital usage"
-msgstr "für Veranstaltungen mit starker digitaler Nutzung"
+msgid "in development, for v3.2"
+msgstr "in Entwicklung, für v3.2"
 
-msgid "for events with low digital usage"
-msgstr "für Veranstaltungen mit geringer digitaler Nutzung"
-
-msgid "frequent updates"
-msgstr "regelmäßige Updates"
-
-msgid ""
-"individual support by expenditure (125 € / hour, quarter-hourly billing)"
+msgid "individual support at cost (125 € / hour, half-hourly billing)"
 msgstr ""
-"individueller Support nach Aufwand (125 € / Stunde, viertelstundengenaue "
+"individueller Support nach Aufwand (125 € / Stunde, halbstundengenaue "
 "Abrechnung)"
+
+msgid "integrated electronic voting for motions and elections"
+msgstr "integriertes elektronisches Voting für Anträge und Wahlen"
 
 msgid "max."
 msgstr "max."
 
-msgid "no participant access"
-msgstr "ohne Teilnehmerzugriff"
+msgid "participants"
+msgstr "Teilnehmende"
 
-msgid "only for administrative purposes"
-msgstr "nur für administrative Nutzung"
+msgid "per month"
+msgstr "pro Monat"
 
 msgid "per month/event"
 msgstr "pro Monat/Veranstaltung"
 
-msgid "plugin extension possible"
-msgstr "Plugin-Erweiterung möglich"
+msgid "plus VAT"
+msgstr "zzgl. USt."
+
+msgid "released"
+msgstr "veröffentlicht"
 
 msgid "secure connection: HTTPS with Let's Encrypt certificates"
 msgstr "sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten"
@@ -708,5 +721,9 @@ msgstr ""
 "sicherer Betrieb: jede Veranstaltung läuft als abgekapselte OpenSlides-"
 "Instanz mit eigener Datenbank"
 
-msgid "user accounts"
-msgstr "Nutzerkonten"
+msgid "sending of invitation emails"
+msgstr "Versand von Einladungs-E-Mails"
+
+msgid "use existing member accounts for login in OpenSlides"
+msgstr ""
+"existierende Mitglieder-Konten für die Anmeldung in OpenSlides verwenden"

@@ -1,7 +1,7 @@
 <div class="container main-container">
     <h1 translate>References</h1>
-    <p translate>
-        OpenSlides was already used successfully on a multitude of different events. Here is a selection of references. We would be happy to list your organisation here, too.
+    <p>
+        {{ 'OpenSlides was already used successfully on a multitude of different events. Here is a selection of references.' | translate }}
     </p>
     <div *ngFor="let cat of refService.references">
         <h2>{{ cat.name | translate }}</h2>
