@@ -1,4 +1,4 @@
-<div appScrollSpy footer="anchor-contact">
+<div appScrollSpy footer="contact">
 
     <!-- Welcome -->
     <div class="full-width-img-wrapper flex col" style="height: 728px">
@@ -12,8 +12,8 @@
             </div>
             <div appWrappable wrapMargin="20px">
                 <a href="https://demo.openslides.org/login/" target="_blank" mat-flat-button
-                    class="os-button transparent-btn blue"><span translate>Test now</span></a>
-                <a routerLink="/" fragment="anchor-getting-started" mat-flat-button
+                    class="os-button transparent-btn blue"><span translate>Demo</span></a>
+                <a routerLink="/" fragment="getting-started" mat-flat-button
                     class="os-button transparent-btn green"><span translate>Get started</span></a>
             </div>
         </div>
@@ -66,7 +66,7 @@
     </div>
 
     <!-- Features -->
-    <div id="anchor-features" class="mt-3">
+    <div id="features" class="mt-3">
         <div class="container section center-mobile">
             <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
                 <div>
@@ -165,7 +165,7 @@
     </div>
 
     <!-- Hosting / Professional Services -->
-    <div class="container section big center-mobile" id="anchor-getting-started">
+    <div class="container section big center-mobile" id="getting-started">
         <div class="flex evenly-spaced wrap-tablet" appWrappable wrapMargin="50px">
             <div class="hosting-container">
                 <div class="flex wrap-mobile center-mobile" appWrappable>
@@ -209,7 +209,7 @@
                                 <span translate>Further development and individual modifications</span>
                             </mat-list-item>
                         </mat-list>
-                        <a routerLink="/" fragment="anchor-contact" mat-flat-button class="os-button filled mt-1">
+                        <a routerLink="/" fragment="contact" mat-flat-button class="os-button filled mt-1">
                             <mat-icon class="mr-0">person</mat-icon>
                             <span translate>Contact us</span>
                         </a>
@@ -233,7 +233,7 @@
                             <mat-icon class="mr-0">all_inbox</mat-icon>
                             <span>PyPI</span>
                         </a>
-                        <a href="https://files.openslides.org/releases/3.0/openslides-3.0.tar.gz" target="_blank"
+                        <a href="https://files.openslides.org/releases/3.1/openslides-3.1.tar.gz" target="_blank"
                             mat-flat-button class="os-button filled light-grey">
                             <mat-icon class="mr-0">get_app</mat-icon>
                             <span translate>Source code</span>
@@ -263,7 +263,7 @@
     </div>
 
     <!-- References -->
-    <div class="container section text-center" id="anchor-references">
+    <div class="container section text-center" id="references">
         <div fxLayout="row wrap" class="flex text-center" appWrappable wrapMarginX="15px">
             <app-reference-container *ngFor="let ref of refService.frontpageRefs" [ref]="ref"></app-reference-container>
         </div>
@@ -280,16 +280,21 @@
 
 
     <!-- News -->
-    <div class="section container" id="anchor-news">
+    <div class="section container" id="news">
         <h1 class="d-inline-block" translate>News</h1>
         <a class="float-right inline" routerLink="/news">
             <span translate>Show all news</span>
         </a>
         <div class="flex evenly-spaced wrap-mobile news-links" appWrappable>
             <div>
+                <div><i>{{ "2019-12-13" | localizedDate }}:</i>
+                    <a> 
+                        <mat-icon style="vertical-align: bottom;">announcement</mat-icon>
+                        OpenSlides 3.1 {{ 'released' | translate }}</a>
+                </div>                
                 <div><i>{{ "2019-10-11" | localizedDate }}:</i> <a class="inline"
                     href="https://twitter.com/openslides/status/1182962307154038785" target=_blank>
-                    Papierlose Antragsberatung auf dem IG Metall Gewerkschafstag 2019</a>
+                    Papierlose Antragsberatung auf dem IG Metall Gewerkschaftstag 2019</a>
                 </div>
                 <div><i>{{ "2019-09-27" | localizedDate }}:</i> <a class="inline"
                     href="https://twitter.com/openslides/status/1177661079603863553" target=_blank>

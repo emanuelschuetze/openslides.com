@@ -10,9 +10,9 @@
                 <span translate>OpenSlides package</span>
             </mat-label>
             <mat-select formControlName="package" required>
-                <mat-option value="meeting">Meeting (50 € / month)</mat-option>
-                <mat-option value="conference">Conference (100 € / month)</mat-option>
-                <mat-option value="congress">Congress (200 € / month)</mat-option>
+                <mat-option value="meeting">{{ 'Meeting (50 € / month)' | translate }}</mat-option>
+                <mat-option value="conference">{{ 'Conference (100 € / month)' | translate }}</mat-option>
+                <mat-option value="congress">{{ 'Congress (200 € / month)' | translate }}</mat-option>
             </mat-select>
         </mat-form-field><br>
         <mat-form-field fxFlex.gt-sm="75">
