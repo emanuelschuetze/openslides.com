@@ -3,86 +3,83 @@
         Choose a hosting package that fits your assembly size:
     </h2>
     <div class="flex evenly-spaced wrap-tablet mb-0" appWrappable wrapMargin="2rem">
-        <div class="price-col single">
+        <div class="price-col grey">
             <div class="price-col-header">
-                <h2>Single</h2>
+                <h2>Meeting</h2>
                 <p>
-                    {{ "only for administrative purposes" | translate }}<br>
-                    {{ "no participant access" | translate }}
+                    <span translate>max.</span> <b>&nbsp;50&nbsp;</b> <span translate>participants</span>
                 </p>
             </div>
             <div class="price-col-body">
                 <div class="price-col-price">
-                    <h1>19 €</h1>
-                    <span><span translate>per month/event</span>*</span>
+                    <h1>50 €</h1>
+                    <small translate>plus VAT</small>
+                    <p translate>per month/event</p>
                 </div>
                 <mat-divider></mat-divider>
-                <mat-list>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>max.</span> <b>&nbsp;5&nbsp;</b> <span translate>user accounts</span></mat-list-item>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span><span translate>Standard domain </span><span>*.openslides.com </span></span></mat-list-item>
-                </mat-list>
-                <mat-divider></mat-divider>
                 <div class="text-center">
-                    <a routerLink="/order" [queryParams]="{package: 'single'}" mat-flat-button class="os-button filled bordered grey">
+                    <a routerLink="/order" [queryParams]="{package: 'meeting'}" mat-flat-button class="os-button filled bordered grey">
                         <span translate>Order now</span>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="price-col basic">
+        <div class="price-col blue">
             <div class="price-col-header ">
-                <h2>Basic</h2>
+                <h2>Conference</h2>
                 <p>
-                    {{ "for events with low digital usage" | translate }}
+                    <span translate>max.</span> <b>&nbsp;500&nbsp;</b> <span translate>participants</span>
                 </p>
             </div>
             <div class="price-col-body">
                 <div class="price-col-price">
-                    <h1>49 €</h1>
-                    <span><span translate>per month/event</span>*</span>
+                    <h1>100 €</h1>
+                    <small translate>plus VAT</small>
+                    <p translate>per month/event</p>
                 </div>
                 <mat-divider></mat-divider>
-                <mat-list>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>max.</span> <b>&nbsp;50&nbsp;</b> <span translate>user accounts</span></mat-list-item>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span><span translate>Standard domain </span><span>*.openslides.com </span></span></mat-list-item>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>plugin extension possible</span></mat-list-item>
-                </mat-list>
-                <mat-divider></mat-divider>
                 <div class="text-center">
-                    <a routerLink="/order" [queryParams]="{package: 'basic'}" mat-flat-button class="os-button filled bordered blue">
+                    <a routerLink="/order" [queryParams]="{package: 'conference'}" mat-flat-button class="os-button filled bordered blue">
                         <span translate>Order now</span>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="price-col enterprise">
+        <div class="price-col grey">
             <div class="price-col-header">
-                <h2>Enterprise</h2>
+                <h2>Congress</h2>
                 <p>
-                    {{ "for events with high digital usage" | translate }}
+                    <span translate>max.</span> &nbsp;<b translate>1.000</b>&nbsp; <span translate>participants</span>
                 </p>
             </div>
             <div class="price-col-body">
                 <div class="price-col-price">
-                    <h1>99 €</h1>
-                    <span><span translate>per month/event</span>*</span>
+                    <h1>200 €</h1>
+                    <small translate>plus VAT</small>
+                    <p translate>per month/event</p>
                 </div>
                 <mat-divider></mat-divider>
-                <mat-list>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>max.</span> <b>&nbsp;500&nbsp;</b> <span translate>user accounts</span></mat-list-item>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>custom domain possible</span></mat-list-item>
-                    <mat-list-item><mat-icon matListIcon>check</mat-icon><span translate>plugin extension possible</span></mat-list-item>
-                </mat-list>
-                <mat-divider></mat-divider>
                 <div class="text-center">
-                    <a routerLink="/order" [queryParams]="{package: 'enterprise'}" mat-flat-button class="os-button filled bordered">
+                    <a routerLink="/order" [queryParams]="{package: 'congress'}" mat-flat-button class="os-button filled bordered grey">
                         <span translate>Order now</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <i translate>* plus 49 € one-off installation payment</i>
+    <p>
+        <small>
+            {{ 'Plus 50 € setup fee for a maturity of less than 3 months.' | translate }}
+            {{ 'All prices plus VAT.' | translate }}
+            {{ '5% discount when paying 12 months in advance.' | translate }}
+        </small>
+    </p>
+
+    <div class="mt-2 mb-2">
+        <span translate>You want to install OpenSlides on your own server?</span>
+        <span>&nbsp;<a class="inline" routerLink="/" fragment="anchor-getting-started" translate>Learn more ...</a></span>
+    </div>
+
     <div class="mt-1">
         <b translate>For all hosting packages we offer the following services:</b>
     </div>
@@ -90,7 +87,7 @@
         <div>
             <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>frequent updates</span></mat-list-item>
             <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>Email dispatch of invitations possible</span></mat-list-item>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>individual support by expenditure (125 € / hour, quarter-hourly billing)</span></mat-list-item>
+            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>individual support by expenditure (125 € / hour, half-hourly billing)</span></mat-list-item>
         </div>
         <div>
             <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure connection: HTTPS with Let's Encrypt certificates</span></mat-list-item>
@@ -98,10 +95,5 @@
             <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure operation: every event runs as an isolated OpenSlides instance with its own database</span></mat-list-item>
         </div>
     </mat-list>
-    <div class="mt-1">
-        <span translate>You want to install OpenSlides on your own server?</span>
-        <span>&nbsp;<a class="inline" routerLink="/" fragment="anchor-getting-started" translate>Learn more ...</a></span>
-    </div>
-    <div class="mt-1" translate>10% discount when paying 12 months in advance.</div>
-    <div class="mt-2"><i translate>All prices are VAT exclusive.</i></div>
+
 </div>

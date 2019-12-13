@@ -109,7 +109,9 @@ export class MainComponent implements OnInit, AfterViewInit {
         }
         this.mailInput.disable();
         try {
-            await this.http.post<void>('/api/add_newsletter', { mail_address: this.mailInput.value }).toPromise();
+            await this.http
+                .post<void>('/api/add_newsletter', { mail_address: this.mailInput.value })
+                .toPromise();
             this.success = true;
             this.error = null;
             this.mailInput.reset();

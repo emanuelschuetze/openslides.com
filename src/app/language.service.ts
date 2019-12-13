@@ -10,7 +10,10 @@ interface Language {
 
 // Define here new languages...
 // IMPORTANT: if you add new languages here, make sure to also add register them at the top of app.module.ts
-export const languages: Language[] = [{ code: 'en', name: 'English' }, { code: 'de', name: 'Deutsch' }];
+export const languages: Language[] = [
+    { code: 'en', name: 'English' },
+    { code: 'de', name: 'Deutsch' }
+];
 
 /**
  * Custom url matcher to manage language prefixes.
