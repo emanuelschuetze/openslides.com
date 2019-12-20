@@ -29,7 +29,7 @@ order_schema = {
         "event_name": {"type": "string", "pattern": standard_pattern},
         "event_location": {"type": "string", "pattern": standard_pattern},
         "event_date": {"type": "string", "pattern": standard_pattern},
-        "expected_users": {"type": "string", "pattern": standard_pattern},
+        "expected_users": {"type": "integer"},
         "contact_person": {
             "type": "object",
             "properties": {
