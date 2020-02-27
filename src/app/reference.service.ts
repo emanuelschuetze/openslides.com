@@ -77,7 +77,7 @@ export class ReferenceService {
                 },
                 {
                     name: 'SPD',
-                    event: 'Kreisparteitag Nordfriesland / Landes-AK "Digitale Gesellschaft"',
+                    event: 'Landes-, Bezirks- und Kreisparteitage',
                     src: 'spd-logo.png',
                     frontpage: true
                 },
@@ -125,19 +125,18 @@ export class ReferenceService {
             ]
         },
         {
-            name: this.translate.instant('Organisations, assosciations and more'),
+            name: this.translate.instant('Helth care'),
             refs: [
                 {
-                    name: 'Amnesty International',
-                    event: 'Jahresversammlung 2018',
-                    src: 'amnesty-logo.png',
+                    name: 'Marburger Bund',
+                    event: 'Hauptversammlungen',
+                    src: 'mb-logo.png',
                     frontpage: true
                 },
                 {
                     name: 'Sächsische Landesärztekammer',
                     event: 'Kammerversammlungen',
-                    src: 'slaek-logo.png',
-                    frontpage: true
+                    src: 'slaek-logo.png'
                 },
                 {
                     name: 'Landesärztekammer Hessen',
@@ -155,10 +154,27 @@ export class ReferenceService {
                     src: 'laekb-logo.png'
                 },
                 {
+                    name: 'Berufsverband der Kinder- und Jugendärzte e.V.',
+                    event: 'Delegiertenversammlungen',
+                    src: 'bvkj-logo.png'
+                },
+                {
                     name: 'Deutscher Hebammenverband',
                     event: 'Bundesdelegiertentagung 2018',
                     src: 'dhv-logo.png'
+                }
+            ]
+        },
+        {
+            name: this.translate.instant('Organisations, assosciations and more'),
+            refs: [
+                {
+                    name: 'Amnesty International',
+                    event: 'Jahresversammlung 2018',
+                    src: 'amnesty-logo.png',
+                    frontpage: true
                 },
+
                 {
                     name: 'Deutsche Pfadfinderschaft Sankt Georg (DPSG)',
                     event: 'Bundesversammlungen',
@@ -203,11 +219,6 @@ export class ReferenceService {
                     name: 'Mensa in Deutschland e.V.',
                     event: 'Mitgliederversammlungen',
                     src: 'mensa-logo.png'
-                },
-                {
-                    name: 'Berufsverband der Kinder- und Jugendärzte e.V.',
-                    event: 'Delegiertenversammlungen',
-                    src: 'bvkj-logo.png'
                 },
                 {
                     name: 'Deutscher Verband für Neuro-Linguistisches Programmieren e.V.',
