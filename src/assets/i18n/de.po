@@ -1,11 +1,11 @@
 # Translators:
 # Katharina <karmitt2@web.de>, 2019
 # Joshua Sangmeister <joshua.sangmeister@gmail.com>, 2019
-# Emanuel Schütze <emanuel.schuetze@intevation.de>, 2019
+# Emanuel Schütze <emanuel.schuetze@intevation.de>, 2020
 # 
 msgid ""
 msgstr ""
-"Last-Translator: Emanuel Schütze <emanuel.schuetze@intevation.de>, 2019\n"
+"Last-Translator: Emanuel Schütze <emanuel.schuetze@intevation.de>, 2020\n"
 "Language-Team: German (https://www.transifex.com/openslides/teams/14270/de/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -251,6 +251,9 @@ msgstr "Globale Volltextsuche"
 
 msgid "Global history on snapshot basis"
 msgstr "Globale Chronik auf Basis von Snapshots"
+
+msgid "Helth care"
+msgstr "Gesundheitswesen"
 
 msgid "Hosting"
 msgstr "Hosting"
@@ -704,9 +707,6 @@ msgstr "pro Monat/Veranstaltung"
 
 msgid "plus VAT"
 msgstr "zzgl. USt."
-
-msgid "released"
-msgstr "veröffentlicht"
 
 msgid "secure connection: HTTPS with Let's Encrypt certificates"
 msgstr "sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten"

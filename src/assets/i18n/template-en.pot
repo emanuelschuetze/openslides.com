@@ -213,6 +213,9 @@ msgstr ""
 msgid "Global history on snapshot basis"
 msgstr ""
 
+msgid "Helth care"
+msgstr ""
+
 msgid "Hosting"
 msgstr ""
 
@@ -598,9 +601,6 @@ msgid "per month/event"
 msgstr ""
 
 msgid "plus VAT"
-msgstr ""
-
-msgid "released"
 msgstr ""
 
 msgid "secure connection: HTTPS with Let's Encrypt certificates"
