@@ -186,19 +186,24 @@ export class ReferenceService {
                     src: 'bdp-logo.png'
                 },
                 {
+                    name: 'Katholische junge Gemeinde',
+                    event: 'Bundeskonferenzen',
+                    src: 'kjg-logo.png'
+                },
+                {
                     name: 'Bund der Deutschen Katholischen Jugend',
                     event: 'Diözesanversammlung Diözesanverband Osnabrück',
                     src: 'bdkj-os-logo.png'
                 },
                 {
-                    name: 'Evangelische StudentInnengemeinde in der Bundesrepublik Deutschland (ESG)',
-                    event: 'Bundesversammlungen',
-                    src: 'esg-logo.png'
-                },
-                {
                     name: 'Arbeitsgemeinschaft der Evangelischen Jugend in Deutschland e. V. (aej)',
                     event: 'Mitgliederversammlung',
                     src: 'aej-logo.png'
+                },
+                {
+                    name: 'Evangelische StudentInnengemeinde in der Bundesrepublik Deutschland (ESG)',
+                    event: 'Bundesversammlungen',
+                    src: 'esg-logo.png'
                 },
                 {
                     name: 'Stipendiatinnen und Stipendiaten des Cusanuswerks',
