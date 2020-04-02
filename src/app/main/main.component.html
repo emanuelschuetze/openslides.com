@@ -50,7 +50,7 @@
                     <h2 class="os-blue" translate>Fast results</h2>
                 </div>
                 <p>
-                    {{ "Accelerate your processes via consistently management with only one software. OpenSlides consolidates the procedure – starting with the preparations of motions and elections up to the final protocol. " | translate }} 
+                    {{ "Accelerate your processes via consistently management with only one software. OpenSlides consolidates the procedure – starting with the preparations of motions and elections up to the final protocol. " | translate }}
                 </p>
             </div>
             <div class="text-center">
@@ -70,8 +70,9 @@
         <div class="container section center-mobile">
             <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
                 <div>
-                    <a routerLink="/feature/agenda">
-                        <img class="screenshot" src="assets/img/features/agenda/agenda_overview_{{ translate.currentLang }}.png">
+                    <a routerLink="./feature/agenda">
+                        <img class="screenshot"
+                            src="assets/img/features/agenda/agenda_overview_{{ translate.currentLang }}.png">
                     </a>
                 </div>
                 <div>
@@ -79,7 +80,7 @@
                     <p>
                         {{ "Complement, change or move automatically numbered agenda items via drag & drop in the running system. Connect single items with lists of speakers and speaking times and show inofficial items like breaks for better scheduling." | translate }}
                     </p>
-                    <a routerLink="/feature/agenda" mat-flat-button class="os-button">
+                    <a routerLink="./feature/agenda" mat-flat-button class="os-button">
                         <span translate>Learn more</span>
                     </a>
                 </div>
@@ -93,13 +94,14 @@
                         <p>
                             {{ "Capture motions with applicant and text. Assign categories and motion numbers. Log the resolution and polling results during the motion discussion. The flexible filtering helps you while searching in all motions and their changes." | translate }}
                         </p>
-                        <a routerLink="/feature/motions" mat-flat-button class="os-button">
+                        <a routerLink="./feature/motions" mat-flat-button class="os-button">
                             <span translate>Learn more</span>
                         </a>
                     </div>
                     <div class="switch-flex-order">
-                        <a routerLink="/feature/motions">
-                            <img class="screenshot" src="assets/img/features/motions/motions_overview_{{ translate.currentLang }}.png">
+                        <a routerLink="./feature/motions">
+                            <img class="screenshot"
+                                src="assets/img/features/motions/motions_overview_{{ translate.currentLang }}.png">
                         </a>
                     </div>
                 </div>
@@ -108,8 +110,9 @@
         <div class="container section center-mobile">
             <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
                 <div>
-                    <a routerLink="/feature/elections">
-                        <img class="screenshot" src="assets/img/features/elections/elections_overview_{{ translate.currentLang }}.png">
+                    <a routerLink="./feature/elections">
+                        <img class="screenshot"
+                            src="assets/img/features/elections/elections_overview_{{ translate.currentLang }}.png">
                     </a>
                 </div>
                 <div>
@@ -117,7 +120,7 @@
                     <p>
                         {{ "Propose candidates off the list of participants. Generate ad-hoc personalized ballots for secret elections. Log and project the counted votes – for all participants accessible in OpenSlides." | translate }}
                     </p>
-                    <a routerLink="/feature/elections" mat-flat-button class="os-button">
+                    <a routerLink="./feature/elections" mat-flat-button class="os-button">
                         <span translate>Learn more</span>
                     </a>
                 </div>
@@ -131,13 +134,14 @@
                         <p>
                             {{ "OpenSlides is designed for working with multiple screens and comes with a powerful projector management. The web interface allows the projection and editing of slides while the projectors are running in full screen." | translate }}
                         </p>
-                        <a routerLink="/feature/projectors" mat-flat-button class="os-button">
+                        <a routerLink="./feature/projectors" mat-flat-button class="os-button">
                             <span translate>Learn more</span>
                         </a>
                     </div>
                     <div class="switch-flex-order">
-                        <a routerLink="/feature/projectors">
-                            <img class="screenshot" src="assets/img/features/projectors/projectors_overview_{{ translate.currentLang }}.png">
+                        <a routerLink="./feature/projectors">
+                            <img class="screenshot"
+                                src="assets/img/features/projectors/projectors_overview_{{ translate.currentLang }}.png">
                         </a>
                     </div>
                 </div>
@@ -146,7 +150,9 @@
         <div class="container section big center-mobile">
             <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
                 <div>
-                    <img class="full-width" src="assets/img/responsive-design.png">
+                    <a routerLink="./feature/miscellaneous">
+                        <img class="full-width" src="assets/img/responsive-design.png">
+                    </a>
                 </div>
                 <div>
                     <h1 translate>Multifunctional and responsive</h1>
@@ -156,7 +162,7 @@
                     <p>
                         {{ "No matter if file upload or comment function – OpenSlides is equipped with a multitude of practicable tools. Moreover, we develop custom solutions for our clients." | translate }}
                     </p>
-                    <a routerLink="/feature/miscellaneous" mat-flat-button class="os-button">
+                    <a routerLink="./feature/miscellaneous" mat-flat-button class="os-button">
                         <span translate>More features</span>
                     </a>
                 </div>
@@ -175,7 +181,7 @@
                         <p>
                             {{ "You want to use OpenSlides for your next assembly, but don't want to care about the technical details? Order a hosting package!" | translate }}
                         </p>
-                        <a routerLink="/pricing" mat-flat-button class="os-button filled">
+                        <a routerLink="./pricing" mat-flat-button class="os-button filled">
                             <mat-icon class="mr-0">shopping_cart</mat-icon>
                             <span translate>Choose package</span>
                         </a>
@@ -218,26 +224,29 @@
             </div>
             <div class="open-source-container">
                 <div class="flex wrap-mobile center-mobile" appWrappable>
-                        <img class="hosting-logo" src="assets/img/self_host.png">
+                    <img class="hosting-logo" src="assets/img/self_host.png">
                     <div>
                         <h1 class="lh-1" translate>Install by yourself</h1>
                         <p>
-                            <span translate>You want to install OpenSlides on your own server? We offer our software as PyPI package and as source code. Please note that we can offer technical support for our hosting solutions only.</span>
+                            <span translate>You want to install OpenSlides on your own server? We offer our software as
+                                PyPI package and as source code. Please note that we can offer technical support for our
+                                hosting solutions only.</span>
                             <br>
                             <a href="https://github.com/OpenSlides/OpenSlides/blob/master/README.rst#installation"
-                                class="inline" target="_blank" rel="noreferrer">&raquo;&#32; <span translate>Installation guide</span></a>
+                                class="inline" target="_blank" rel="noreferrer">&raquo;&#32; <span
+                                    translate>Installation guide</span></a>
                         </p>
                         <div appWrappable>
-                            <a href="https://pypi.org/project/openslides/" target="_blank" rel="noreferrer" mat-flat-button
-                            class="os-button filled light-grey">
-                            <mat-icon class="mr-0">all_inbox</mat-icon>
-                            <span>PyPI</span>
-                        </a>
-                        <a href="https://files.openslides.org/releases/3.1/openslides-3.1.tar.gz" target="_blank" rel="noreferrer"
-                            mat-flat-button class="os-button filled light-grey">
-                            <mat-icon class="mr-0">get_app</mat-icon>
-                            <span translate>Source code</span>
-                        </a>
+                            <a href="https://pypi.org/project/openslides/" target="_blank" rel="noreferrer"
+                                mat-flat-button class="os-button filled light-grey">
+                                <mat-icon class="mr-0">all_inbox</mat-icon>
+                                <span>PyPI</span>
+                            </a>
+                            <a href="https://files.openslides.org/releases/3.1/openslides-3.1.tar.gz" target="_blank"
+                                rel="noreferrer" mat-flat-button class="os-button filled light-grey">
+                                <mat-icon class="mr-0">get_app</mat-icon>
+                                <span translate>Source code</span>
+                            </a>
                         </div>
 
                         <h3 class="mt-2" translate>OpenSlides is Open Source</h3>
@@ -245,16 +254,16 @@
                             {{ "We pledged ourselves to the principles of a Open Source, liberal and free of charge exchange of our software and even represent this in our name. OpenSlides is usable under the MIT license. Help us to further improve the code." | translate }}
                         </p>
                         <div appWrappable>
-                        <a href="https://github.com/OpenSlides/OpenSlides" target="_blank" rel="noreferrer" mat-flat-button
-                            class="os-button filled light-grey">
-                            <img class="inline-logo" src="assets/img/logos/github.png">
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://www.transifex.com/openslides/openslides/" target="_blank" rel="noreferrer" mat-flat-button
-                            class="os-button filled light-grey ml-0">
-                            <mat-icon class="mr-0">language</mat-icon>
-                            <span>Transifex</span>
-                        </a>
+                            <a href="https://github.com/OpenSlides/OpenSlides" target="_blank" rel="noreferrer"
+                                mat-flat-button class="os-button filled light-grey">
+                                <img class="inline-logo" src="assets/img/logos/github.png">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.transifex.com/openslides/openslides/" target="_blank" rel="noreferrer"
+                                mat-flat-button class="os-button filled light-grey ml-0">
+                                <mat-icon class="mr-0">language</mat-icon>
+                                <span>Transifex</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -268,7 +277,7 @@
             <app-reference-container *ngFor="let ref of refService.frontpageRefs" [ref]="ref"></app-reference-container>
         </div>
         <div class="mt-1 mb-2">
-            <a routerLink="/references" mat-flat-button class="os-button">
+            <a routerLink="./references" mat-flat-button class="os-button">
                 <span translate>More references</span>
             </a>
         </div>
@@ -282,39 +291,50 @@
     <!-- News -->
     <div class="section container" id="news">
         <h1 class="d-inline-block" translate>News</h1>
-        <a class="float-right inline" routerLink="/news">
+        <a class="float-right inline" routerLink="./news">
             <span translate>Show all news</span>
         </a>
         <div class="flex evenly-spaced wrap-mobile news-links" appWrappable>
             <div>
-                <div><i>{{ "2020-03-21" | localizedDate }}:</i> <a class="inline"
-                    href="https://twitter.com/openslides/status/1241310398466461696" target=_blank rel="noreferrer">
-                    OpenSlides ab sofort bereit für Online-Versammlungen - jetzt mit integriertem Live-Voting für Anträge und Wahlen!</a>
+                <div><i>{{ "2020-03-21" | localizedDate }}:</i>
+                    <a href="https://twitter.com/openslides/status/1241310398466461696" target=_blank rel="noreferrer">
+                        <mat-icon style="vertical-align: bottom;">public</mat-icon>
+                        OpenSlides ab sofort bereit für Online-Versammlungen - jetzt mit integriertem Live-Voting für
+                        Anträge und Wahlen!
+                    </a>
                 </div>
                 <div><i>{{ "2019-12-13" | localizedDate }}:</i>
                     <a target="_blank" rel="noreferrer"
                         href="http://files.openslides.org/press/3.1/PM-OpenSlides-3.1.pdf">
-                        <mat-icon style="vertical-align: bottom;">announcement</mat-icon>
-                        OpenSlides 3.1 mit Performanceverbesserungen</a>
-                </div>                
-                <div><i>{{ "2019-10-11" | localizedDate }}:</i> <a class="inline"
-                    href="https://twitter.com/openslides/status/1182962307154038785" target=_blank rel="noreferrer">
-                    Papierlose Antragsberatung auf dem IG Metall Gewerkschaftstag 2019</a>
+                        <mat-icon style="vertical-align: bottom;">picture_as_pdf</mat-icon>
+                        OpenSlides 3.1 mit Performanceverbesserungen
+                    </a>
                 </div>
-                <div><i>{{ "2019-09-27" | localizedDate }}:</i> <a class="inline"
-                    href="https://twitter.com/openslides/status/1177661079603863553" target=_blank rel="noreferrer">
-                    OpenSlides im Einsatz auf dem ver.di Bundeskongress 2019</a>
+                <div><i>{{ "2019-10-11" | localizedDate }}:</i>
+                    <a href="https://twitter.com/openslides/status/1182962307154038785" target=_blank rel="noreferrer">
+                        <mat-icon style="vertical-align: bottom;">public</mat-icon>
+                        Papierlose Antragsberatung auf dem IG Metall Gewerkschaftstag 2019
+                    </a>
+                </div>
+                <div><i>{{ "2019-09-27" | localizedDate }}:</i>
+                    <a href="https://twitter.com/openslides/status/1177661079603863553" target=_blank rel="noreferrer">
+                        <mat-icon style="vertical-align: bottom;">public</mat-icon>
+                        OpenSlides im Einsatz auf dem ver.di Bundeskongress 2019
+                    </a>
                 </div>
                 <div><i>{{ "2019-09-13" | localizedDate }}:</i>
-                    <a target="_blank" rel="noreferrer" href="http://files.openslides.org/press/3.0/PM-OpenSlides-3.0.pdf"> 
-                        <mat-icon style="vertical-align: bottom;">announcement</mat-icon>
-                        OpenSlides 3.0 runderneuert als Progressive Web App</a>
+                    <a target="_blank" rel="noreferrer"
+                        href="http://files.openslides.org/press/3.0/PM-OpenSlides-3.0.pdf">
+                        <mat-icon style="vertical-align: bottom;">picture_as_pdf</mat-icon>
+                        OpenSlides 3.0 runderneuert als Progressive Web App
+                    </a>
                 </div>
                 <div><i>{{ "2019-02-05" | localizedDate }}:</i> <a class="inline"
-                        routerLink="/news/dgb-bundeskongress2018">
+                        routerLink="./news/dgb-bundeskongress2018">
                         <mat-icon style="vertical-align: bottom;">dashboard</mat-icon>
                         Erfolgreiche Digitalisierung: DGB-Bundeskongress mit
-                        OpenSlides</a>
+                        OpenSlides
+                    </a>
                 </div>
             </div>
         </div>
@@ -327,11 +347,13 @@
             </p>
             <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="20px" class="valign-wrapper">
                 <mat-form-field fxFlex.gt-xs="80%" fxFlexFill>
-                    <input matInput type="email" placeholder="E-Mail-Adresse" [formControl]="mailInput" required (keydown)="onKeydown($event)">
+                    <input matInput type="email" placeholder="E-Mail-Adresse" [formControl]="mailInput" required
+                        (keydown)="onKeydown($event)">
                     <mat-error>{{ getErrorMessage() }}</mat-error>
                 </mat-form-field>
                 <div fxFlex.gt-xs="20%">
-                    <button mat-flat-button type="submit" [disabled]="!mailInput.valid" class="os-button full-width" (click)="onSubmit()">
+                    <button mat-flat-button type="submit" [disabled]="!mailInput.valid" class="os-button full-width"
+                        (click)="onSubmit()">
                         <span translate>Submit</span>
                     </button>
                 </div>

@@ -24,7 +24,9 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/assets"
+              "src/assets",
+              "src/sitemap.xml",
+              "src/.htaccess"
             ],
             "styles": [
               "src/styles.scss"
