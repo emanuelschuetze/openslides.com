@@ -1,0 +1,132 @@
+<div class="container main-container blue-links">
+    <h1>Versammlungen und Sitzungen virtuell abhalten – rechtliche und organisatorische Möglichkeiten</h1>
+    <i>April 2020, von <a href="mailto:eric.lanfer@openslides.com">Eric Lanfer</a> und <a
+            href="mailto:emanuel.schuetze@openslides.com">Emanuel Schütze</a></i>
+    <p>Die COVID-19-Epidemie stellt aktuell Vereine, Verbände, Unternehmen, Genossenschaften, Stiftungen, Parteien und
+        Wohnungseigentümergemeinschaften vor eine besondere Situation. Aufgrund verschiedenster Verfügungen und
+        Regelungen, die Zusammenkünfte auf eine geringe Anzahl an Personen begrenzen, stehen viele Organisationen im
+        gesamten Bundesgebiet vor der Herausforderung kreative Lösungen für die Durchführung ihrer Versammlungen und
+        Sitzungen zu finden.</p>
+    <p>Viele entscheiden sich kurzfristig dazu reine Videokonferenz-Lösungen von Drittanbietern, wie <em>Skype</em>,
+        <em>discord</em> oder <em>Zoom</em> zu nutzen. Abseits datenschutzrechtlicher Bedenken mangelt es bei der
+        Durchführung von Sitzungen und Versammlungen in solchen Konstellationen an adäquater Unterstützung für die
+        Sitzungsleitung – beispielsweise Redelistenverwaltung, Visualisierung und Bereitstellung von Anträgen und die
+        Durchführung von Abstimmungen und Wahlen. In diesem Artikel werden im Weiteren Möglichkeiten aufgezeigt, wie das
+        digitale Versammlungstool <strong>OpenSlides</strong> dazu eingesetzt werden kann, um zuvor genannte
+        Problematiken am Beispiel von Vereinen zu lösen.</p>
+    <h2>Rechtliche Möglichkeiten prüfen</h2>
+    <p>Eine neue Grundlage bietet das <a
+            href="https://www.bmjv.de/SharedDocs/Gesetzgebungsverfahren/Dokumente/Bgbl_Corona-Pandemie.pdf">„<strong>Gesetz
+                zur Abmilderung der Folgen der COVID-19-Pandemie im Zivil-, Insolvenz- und
+                Strafverfahrensrecht</strong>“</a> vom 27. März 2020. Einerseits bietet dieses Gesetz die Möglichkeit,
+        dass Vorstände länger im Amt bleiben können (§5 Abs. 1). Die Regelung ist gültig bis zur Abberufung oder
+        Bestellung eines neuen Vorstands. Zum Anderen können Mitgliederversammlungen ohne Anwesenheit der Mitglieder am
+        Versammlungsort durchgeführt werden und Mitglieder können ihre Rechte im Wege der elektronischen Kommunikation
+        ausüben (§ 5 Abs. 2 S. 1). Ebenso wurde ermöglicht, dass Mitglieder ihre Stimmen vor Durchführung der
+        Mitgliederversammlung schriftlich abgeben können (§ 5 Abs. 2 S. 2). Zuletzt wurden mit diesem neuen Gesetz noch
+        die Quoren zur Beteiligung der Mitglieder ohne Versammlung angepasst. Hier reicht es nun, wenn mindestens die
+        Hälfte der Mitglieder ihre Stimmen in Textform abgegeben haben und der Beschluss mit erforderlicher Mehrheit
+        gefasst wurde. Zuvor mussten hier gemäß § 32 Abs. 2 BGB alle Mitglieder ihre Zustimmung schriftlich mitteilen.
+    </p>
+    <h3>Die eigene Satzung beachten</h3>
+    <p>Mit diesem Gesetz wurde nun die Grundlage für virtuelle Versammlungen gelegt. Ein weiterer Fallstrick kann jedoch
+        die eigene Satzung des Vereins werden. Hier ist besonders darauf zu achten, wie Abstimmungs- bzw. Wahlmodi
+        definiert sind. Sollte beispielsweise in der Satzung explizit definiert sein, dass die Wahl des Vorstandes
+        geheim zu erfolgen hat, ist dies „im Wege der elektronischen Kommunikation“ nur sehr schwer bis gar nicht zu
+        gewährleisten. Sollte eine Satzung dahingehend restriktiert sein, wäre für die Wahl eine Form der Briefwahl
+        angebracht.</p>
+    <h3>Einladung, Zugänge und Anwesenheit</h3>
+    <p>Bei der Anwesenheitsüberprüfung in Online-Versammlungen stellt sich eine weitere Hürde. Auf Basis eines
+        elektronischen Weges sind hier verschiedene Lösung denkbar, die unterschiedlich hohe Level der Authentizität der
+        Teilnehmenden bieten. Es werden nachfolgend zwei mögliche Wege erläutert und eingeordnet:</p>
+    <ol>
+        <li><strong>Feststellung der Beschlussfähigkeit mithilfe des Videobildes auf der genutzten
+                Kommunikationsplattform</strong>:<br> Wenn eine Sitzung per Videokonferenz durchgeführt wird, könnte die
+            Anwesenheit anhand der Videobilder überprüft werden. Die Sitzungsleitung könnte dann zu Anfang der Sitzung
+            entsprechend eine Anwesenheitsliste manuell oder mithilfe von OpenSlides anfertigen und die Authentizität
+            anhand der Videobilder kontrollieren. In diesem Szenario bestehen jedoch diverse technische Einschränkungen:
+            Zum einen müssen Kapazitäten an Bandbreite für hinreichend viele Videostreams und eine stabile Plattform zur
+            Verfügung stehen. Zum anderen müssen die Teilnehmenden alle über eine funktionierende Webcam, Smartphone
+            oder ähnliche Aufnahmemöglichkeit verfügen.</li>
+        <li><strong>Feststellung der Beschlussfähigkeit durch eine Anwesenheitsliste geführt mit OpenSlides</strong>:<br> In
+            OpenSlides ist es möglich den Teilnehmenden die Berechtigung zu geben, ihren eigenen Anwesenheitsstatus zu
+            setzen. Dies ist ein vergleichbarer Weg zu einer Anwesenheitsliste bei Präsenzversammlungen in die sich
+            Teilnehmende von Hand eintragen. Alternativ kann der Status auch durch die Sitzungsleitung gesetzt werden.
+            Wenn sichergestellt ist, dass die Mitglieder des Vereins ihre Zugangsdaten für OpenSlides persönlich
+            erhalten (per Post oder E-Mail) ist die Authentizität der Teilnehmenden, welche sich in die digitale
+            Anwesenheitsliste eintragen, bestätigt. Dies ist gewährleistet da die jeweiligen Mitglieder persönlich
+            sicherstellen müssen, dass nur Sie selbst Zugriff auf OpenSlides haben und die Login-Daten nicht an Dritte
+            gelangen.</li>
+    </ol>
+    <p>In beiden zuvor genannten Formen sollten die Mitglieder in der Einladung oder in der Aussendung der Zugangsdaten
+        über den gewählten Modus informiert werden.</p>
+    <h2>Kommunikationsplattform auswählen</h2>
+    <p>Zur Durchführung einer Online-Versammlung wird im Minimalfall ein Audiokanal benötigt über den die Teilnehmenden
+        untereinander kommunizieren können. Dies könnte beispielsweise eine klassische Telefonkonferenz oder eine
+        Audikonferenz-Softwarelösung sein. Darüber hinaus kann auch ein Videokanal zur Versammlung genutzt werden, um
+        ebenfalls ein visuelles Medium zu bieten. Ein beiden Fällen lassen sich folgende Anforderungen für ein
+        Kommunikationsmittel aufstellen:</p>
+    <ul>
+        <li><strong>Verfügbarkeit/Erreichbarkeit</strong>: Die Kommunikationsplattform sollte für alle Mitglieder
+            erreichbar sein und muss auch einer größeren Zahl gleichzeitiger Nutzer*innen standhalten können.</li>
+        <li><strong>Einstiegsschwelle</strong>: Häufig sind technische Vorkenntnisse der Mitglieder sehr heterogen,
+            daher sollte die Nutzbarkeit eines Kommunikationsmittels eine geringe Einstiegshürde bieten und einfach zu
+            bedienen sein.</li>
+        <li><strong>Plattformunabhängigkeit/Kompatibilität</strong>: Ebenso heterogen wie technische Vorkenntnisse sind
+            häufig auch die Geräte und Systeme, die von verschiedenen Personen verwendet werden. Beispielsweise
+            verschiedene Geräte (Smartphones, Tablets und Notebooks), unterschiedliche Betriebssysteme (Linux, Windows,
+            MacOS, Android, iOS, ...) oder verschiedene Webbrowser. Ein Kommunikationsmittel sollte deshalb eine große
+            Plattformunabhängigkeit aufweisen.</li>
+        <li><strong>Datenschutz</strong>: Das Kommunikationsmittel sollte alle datenschutzrechtlichen Anforderungen
+            gemäß DSGVO erfüllen oder sogar darüber hinausgehen. Mit den Daten der Mitglieder sollte so sparsam wie
+            möglich umgegangen werden. Sollten Daten von Dritten weiterverarbeitet werden, weil ein Kommunikationsdienst
+            genutzt wird, so sollten dies so wenig Daten wie möglich sein. Zudem müssen die Mitglieder darüber
+            aufgeklärt werden.</li>
+        <li><strong>Sprach-/Videoqualität</strong>: Eine hinreichend gute Gesprächsqualität sollte gegeben sein, um eine
+            Versammlung adäquat durchführen zu können.</li>
+        <li><strong>Moderation</strong>: Die Versammlungsleitung sollte im genutzten Tool die Möglichkeit haben,
+            Hilfsmittel zur Moderation der Sitzung nutzen zu können. Beispielsweise das Freischalten/Stummschalten
+            einzelner Mitglieder bei Wortmeldung.</li>
+    </ul>
+    <p>Unter Einbeziehung der zuvor genannten Kriterien soll nun auf zwei geeignete Open-Source-Konferenzlösungen
+        eingegangen werden: Mumble und Jitsi-Meet.</p>
+    <p>Als Vorbemerkung sei gesagt: Um eine gute Datenschutzkonformität zu erfüllen, ist es ratsam, auf selbst
+        betriebene Lösungen zu setzen (sofern möglich). Hierzu eignen sich die im weiteren genannten beiden Freie
+        Software Projekte optimal. Alternativ sei es ebenso ratsam, auf IT-Dienstleister zu setzen, mit denen eine
+        DSGVO-Auftragsverarbeitung abgeschlossen wurde für den Betrieb solcher Dienste. Im Frühjahr 2020 wurde bekannt,
+        dass bei verschiedenen großen Anbietern von Videokonferenzlösungen Daten von Nutzer*innen zur Auswertung an
+        Big-Data-Unternehmen mit Analytics-Diensten weitergegeben wurden. Diesen Aspekt gilt es dringend zu beachten bei
+        der Auswahl von Dienstleistungen und Produkten.</p>
+    <p><a href="https://www.mumble.info/"><strong>Mumble</strong></a> ist eine freie Sprachkonferenzsoftware, die es
+        ermöglicht Konferenzen mit großen Teilnehmendenzahlen durchzuführen. Zur Durchführung einer Konferenz wird ein
+        Mumble-Server benötigt. Dazu kann auf öffentliche Server, selbst betriebene Server oder auch gemietete Server
+        von Dienstleistern zurückgegriffen werden. Je nach Anbindung dieses Servers ist die Verfügbarkeit und
+        Erreichbarkeit zu bewerten. Im Allgemeinen lässt sich jedoch sagen, dass Mumble sehr bandbreiten- und
+        ressourcen-sparsam agiert. Vor allem, da keine ressourcen-hungrigen Videostreams in der Software genutzt werden.
+        Was die Einstiegsschwelle angeht, gibt es eine Web-Client für Mumble, welcher die Basisfunktionalitäten bietet
+        und von den meisten Browsern genutzt werden kann. Für die volle Funktionalität gibt es geräte- bzw.
+        systemspezifische Clients, die installiert werden müssen. Diese gibt es sowohl für mobile Geräte als auch für
+        Desktop-Betriebssysteme. Die Audioqualität in Mumble kann sowohl über die Clients als auch auf Serverseite
+        angepasst werden. Schon bei einer Audiokomprimierung auf 56kbit/s lässt sich eine sehr gute Gesprächsqualität
+        herstellen. In der Moderation bietet Mumble hilfreiche Features wie zum Beispiel moderierte Räume. In diesen
+        Räumen sind alle Nutzer*innnen standardmäßig auf Stumm geschaltet und können über eine Schaltfläche im Programm
+        eine Wortmeldung signalisieren, eine Person mit Moderationsrechten kann dann entsprechend Rederechte verteilen
+        und Teilnehmende aktiv schalten. Ebenso kann der Zugang zu Konferenzräumen beschränkt werden.</p>
+    <p><a href="https://jitsi.org/jitsi-meet/"><strong>Jitsi-Meet</strong></a> ist ebenfalls Freie Software und bietet
+        im Vergleich zu Mumble zusätzlich einen Videokanal mit an. Jitsi basiert auf der WebRTC-Technologie. Es ist
+        ebenfalls ein Server erforderlich. Es kann entweder ein <a
+            href="https://github.com/tosterkamp/random-redirect/blob/develop/res/jitsi_servers.lst">öffentlicher
+            Jitsi-Server</a> ausgewählt werden, ein eigener Server selbst betrieben werden oder bei Dienstleistern ein
+        Server gemietet werden. Für mobile Betriebssysteme gibt es native Apps, um einer Konferenz beizutreten. Auf
+        Desktop-Clients kann komfortabel über die meisten Browser beigetreten werden. Mit eingeschaltetem Videokanal
+        benötigt Jitsi mehr Ressourcen als nur mit einem Audiokanal. Darum sollte bei größeren Konferenzen mit Video ein
+        Server mit ausreichend Bandbreite zur Verfügung stehen. Auf Clientseite können Nutzer*innen die Qualität der
+        Videoübertragung auswählen und diese an den eigenen Anschluss anpassen. Bei Jitsi können Konferenzräume mit
+        einem Kennwort geschützt werden, so kann der Zugang restriktiert werden. Eine Person hat in Jitis-Konferenzen
+        Moderationsrechte und kann damit z. B. Teilnehmende stumm schalten, um Redebeiträge zu moderieren.</p>
+    <h2>Sitzung online durchführen</h2>
+    <p>Wie Sie OpenSlides zur effizienten Unterstützung in virtuellen Versammlungen einsetzen können, erfahren Sie im
+        Artikel <a class="inline" routerLink="/news/online-versammlungen">Online-Versammlungen mit OpenSlides
+            durchführen</a>.</p>
+
+</div>

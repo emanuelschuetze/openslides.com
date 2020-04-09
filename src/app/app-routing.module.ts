@@ -3,6 +3,8 @@ import { ExtraOptions, RouterModule, Routes, UrlSegment } from '@angular/router'
 
 import { ArticlePaperlessComponent } from './news/article-paperless/article-paperless.component';
 import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
+import { ArticleOnlineMeetingComponent } from './news/online-versammlungen/online-versammlungen.component';
+import { ArticleOnlineMeetingBasisComponent } from './news/online-versammlungen-basis/online-versammlungen-basis.component';
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { FeatureComponent } from './feature/feature.component';
 import { LanguageService, LanguageUrlMatcher } from './language.service';
@@ -33,6 +35,8 @@ const routes: Routes = [
                 path: 'news',
                 children: [
                     { path: '', component: NewsComponent, pathMatch: 'full' },
+                    { path: 'online-versammlungen', component: ArticleOnlineMeetingComponent },
+                    { path: 'online-versammlungen-basis', component: ArticleOnlineMeetingBasisComponent },
                     { path: 'dgb-bundeskongress2018', component: DgbBundeskongressComponent },
                     { path: '20141125', component: ArticlePaperlessComponent },
                     { path: '20121119', component: ArticleVirtualAssemblyComponent }
