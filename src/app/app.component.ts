@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DateAdapter } from '@angular/material';
 import { Router } from '@angular/router';
+import { LanguageService } from './language.service';
 
 /**
  * Enhance array with own functions
@@ -21,7 +22,11 @@ declare global {
 export class AppComponent implements OnInit {
     public currentYear = new Date().getFullYear();
 
-    public constructor(private dateAdapter: DateAdapter<any>, public router: Router) {
+    public constructor(
+        private dateAdapter: DateAdapter<any>,
+        public router: Router,
+        public languageService: LanguageService
+    ) {
         this.overloadFlatMap();
         this.overloadShuffle();
     }

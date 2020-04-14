@@ -18,7 +18,7 @@
     <app-main-menu></app-main-menu>
 </mat-menu>
 
-<div class="content-container">
+<div class="content-container" lang="{{ languageService.getCurrentLanguage() }}">
     <router-outlet></router-outlet>
 </div>
 
