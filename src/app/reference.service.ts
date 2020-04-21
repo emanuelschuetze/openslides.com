@@ -92,11 +92,7 @@ export class ReferenceService {
                     event: 'Kreisparteitag Görlitz',
                     src: 'linke-logo.png'
                 },
-                {
-                    name: 'Piratenpartei Deutschland / Schweiz',
-                    event: 'Bundes-, Landes- und Kreisparteitage',
-                    src: 'piraten-logo.png'
-                },
+
                 {
                     name: 'Grüne Jugend',
                     event: 'Bundeskongress',
@@ -108,19 +104,29 @@ export class ReferenceService {
                     src: 'jusos-logo.png'
                 },
                 {
+                    name: 'Junge Liberale',
+                    event: '1. virtueller Landeskongress der JuLis Bayern',
+                    src: 'julis-logo.png'
+                },
+                {
                     name: 'Linksjugend',
                     event: 'Landesjugendplenum Sachsen',
                     src: 'linksjugend-logo.png'
                 },
                 {
-                    name: 'Piraten ohne Grenzen',
-                    event: 'Piratenversammlungen',
-                    src: 'pog-logo.png'
+                    name: 'Piratenpartei Deutschland / Schweiz',
+                    event: 'Bundes-, Landes- und Kreisparteitage',
+                    src: 'piraten-logo.png'
                 },
                 {
                     name: 'Junge Generation in der SPÖ Wien',
                     event: 'Landeskonferenz',
                     src: 'jgspoe-logo.png'
+                },
+                {
+                    name: 'Piraten ohne Grenzen',
+                    event: 'Piratenversammlungen',
+                    src: 'pog-logo.png'
                 }
             ]
         },
