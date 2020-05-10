@@ -1,47 +1,79 @@
 <div class="container main-container">
+
+    <p><b>Unsere Leistung für Sie:</b> Wir betreiben OpenSlides datenschutzkonform auf unseren Servern. – 
+    Wählen Sie dafür eines unserer Hostingpakete aus.</p>
+
     <h2 class="mb-1">
-        {{ 'Choose a hosting package that fits your assembly size:' | translate }}
+        1. {{ 'Hinweise zur Auswahl' | translate }}
+        <!-- Choose a hosting package that fits your assembly size:-->
     </h2>
+    <ul>
+        <li> Für jedes eigenständige Gremium/Organ (z.B. Vorstand, Beirat, Mitgliederversammlung) benötigen Sie je eine separate OpenSlides-Instanz.
+        <li> Sie erhalten von uns eine Wunsch-URL (z.B. https://meine-versammlung.openslides.com) pro OpenSlides-Instanz.
+        <li>Innerhalb einer OpenSlides-Instanz können Sie beliebig viele wiederkehrende Sitzungen in der Hostinglaufzeit abhalten. Abgerechnet wird pro Monat.
+        <li> Hostingpakete sind einzeln buchbar und kombinierbar.
+    </ul>
+        <!--Inhaltlich eigenständige Organe/Gremien benötigen jeweil-->
+    <p><small>Beispiele:<br>
+        A) Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung mit 12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 Teilnehmde nutzen.
+        Dafür sind zwei Hostingpakete nötig: »Sitzung« und »Tagung«.<br>
+        B) Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 Landesverbände OpenSlides nutzen (je <50 Personen). Dafür sind 16 einzelne OpenSlides-Instanzen (Hostingpaket »Sitzung«) nötig.</small>
+    
+
+    <h2 class="mb-1">
+        2. {{ 'Wählen Sie das Hostingpaket passend zu Ihrer Veranstaltungsgröße' | translate }}
+        <!-- Choose a hosting package that fits your assembly size:-->
+    </h2>
+
+
+
     <div class="flex evenly-spaced wrap-tablet mb-0" appWrappable wrapMargin="2rem">
         <div class="price-col grey">
             <div class="price-col-header">
-                <h2>{{ 'Meeting' | translate }}</h2>
+                <h2>{{ 'Sitzung' | translate }}</h2>
                 <p>
-                    <span translate>max.</span> <b>&nbsp;50&nbsp;</b> <span translate>participants</span>
+                    für kleine (virtuelle) Gremien<br>
+                    mit wiederkehrenden Sitzungen
                 </p>
             </div>
             <div class="price-col-body">
                 <div class="price-col-price">
-                    <h1>50 €</h1>
-                    <small translate>plus VAT</small>
-                    <p translate>per month/event</p>
-                </div>
-                <mat-divider></mat-divider>
-                <div class="text-center">
-                    <a routerLink="/order" [queryParams]="{package: 'meeting'}" mat-flat-button class="os-button filled bordered grey">
-                        <span translate>Order now</span>
-                    </a>
+                    <p>
+                        <span translate>bis</span> <b>&nbsp;50&nbsp;</b> <span translate>participants</span>
+                    </p>
+                    <h1>50 € <small translate>/ Monat</small></h1>
+                    <small>{{ 'Mindestlaufzeit: 3 Monate' | translate }}</small>
+                    <p><small>
+                        zubuchbare Zusatzfunktionen:<br>
+                        &#10003; eVoting <br>
+                        &#10003; Audiokonferenz<br>
+                        &#10003; Single-Sign-On
+                        </small>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="price-col blue">
-            <div class="price-col-header ">
+            <div class="price-col-header">
                 <h2>{{ 'Conference' | translate }}</h2>
                 <p>
-                    <span translate>max.</span> <b>&nbsp;500&nbsp;</b> <span translate>participants</span>
+                    für mittelgroße (virtuelle) Versammlungen
                 </p>
             </div>
             <div class="price-col-body">
                 <div class="price-col-price">
-                    <h1>100 €</h1>
-                    <small translate>plus VAT</small>
-                    <p translate>per month/event</p>
-                </div>
-                <mat-divider></mat-divider>
-                <div class="text-center">
-                    <a routerLink="/order" [queryParams]="{package: 'conference'}" mat-flat-button class="os-button filled bordered blue">
-                        <span translate>Order now</span>
-                    </a>
+                    <p>
+                        <span translate>bis</span> <b>&nbsp;500&nbsp;</b> <span translate>participants</span>
+                    </p>
+                    <h1>100 € <small translate>/ Monat</small></h1>
+                    <small>{{ 'Mindestlaufzeit: 3 Monate' | translate }}</small>
+                    <p><small>
+                        zubuchbare Zusatzfunktionen:<br>
+                        &#10003; eVoting  <br>
+                        &#10003; Video-Livestream <br>
+                        &#10003; Single-Sign-On
+                        </small>
+                    </p>
                 </div>
             </div>
         </div>
@@ -49,64 +81,117 @@
             <div class="price-col-header">
                 <h2>{{ 'Congress' | translate }}</h2>
                 <p>
-                    <span translate>max.</span> <b>&nbsp;1.000&nbsp;</b> <span translate>participants</span>
+                    für große (virtuelle) Konferenzen
                 </p>
             </div>
             <div class="price-col-body">
                 <div class="price-col-price">
-                    <h1>200 €</h1>
-                    <small translate>plus VAT</small>
-                    <p translate>per month/event</p>
-                </div>
-                <mat-divider></mat-divider>
-                <div class="text-center">
-                    <a routerLink="/order" [queryParams]="{package: 'congress'}" mat-flat-button class="os-button filled bordered grey">
-                        <span translate>Order now</span>
-                    </a>
+                    <p>
+                        <span translate>bis</span> <b>&nbsp;1.000&nbsp;</b> <span translate>participants</span>
+                    </p>
+                    <h1>200 € <small translate>/ Monat</small></h1>
+                    <small>{{ 'Mindestlaufzeit: 3 Monate' | translate }}</small>
+                    <p><small>
+                        zubuchbare Zusatzfunktionen:<br>
+                        &#10003; eVoting  <br>
+                        &#10003; Video-Livestream<br>
+                        &#10003; Single-Sign-On
+                        </small>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <p>
         <small>
-            {{ 'Minimum term of 3 month.' | translate }}
+            
             {{ 'All prices plus VAT.' | translate }}
             {{ '5% discount when paying 12 months in advance.' | translate }}
         </small>
     </p>
 
-    <div class="mt-2 mb-2">
-        <span translate>You want to install OpenSlides on your own server?</span>
-        <span>&nbsp;<a class="inline" routerLink="/" fragment="getting-started" translate>Learn more ...</a></span>
-    </div>
-
     <div class="mt-1">
-        <b translate>For all hosting packages we offer the following services:</b>
+       <b><small translate="">For all hosting packages we offer the following services:</small></b>
     </div>
-    <mat-list fxLayout="row" class="better-list wrap-mobile mt-0 mb-1">
+    <mat-list fxLayout="row" class="wrap-mobile mt-0 mb-1">
         <div>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>continuous updates</span></mat-list-item>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>sending of invitation emails</span></mat-list-item>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>individual support at cost (125 € / hour, half-hourly billing)</span></mat-list-item>
+            <mat-list-item>&#10003; <span translate>continuous updates</span></mat-list-item>
+            <mat-list-item>&#10003; <span translate>sending of invitation emails</span></mat-list-item>
+            <mat-list-item>&#10003; <span translate>individual support at cost (125 € / hour, half-hourly billing)</span></mat-list-item>
         </div>
         <div>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure connection: HTTPS with Let's Encrypt certificates</span></mat-list-item>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure data: Completion of a contract for data processing</span></mat-list-item>
-            <mat-list-item><mat-icon matListIcon>check</mat-icon> <span translate>secure operation: every event runs as an isolated OpenSlides instance with its own database</span></mat-list-item>
+            <mat-list-item>&#10003; <span translate>secure connection: HTTPS with Let's Encrypt certificates</span></mat-list-item>
+            <mat-list-item>&#10003; <span translate>secure data: Completion of a contract for data processing</span></mat-list-item>
+            <mat-list-item>&#10003; <span translate>secure operation: every event runs as an isolated OpenSlides instance with its own database</span></mat-list-item>
         </div>
     </mat-list>
 
-    <div class="mt-1">
-        <p><b translate>Additional features:</b> (Preis auf Anfrage)</p>
-        <p>
-            <b>» NEU: eVoting</b><br>
-            <span translate>integrated electronic voting for motions and elections</span>
-            <br><span translate>(z.B. für Online-Versammlungen mit Live-Voting)</span>
-        </p>
-        <p>
-            <b>» Single Sign-On via SAML</b><br>
-            <span translate>use existing member accounts for login in OpenSlides</span>
-        </p>
+
+
+
+    <div class="mt-2 mb-2 blue-links">
+        <h2 translate>3. Wählen Sie praktische Zusatzfunktionen</h2>
+        <ul>
+            <li>
+            <u><b translate>eVoting – unerlässlich für Online-Versammlungen mit Live-Voting</b></u><br>
+            <span translate>Erweitern Sie OpenSlides um ein integriertes elektronisches Abstimmungssystem.
+            Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen.
+            Möglich sind namentliche oder nicht-namentliche Antragsabstimmungen und Personenwahlen. 
+            Auch individuelle Stimmgewichtungen sind möglich.<br> Testen Sie die elektronische Stimmabgabe in der
+            <a class="inline" href="https://demo.openslides.org/" target="_blank">Online-Demo</a>.
+            <br>
+            <b><i>50€/Monat <span style="color: red">&#8594; Corona-Aktionspreis: 0€ für die ersten 3 Monate (nur im Hostingpaket "Sitzung")</span></i></b><br>
+            </span>
+        
+            <li>
+            <u><b translate>Audiokonferenz – ideal zum Austausch für kleine virtuelle Gremiensitzung</b></u><br>
+            <span translate>Verwenden Sie OpenSlides mit integrierter Audiokonferenz.  Über unseren exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle Teilnehmende direkt miteinander - geschützt in
+                einem Passwort-gesicherten Audio-Konferenzraum.
+                Jede/r verbindet sich automatisch nach dem Login in OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und auschalten.</span>
+            <br>
+            <b><i>50€/Monat · bis 50 Teilnehmende</i></b>
+        
+            <li>
+            <u><b translate>Video-Livestream – ideal für große virtuelle Versammlungen und Parteitage</b></u><br>
+            <span translate>Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in OpenSlides.
+                Möchte sich eine Person zu Wort melden, setzt sich diese selbständig auf die aktuelle Redeliste und wechselt damit automatisch in einen Jitsi-Videokonferenzraum.
+                Der Livestream überträgt die Videokonferenz. Nach Ende der Wortmelung verlässt man den Konferenzraum und verfolgt wieder den Livestream.</span><br>
+
+                <span translate>Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen Videokonferenzen) und erlaubt die größtmögliche Skalierung an Teilnehmerzahlen.
+                Virtuelle Veranstaltungen mit mehreren Hundert Personen sind damit kein Problem mehr.
+                Hinzu kommt, dass die meißten Teilnehmenden eine Veranstaltung nur "konsomierend" verfolgen, d.h. nur ein kleiner Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden.
+                Setzen Sie daher lieber auf erpobte Broadcast-Streaming-Lösung – intelligent gekoppelt mit der OpenSlides-Redelistenfunktion.</span><br>
+                <span translate>Kontaktieren Sie uns! Wir finden die passende Streaming-Lösung für Ihre Veranstaltung.</span>
+            <br><b><i>Preis auf Anfrage · ab 50 Teilnehmende</i></b>
+                
+            <li>
+            <u><b translate>Single Sign-On via SAML – ideal für Organisationen mit zentralem Mitgliedsserver</b></u><br>
+            <span translate>Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten Mitgliedsaccounts in OpenSlides anzumelden. OpenSlides unterstützt den Standard "SAML"
+                (Security Assertion Markup Language) für Single Sign-On (SSO). Ersparen Sie sich damit die Teilnehmerverwaltung in OpenSlides. Und Ihre Mitglieder brauchen sich keinen extra OpenSlides-Login merken.</span>
+            <br><b><i>50€/Monat</i></b>
+        </ul>
+        
+        <small>{{ 'All prices plus VAT.' | translate }}</small>
+    </div>
+
+    <div class="mt-2 mb-2 blue-links">
+        <h2 translate>4. Jetzt bestellen!</h2>
+        <div>
+            <a routerLink="/order" [queryParams]="{package: 'conference'}" mat-flat-button class="os-button filled bordered blue">
+                <span translate>Online-Bestellformular</span>
+            </a>
+
+            <p>Sind noch Fragen offen? Haben Sie individuelle Wünsche? Schreiben Sie uns an
+                <a href="mailto:hosting@openslides.com" class="inline">hosting@openslides.com</a>!
+            </p>
+        </div>
+    </div>
+
+    <div class="mt-1 mb-1 blue-links">
+        <h2 translate>5. Nichts dabei? Mach's kostenfrei!</h2>
+
+        <span translate>OpenSlides ist Freie Open Source Software und kann – mit einigen administrativen Kenntnissen –  auch selbständig auf dem eigenen Server installiert werden.</span>
+        <span>&nbsp;<a class="inline" routerLink="/" fragment="getting-started" translate>Learn more ...</a></span>
     </div>
 
 </div>

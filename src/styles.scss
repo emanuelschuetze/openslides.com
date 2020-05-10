@@ -18,8 +18,6 @@ a {
     color: inherit;
     
     &.inline {
-        font-weight: 400;
-
         &:hover {
             text-decoration: underline;
         }
@@ -40,6 +38,10 @@ a {
 
 b, strong {
     font-weight: 400;
+}
+
+small {
+    font-size: 16px;
 }
 
 h3 {
@@ -386,7 +388,7 @@ h2 {
 .mat-list-base .mat-list-item .mat-list-item-content {
     align-items: flex-start !important;
     padding: 0 25px 7px 0 !important;
-    font-size: 17px;
+    font-size: 16px;
 
     .mat-list-icon {
         padding: 0;

@@ -1,45 +1,69 @@
-/** Regular */
+/* Regular */
 @font-face {
-    font-family: Fira Sans;
+    font-family: 'Fira Sans';
     font-style: normal;
     font-display: swap;
     font-weight: 300;
     src: url('assets/fonts/FiraSans-Light.ttf') format('ttf');
 }
 
-/** Italic */
+/* Italic */
 @font-face {
-    font-family: Fira Sans;
+    font-family: 'Fira Sans';
     font-style: italic;
     font-display: swap;
     font-weight: 300;
     src: url('assets/fonts/FiraSans-LightItalic.ttf') format('ttf');
 }
 
-/** Medium */
+/* Medium */
 @font-face {
-    font-family: Fira Sans;
+    font-family: 'Fira Sans';
     font-style: bold;
     font-display: swap;
     font-weight: 500;
     src: url('assets/fonts/fira-sans-latin-500.woff') format('woff');
 }
 
-/** Condensed Regular */
+/* Fire Sans Condensed Light (300) */
 @font-face {
     font-family: 'Fira Sans Condensed';
     font-style: normal;
     font-display: swap;
     font-weight: 300;
-    src: url('assets/fonts/FiraSansCondensed-Light.ttf') format('ttf');
+    src: url('assets/fonts/fira-sans-condensed-300.woff') format('woff');
 }
-
+/* Fire Sans Condensed Regular (400) */
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url('assets/fonts/fira-sans-condensed-400.woff') format('woff');
+}
+/* Fire Sans Condensed Medium (500) */
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url('assets/fonts/fira-sans-condensed-500.woff') format('woff');
+}
+/* Fire Sans Condensed Bold (700) */
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url('assets/fonts/fira-sans-condensed-700.woff') format('woff');
+}
 
 h1,
 h2,
 h3,
-.mat-flat-button {
-    font-family: 'Fira Sans Condensed', sans-serif;
+.mat-flat-button,
+.mat-list-item {
+    font-family: 'Fira Sans Condensed';
 }
 
 .mat-flat-button {
