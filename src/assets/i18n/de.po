@@ -1,11 +1,12 @@
+# 
 # Translators:
 # Katharina <karmitt2@web.de>, 2019
-# Joshua Sangmeister <joshua.sangmeister@gmail.com>, 2019
 # Emanuel Schütze <emanuel.schuetze@intevation.de>, 2020
+# jsangmeister <joshua.sangmeister@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
-"Last-Translator: Emanuel Schütze <emanuel.schuetze@intevation.de>, 2020\n"
+"Last-Translator: jsangmeister <joshua.sangmeister@gmail.com>, 2020\n"
 "Language-Team: German (https://www.transifex.com/openslides/teams/14270/de/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,8 +14,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "mime-version: 1.0\n"
 
+msgid "/ Monat"
+msgstr ""
+
+msgid "3. Wählen Sie praktische Zusatzfunktionen"
+msgstr ""
+
+msgid "4. Jetzt bestellen!"
+msgstr ""
+
 msgid "5% discount when paying 12 months in advance."
 msgstr "5% Rabatt bei Vorauszahlung von 12 Monaten."
+
+msgid "5. Nichts dabei? Mach's kostenfrei!"
+msgstr ""
 
 msgid ""
 "Accelerate your processes via consistently management with only one "
@@ -32,9 +45,6 @@ msgstr ""
 "Beziehen Sie das Plenum aktiv mit ein. Öffnen Sie den mobilen Zugriff auf "
 "OpenSlides – zur Einsicht wichtiger Dokumente, zum Einreichen von Anträgen "
 "oder Abrufen von Wahlergebnissen."
-
-msgid "Additional features:"
-msgstr "Zusatzfunktionen:"
 
 msgid "Agenda"
 msgstr "Tagesordnung"
@@ -63,6 +73,10 @@ msgstr ""
 "und Veröffentlichung aller relevanten Versammlungsinhalte auf Leinwand, "
 "Notebook oder Smartphone."
 
+msgid ""
+"Audiokonferenz – ideal zum Austausch für kleine virtuelle Gremiensitzung"
+msgstr ""
+
 msgid "Automatic numbering of agenda points"
 msgstr "Automatische Nummerierung von Tagesordnungspunkten"
 
@@ -90,9 +104,6 @@ msgstr ""
 "Sachgebiete und Antragsnummer zu. Protokollieren Sie Beschluss und "
 "Abstimmungsergebnis während der Antragsberatung. Die flexible Filterung der "
 "Liste hilft bei der Suche in allen Anträgen und ihren Änderungen."
-
-msgid "Choose a hosting package that fits your assembly size:"
-msgstr "Wählen Sie ein Hosting-Paket passend zu Ihrer Veranstaltungsgröße:"
 
 msgid "Choose package"
 msgstr "Paket wählen"
@@ -169,6 +180,13 @@ msgstr "Demo"
 msgid "Development and editing:"
 msgstr "Entwicklung und Redaktion:"
 
+msgid ""
+"Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen Videokonferenzen) und erlaubt die größtmögliche Skalierung an Teilnehmerzahlen.\n"
+"                Virtuelle Veranstaltungen mit mehreren Hundert Personen sind damit kein Problem mehr.\n"
+"                Hinzu kommt, dass die meißten Teilnehmenden eine Veranstaltung nur \"konsomierend\" verfolgen, d.h. nur ein kleiner Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden.\n"
+"                Setzen Sie daher lieber auf erpobte Broadcast-Streaming-Lösung – intelligent gekoppelt mit der OpenSlides-Redelistenfunktion."
+msgstr ""
+
 msgid "Directly witness live changes"
 msgstr "Live-Änderungen direkt miterleben"
 
@@ -187,8 +205,23 @@ msgstr "Wahlen"
 msgid "Enter election results and project them with a diagram"
 msgstr "Wahlergebnisse eingeben und mit Diagramm projizieren"
 
+msgid ""
+"Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten Mitgliedsaccounts in OpenSlides anzumelden. OpenSlides unterstützt den Standard \"SAML\"\n"
+"                (Security Assertion Markup Language) für Single Sign-On (SSO). Ersparen Sie sich damit die Teilnehmerverwaltung in OpenSlides. Und Ihre Mitglieder brauchen sich keinen extra OpenSlides-Login merken."
+msgstr ""
+
 msgid "Error:"
 msgstr "Fehler:"
+
+msgid ""
+"Erweitern Sie OpenSlides um ein integriertes elektronisches Abstimmungssystem.\n"
+"            Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen.\n"
+"            Möglich sind namentliche oder nicht-namentliche Antragsabstimmungen und Personenwahlen. \n"
+"            Auch individuelle Stimmgewichtungen sind möglich.<br> Testen Sie die elektronische Stimmabgabe in der\n"
+"            <a class=\"inline\" href=\"https://demo.openslides.org/\" target=\"_blank\">Online-Demo</a>.\n"
+"            <br>\n"
+"            <b><i>50€/Monat <span style=\"color: red\">&#8594; Corona-Aktionspreis: 0€ für die ersten 3 Monate (nur im Hostingpaket \"Sitzung\")</span></i></b><br>"
+msgstr ""
 
 msgid "Event date"
 msgstr "Veranstaltungszeitraum"
@@ -255,6 +288,9 @@ msgstr "Globale Chronik auf Basis von Snapshots"
 msgid "Helth care"
 msgstr "Gesundheitswesen"
 
+msgid "Hinweise zur Auswahl"
+msgstr ""
+
 msgid "Hosting"
 msgstr "Hosting"
 
@@ -284,6 +320,12 @@ msgstr ""
 "Inoffizielle Tagesordnungspunkte (z. B. Pausen) in die Tagesordnung "
 "integrieren"
 
+msgid ""
+"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in OpenSlides.\n"
+"                Möchte sich eine Person zu Wort melden, setzt sich diese selbständig auf die aktuelle Redeliste und wechselt damit automatisch in einen Jitsi-Videokonferenzraum.\n"
+"                Der Livestream überträgt die Videokonferenz. Nach Ende der Wortmelung verlässt man den Konferenzraum und verfolgt wieder den Livestream."
+msgstr ""
+
 msgid "Introduction and consulting"
 msgstr "Programmvorstellung und Beratung"
 
@@ -292,6 +334,11 @@ msgstr "Rechnungsempfänger"
 
 msgid "Keep an eye on the projections with the history"
 msgstr "Projektionshistorie durch einen Verlauf im Überblick behalten"
+
+msgid ""
+"Kontaktieren Sie uns! Wir finden die passende Streaming-Lösung für Ihre "
+"Veranstaltung."
+msgstr ""
 
 msgid "Learn more"
 msgstr "Mehr erfahren"
@@ -329,14 +376,11 @@ msgstr ""
 msgid "Mark and hide closed agenda points"
 msgstr "Abgeschlossene Tagesordnungspunkte markieren und verstecken"
 
-msgid "Meeting"
-msgstr "Sitzung"
-
 msgid "Meeting (50 € / month)"
 msgstr "Sitzung (50 € / Monat)"
 
-msgid "Minimum term of 3 month."
-msgstr "Mindestlaufzeit von 3 Monaten."
+msgid "Mindestlaufzeit: 3 Monate"
+msgstr ""
 
 msgid "More features"
 msgstr "Mehr Funktionen"
@@ -387,6 +431,9 @@ msgstr "Telefonrufbereitschaft"
 msgid "On-site assistance"
 msgstr "Vor-Ort-Service"
 
+msgid "Online-Bestellformular"
+msgstr ""
+
 msgid "OpenSlides is Free Software, licensed under MIT."
 msgstr "OpenSlides ist Freie Software, lizenziert unter MIT."
 
@@ -415,6 +462,12 @@ msgstr ""
 " Anträge, Wahlen, Dokumente, Redelisten und Teilnehmende. Webbasiert und "
 "immer auf dem neuesten Stand. "
 
+msgid ""
+"OpenSlides ist Freie Open Source Software und kann – mit einigen "
+"administrativen Kenntnissen –  auch selbständig auf dem eigenen Server "
+"installiert werden."
+msgstr ""
+
 msgid "OpenSlides package"
 msgstr "OpenSlides-Paket"
 
@@ -433,9 +486,6 @@ msgstr "Anordnen von Inhalten in einer Warteschlange"
 
 msgid "Order hosting"
 msgstr "Hosting bestellen"
-
-msgid "Order now"
-msgstr "Jetzt bestellen"
 
 msgid "Organisation"
 msgstr "Organisation"
@@ -538,6 +588,14 @@ msgstr "Anzeigen/Verstecken von Anträgen in der Tagesordnung"
 msgid "Simple interaction"
 msgstr "Einfache Interaktion"
 
+msgid ""
+"Single Sign-On via SAML – ideal für Organisationen mit zentralem "
+"Mitgliedsserver"
+msgstr ""
+
+msgid "Sitzung"
+msgstr ""
+
 msgid "Sort motions in a calling list"
 msgstr "Sortierung von Anträgen in einer Aufrufliste"
 
@@ -608,6 +666,16 @@ msgid "Unions"
 msgstr "Gewerkschaften"
 
 msgid ""
+"Verwenden Sie OpenSlides mit integrierter Audiokonferenz.  Über unseren exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle Teilnehmende direkt miteinander - geschützt in\n"
+"                einem Passwort-gesicherten Audio-Konferenzraum.\n"
+"                Jede/r verbindet sich automatisch nach dem Login in OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und auschalten."
+msgstr ""
+
+msgid ""
+"Video-Livestream – ideal für große virtuelle Versammlungen und Parteitage"
+msgstr ""
+
+msgid ""
 "We gladly assist you in any questions about OpenSlides or offer a personal "
 "consultation."
 msgstr ""
@@ -630,6 +698,9 @@ msgstr ""
 "Wir werden diese schnellstmöglich bearbeiten und uns dann zeitnah bei Ihnen "
 "melden."
 
+msgid "Wählen Sie das Hostingpaket passend zu Ihrer Veranstaltungsgröße"
+msgstr ""
+
 msgid ""
 "You need individual support at your assembly and professional consultation "
 "from the OpenSlides developers? You're missing a function or you want "
@@ -651,18 +722,11 @@ msgstr ""
 "Erhalten Sie Neuigkeiten und Bekanntmachungen über neue OpenSlides-"
 "Entwicklungen. Tragen Sie sich hier in unseren Verteiler ein:"
 
-msgid "You want to install OpenSlides on your own server?"
-msgstr "Sie wollen OpenSlides auf Ihrem eigenen Server installieren?"
-
 msgid ""
-"You want to install OpenSlides on your own server? We offer our software as "
-"PyPI package and as source code. Please note that we can offer technical "
-"support for our hosting solutions only."
+"You want to install OpenSlides on your own server? We offer our software as\n"
+"                                PyPI package and as source code. Please note that we can offer technical support for our\n"
+"                                hosting solutions only."
 msgstr ""
-"Sie wollen OpenSlides auf ihrem eigenen Server installieren? Wir bieten "
-"unsere Software als PyPI-Paket und als Quellcode-Download an. Beachten Sie, "
-"dass wir unseren technischen Support nur für unsere Hosting-Pakete anbieten "
-"können."
 
 msgid ""
 "You want to use OpenSlides for your next assembly, but don't want to care "
@@ -679,34 +743,25 @@ msgstr ""
 msgid "Zipcode"
 msgstr "PLZ"
 
+msgid "OpenSlides: the digital motion and assembly system"
+msgstr "OpenSlides: das digitale Antrags- und Versammlungssystem"
+
+msgid "bis"
+msgstr ""
+
 msgid "continuous updates"
 msgstr "kontinuierliche Updates"
 
-msgid "in development, for v3.2"
-msgstr "in Entwicklung, für v3.2"
+msgid "eVoting – unerlässlich für Online-Versammlungen mit Live-Voting"
+msgstr ""
 
 msgid "individual support at cost (125 € / hour, half-hourly billing)"
 msgstr ""
 "individueller Support nach Aufwand (125 € / Stunde, halbstundengenaue "
 "Abrechnung)"
 
-msgid "integrated electronic voting for motions and elections"
-msgstr "integriertes elektronisches Voting für Anträge und Wahlen"
-
-msgid "max."
-msgstr "max."
-
 msgid "participants"
 msgstr "Teilnehmende"
-
-msgid "per month"
-msgstr "pro Monat"
-
-msgid "per month/event"
-msgstr "pro Monat/Veranstaltung"
-
-msgid "plus VAT"
-msgstr "zzgl. USt."
 
 msgid "secure connection: HTTPS with Let's Encrypt certificates"
 msgstr "sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten"
@@ -723,7 +778,3 @@ msgstr ""
 
 msgid "sending of invitation emails"
 msgstr "Versand von Einladungs-E-Mails"
-
-msgid "use existing member accounts for login in OpenSlides"
-msgstr ""
-"existierende Mitglieder-Konten für die Anmeldung in OpenSlides verwenden"

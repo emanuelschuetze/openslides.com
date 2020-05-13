@@ -4,7 +4,19 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "/ Monat"
+msgstr ""
+
+msgid "3. Wählen Sie praktische Zusatzfunktionen"
+msgstr ""
+
+msgid "4. Jetzt bestellen!"
+msgstr ""
+
 msgid "5% discount when paying 12 months in advance."
+msgstr ""
+
+msgid "5. Nichts dabei? Mach's kostenfrei!"
 msgstr ""
 
 msgid ""
@@ -16,9 +28,6 @@ msgstr ""
 msgid ""
 "Actively integrate the plenum. Open the mobile access to OpenSlides – for "
 "get important documents, submit and read motions or check election results."
-msgstr ""
-
-msgid "Additional features:"
 msgstr ""
 
 msgid "Agenda"
@@ -43,6 +52,9 @@ msgid ""
 "relevant assembly contents to a projector, notebook or smartphone."
 msgstr ""
 
+msgid "Audiokonferenz – ideal zum Austausch für kleine virtuelle Gremiensitzung"
+msgstr ""
+
 msgid "Automatic numbering of agenda points"
 msgstr ""
 
@@ -63,9 +75,6 @@ msgid ""
 "numbers. Log the resolution and polling results during the motion "
 "discussion. The flexible filtering helps you while searching in all motions "
 "and their changes."
-msgstr ""
-
-msgid "Choose a hosting package that fits your assembly size:"
 msgstr ""
 
 msgid "Choose package"
@@ -132,6 +141,20 @@ msgstr ""
 msgid "Development and editing:"
 msgstr ""
 
+msgid ""
+"Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen "
+"Videokonferenzen) und erlaubt die größtmögliche Skalierung an "
+"Teilnehmerzahlen.\n"
+"                Virtuelle Veranstaltungen mit mehreren Hundert Personen "
+"sind damit kein Problem mehr.\n"
+"                Hinzu kommt, dass die meißten Teilnehmenden eine "
+"Veranstaltung nur \"konsomierend\" verfolgen, d.h. nur ein kleiner "
+"Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden.\n"
+"                Setzen Sie daher lieber auf erpobte "
+"Broadcast-Streaming-Lösung – intelligent gekoppelt mit der "
+"OpenSlides-Redelistenfunktion."
+msgstr ""
+
 msgid "Directly witness live changes"
 msgstr ""
 
@@ -150,7 +173,34 @@ msgstr ""
 msgid "Enter election results and project them with a diagram"
 msgstr ""
 
+msgid ""
+"Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten "
+"Mitgliedsaccounts in OpenSlides anzumelden. OpenSlides unterstützt den "
+"Standard \"SAML\"\n"
+"                (Security Assertion Markup Language) für Single Sign-On "
+"(SSO). Ersparen Sie sich damit die Teilnehmerverwaltung in OpenSlides. Und "
+"Ihre Mitglieder brauchen sich keinen extra OpenSlides-Login merken."
+msgstr ""
+
 msgid "Error:"
+msgstr ""
+
+msgid ""
+"Erweitern Sie OpenSlides um ein integriertes elektronisches "
+"Abstimmungssystem.\n"
+"            Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in "
+"OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen "
+"abstimmen.\n"
+"            Möglich sind namentliche oder nicht-namentliche "
+"Antragsabstimmungen und Personenwahlen. \n"
+"            Auch individuelle Stimmgewichtungen sind möglich.<br> Testen "
+"Sie die elektronische Stimmabgabe in der\n"
+"            <a class=\"inline\" href=\"https://demo.openslides.org/\" "
+"target=\"_blank\">Online-Demo</a>.\n"
+"            <br>\n"
+"            <b><i>50€/Monat <span style=\"color: red\">&#8594; "
+"Corona-Aktionspreis: 0€ für die ersten 3 Monate (nur im Hostingpaket "
+"\"Sitzung\")</span></i></b><br>"
 msgstr ""
 
 msgid "Event date"
@@ -216,6 +266,9 @@ msgstr ""
 msgid "Helth care"
 msgstr ""
 
+msgid "Hinweise zur Auswahl"
+msgstr ""
+
 msgid "Hosting"
 msgstr ""
 
@@ -243,6 +296,18 @@ msgstr ""
 msgid "Integrate inofficial agenda points (e.g. breaks) into the agenda"
 msgstr ""
 
+msgid ""
+"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
+"OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
+"OpenSlides.\n"
+"                Möchte sich eine Person zu Wort melden, setzt sich diese "
+"selbständig auf die aktuelle Redeliste und wechselt damit automatisch in "
+"einen Jitsi-Videokonferenzraum.\n"
+"                Der Livestream überträgt die Videokonferenz. Nach Ende der "
+"Wortmelung verlässt man den Konferenzraum und verfolgt wieder den "
+"Livestream."
+msgstr ""
+
 msgid "Introduction and consulting"
 msgstr ""
 
@@ -250,6 +315,11 @@ msgid "Invoice recipient"
 msgstr ""
 
 msgid "Keep an eye on the projections with the history"
+msgstr ""
+
+msgid ""
+"Kontaktieren Sie uns! Wir finden die passende Streaming-Lösung für Ihre "
+"Veranstaltung."
 msgstr ""
 
 msgid "Learn more"
@@ -285,13 +355,10 @@ msgstr ""
 msgid "Mark and hide closed agenda points"
 msgstr ""
 
-msgid "Meeting"
-msgstr ""
-
 msgid "Meeting (50 € / month)"
 msgstr ""
 
-msgid "Minimum term of 3 month."
+msgid "Mindestlaufzeit: 3 Monate"
 msgstr ""
 
 msgid "More features"
@@ -338,6 +405,9 @@ msgstr ""
 msgid "On-site assistance"
 msgstr ""
 
+msgid "Online-Bestellformular"
+msgstr ""
+
 msgid "OpenSlides is Free Software, licensed under MIT."
 msgstr ""
 
@@ -358,6 +428,12 @@ msgid ""
 "up-to-date."
 msgstr ""
 
+msgid ""
+"OpenSlides ist Freie Open Source Software und kann – mit einigen "
+"administrativen Kenntnissen –  auch selbständig auf dem eigenen Server "
+"installiert werden."
+msgstr ""
+
 msgid "OpenSlides package"
 msgstr ""
 
@@ -373,9 +449,6 @@ msgid "Order contents in a queue"
 msgstr ""
 
 msgid "Order hosting"
-msgstr ""
-
-msgid "Order now"
 msgstr ""
 
 msgid "Organisation"
@@ -465,6 +538,14 @@ msgstr ""
 msgid "Simple interaction"
 msgstr ""
 
+msgid ""
+"Single Sign-On via SAML – ideal für Organisationen mit zentralem "
+"Mitgliedsserver"
+msgstr ""
+
+msgid "Sitzung"
+msgstr ""
+
 msgid "Sort motions in a calling list"
 msgstr ""
 
@@ -527,6 +608,19 @@ msgid "Unions"
 msgstr ""
 
 msgid ""
+"Verwenden Sie OpenSlides mit integrierter Audiokonferenz.  Über unseren "
+"exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle "
+"Teilnehmende direkt miteinander - geschützt in\n"
+"                einem Passwort-gesicherten Audio-Konferenzraum.\n"
+"                Jede/r verbindet sich automatisch nach dem Login in "
+"OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und "
+"auschalten."
+msgstr ""
+
+msgid "Video-Livestream – ideal für große virtuelle Versammlungen und Parteitage"
+msgstr ""
+
+msgid ""
 "We gladly assist you in any questions about OpenSlides or offer a personal "
 "consultation."
 msgstr ""
@@ -539,6 +633,9 @@ msgid ""
 msgstr ""
 
 msgid "We will work on it as fast as possible and then contact you soon."
+msgstr ""
+
+msgid "Wählen Sie das Hostingpaket passend zu Ihrer Veranstaltungsgröße"
 msgstr ""
 
 msgid ""
@@ -556,13 +653,11 @@ msgid ""
 "for our newsletter (sorry, only in German):"
 msgstr ""
 
-msgid "You want to install OpenSlides on your own server?"
-msgstr ""
-
 msgid ""
-"You want to install OpenSlides on your own server? We offer our software as "
-"PyPI package and as source code. Please note that we can offer technical "
-"support for our hosting solutions only."
+"You want to install OpenSlides on your own server? We offer our software as\n"
+"                                PyPI package and as source code. Please "
+"note that we can offer technical support for our\n"
+"                                hosting solutions only."
 msgstr ""
 
 msgid ""
@@ -576,31 +671,22 @@ msgstr ""
 msgid "Zipcode"
 msgstr ""
 
+msgid "OpenSlides: the digital motion and assembly system"
+msgstr ""
+
+msgid "bis"
+msgstr ""
+
 msgid "continuous updates"
 msgstr ""
 
-msgid "in development, for v3.2"
+msgid "eVoting – unerlässlich für Online-Versammlungen mit Live-Voting"
 msgstr ""
 
 msgid "individual support at cost (125 € / hour, half-hourly billing)"
 msgstr ""
 
-msgid "integrated electronic voting for motions and elections"
-msgstr ""
-
-msgid "max."
-msgstr ""
-
 msgid "participants"
-msgstr ""
-
-msgid "per month"
-msgstr ""
-
-msgid "per month/event"
-msgstr ""
-
-msgid "plus VAT"
 msgstr ""
 
 msgid "secure connection: HTTPS with Let's Encrypt certificates"
@@ -615,7 +701,4 @@ msgid ""
 msgstr ""
 
 msgid "sending of invitation emails"
-msgstr ""
-
-msgid "use existing member accounts for login in OpenSlides"
 msgstr ""

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRouteSnapshot, CanActivate, NavigationEnd, Router, UrlSegment } from '@angular/router';
 
 import { TranslateService } from '@ngx-translate/core';
@@ -29,7 +30,9 @@ export function LanguageUrlMatcher(url: UrlSegment[]): { consumed: UrlSegment[] 
     providedIn: 'root'
 })
 export class LanguageService implements CanActivate {
-    public constructor(protected translate: TranslateService, private router: Router) {
+    private title_string = 'OpenSlides: the digital motion and assembly system';
+
+    public constructor(protected translate: TranslateService, private router: Router, private title: Title) {
         this.translate.addLangs(languages.map(e => e.code));
         this.translate.setDefaultLang('en'); // english is default language
         this.router.events.subscribe(event => {
@@ -37,6 +40,10 @@ export class LanguageService implements CanActivate {
                 const lang = this.getCurrentLanguage();
                 this.translate.use(lang).subscribe();
             }
+        });
+
+        this.translate.stream(this.title_string).subscribe(translated_title => {
+            this.title.setTitle(translated_title);
         });
     }
 
