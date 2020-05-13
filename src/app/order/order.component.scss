@@ -10,6 +10,16 @@
         width: 100%;
     }
 
+    .url-preview {
+        white-space: nowrap;
+    }
+
+    .details-link {
+        float: right;
+        font-size: smaller;
+        color: #666;
+    }
+
     .error-div {
         border-radius: 4px;
         border: 1px solid red;

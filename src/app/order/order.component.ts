@@ -1,3 +1,4 @@
+import { KeyValue } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -20,29 +21,27 @@ export class OrderComponent implements OnInit {
     public orderForm: FormGroup;
     public error = null;
 
+    public services = {
+        evoting: 'eVoting',
+        audio: 'Audiokonferenz via Jitsi',
+        video: 'Video-Livestream',
+        saml: 'Single Sign-On via SAML'
+    };
+
     public constructor(
         private fb: FormBuilder,
         private route: ActivatedRoute,
         private http: HttpClient,
         private router: Router
-    ) {}
-
-    public ngOnInit(): void {
-        let packageName = this.route.snapshot.queryParamMap.get('package');
-        if (!['meeting', 'conference', 'congress'].includes(packageName)) {
-            packageName = 'meeting';
-        }
-        this.createForm(packageName);
-    }
-
-    private createForm(packageName: string): void {
+    ) {
         this.orderForm = this.fb.group({
-            package: [packageName, [Validators.required, Validators.pattern(/^(meeting|conference|congress)$/)]],
+            package: ['', [Validators.required, Validators.pattern(/^(meeting|conference|congress)$/)]],
             domain: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9\-\.]+$/)]],
+            services: this.fb.group(Object.keys(this.services).mapToObject(service => ({ [service]: [false, []] }))),
             event_name: ['', [Validators.required, this.standard]],
             event_location: ['', [Validators.required, this.standard]],
             event_date: ['', [Validators.required, this.standard]],
-            expected_users: ['', [Validators.required]],
+            expected_users: ['', [Validators.required, Validators.min(0)]],
             contact_person: this.fb.group({
                 organisation: ['', [Validators.required, this.standard]],
                 name: ['', [Validators.required, this.standardNoNumber]],
@@ -58,15 +57,17 @@ export class OrderComponent implements OnInit {
                     ]
                 ]
             }),
-            billing_address: this.fb.group({
-                name: ['', [Validators.required, this.standard]],
-                street: ['', [Validators.required, this.standard]],
-                extra: [''],
-                zipcode: ['', [Validators.required, Validators.pattern(/^[0-9]{4,5}$/)]],
-                city: ['', [Validators.required, this.standardNoNumber]],
-                country: ['', [Validators.required, this.standardNoNumber]]
-            })
+            billing_address: ['', [Validators.required, this.standard]],
+            comment: ['', [this.standard]]
         });
+    }
+
+    public ngOnInit(): void {
+        let packageName = this.route.snapshot.queryParamMap.get('package');
+        if (!['meeting', 'conference', 'congress'].includes(packageName)) {
+            packageName = 'meeting';
+        }
+        this.orderForm.controls.package.setValue(packageName);
     }
 
     public async onSubmit(): Promise<void> {
@@ -79,12 +80,16 @@ export class OrderComponent implements OnInit {
             switch (error.status) {
                 case 502:
                 case 504:
-                    this.error = _('The server is not reachable at the moment. Please try again later.');
+                    this.error = _('Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte senden Sie uns Ihre Anfrage per E-Mail: hosting@openslides.com');
                     break;
                 default:
                     this.error = error.error.error || 'An unknwon error occurred.';
                     break;
             }
         }
+    }
+
+    public originalOrder(a: KeyValue<number, string>, b: KeyValue<number, string>): number {
+        return 0;
     }
 }

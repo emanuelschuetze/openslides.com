@@ -3,9 +3,8 @@
         <div class="text-center" translate>
             Senden Sie uns das ausgefüllte Formular. Mit unserer Bestätigung starten wir Ihr Hosting.
         </div>
-        <br>
 
-        <mat-form-field fxFlex.gt-sm="75">
+        <mat-form-field>
             <mat-label>
                 <span translate>OpenSlides-Paket</span>
             </mat-label>
@@ -19,6 +18,17 @@
             <input required type="text" matInput formControlName="domain" placeholder="{{ 'Wunschdomain' | translate }}">
             <span matSuffix>.openslides.com</span>
         </mat-form-field>
+        <div class="url-preview" *ngIf="orderForm.controls.domain.valid">
+            Domain: https://{{orderForm.controls.domain.value}}.openslides.com/
+        </div>
+
+        <h3 translate>Zusatzfunktionen</h3>
+        <div formGroupName="services">
+            <div *ngFor="let service of services | keyvalue: originalOrder">
+                <mat-checkbox [formControlName]="service.key">{{ service.value | translate }}</mat-checkbox>
+                <a class="details-link" target="_blank" routerLink="/pricing" [fragment]="service.key">Details</a>
+            </div>
+        </div>
 
         <h3 class="mb-0" translate>Veranstaltungsdetails</h3>
         <mat-form-field>
@@ -51,29 +61,30 @@
                 </mat-form-field>
             </div>
         </div>
-        <h3 class="mb-0" translate>Rechnungsadresse</h3>
-        <div formGroupName="billing_address">
+
+        <h3 class="mb-0" translate>Additional information</h3>
+        <div class="mb-1">
             <mat-form-field>
-                <input required type="text" matInput formControlName="name" placeholder="{{ 'Rechnungsempfänger' | translate }}">
+                <textarea 
+                    required 
+                    type="text"
+                    matInput
+                    cdkTextareaAutosize
+                    formControlName="billing_address"
+                    placeholder="{{ 'Billing Address' | translate }}"
+                ></textarea>
             </mat-form-field>
             <mat-form-field>
-                <input type="text" matInput formControlName="extra" placeholder="{{ 'Name oder Abteilung' | translate }}">
-            </mat-form-field>
-            <mat-form-field>
-                <input required type="text" matInput formControlName="street" placeholder="{{ 'Straße und Hausnummer' | translate }}">
-            </mat-form-field>
-            <div fxLayout="row wrap" appWrappable wrapMargin="4%">
-                <mat-form-field fxFlex.gt-sm="23">
-                    <input required type="text" matInput formControlName="zipcode" placeholder="{{ 'PLZ' | translate }}">
-                </mat-form-field>
-                <mat-form-field fxFlex.gt-sm="69">
-                    <input required type="text" matInput formControlName="city" placeholder="{{ 'Ort' | translate }}">
-                </mat-form-field>
-            </div>
-            <mat-form-field>
-                <input required type="text" matInput formControlName="country" placeholder="{{ 'Land' | translate }}">
+                <textarea 
+                    type="text"
+                    matInput
+                    cdkTextareaAutosize
+                    formControlName="comment"
+                    placeholder="{{ 'Comment' | translate }}"
+                ></textarea>
             </mat-form-field>
         </div>
+
         <button type="submit" [disabled]="!orderForm.valid" mat-flat-button class="os-button">
             <span translate>Anfrage absenden</span>
         </button>

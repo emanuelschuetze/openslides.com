@@ -12,6 +12,7 @@ declare global {
     interface Array<T> {
         flatMap(o: any): any[];
         shuffle(): any[];
+        mapToObject(f: (item: T) => { [key: string]: any }): { [key: string]: any };
     }
 }
 
@@ -28,30 +29,27 @@ export class AppComponent implements OnInit {
         public router: Router,
         public languageService: LanguageService
     ) {
-        this.overloadFlatMap();
-        this.overloadShuffle();
+        this.overloadArrayFunctions();
     }
 
     public ngOnInit(): void {
         this.dateAdapter.setLocale('en');
     }
 
-    /**
-     * Adds an implementation of flatMap.
-     * TODO: Remove once flatMap made its way into official JS/TS (ES 2019?)
-     */
-    private overloadFlatMap(): void {
+    private overloadArrayFunctions(): void {
+        /**
+         * Adds an implementation of flatMap.
+         * TODO: Remove once flatMap made its way into official JS/TS (ES 2019?)
+         */
         const concat = (x: any, y: any) => x.concat(y);
         const flatMap = (f: any, xs: any) => xs.map(f).reduce(concat, []);
         Array.prototype.flatMap = function(f: any): any[] {
             return flatMap(f, this);
         };
-    }
 
-    /**
-     * Adds a shuffle function to the array prototype
-     */
-    private overloadShuffle(): void {
+        /**
+         * Adds a shuffle function to the array prototype
+         */
         Array.prototype.shuffle = function(): any[] {
             const array = Array.from(this);
             for (let i = array.length - 1; i > 0; i--) {
@@ -59,6 +57,21 @@ export class AppComponent implements OnInit {
                 [array[i], array[j]] = [array[j], array[i]];
             }
             return array;
+        };
+
+        /**
+         * Add mapToObject
+         */
+        Array.prototype.mapToObject = function<T>(f: (item: T) => { [key: string]: any }): { [key: string]: any } {
+            return this.reduce((aggr, item) => {
+                const res = f(item);
+                for (const key in res) {
+                    if (res.hasOwnProperty(key)) {
+                        aggr[key] = res[key];
+                    }
+                }
+                return aggr;
+            }, {});
         };
     }
 }
