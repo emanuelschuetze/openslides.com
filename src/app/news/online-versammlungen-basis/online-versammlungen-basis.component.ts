@@ -6,4 +6,3 @@ import { Component } from '@angular/core';
     styleUrls: ['./online-versammlungen-basis.component.scss']
 })
 export class ArticleOnlineMeetingBasisComponent {}
-

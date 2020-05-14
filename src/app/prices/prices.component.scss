@@ -81,8 +81,8 @@
 li {
     list-style-type: none;
 }
-li::before  {
-    content: "» ";
+li::before {
+    content: '» ';
     /*color: #327896;*/
     font-weight: 400;
     margin-left: -15px;

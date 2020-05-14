@@ -29,8 +29,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArticlePaperlessComponent } from './news/article-paperless/article-paperless.component';
 import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
-import { ArticleOnlineMeetingComponent } from './news/online-versammlungen/online-versammlungen.component';
-import { ArticleOnlineMeetingBasisComponent } from './news/online-versammlungen-basis/online-versammlungen-basis.component';
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
 import { FeatureComponent } from './feature/feature.component';
 import { ImpressumComponent } from './legal-notice/legal-notice.component';
@@ -38,6 +36,8 @@ import { LocalizedDatePipe } from './localized-date.pipe';
 import { MainMenuComponent } from './main/main-menu/main-menu.component';
 import { MainComponent } from './main/main.component';
 import { NewsComponent } from './news/news.component';
+import { ArticleOnlineMeetingBasisComponent } from './news/online-versammlungen-basis/online-versammlungen-basis.component';
+import { ArticleOnlineMeetingComponent } from './news/online-versammlungen/online-versammlungen.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { OrderComponent } from './order/order.component';
 import { PricesComponent } from './prices/prices.component';
@@ -80,8 +80,8 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
         FeatureComponent,
         OrderSuccessComponent,
         DgbBundeskongressComponent,
-	    ArticleOnlineMeetingComponent,
-	    ArticleOnlineMeetingBasisComponent,
+        ArticleOnlineMeetingComponent,
+        ArticleOnlineMeetingBasisComponent,
         ReferenceContainerComponent,
         NewsComponent,
         ArticlePaperlessComponent,
