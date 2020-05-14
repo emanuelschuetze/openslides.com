@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -91,9 +92,9 @@ export class MainComponent implements OnInit, AfterViewInit {
 
     public getErrorMessage(): string {
         return this.mailInput.hasError('required')
-            ? 'You must enter a value'
+            ? _('You must enter a value')
             : this.mailInput.hasError('email')
-            ? 'Not a valid email'
+            ? _('Not a valid email')
             : this.error;
     }
 
@@ -121,10 +122,10 @@ export class MainComponent implements OnInit, AfterViewInit {
             switch (error.status) {
                 case 502:
                 case 504:
-                    this.error = 'The server is not reachable at the moment. Please try again later.';
+                    this.error = _('The server is not reachable at the moment. Please try again later.');
                     break;
                 default:
-                    this.error = error.error.error || 'An unknwon error occurred.';
+                    this.error = error.error.error || _('An unknwon error occurred.');
                     break;
             }
             this.mailInput.enable();

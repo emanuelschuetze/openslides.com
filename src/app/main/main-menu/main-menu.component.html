@@ -1,18 +1,18 @@
 <a  mat-menu-item routerLink="./pricing"
     [ngClass]="router.url.endsWith('/pricing') ? 'active' : ''">
-    <span translate>Pricing</span>
+    <span translate>Preise</span>
 </a>
 <a  mat-menu-item routerLink="/" fragment="features"
     [ngClass]="currentSection == 'features' ? 'active' : ''">
-    <span translate>Features</span>
+    <span translate>Funktionen</span>
 </a>
 <a  mat-menu-item routerLink="/" fragment="getting-started"
     [ngClass]="currentSection == 'getting-started' ? 'active' : ''">
-    <span translate>Start</span>
+    <span translate>Starten</span>
 </a>
 <a  mat-menu-item routerLink="/" fragment="references"
     [ngClass]="currentSection == 'references' ? 'active' : ''">
-    <span translate>References</span>
+    <span translate>Referenzen</span>
 </a>
 <a  mat-menu-item routerLink="/" fragment="news"
     [ngClass]="currentSection == 'news' ? 'active' : ''">
@@ -20,7 +20,7 @@
 </a>
 <a  mat-menu-item routerLink="/" fragment="contact"
     [ngClass]="currentSection == 'contact' ? 'active' : ''">
-    <span translate>Contact</span>
+    <span translate>Kontakt</span>
 </a>
 <a mat-menu-item [matMenuTriggerFor]="languageMenu" class="valign-wrapper">
     <img class="flag" [src]="'assets/img/flags/' + languageService.getCurrentLanguage() + '.png'" [alt]="'flag-' + languageService.getCurrentLanguage()">

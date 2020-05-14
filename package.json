@@ -13,8 +13,8 @@
     "prettify-write": "prettier --config ./.prettierrc --write \"src/{app,environments}/**/*{.ts,.js,.json,.css,.scss}\"",
     "cleanup": "npm run prettify-write; npm run lint-write",
     "cleanup-win": "npm run prettify-write & npm run lint-write",
-    "extract": "ngx-translate-extract -i ./src -o ./src/assets/i18n/template-en.pot --clean --sort --format pot -m _",
-    "po2json": "./node_modules/.bin/po2json -f mf src/assets/i18n/de.po src/assets/i18n/de.json"
+    "extract": "ngx-translate-extract -i ./src -o ./src/assets/i18n/template-de.pot --clean --sort --format pot -m _",
+    "po2json": "./node_modules/.bin/po2json -f mf src/assets/i18n/en.po src/assets/i18n/en.json"
   },
   "private": true,
   "dependencies": {

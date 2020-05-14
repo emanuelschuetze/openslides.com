@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
 
 @Component({
     selector: 'app-order',
@@ -78,7 +79,7 @@ export class OrderComponent implements OnInit {
             switch (error.status) {
                 case 502:
                 case 504:
-                    this.error = 'The server is not reachable at the moment. Please try again later.';
+                    this.error = _('The server is not reachable at the moment. Please try again later.');
                     break;
                 default:
                     this.error = error.error.error || 'An unknwon error occurred.';
