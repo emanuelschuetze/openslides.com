@@ -1,40 +1,40 @@
 <div class="container main-container">
     <form id="order-form" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
         <div class="text-center" translate>
-            Send us the form below and we will process your inquiry.
+            Senden Sie uns das ausgefüllte Formular. Mit unserer Bestätigung starten wir Ihr Hosting.
         </div>
         <br>
 
         <mat-form-field fxFlex.gt-sm="75">
             <mat-label>
-                <span translate>OpenSlides package</span>
+                <span translate>OpenSlides-Paket</span>
             </mat-label>
             <mat-select formControlName="package" required>
-                <mat-option value="meeting">{{ 'Meeting (50 € / month)' | translate }}</mat-option>
-                <mat-option value="conference">{{ 'Conference (100 € / month)' | translate }}</mat-option>
-                <mat-option value="congress">{{ 'Congress (200 € / month)' | translate }}</mat-option>
+                <mat-option value="meeting">{{ 'Sitzung (50 € / Monat)' | translate }}</mat-option>
+                <mat-option value="conference">{{ 'Tagung (100 € / Monat)' | translate }}</mat-option>
+                <mat-option value="congress">{{ 'Kongress (200 € / Monat)' | translate }}</mat-option>
             </mat-select>
         </mat-form-field><br>
         <mat-form-field fxFlex.gt-sm="75">
-            <input required type="text" matInput formControlName="domain" placeholder="{{ 'Preferred domain' | translate }}">
+            <input required type="text" matInput formControlName="domain" placeholder="{{ 'Wunschdomain' | translate }}">
             <span matSuffix>.openslides.com</span>
         </mat-form-field>
 
-        <h3 class="mb-0" translate>Event details</h3>
+        <h3 class="mb-0" translate>Veranstaltungsdetails</h3>
         <mat-form-field>
-            <input required type="text" matInput formControlName="event_name" placeholder="{{ 'Event name' | translate }}">
+            <input required type="text" matInput formControlName="event_name" placeholder="{{ 'Veranstaltungsname' | translate }}">
         </mat-form-field>
         <mat-form-field>
-            <input required type="text" matInput formControlName="event_location" placeholder="{{ 'Event location' | translate}}">
+            <input required type="text" matInput formControlName="event_location" placeholder="{{ 'Veranstaltungsort' | translate}}">
         </mat-form-field>
         <mat-form-field>
-            <input required type="text" matInput formControlName="event_date" placeholder="{{ 'Event date' | translate }}">
+            <input required type="text" matInput formControlName="event_date" placeholder="{{ 'Veranstaltungszeitraum' | translate }}">
         </mat-form-field>
         <mat-form-field>
-            <input required type="number" matInput min="0" formControlName="expected_users" placeholder="{{ 'Expected participants' | translate }}">
+            <input required type="number" matInput min="0" formControlName="expected_users" placeholder="{{ 'Erwartete Teilnehmeranzahl' | translate }}">
         </mat-form-field>
 
-        <h3 class="mb-0" translate>Contact person</h3>
+        <h3 class="mb-0" translate>Ansprechpartner</h3>
         <div formGroupName="contact_person" class="mb-1">
             <mat-form-field>
                 <input required type="text" matInput formControlName="name" placeholder="{{ 'Name' | translate }}">
@@ -47,38 +47,38 @@
                     <input required type="email" matInput formControlName="email" placeholder="{{ 'E-Mail' | translate }}">
                 </mat-form-field>
                 <mat-form-field fxFlex.gt-sm="46">
-                    <input required type="tel" matInput formControlName="phone" placeholder="{{ 'Phone' | translate }}">
+                    <input required type="tel" matInput formControlName="phone" placeholder="{{ 'Telefon' | translate }}">
                 </mat-form-field>
             </div>
         </div>
-        <h3 class="mb-0" translate>Billing address</h3>
+        <h3 class="mb-0" translate>Rechnungsadresse</h3>
         <div formGroupName="billing_address">
             <mat-form-field>
-                <input required type="text" matInput formControlName="name" placeholder="{{ 'Invoice recipient' | translate }}">
+                <input required type="text" matInput formControlName="name" placeholder="{{ 'Rechnungsempfänger' | translate }}">
             </mat-form-field>
             <mat-form-field>
-                <input type="text" matInput formControlName="extra" placeholder="{{ 'Name or department' | translate }}">
+                <input type="text" matInput formControlName="extra" placeholder="{{ 'Name oder Abteilung' | translate }}">
             </mat-form-field>
             <mat-form-field>
-                <input required type="text" matInput formControlName="street" placeholder="{{ 'Street and number' | translate }}">
+                <input required type="text" matInput formControlName="street" placeholder="{{ 'Straße und Hausnummer' | translate }}">
             </mat-form-field>
             <div fxLayout="row wrap" appWrappable wrapMargin="4%">
                 <mat-form-field fxFlex.gt-sm="23">
-                    <input required type="text" matInput formControlName="zipcode" placeholder="{{ 'Zipcode' | translate }}">
+                    <input required type="text" matInput formControlName="zipcode" placeholder="{{ 'PLZ' | translate }}">
                 </mat-form-field>
                 <mat-form-field fxFlex.gt-sm="69">
-                    <input required type="text" matInput formControlName="city" placeholder="{{ 'City' | translate }}">
+                    <input required type="text" matInput formControlName="city" placeholder="{{ 'Ort' | translate }}">
                 </mat-form-field>
             </div>
             <mat-form-field>
-                <input required type="text" matInput formControlName="country" placeholder="{{ 'Country' | translate }}">
+                <input required type="text" matInput formControlName="country" placeholder="{{ 'Land' | translate }}">
             </mat-form-field>
         </div>
         <button type="submit" [disabled]="!orderForm.valid" mat-flat-button class="os-button">
-            <span translate>Submit inquiry</span>
+            <span translate>Anfrage absenden</span>
         </button>
         <div class="error-div mt-1" *ngIf="error">
-            <span translate>Error:</span><br>
+            <span translate>Fehler:</span><br>
             {{ error }}
         </div>
     </form>

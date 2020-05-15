@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { TranslateService } from '@ngx-translate/core';
+import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker'
 
 export interface ReferenceObject {
     name: string;
@@ -19,7 +20,7 @@ export interface CategoryObject {
 export class ReferenceService {
     public references: CategoryObject[] = [
         {
-            name: this.translate.instant('Unions'),
+            name: _('Gewerkschaften'),
             refs: [
                 {
                     name: 'Deutscher Gewerkschaftsbund (DGB)',
@@ -67,7 +68,7 @@ export class ReferenceService {
             ]
         },
         {
-            name: this.translate.instant('Parties'),
+            name: _('Parteien'),
             refs: [
                 {
                     name: 'BÜNDNIS 90/DIE GRÜNEN',
@@ -131,7 +132,7 @@ export class ReferenceService {
             ]
         },
         {
-            name: this.translate.instant('Helth care'),
+            name: _('Gesundheitswesen'),
             refs: [
                 {
                     name: 'Marburger Bund',
@@ -172,7 +173,7 @@ export class ReferenceService {
             ]
         },
         {
-            name: this.translate.instant('Organisations, assosciations and more'),
+            name: _('Verbände, Vereine und mehr'),
             refs: [
                 {
                     name: 'Amnesty International',

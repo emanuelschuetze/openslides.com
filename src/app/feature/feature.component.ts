@@ -36,94 +36,94 @@ export class FeatureComponent implements OnInit {
 
     public featuresByRoute: { [route: string]: FeatureDescription } = {
         agenda: {
-            title: _('Agenda'),
+            title: _('Tagesordnung'),
             icon: 'calendar_today',
             intro: _(
-                'Stay flexible: Complement, amend or move automatically numbered agenda points in the running system.'
+                'Bleiben Sie flexibel: Ergänzen, ändern oder verschieben Sie Tagesordnungspunkte im laufenden Betrieb.'
             ),
             image_names: ['overview', 'new-item', 'los', 'los-projected'],
             details: [
-                _('Lists of speakers for every agenda point'),
-                _('Flexible adding of agenda points for every kind of content'),
-                _('The current list of speakers always in view (as an overlay or on a second projector)'),
-                _('Countdowns to limit speaking time'),
-                _('Automatic numbering of agenda points'),
-                _('Time management: Estimate the duration of each agenda point'),
-                _('Integrate inofficial agenda points (e.g. breaks) into the agenda'),
-                _('Mark and hide closed agenda points'),
-                _('Individual visibilities for each agenda point'),
-                _('Export the agenda as PDF'),
-                _('Sort the agenda via drag&drop')
+                _('Redelisten für jeden Tagesordnungspunkt'),
+                _('Flexibles Hinzufügen von Tagesordnungspunkten für jegliche Inhalte'),
+                _('Die aktuelle Redeliste stets im Blick (als Überblendung oder auf einem 2. Projektor)'),
+                _('Countdowns zur Redezeitbeschränkung'),
+                _('Automatische Nummerierung von Tagesordnungspunkten'),
+                _('Zeitplanung: Dauer pro Tagesordnungspunkt schätzen'),
+                _('Inoffizielle Tagesordnungspunkte (z. B. Pausen) in die Tagesordnung integrieren'),
+                _('Abgeschlossene Tagesordnungspunkte markieren und verstecken'),
+                _('Individuelle Sichtbarkeiten für jeden Tagesordnungspunkt'),
+                _('Tagesordnung als PDF exportieren'),
+                _('Tagesordnung per Drag&Drop sortieren')
             ]
         },
         motions: {
-            title: _('Motions'),
+            title: _('Anträge'),
             icon: 'note',
-            intro: _('Save paper: Log and manage motions and voting results digitally.'),
+            intro: _('Sparen Sie Papier: Erfassen und verwalten Sie Anträge und Abstimmungsergebnisse digital.'),
             image_names: ['overview', 'detail', 'projected', 'pdf'],
             details: [
-                _('Customizable motion status messages and work flows'),
-                _('Manage motions with motion blocks and tags'),
-                _('Automatically number motions in categories and subcategories'),
-                _('Sort motions in a calling list'),
-                _('Define for each motion how many supporters are needed'),
-                _('Create amendments and change recommendations on basis of line numbers'),
-                _('Support of statute motions'),
-                _('Show/hide motions in the agenda'),
-                _('Inline HTML editor to format the motion text and reasoning'),
-                _('Allow motion comment fields'),
-                _('Log voting results'),
-                _('Export motions as PDF, CSV or XLSX')
+                _('Anpassbare Antrag-Statusmeldungen und -Arbeitsabläufe'),
+                _('Anträge in Antragsblöcken und Schlagwörter verwalten'),
+                _('Anträge automatisch nummerieren in Sachgebieten und Untersachgebieten'),
+                _('Sortierung von Anträgen in einer Aufrufliste'),
+                _('Erforderliche Unterstützern pro Antrag definieren'),
+                _('Änderungsanträge und Änderungsempfehlungen auf Basis von Zeilennummern erstellen'),
+                _('Unterstützung von Satzungsanträgen'),
+                _('Anzeigen/Verstecken von Anträgen in der Tagesordnung'),
+                _('HTML-Inline-Editor zum Formatieren von Antragstext und -begründung'),
+                _('Kommentarfelder für Anträge erlauben'),
+                _('Abstimmungsergebnisse erfassen'),
+                _('Anträge als PDF, CSV und XLSX exportieren')
             ]
         },
         elections: {
-            title: _('Elections'),
+            title: _('Wahlen'),
             icon: 'pie_chart',
-            intro: _('Streamline the procedure: Generate ad-hoc ballots for your secret elections.'),
+            intro: _('Beschleunigen Sie das Prozedere: Generieren Sie ad-hoc Stimmzettel für Ihre geheime Wahlen.'),
             image_names: ['overview', 'detail', 'projected', 'pdf'],
             details: [
-                _('Propose candidates off the participants list'),
-                _('Print personalized ballots for secret elections'),
-                _('Supported election modes: Yes/no/abstention or one vote per candidates'),
-                _('Election results on different bases for 100%'),
-                _('Multiple election gears'),
-                _('Enter election results and project them with a diagram'),
-                _('Export elections (with all results) as PDF')
+                _('Kandidaten aus der Teilnehmenden-Liste vorschlagen'),
+                _('Personalisierte Wahlscheine für geheime Wahlen drucken'),
+                _('Unterstützte Wahlverfahren: Ja/Nein/Enthaltung oder eine Stimme pro Kandidat'),
+                _('Wahlergebnisse auf Grundlage verschiedener 100%-Basen'),
+                _('Mehrere Wahlgänge'),
+                _('Wahlergebnisse eingeben und mit Diagramm projizieren'),
+                _('Wahlen (mit allen Ergebnissen) als PDF exportieren')
             ]
         },
         projectors: {
-            title: _('Projectors'),
+            title: _('Projektoren'),
             icon: 'videocam',
-            intro: _('Always live: Show the participants currently discussed contents on the projector canvasas.'),
+            intro: _('Live dabei: Zeigen Sie den Teilnehmenden gerade diskutierte Inhalte auf den Projektionsflächen.'),
             image_names: ['overview', 'detail'],
             details: [
-                _('Instant update on changes'),
-                _('Support of multiple projectors'),
-                _('Individual projector design with your own logo and colors'),
-                _('Order contents in a queue'),
-                _('Keep an eye on the projections with the history'),
-                _('Support of multiple resolutions'),
-                _('Projection of PDF or image files')
+                _('Sofortige Aktualisierung bei Änderungen'),
+                _('Unterstützung mehrerer Projektoren'),
+                _('Individuelle Projektorgestaltung mit eigenem Logo und Farben'),
+                _('Anordnen von Inhalten in einer Warteschlange'),
+                _('Projektionshistorie durch einen Verlauf im Überblick behalten'),
+                _('Unterstützung verschiedener Auflösungen'),
+                _('Projektion von PDF- oder Bilddateien')
             ]
         },
         miscellaneous: {
-            title: _('Other functions'),
+            title: _('Weitere Funktionen'),
             icon: 'search',
-            intro: _('Be curious: Discover many more functions of OpenSlides.'),
+            intro: _('Seien Sie neugierig: Entdecken Sie noch viele weitere Funktionen von OpenSlides.'),
             image_names: ['participants', 'files', 'history', 'search'],
             details: [
-                _('Directly witness live changes'),
-                _('Manage participants, groups and permissions'),
-                _('CSV import and export for participants'),
-                _('Extensive file management system with access permissions per file and folder'),
-                _('Global history on snapshot basis'),
-                _('Global full text search'),
-                _('Extensive sorting and filtering of all lists possible'),
-                _('Configurable designs and creation of custom designs on request'),
-                _('Multilingual (English, German, French, Czech, Portuguese, Spanish and Russian)'),
-                _('Responsive design'),
-                _('Platform independent web application based on Python 3 and Angular 8 in the modern Material Design'),
-                _('Progressive WebApp with client-side caching and lazy loading for fast loading times')
+                _('Live-Änderungen direkt miterleben'),
+                _('Teilnehmende, Gruppen und Berechtigungen verwalten'),
+                _('CSV-Import und -Export für Teilnehmende'),
+                _('Umfangreiche Dateiverwaltung mit Zugriffsberechtigungen pro Datei und Ordner'),
+                _('Globale Chronik auf Basis von Snapshots'),
+                _('Globale Volltextsuche'),
+                _('Umfangreiche Sortier- und Filtermöglichkeiten aller Listen'),
+                _('Konfigurierbares Design sowie Erstellung eigener Designs auf Anfrage'),
+                _('Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, Portugiesisch, Spanisch und Russisch)'),
+                _('Responsive Design'),
+                _('Plattformunabhängige Webanwendung basierend auf Python 3 und Angular 8 im modernen Material Design'),
+                _('Progressive WebApp mit clientseitigem Caching und Lazy Loading für kurze Ladezeiten')
             ]
         }
     };
