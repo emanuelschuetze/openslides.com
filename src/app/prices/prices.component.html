@@ -1,31 +1,11 @@
 <div class="container main-container">
 
-    <p translate><b>Unsere Leistung für Sie:</b> Wir betreiben OpenSlides datenschutzkonform auf unseren Servern. – 
-    Wählen Sie dafür eines unserer Hostingpakete aus.</p>
+    <p translate>Wir betreiben OpenSlides für Sie datenschutzkonform auf unseren Servern.</p>
 
     <h2 class="mb-1">
-        1. {{ 'Hinweise zur Auswahl' | translate }}
+        {{ 'Wählen Sie das Hostingpaket passend zu Ihrer Veranstaltungsgröße' | translate }}
         <!-- Choose a hosting package that fits your assembly size:-->
     </h2>
-    <ul>
-        <li translate>Für jedes eigenständige Gremium/Organ (z.B. Vorstand, Beirat, Mitgliederversammlung) benötigen Sie je eine separate OpenSlides-Instanz.</li>
-        <li translate>Sie erhalten von uns eine Wunsch-URL (z.B. https://meine-versammlung.openslides.com) pro OpenSlides-Instanz.</li>
-        <li translate>Innerhalb einer OpenSlides-Instanz können Sie beliebig viele wiederkehrende Sitzungen in der Hostinglaufzeit abhalten. Abgerechnet wird pro Monat.</li>
-        <li translate>Hostingpakete sind einzeln buchbar und kombinierbar.</li>
-    </ul>
-        <!--Inhaltlich eigenständige Organe/Gremien benötigen jeweil-->
-    <p><small translate>Beispiele:<br>
-        A) Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung mit 12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 Teilnehmde nutzen.
-        Dafür sind zwei Hostingpakete nötig: »Sitzung« und »Tagung«.<br>
-        B) Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 Landesverbände OpenSlides nutzen (je &lt;50 Personen). Dafür sind 16 einzelne OpenSlides-Instanzen (Hostingpaket »Sitzung«) nötig.</small>
-    
-
-    <h2 class="mb-1">
-        2. {{ 'Wählen Sie das Hostingpaket passend zu Ihrer Veranstaltungsgröße' | translate }}
-        <!-- Choose a hosting package that fits your assembly size:-->
-    </h2>
-
-
 
     <div class="flex evenly-spaced wrap-tablet mb-0" appWrappable wrapMargin="2rem">
         <div class="price-col grey">
@@ -50,6 +30,12 @@
                         Single-Sign-On
                         </small>
                     </p>
+                    <mat-divider></mat-divider>
+                    <div class="text-center">
+                        <a routerLink="/order" [queryParams]="{package: 'meeting'}" mat-flat-button class="os-button filled bordered grey">
+                            <span translate>Jetzt bestellen</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,6 +60,12 @@
                         Single-Sign-On
                         </small>
                     </p>
+                    <mat-divider></mat-divider>
+                    <div class="text-center">
+                        <a routerLink="/order" [queryParams]="{package: 'conference'}" mat-flat-button class="os-button filled bordered blue">
+                            <span translate>Jetzt bestellen</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,6 +90,12 @@
                         Single-Sign-On
                         </small>
                     </p>
+                    <mat-divider></mat-divider>
+                    <div class="text-center">
+                        <a routerLink="/order" [queryParams]="{package: 'meeting'}" mat-flat-button class="os-button filled bordered grey">
+                            <span translate>Jetzt bestellen</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,6 +106,20 @@
             {{ '5% Rabatt bei Vorauszahlung von 12 Monaten.' | translate }}
         </small>
     </p>
+
+    <div class="mt-1">
+        <b><small translate>Hinweise zur Auswahl:</small></b>
+     </div>
+    <ul>
+        <li translate>Für jedes eigenständige Gremium/Organ (z.B. Vorstand, Beirat, Mitgliederversammlung) benötigen Sie je eine separate OpenSlides-Instanz.</li>
+        <li translate>Innerhalb einer OpenSlides-Instanz können Sie beliebig viele wiederkehrende Sitzungen in der Hostinglaufzeit abhalten. Abgerechnet wird pro Monat.</li>
+        <li translate>Wunsch-URL pro OpenSlides-Instanz nach Verfügbarkeit (z.B. https://meine-versammlung.openslides.com)</li>
+    </ul>
+        <!--Inhaltlich eigenständige Organe/Gremien benötigen jeweil-->
+    <p><small translate>Beispiele:<br>
+        A) Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung mit 12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 Teilnehmde nutzen.
+        Dafür sind zwei Hostingpakete nötig: »Sitzung« und »Tagung«.<br>
+        B) Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 Landesverbände OpenSlides nutzen (je &lt;50 Personen). Dafür sind 16 einzelne OpenSlides-Instanzen (Hostingpaket »Sitzung«) nötig.</small>
 
     <div class="mt-1">
        <b><small translate>Für alle Hosting-Pakete gelten folgende Leistungen:</small></b>
@@ -129,7 +141,7 @@
 
 
     <div class="mt-2 mb-2 blue-links">
-        <h2>3. {{ 'Wählen Sie praktische Zusatzfunktionen' | translate }}</h2>
+        <h2>{{ 'Wählen Sie praktische Zusatzfunktionen' | translate }}</h2>
         <ul>
             <li>
             <u><b translate>eVoting – unerlässlich für Online-Versammlungen mit Live-Voting</b></u><br>
@@ -139,7 +151,7 @@
             Auch individuelle Stimmgewichtungen sind möglich.<br> Testen Sie die elektronische Stimmabgabe in der
             <a class="inline" href="https://demo.openslides.org/" target="_blank">Online-Demo</a>.
             <br>
-            <b><i translate>50€/Monat <span style="color: red">&#8594; Corona-Aktionspreis: 0€ für die ersten 3 Monate (nur im Hostingpaket "Sitzung")</span></i></b><br>
+            <b><i>50 € / {{ 'Monat'|translate }} <span style="color: red">&#8594; {{ 'Corona-Aktionspreis: 0 € für die ersten 3 Monate (nur im Hostingpaket "Sitzung")'|translate }}</span></i></b><br>
             </span>
         
             <li>
@@ -148,7 +160,7 @@
                 einem Passwort-gesicherten Audio-Konferenzraum.
                 Jede/r verbindet sich automatisch nach dem Login in OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und auschalten.</span>
             <br>
-            <b><i translate>50€/Monat · bis 50 Teilnehmende</i></b>
+            <b><i>50 € / {{ 'Monat'| translate }} · {{ 'bis 50 Teilnehmende'|translate }}</i></b>
         
             <li>
             <u><b translate>Video-Livestream – ideal für große virtuelle Versammlungen und Parteitage</b></u><br>
@@ -167,31 +179,24 @@
             <u><b translate>Single Sign-On via SAML – ideal für Organisationen mit zentralem Mitgliedsserver</b></u><br>
             <span translate>Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten Mitgliedsaccounts in OpenSlides anzumelden. OpenSlides unterstützt den Standard "SAML"
                 (Security Assertion Markup Language) für Single Sign-On (SSO). Ersparen Sie sich damit die Teilnehmerverwaltung in OpenSlides. Und Ihre Mitglieder brauchen sich keinen extra OpenSlides-Login merken.</span>
-            <br><b><i translate>50€/Monat</i></b>
+            <br><b><i>50 € / {{ 'Monat'|translate }}</i></b>
         </ul>
         
         <small translate>Alle Preise zzgl. der gesetzlich gültigen Umsatzsteuer.</small>
     </div>
 
     <div class="mt-2 mb-2 blue-links">
-        <h2>4. {{ 'Jetzt bestellen!' | translate }}</h2>
+        <h2>{{ 'Noch Fragen?' | translate }}</h2>
         <div>
-            <a routerLink="/order" [queryParams]="{package: 'conference'}" mat-flat-button class="os-button filled bordered blue">
-                <span translate>Online-Bestellformular</span>
-            </a>
-
             <p>
                 <span translate>Sind noch Fragen offen? Haben Sie individuelle Wünsche? Schreiben Sie uns an</span>
                 <a href="mailto:hosting@openslides.com" class="inline"> hosting@openslides.com</a>!
             </p>
         </div>
-    </div>
-
-    <div class="mt-1 mb-1 blue-links">
-        <h2>5. {{ "Nichts dabei? Mach's kostenfrei!" | translate }}</h2>
-
-        <span translate>OpenSlides ist Freie Open Source Software und kann – mit einigen administrativen Kenntnissen –  auch selbständig auf dem eigenen Server installiert werden.</span>
-        <span>&nbsp;<a class="inline" routerLink="/" fragment="getting-started" translate>Mehr erfahren ...</a></span>
+        <p>
+            <span translate>OpenSlides ist Freie Open Source Software und kann – mit einigen administrativen Kenntnissen –  auch selbständig auf dem eigenen Server installiert werden.</span>
+            <span>&nbsp;<a class="inline" routerLink="/" fragment="getting-started" translate>Mehr erfahren ...</a></span>
+        </p>
     </div>
 
 </div>
