@@ -7,9 +7,9 @@ MAIL_PORT = 465
 MAIL_USE_TLS = False
 MAIL_USE_SSL = True
 MAIL_USERNAME = ""
-#region password
+# region password
 MAIL_PASSWORD = ""
-#endregion
+# endregion
 MAIL_DEFAULT_SENDER = ""
 
 # Send order emails to
