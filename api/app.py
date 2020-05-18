@@ -111,20 +111,21 @@ def order():
     contact_person = data.pop("contact_person")
     request_str = dedent(
         """\
-        Paket: {package}
+        _Hostingauswahl
+        Hostingpaket: {package}
         Wunschdomain: {domain}
+        Zusatzfunktionen: {services_str}
 
-        Services: {services_str}
-
+        _Veranstaltungsdetails
         Veranstaltungsname: {event_name}
         Veranstaltungsort: {event_location}
         Veranstaltungszeitraum: {event_date}
         Erwartete Teilnehmeranzahl: {expected_users}
 
-        Ansprechpartner:
+        _Ansprechpartner
         {contact_person_str}
 
-        Rechnungsadresse:
+        _Rechnungsadresse
         {billing_address}
     """
     ).format(
@@ -158,16 +159,16 @@ def order():
 
         vielen Dank für ihre Hosting-Anfrage bei OpenSlides! Wir werden Ihre Nachricht schnellstmöglich bearbeiten.
 
-        Unten stehend finden Sie noch einmal Ihre Angaben. Sollten Ihnen Fehler auffallen oder Sie noch Änderungswünsche haben, \
-        antworten Sie einfach mit den Ergänzungen/Korrekturen auf diese Email.
+        Unten stehend finden Sie noch einmal Ihre Angaben. Sollten Sie noch Korrekturen oder Änderungswünsche haben, antworten Sie einfach auf diese E-Mail.
 
         Sollten Sie diese Anfrage nicht gesendet haben, melden Sie sich bitte bei uns, um die Anfrage zu stornieren.
 
-        Viele Grüße,
+        Mit besten Grüßen,
         Ihr OpenSlides-Team
 
-
+        --
         Ihre Angaben:
+
         {}
     """
     ).format(contact_person["name"], request_str)
