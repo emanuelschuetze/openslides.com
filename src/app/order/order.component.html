@@ -21,7 +21,7 @@
                 </mat-option>
             </mat-select>
         </mat-form-field><br>
-        <mat-form-field fxFlex.gt-sm="75" class="mb-1">
+        <mat-form-field class="mb-1">
             <input required type="text" matInput formControlName="domain" placeholder="{{ 'Wunschdomain' | translate }}">
             <span matSuffix>.openslides.com</span>
             <mat-hint *ngIf="orderForm.controls.domain.valid">https://{{orderForm.controls.domain.value}}.openslides.com/</mat-hint>

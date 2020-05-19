@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+
 import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
 
 @Component({
@@ -22,10 +23,10 @@ export class OrderComponent implements OnInit {
     public error = null;
 
     public services = {
-        evoting: 'eVoting',
-        audio: 'Audiokonferenz via Jitsi',
-        video: 'Video-Livestream',
-        saml: 'Single Sign-On via SAML'
+        evoting: _('eVoting'),
+        audio: _('Audiokonferenz via Jitsi'),
+        video: _('Video-Livestream'),
+        saml: _('Single Sign-On via SAML')
     };
 
     public constructor(
@@ -80,10 +81,13 @@ export class OrderComponent implements OnInit {
             switch (error.status) {
                 case 502:
                 case 504:
-                    this.error = _('Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte senden Sie uns Ihre Anfrage per E-Mail: hosting@openslides.com');
+                    this.error = _(
+                        'Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. \
+                        Bitte senden Sie uns Ihre Anfrage per E-Mail: hosting@openslides.com'
+                    );
                     break;
                 default:
-                    this.error = error.error.error || 'An unknwon error occurred.';
+                    this.error = error.error.error || _('Ein unbekannter Fehler ist aufgetreten.');
                     break;
             }
         }
