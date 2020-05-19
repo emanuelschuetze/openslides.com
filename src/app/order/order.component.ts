@@ -57,8 +57,8 @@ export class OrderComponent implements OnInit {
                     ]
                 ]
             }),
-            billing_address: ['', [Validators.required, this.standard]],
-            comment: ['', [this.standard]]
+            billing_address: ['', [Validators.required]],
+            comment: ['', []]
         });
     }
 

@@ -52,7 +52,7 @@ order_schema = {
             },
             "required": ["name", "email", "phone"],
         },
-        "billing_address": {"type": "string", "pattern": standard_pattern},
+        "billing_address": {"type": "string"},
         "comment": {"type": "string"},
     },
     "required": [
