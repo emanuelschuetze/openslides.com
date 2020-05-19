@@ -157,7 +157,7 @@ def order():
         """\
         Sehr geehrte/r {},
 
-        vielen Dank für ihre Hosting-Anfrage bei OpenSlides! Wir werden Ihre Nachricht schnellstmöglich bearbeiten.
+        vielen Dank für Ihre Hosting-Anfrage bei OpenSlides! Wir werden Ihre Nachricht schnellstmöglich bearbeiten.
 
         Unten stehend finden Sie noch einmal Ihre Angaben. Sollten Sie noch Korrekturen oder Änderungswünsche haben, antworten Sie einfach auf diese E-Mail.
 

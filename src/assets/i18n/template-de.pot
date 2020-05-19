@@ -7,18 +7,6 @@ msgstr ""
 msgid "5% Rabatt bei Vorauszahlung von 12 Monaten."
 msgstr ""
 
-msgid "50€/Monat"
-msgstr ""
-
-msgid "50€/Monat · bis 50 Teilnehmende"
-msgstr ""
-
-msgid ""
-"<b>Unsere Leistung für Sie:</b> Wir betreiben OpenSlides datenschutzkonform "
-"auf unseren Servern. – \n"
-"    Wählen Sie dafür eines unserer Hostingpakete aus."
-msgstr ""
-
 msgid ""
 "<p>In Zeiten der COVID-19-Pandemie können viele Sitzungen und Versammlungen "
 "von Organisationen nicht wie gewohnt\n"
@@ -332,6 +320,11 @@ msgid "Automatische Nummerierung von Tagesordnungspunkten"
 msgstr ""
 
 msgid ""
+"Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte "
+"senden Sie uns Ihre Anfrage per E-Mail: hosting@openslides.com"
+msgstr ""
+
+msgid ""
 "Beispiele:<br>\n"
 "        A) Ein Verband möchte OpenSlides für seine wöchentlichen "
 "Vorstandssitzung mit 12 Personen sowie für die jährliche "
@@ -367,6 +360,11 @@ msgstr ""
 msgid "CSV-Import und -Export für Teilnehmende"
 msgstr ""
 
+msgid ""
+"Corona-Aktionspreis: 0 € für die ersten 3 Monate (nur im Hostingpaket "
+"\"Sitzung\")"
+msgstr ""
+
 msgid "Countdowns zur Redezeitbeschränkung"
 msgstr ""
 
@@ -389,16 +387,14 @@ msgstr ""
 
 msgid ""
 "Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen "
-"Videokonferenzen) und erlaubt die größtmögliche Skalierung an "
-"Teilnehmerzahlen.\n"
-"                Virtuelle Veranstaltungen mit mehreren Hundert Personen "
+"Videokonferenzen) und erlaubt eine große Skalierung an Teilnehmerzahlen.\n"
+"                Virtuelle Veranstaltungen mit mehreren hundert Personen "
 "sind damit kein Problem mehr.\n"
-"                Hinzu kommt, dass die meißten Teilnehmenden eine "
-"Veranstaltung nur \"konsomierend\" verfolgen, d.h. nur ein kleiner "
+"                Hinzu kommt, dass die meisten Teilnehmenden eine "
+"Veranstaltung nur \"konsumierend\" verfolgen, d.h. nur ein kleiner "
 "Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden.\n"
-"                Setzen Sie daher lieber auf erpobte "
-"Broadcast-Streaming-Lösung – intelligent gekoppelt mit der "
-"OpenSlides-Redelistenfunktion."
+"                Setzen Sie auf erprobte Broadcast-Streaming-Lösung – "
+"intelligent gekoppelt mit der OpenSlides-Redelistenfunktion."
 msgstr ""
 
 msgid "E-Mail"
@@ -463,9 +459,9 @@ msgid ""
 "            <a class=\"inline\" href=\"https://demo.openslides.org/\" "
 "target=\"_blank\">Online-Demo</a>.\n"
 "            <br>\n"
-"            <b><i translate>50€/Monat <span style=\"color: red\">&#8594; "
-"Corona-Aktionspreis: 0€ für die ersten 3 Monate (nur im Hostingpaket "
-"\"Sitzung\")</span></i></b><br>"
+"            <b><i>50 € / {{ 'Monat'|translate }} <span style=\"color: "
+"red\">&#8594; {{ 'Corona-Aktionspreis: 0 € für die ersten 3 Monate (nur im "
+"Hostingpaket \"Sitzung\")'|translate }}</span></i></b><br>"
 msgstr ""
 
 msgid "Fehler:"
@@ -500,7 +496,7 @@ msgstr ""
 msgid "HTML-Inline-Editor zum Formatieren von Antragstext und -begründung"
 msgstr ""
 
-msgid "Hinweise zur Auswahl"
+msgid "Hinweise zur Auswahl:"
 msgstr ""
 
 msgid "Hosting"
@@ -512,10 +508,13 @@ msgstr ""
 msgid "Hosting starten"
 msgstr ""
 
-msgid "Hostingpakete sind einzeln buchbar und kombinierbar."
+msgid "Hostingauswahl"
 msgstr ""
 
 msgid "Ihr Ansprechpartner für Beratung und individuelle Servicedienstleistungen"
+msgstr ""
+
+msgid "Ihre Anmerkungen und Wünsche"
 msgstr ""
 
 msgid "Impressum"
@@ -548,14 +547,14 @@ msgid ""
 "OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
 "OpenSlides.\n"
 "                Möchte sich eine Person zu Wort melden, setzt sich diese "
-"selbständig auf die aktuelle Redeliste und wechselt damit automatisch in "
-"einen Jitsi-Videokonferenzraum.\n"
+"selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit "
+"automatisch in einen Jitsi-Videokonferenzraum.\n"
 "                Der Livestream überträgt die Videokonferenz. Nach Ende der "
-"Wortmelung verlässt man den Konferenzraum und verfolgt wieder den "
+"Wortmeldung verlässt man den Konferenzraum und verfolgt wieder den "
 "Livestream."
 msgstr ""
 
-msgid "Jetzt bestellen!"
+msgid "Jetzt bestellen"
 msgstr ""
 
 msgid "Kandidaten aus der Teilnehmenden-Liste vorschlagen"
@@ -570,9 +569,6 @@ msgstr ""
 msgid "Kongress"
 msgstr ""
 
-msgid "Kongress (200 € / Monat)"
-msgstr ""
-
 msgid "Kontakt"
 msgstr ""
 
@@ -582,9 +578,6 @@ msgstr ""
 msgid ""
 "Kontaktieren Sie uns! Wir finden die passende Streaming-Lösung für Ihre "
 "Veranstaltung."
-msgstr ""
-
-msgid "Land"
 msgstr ""
 
 msgid ""
@@ -633,29 +626,23 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-msgid "Name oder Abteilung"
-msgstr ""
-
 msgid "News"
 msgstr ""
 
 msgid "Newsletter"
 msgstr ""
 
-msgid "Nichts dabei? Mach's kostenfrei!"
+msgid "Noch Fragen?"
 msgstr ""
 
 msgid "Not a valid email"
-msgstr ""
-
-msgid "Online-Bestellformular"
 msgstr ""
 
 msgid "Online-Versammlungen mit OpenSlides effizient durchführen"
 msgstr ""
 
 msgid ""
-"OpenSlides ist Freie Open Source Software und kann – mit einigen "
+"OpenSlides ist Freie Software (Open Source) und kann – mit einigen "
 "administrativen Kenntnissen –  auch selbständig auf dem eigenen Server "
 "installiert werden."
 msgstr ""
@@ -685,7 +672,7 @@ msgid ""
 "Einsatz. Hier eine Auswahl an Referenzen."
 msgstr ""
 
-msgid "OpenSlides-Paket"
+msgid "OpenSlides-Hostingpaket"
 msgstr ""
 
 msgid "OpenSlides-Team"
@@ -695,12 +682,6 @@ msgid "OpenSlides: das digitale Antrags- und Versammlungssystem"
 msgstr ""
 
 msgid "Organisation"
-msgstr ""
-
-msgid "Ort"
-msgstr ""
-
-msgid "PLZ"
 msgstr ""
 
 msgid "Paket wählen"
@@ -752,9 +733,6 @@ msgstr ""
 msgid "Rechnungsadresse"
 msgstr ""
 
-msgid "Rechnungsempfänger"
-msgstr ""
-
 msgid "Redelisten für jeden Tagesordnungspunkt"
 msgstr ""
 
@@ -795,7 +773,7 @@ msgstr ""
 
 msgid ""
 "Senden Sie uns das ausgefüllte Formular. Mit unserer Bestätigung starten "
-"wir Ihr Hosting."
+"wir i.d.R. innerhalb eines Tages das Hosting."
 msgstr ""
 
 msgid "Servicedienstleistungen"
@@ -806,11 +784,6 @@ msgid ""
 "OpenSlides-Entwickerteam? Ihnen fehlen spezielle Funktionen oder Sie haben "
 "Anpassungsbedarf? Vereinbaren Sie eine kostenfreie Erstberatung! Unsere "
 "kostenpflichtigen Serviceleistungen:"
-msgstr ""
-
-msgid ""
-"Sie erhalten von uns eine Wunsch-URL (z.B. "
-"https://meine-versammlung.openslides.com) pro OpenSlides-Instanz."
 msgstr ""
 
 msgid "Sie haben sich erfolgreich für unseren Newsletter registriert!"
@@ -825,15 +798,10 @@ msgstr ""
 msgid "Sind noch Fragen offen? Haben Sie individuelle Wünsche? Schreiben Sie uns an"
 msgstr ""
 
-msgid ""
-"Single Sign-On via SAML – ideal für Organisationen mit zentralem "
-"Mitgliedsserver"
+msgid "Single Sign-On via SAML – für Organisationen mit zentralem Mitgliedsserver"
 msgstr ""
 
 msgid "Sitzung"
-msgstr ""
-
-msgid "Sitzung (50 € / Monat)"
 msgstr ""
 
 msgid "Sofortige Aktualisierung bei Änderungen"
@@ -855,9 +823,6 @@ msgstr ""
 msgid "Starten"
 msgstr ""
 
-msgid "Straße und Hausnummer"
-msgstr ""
-
 msgid "Tagesordnung"
 msgstr ""
 
@@ -868,9 +833,6 @@ msgid "Tagesordnung per Drag&Drop sortieren"
 msgstr ""
 
 msgid "Tagung"
-msgstr ""
-
-msgid "Tagung (100 € / Monat)"
 msgstr ""
 
 msgid "Technischer Kundensupport"
@@ -889,6 +851,9 @@ msgid "The server is not reachable at the moment. Please try again later."
 msgstr ""
 
 msgid "Treten Sie mit uns in Kontakt"
+msgstr ""
+
+msgid "USt."
 msgstr ""
 
 msgid "Umfangreiche Dateiverwaltung mit Zugriffsberechtigungen pro Datei und Ordner"
@@ -942,7 +907,7 @@ msgid ""
 "auschalten."
 msgstr ""
 
-msgid "Video-Livestream – ideal für große virtuelle Versammlungen und Parteitage"
+msgid "Video-Livestream – für große virtuelle Versammlungen und Parteitage"
 msgstr ""
 
 msgid "Vielen Dank für Ihre Anfrage!"
@@ -976,6 +941,11 @@ msgid "Weiterentwicklung und individuelle Anpassungen"
 msgstr ""
 
 msgid ""
+"Wir betreiben OpenSlides für Sie datenschutzkonform auf unseren Servern in "
+"Deutschland."
+msgstr ""
+
+msgid ""
 "Wir haben uns zu den Grundsätzen eines quelloffenen, freien und kostenlosen "
 "Austauschs unserer Software verpflichtet und tragen diesen Anspruch auch im "
 "Namen. OpenSlides wird unter MIT-Lizenz zur Verfügung gestellt. Hilf mit, "
@@ -985,6 +955,11 @@ msgstr ""
 msgid ""
 "Wir werden diese schnellstmöglich bearbeiten und uns dann zeitnah bei Ihnen "
 "melden."
+msgstr ""
+
+msgid ""
+"Wunsch-URL pro OpenSlides-Instanz nach Verfügbarkeit (z.B. "
+"https://meine-versammlung.openslides.com)"
 msgstr ""
 
 msgid "Wunschdomain"
@@ -1007,6 +982,27 @@ msgid ""
 msgstr ""
 
 msgid "Zeitplanung: Dauer pro Tagesordnungspunkt schätzen"
+msgstr ""
+
+msgid "Zusatzfunktionen"
+msgstr ""
+
+msgid "Zusätzliche Angaben"
+msgstr ""
+
+msgid "ab"
+msgstr ""
+
+msgid "bis 1.000 TLN"
+msgstr ""
+
+msgid "bis 50 TLN"
+msgstr ""
+
+msgid "bis 50 Teilnehmende"
+msgstr ""
+
+msgid "bis 500 TLN"
 msgstr ""
 
 msgid "bis <b>1.000</b> Teilnehmende"
@@ -1037,6 +1033,9 @@ msgid ""
 "Abrechnung)"
 msgstr ""
 
+msgid "inkl."
+msgstr ""
+
 msgid "kontinuierliche Updates"
 msgstr ""
 
@@ -1051,18 +1050,7 @@ msgid ""
 "OpenSlides-Instanz mit eigener Datenbank"
 msgstr ""
 
-msgid ""
-"zubuchbare Zusatzfunktionen:<br>\n"
-"                        eVoting,\n"
-"                        Audiokonferenz,\n"
-"                        Single-Sign-On"
-msgstr ""
-
-msgid ""
-"zubuchbare Zusatzfunktionen:<br>\n"
-"                        eVoting,\n"
-"                        Video-Livestream,\n"
-"                        Single-Sign-On"
+msgid "zzgl. USt"
 msgstr ""
 
 msgid ""
