@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
+import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
 import { TranslateService } from '@ngx-translate/core';
-import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker'
 
 export interface ReferenceObject {
     name: string;

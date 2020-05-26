@@ -1,151 +1,107 @@
 <div class="container main-container blue-links">
     <h1 translate>Online-Versammlungen mit OpenSlides effizient durchführen</h1>
-    <i translate>April 2020, von <a href="mailto:eric.lanfer@openslides.com">Eric Lanfer</a> und <a
-            href="mailto:emanuel.schuetze@openslides.com">Emanuel Schütze</a></i>
-    <div translate>
-        <p>In Zeiten der COVID-19-Pandemie können viele Sitzungen und Versammlungen von Organisationen nicht wie gewohnt
-            stattfinden. Es geht beispielsweise um Mitgliederversammlungen von Vereinen, Hauptversammlungen von Unternehmen,
-            Vollversammlungen von Genossenschaften und Stiftungen, Wohnungseigentümerversammlungen und diverse Sitzungen von
-            Vorständen und anderen Gremien.</p>
-        <p>Um Abhilfe zu schaffen wurde von Bundesrat und Bundestag Ende März 2020 ein neues Gesetz beschlossen, um
-            Versammlungen virtuell durchführen zu können. Die rechtlichen Aspekte und Neuerungen haben wir in einem <a
-                class="inline" routerLink="/news/online-versammlungen-basis">separaten Artikel</a> beleuchtet und technische
-            Minimalanforderungen
-            zur Kommunikation
-            beschrieben.</p>
-        <p>In diesem Artikel wird beschrieben, wie <strong>OpenSlides</strong> zur effizienten Unterstützung in virtuellen
-            Versammlungen eingesetzt werden kann. Ein Kernvorteil von OpenSlides sei vorweg genannt: Der <strong>virtuelle
-                Projektor</strong>, der sämtlichen Teilnehmenden einer Versammlung zur Verfügung steht und somit eine gute
-            visuelle Orientierung für das Verfolgen der Veranstaltung bietet. Auf dem Projektor können Redelisten,
-            Tagesordnungspunkte, Anträge und vieles mehr eingeblendet werden.</p>
-        <h2>Virtuelle Anwesenheit erfassen</h2>
-        <p>Eine zentrale Bedeutung bei virtuellen Versammlungen spielt die Anwesenheitserfassung. Nur anwesende Nutzer
-            dürfen
-            beispielsweise abstimmen. Mit OpenSlides lässt sich eine virtuelle Anwesenheitsliste führen. Alle Teilnehmende
-            erhalten einen persönlichen Zugang zu OpenSlides und können sich darüber zu Beginn der Sitzung als \"anwesend\"
-            melden.
-            Dies ist vergleichbar mit der Eintragung in eine analoge Anwesenheitsliste. Für Mitglieder ist die
-            Anwesenheitsmeldung (wie in folgender Abbildung markiert) nur ein einfacher Klick auf "Anwesend":</p>
-        <p><img class="screenshot" src="assets/img/online_conference_article/set_presence.png"
-                alt="Screenshot zur Anwesenheitsmeldung in OpenSlides" /></p>
-        <p>Im Sinne einer doppelten Absicherung kann die Sitzungsleitung zu Beginn der virtuellen Versammlung die
-            Anwesenheitsliste einsehen und prüfen, welche Mitglieder bereits als anwesend gemeldet sind. Alternativ wäre es
-            auch
-            möglich, dass die Sitzungsleitung die Überprüfung und Markierung der Anwesenheit vollständig übernimmt.</p>
-        <h2>Wortmeldungen in Redelisten organisieren</h2>
-        <p>Virtuelle Sitzungen können bereits in kleiner Personenanzahl ohne Moderation schnell anstrengend und chaotisch
-            werden. Redelisten helfen dabei Struktur reinzubekommen. In OpenSlides können sich Teilnehmende per Klick auf
-            eine
-            Redeliste setzen. Jeder Tagesordnungspunkt und jeder Antrag hat seine eigene Redeliste. Damit können Mitglieder
-            bereits im Voraus Wortbeiträge zu bestimmten TOPs/Anträgen anmelden.</p>
-        <p><img class="screenshot" alt="Screenshot der Redeliste in Nutzeransicht"
-                src="assets/img/online_conference_article/speakerslist_userview.png" /></p>
-        <p>Die Redeliste zur aktuellen Debatte lässt sich auf einen virtuellen Projektor anzeigen, wenn gewünscht mit einem
-            Countdown zur Redezeitbegrenzung.</p>
-        <p><img class="screenshot" alt="Screenshot der Redeliste in Projektionsansicht"
-                src="assets/img/online_conference_article/speakerslist_projection.png" /></p>
-        <p>Die Sitzungsleitung steuert das Starten und Stoppen der Wortbeiträge in OpenSlides. Auch ein Zurückziehen oder
-            Vorziehen von Redner*innen ist problemlos möglich. Aktuell wird an einer Integration der
-            Audio/Video-Konferenzlösungen Jitsi in OpenSlides gearbeitet.</p>
-        <h2>Digitale Antragsberatung</h2>
-        <p>Das Herzstück von OpenSlides ist die digitale Antragsverwaltung. Es lassen sich sehr komplexe Abläufe von der
-            Antragsstellung bis zum Beschluss abbilden. Auch Beschlussvorlagen in Sitzungen können in OpenSlides komfortabel
-            organisiert werden. In diesem Artikel werden nur die wichtigsten Antragsfunktionen erwähnt.</p>
-        <h3>Antragsübersicht</h3>
-        <p>Die Antragsliste bietet einen strukturierten Überblick über alle vorliegenden Anträge und deren Status. Per Klick
-            öffnet sich ein Antrag mit allen Detailinformationen. Teilnehmende können vorgeschlagene Änderungen und
-            Begründungen nachlesen und die passende Redeliste mitverfolgen. Ebenso sind persönliche Notizen zu jedem Antrag möglich. Ein
-            vollständiges Antragsbuch lässt sich jederzeit als PDF generieren, um z. B. am Ende ein fertiges Beschlussbuch
-            zu erstellen.</p>
-        <p><img class="screenshot" alt="Screenshot von der Antragsliste"
-                src="assets/img/online_conference_article/motion_list.png" /></p>
-        <p><img class="screenshot" alt="Screenshot von Antragsblöcken"
-                src="assets/img/online_conference_article/motion_blocks_view.png" /></p>
-        <h3 id="anträge-stellen">Anträge stellen</h3>
-        <p>Jeder antragsberechtigte Teilnehmende kann in OpenSlides selbständig einen Antrag einreichen. Dabei muss nur ein
-            Antragstitel und der zu beschließende Text eingegeben werden, optional eine Begründung. Das Antragsformular zum
-            Einreichen ist dabei sehr einfach gehalten:</p>
-        <p><img class="screenshot" src="assets/img/online_conference_article/create_motion.png"
-                alt="Screenshot Antragserstellung" /></p>
-        <h3>Änderungsanträge</h3>
-        <p>Zu einem bestehenden Antrag lassen sich leicht Änderungsanträge erstellen. Dazu wird der zu ändernde Absatz
-            ausgewählt und modifiziert. Der Antrag erscheint in Änderungsdarstellung (rot\=Streichung, grün\=Ergänzung). Damit
-            sind die Änderungen für alle transparent und sofort ersichtlich. Bei Annahme des Änderungsantrags wird die
-            Änderung direkt in den Ursprungsantrag übernommen.</p>
-        <p><img class="screenshot" alt="Screenshot eine Änderungsantrages"
-                src="assets/img/online_conference_article/amendment.png" /></p>
-        <p><img class="screenshot" alt="Screenshot eines Antrages mit übernommenen Änderungen"
-                src="assets/img/online_conference_article/amendment_detail.png" /></p>
-        <p>Auch Satzungsänderungsanträge sind mit OpenSlides möglich. Dazu wird vorher die komplette Satzung in einzelne
-            Abschnitte hinterlegt. Nach Auswahl eines Abschnitts wird der Text modifiziert und als neuer Satzungsantrag
-            gestellt - mit automatischer Änderungsdarstellung.</p>
-        <h3>Änderungsempfehlungen</h3>
-        <p>Mündliche Änderungsanträge oder andere ad-hoc-Änderungen eines Antragstextes lassen sich in OpenSlides in Form
-            von sogenannten \"Änderungsempfehlungen\" visualisieren. Dazu hinterlegt der Antragsverwalter zu einer bestimmten
-            Zeile eine Modifizierung. Diese Änderung ist sofort für alle Teilnehmende in der Antragsansicht sichtbar. Auch ein
-            Wechsel zwischen der Originalfassung und der Änderungsfassung ist jederzeit möglich.</p>
-        <p><img class="screenshot" alt="Screenshot von Änderungsempfehlungen"
-                src="assets/img/online_conference_article/motion_change_suggest.png" /></p>
-        <h2>Elektronische Abstimmungen und Wahlen</h2>
-        <p>Entscheidend für virtuelle Versammlungen ist die Möglichkeit der sicheren, elektronischen Stimmabgabe. Dazu
-            bietet
-            OpenSlides ab Version 3.2 ein Live-Voting für Anträge und Wahlen. Die Sitzungsleitung kann zwischen namentlicher
-            und
-            nicht namentlicher Stimmabgabe wählen.</p>
-        <p>In beiden Fällen nutzen die stimmberechtigten Teilnehmenden ihren persönlichen OpenSlides-Login zur Stimmabgabe.
-            Damit wird sichergestellt, dass nur die Personen abstimmen dürfen, die auch stimmberechtigt sind. Und dass jeder
-            dieser Personen nur einmal abstimmen darf. Auch eine individuelle Stimmgewichtung pro Stimmberechtigten ist mit
-            OpenSlides möglich.</p>
-        <h3>Namentliche Stimmabgabe</h3>
-        <p>Bei der namentlichen Stimmabgabe werden die einzelnen, abgegebenen Stimmen zusammen mit dem jeweiligen Account
-            gespeichert. D. h. nach Ende der Stimmabgabe ist für alle erkennbar wer wie abgestimmt hat. Dieser sogenannte
-            \"Einzelstimmennachweis\" listet in einer Tabelle alle Stimmen mit dem jeweiligen Votum auf und bietet damit volle
-            Transparenz und Nachvollziehbarkeit über eine offen Abstimmung. Die Namenszuordnung ist später für das Archiv,
-            bei
-            Bedarf, anonymisierbar. Die nachfolgende Abbildung zeigt ein Ergebnis einer namentlichen Antragsabstimmung mit
-            Einzelstimmennachweis.</p>
-        <p><img class="screenshot" alt="Screenshot einer namentlichen Abstimmung"
-                src="assets/img/online_conference_article/named_vote_detail_view.png" /></p>
-        <p>Für eine nicht-namentliche Abstimmung, bei der Mitglieder ihre eigene abgegebene Stimme nachvollziehen können, wäre eine
-            namentliche Abstimmung mit pseudonymen Accounts möglich. Diese Möglichkeit wird bei der nicht-namentlichen
-            Stimmabgabe erläutert.</p>
-        <h3>Nicht-namentliche Stimmabgabe</h3>
-        <p>Bei der nicht-namentlichen Stimmabgabe wird nur abgespeichert wer seine Stimme abgegeben hat. Zusätzlich werden
-            in
-            einer virtuellen Wahlurne alle abgegebenen Stimmen gezählt. Es wird aber nicht gespeichert wer wie
-            abgestimmt/gewählt hat. Es existiert also keine zuordenbare Liste mit Namen und Votum. Eine direkte
-            Nachvollziehbarkeit der elektronischen Stimmabgabe in OpenSlides ist also nicht möglich. Die nachfolgende
-            Abbildung
-            zeigt das Ergebnis einer nicht-namentlichen Antragsabstimmung (ohne Einzelstimmennachweis).</p>
-        <p><img class="screenshot" alt="Screenshot einer Wahl" src="assets/img/online_conference_article/election.png" />
+    <i translate translateHtml>
+        April 2020, von <a href="mailto:eric.lanfer@openslides.com">Eric Lanfer</a> und <a href="mailto:emanuel.schuetze@openslides.com">Emanuel Schütze</a>
+    </i>
+    <div>
+        <p translate>
+            In Zeiten der COVID-19-Pandemie können viele Sitzungen und Versammlungen von Organisationen nicht wie gewohnt stattfinden. Es geht beispielsweise um Mitgliederversammlungen von Vereinen, Hauptversammlungen von Unternehmen, Vollversammlungen von Genossenschaften und Stiftungen, Wohnungseigentümerversammlungen und diverse Sitzungen von Vorständen und anderen Gremien.
         </p>
-        <p><strong>Wichtig anzumerken:</strong> Eine nicht-namentliche Stimmabgabe in OpenSlides erfüllt <em>nicht</em> die
-            Ansprüche einer geheimen Wahl, da Administratoren (also Personen mit Administrationsrechten auf dem
-            OpenSlides-Server und hinreichend technischem Verständnis bei der Auswertung von Serverlogs) den Eingang der
-            Einzelstimmen nachvollziehen könnten und u.U. das übermittelte Votum einer Session-ID und damit einem Namen
-            zuordnen
-            könnten. Dies resultiert aus der Voraussetzung, dass geprüft werden muss, ob Nutzer*innen stimmberechtigt sind.
-            Dies
-            kann nur anhand eines gültigen Logins ausgemacht werden. Zudem muss nachgehalten werden, ob Teilnehmende schon
-            ihre
-            Stimme abgegeben haben, um Doppelabstimmungen zu verhindern.</p>
-        <p>Eine Alternative ist die <strong>pseudonyme Stimmabgabe</strong>: Dabei erhalten Mitglieder zwei Zugänge zu
-            OpenSlides – einen personalisierten Zugang, um sich auf die Redeliste zu setzen oder Anträge zu stellen und
-            einen
-            pseudonymen Zugang, um anonym abstimmen und wählen zu können. Die pseudonymen Zugänge haben dabei zufällig
-            generierte Benutzernamen und werden an die Mitglieder gelost. Für die Stimmabgabe ist dann nur die Gruppe der
-            pseudonymen Zugänge zugelassen. Dieses Vorgehen hat den Vorteil, dass die eigene Stimmabgabe nur für den
-            Stimmberechtigte durch das eigene Pseudonym nachvollziehbar und überprüfbar ist. Ein Rückschluss, wer wie
-            abgestimmt
-            hat ist durch die Nutzung von Pseudonymen deutlich schwieriger möglich. Es sei jedoch nochmals explizit darauf
-            hingewiesen, dass dies ein pseudonymes Verfahren ist und dadurch keine absolute Anonymität der Stimmen
-            sichergestellt ist. Wie in den <a class="inline" routerLink="/news/online-versammlungen-basis">rechtlichen
-                Grundlagen</a> erläutert: falls eine geheime Wahl erforderlich ist, sollte das Verfahren der Briefwahl (gem.
-            §32 Abs. 2 BGB) in Betracht gezogen werden.</p>
-        <h2>Beratung, Bereitstellung und Unterstützung</h2>
-        <p>Bei der Planung und Durchführung von virtuellen Versammlungen unterstützen und beraten wir Sie gerne persönlich.
-            Wenden Sie sich am besten per Mail an <a href="mailto:info@openslides.com">info@openslides.com</a> und
-            beschreiben
-            Sie Ihr Vorhaben.</p>
+        <p translate translateHtml>
+            Um Abhilfe zu schaffen wurde von Bundesrat und Bundestag Ende März 2020 ein neues Gesetz beschlossen, um Versammlungen virtuell durchführen zu können. Die rechtlichen Aspekte und Neuerungen haben wir in einem <a class="inline" routerLink="/news/online-versammlungen-basis">separaten Artikel</a> beleuchtet und technische Minimalanforderungen zur Kommunikation beschrieben.
+        </p>
+        <p translate translateHtml>
+            In diesem Artikel wird beschrieben, wie <strong>OpenSlides</strong> zur effizienten Unterstützung in virtuellen Versammlungen eingesetzt werden kann. Ein Kernvorteil von OpenSlides sei vorweg genannt: Der <strong>virtuelle Projektor</strong>, der sämtlichen Teilnehmenden einer Versammlung zur Verfügung steht und somit eine gute visuelle Orientierung für das Verfolgen der Veranstaltung bietet. Auf dem Projektor können Redelisten, Tagesordnungspunkte, Anträge und vieles mehr eingeblendet werden.
+        </p>
+
+        <h2 translate>Virtuelle Anwesenheit erfassen</h2>
+        <p translate>
+            Eine zentrale Bedeutung bei virtuellen Versammlungen spielt die Anwesenheitserfassung. Nur anwesende Nutzer dürfen beispielsweise abstimmen. Mit OpenSlides lässt sich eine virtuelle Anwesenheitsliste führen. Alle Teilnehmende erhalten einen persönlichen Zugang zu OpenSlides und können sich darüber zu Beginn der Sitzung als "anwesend" melden. Dies ist vergleichbar mit der Eintragung in eine analoge Anwesenheitsliste. Für Mitglieder ist die Anwesenheitsmeldung (wie in folgender Abbildung markiert) nur ein einfacher Klick auf "Anwesend":
+        </p>
+        <p><img class="screenshot" src="assets/img/online_conference_article/set_presence.png" alt="Screenshot zur Anwesenheitsmeldung in OpenSlides" /></p>
+        <p translate>
+            Im Sinne einer doppelten Absicherung kann die Sitzungsleitung zu Beginn der virtuellen Versammlung die Anwesenheitsliste einsehen und prüfen, welche Mitglieder bereits als anwesend gemeldet sind. Alternativ wäre es auch möglich, dass die Sitzungsleitung die Überprüfung und Markierung der Anwesenheit vollständig übernimmt.
+        </p>
+
+        <h2 translate>Wortmeldungen in Redelisten organisieren</h2>
+        <p translate>
+            Virtuelle Sitzungen können bereits in kleiner Personenanzahl ohne Moderation schnell anstrengend und chaotisch werden. Redelisten helfen dabei Struktur reinzubekommen. In OpenSlides können sich Teilnehmende per Klick auf eine Redeliste setzen. Jeder Tagesordnungspunkt und jeder Antrag hat seine eigene Redeliste. Damit können Mitglieder bereits im Voraus Wortbeiträge zu bestimmten TOPs/Anträgen anmelden.
+        </p>
+        <p><img class="screenshot" alt="Screenshot der Redeliste in Nutzeransicht" src="assets/img/online_conference_article/speakerslist_userview.png" /></p>
+        <p translate>
+            Die Redeliste zur aktuellen Debatte lässt sich auf einen virtuellen Projektor anzeigen, wenn gewünscht mit einem Countdown zur Redezeitbegrenzung.
+        </p>
+        <p><img class="screenshot" alt="Screenshot der Redeliste in Projektionsansicht" src="assets/img/online_conference_article/speakerslist_projection.png" /></p>
+        <p translate>
+            Die Sitzungsleitung steuert das Starten und Stoppen der Wortbeiträge in OpenSlides. Auch ein Zurückziehen oder Vorziehen von Redner*innen ist problemlos möglich. Aktuell wird an einer Integration der Audio/Video-Konferenzlösungen Jitsi in OpenSlides gearbeitet.
+        </p>
+
+        <h2 translate>Digitale Antragsberatung</h2>
+        <p translate>
+            Das Herzstück von OpenSlides ist die digitale Antragsverwaltung. Es lassen sich sehr komplexe Abläufe von der Antragsstellung bis zum Beschluss abbilden. Auch Beschlussvorlagen in Sitzungen können in OpenSlides komfortabel organisiert werden. In diesem Artikel werden nur die wichtigsten Antragsfunktionen erwähnt.
+        </p>
+
+        <h3 translate>Antragsübersicht</h3>
+        <p translate>
+            Die Antragsliste bietet einen strukturierten Überblick über alle vorliegenden Anträge und deren Status. Per Klick öffnet sich ein Antrag mit allen Detailinformationen. Teilnehmende können vorgeschlagene Änderungen und Begründungen nachlesen und die passende Redeliste mitverfolgen. Ebenso sind persönliche Notizen zu jedem Antrag möglich. Ein vollständiges Antragsbuch lässt sich jederzeit als PDF generieren, um z. B. am Ende ein fertiges Beschlussbuch zu erstellen.
+        </p>
+        <p><img class="screenshot" alt="Screenshot von der Antragsliste" src="assets/img/online_conference_article/motion_list.png" /></p>
+        <p><img class="screenshot" alt="Screenshot von Antragsblöcken" src="assets/img/online_conference_article/motion_blocks_view.png" /></p>
+
+        <h3 id="anträge-stellen" translate>Anträge stellen</h3>
+        <p translate>
+            Jeder antragsberechtigte Teilnehmende kann in OpenSlides selbständig einen Antrag einreichen. Dabei muss nur ein Antragstitel und der zu beschließende Text eingegeben werden, optional eine Begründung. Das Antragsformular zum Einreichen ist dabei sehr einfach gehalten:
+        </p>
+        <p><img class="screenshot" src="assets/img/online_conference_article/create_motion.png" alt="Screenshot Antragserstellung" /></p>
+
+        <h3 translate>Änderungsanträge</h3>
+        <p translate>
+            Zu einem bestehenden Antrag lassen sich leicht Änderungsanträge erstellen. Dazu wird der zu ändernde Absatz ausgewählt und modifiziert. Der Antrag erscheint in Änderungsdarstellung (rot=Streichung, grün=Ergänzung). Damit sind die Änderungen für alle transparent und sofort ersichtlich. Bei Annahme des Änderungsantrags wird die Änderung direkt in den Ursprungsantrag übernommen.
+        </p>
+        <p><img class="screenshot" alt="Screenshot eine Änderungsantrages" src="assets/img/online_conference_article/amendment.png" /></p>
+        <p><img class="screenshot" alt="Screenshot eines Antrages mit übernommenen Änderungen" src="assets/img/online_conference_article/amendment_detail.png" /></p>
+        <p translate>
+            Auch Satzungsänderungsanträge sind mit OpenSlides möglich. Dazu wird vorher die komplette Satzung in einzelne Abschnitte hinterlegt. Nach Auswahl eines Abschnitts wird der Text modifiziert und als neuer Satzungsantrag gestellt - mit automatischer Änderungsdarstellung.
+        </p>
+
+        <h3 translate>Änderungsempfehlungen</h3>
+        <p translate>
+            Mündliche Änderungsanträge oder andere ad-hoc-Änderungen eines Antragstextes lassen sich in OpenSlides in Form von sogenannten "Änderungsempfehlungen" visualisieren. Dazu hinterlegt der Antragsverwalter zu einer bestimmten Zeile eine Modifizierung. Diese Änderung ist sofort für alle Teilnehmende in der Antragsansicht sichtbar. Auch ein Wechsel zwischen der Originalfassung und der Änderungsfassung ist jederzeit möglich.
+        </p>
+        <p><img class="screenshot" alt="Screenshot von Änderungsempfehlungen" src="assets/img/online_conference_article/motion_change_suggest.png" /></p>
+
+        <h2 translate>Elektronische Abstimmungen und Wahlen</h2>
+        <p translate>
+            Entscheidend für virtuelle Versammlungen ist die Möglichkeit der sicheren, elektronischen Stimmabgabe. Dazu bietet OpenSlides ab Version 3.2 ein Live-Voting für Anträge und Wahlen. Die Sitzungsleitung kann zwischen namentlicher und nicht namentlicher Stimmabgabe wählen.
+        </p>
+        <p translate>
+            In beiden Fällen nutzen die stimmberechtigten Teilnehmenden ihren persönlichen OpenSlides-Login zur Stimmabgabe. Damit wird sichergestellt, dass nur die Personen abstimmen dürfen, die auch stimmberechtigt sind. Und dass jeder dieser Personen nur einmal abstimmen darf. Auch eine individuelle Stimmgewichtung pro Stimmberechtigten ist mit OpenSlides möglich.
+        </p>
+
+        <h3 translate>Namentliche Stimmabgabe</h3>
+        <p translate>
+            Bei der namentlichen Stimmabgabe werden die einzelnen, abgegebenen Stimmen zusammen mit dem jeweiligen Account gespeichert. D. h. nach Ende der Stimmabgabe ist für alle erkennbar wer wie abgestimmt hat. Dieser sogenannte "Einzelstimmennachweis" listet in einer Tabelle alle Stimmen mit dem jeweiligen Votum auf und bietet damit volle Transparenz und Nachvollziehbarkeit über eine offen Abstimmung. Die Namenszuordnung ist später für das Archiv, bei Bedarf, anonymisierbar. Die nachfolgende Abbildung zeigt ein Ergebnis einer namentlichen Antragsabstimmung mit Einzelstimmennachweis.
+        </p>
+        <p><img class="screenshot" alt="Screenshot einer namentlichen Abstimmung" src="assets/img/online_conference_article/named_vote_detail_view.png" /></p>
+        <p translate>
+            Für eine nicht-namentliche Abstimmung, bei der Mitglieder ihre eigene abgegebene Stimme nachvollziehen können, wäre eine namentliche Abstimmung mit pseudonymen Accounts möglich. Diese Möglichkeit wird bei der nicht-namentlichen Stimmabgabe erläutert.
+        </p>
+
+        <h3 translate>Nicht-namentliche Stimmabgabe</h3>
+        <p translate>
+            Bei der nicht-namentlichen Stimmabgabe wird nur abgespeichert wer seine Stimme abgegeben hat. Zusätzlich werden in einer virtuellen Wahlurne alle abgegebenen Stimmen gezählt. Es wird aber nicht gespeichert wer wie abgestimmt/gewählt hat. Es existiert also keine zuordenbare Liste mit Namen und Votum. Eine direkte Nachvollziehbarkeit der elektronischen Stimmabgabe in OpenSlides ist also nicht möglich. Die nachfolgende Abbildung zeigt das Ergebnis einer nicht-namentlichen Antragsabstimmung (ohne Einzelstimmennachweis).
+        </p>
+        <p><img class="screenshot" alt="Screenshot einer Wahl" src="assets/img/online_conference_article/election.png" /></p>
+        <p translate translateHtml>
+            <strong>Wichtig anzumerken:</strong> Eine nicht-namentliche Stimmabgabe in OpenSlides erfüllt <em>nicht</em> die Ansprüche einer geheimen Wahl, da Administratoren (also Personen mit Administrationsrechten auf dem OpenSlides-Server und hinreichend technischem Verständnis bei der Auswertung von Serverlogs) den Eingang der Einzelstimmen nachvollziehen könnten und u.U. das übermittelte Votum einer Session-ID und damit einem Namen zuordnen könnten. Dies resultiert aus der Voraussetzung, dass geprüft werden muss, ob Nutzer*innen stimmberechtigt sind. Dies kann nur anhand eines gültigen Logins ausgemacht werden. Zudem muss nachgehalten werden, ob Teilnehmende schon ihre Stimme abgegeben haben, um Doppelabstimmungen zu verhindern.
+        </p>
+        <p translate translateHtml>
+            Eine Alternative ist die <strong>pseudonyme Stimmabgabe</strong>: Dabei erhalten Mitglieder zwei Zugänge zu OpenSlides – einen personalisierten Zugang, um sich auf die Redeliste zu setzen oder Anträge zu stellen und einen pseudonymen Zugang, um anonym abstimmen und wählen zu können. Die pseudonymen Zugänge haben dabei zufällig generierte Benutzernamen und werden an die Mitglieder gelost. Für die Stimmabgabe ist dann nur die Gruppe der pseudonymen Zugänge zugelassen. Dieses Vorgehen hat den Vorteil, dass die eigene Stimmabgabe nur für den Stimmberechtigte durch das eigene Pseudonym nachvollziehbar und überprüfbar ist. Ein Rückschluss, wer wie abgestimmt hat ist durch die Nutzung von Pseudonymen deutlich schwieriger möglich. Es sei jedoch nochmals explizit darauf hingewiesen, dass dies ein pseudonymes Verfahren ist und dadurch keine absolute Anonymität der Stimmen sichergestellt ist. Wie in den <a class="inline" routerLink="/news/online-versammlungen-basis">rechtlichen Grundlagen</a> erläutert: falls eine geheime Wahl erforderlich ist, sollte das Verfahren der Briefwahl (gem. §32 Abs. 2 BGB) in Betracht gezogen werden.
+        </p>
+
+        <h2 translate>Beratung, Bereitstellung und Unterstützung</h2>
+        <p translate translateHtml>
+            Bei der Planung und Durchführung von virtuellen Versammlungen unterstützen und beraten wir Sie gerne persönlich. Wenden Sie sich am besten per Mail an <a href="mailto:info@openslides.com">info@openslides.com</a> und beschreiben Sie Ihr Vorhaben.
+        </p>
     </div>
 </div>

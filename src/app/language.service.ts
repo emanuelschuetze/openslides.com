@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRouteSnapshot, CanActivate, NavigationEnd, Router, UrlSegment } from '@angular/router';
-import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
 
+import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
 import { TranslateService } from '@ngx-translate/core';
 
 interface Language {

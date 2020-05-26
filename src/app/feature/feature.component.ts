@@ -120,7 +120,9 @@ export class FeatureComponent implements OnInit {
                 _('Globale Volltextsuche'),
                 _('Umfangreiche Sortier- und Filtermöglichkeiten aller Listen'),
                 _('Konfigurierbares Design sowie Erstellung eigener Designs auf Anfrage'),
-                _('Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, Portugiesisch, Spanisch und Russisch)'),
+                _(
+                    'Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, Portugiesisch, Spanisch und Russisch)'
+                ),
                 _('Responsive Design'),
                 _('Plattformunabhängige Webanwendung basierend auf Python 3 und Angular 8 im modernen Material Design'),
                 _('Progressive WebApp mit clientseitigem Caching und Lazy Loading für kurze Ladezeiten')
