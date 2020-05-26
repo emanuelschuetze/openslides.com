@@ -46,6 +46,7 @@ import { ReferenceContainerComponent } from './reference-container/reference-con
 import { ReferencesComponent } from './references/references.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { WrappableDirective } from './wrappable.directive';
+import { TranslateHtmlDirective } from './translate-html.directive';
 
 registerLocaleData(localeDe, 'de');
 
@@ -69,6 +70,7 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
         AppComponent,
         WrappableDirective,
         ScrollSpyDirective,
+        TranslateHtmlDirective,
         LocalizedDatePipe,
         MainMenuComponent,
         MainComponent,

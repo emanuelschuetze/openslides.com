@@ -82,8 +82,7 @@ export class OrderComponent implements OnInit {
                 case 502:
                 case 504:
                     this.error = _(
-                        'Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. \
-                        Bitte senden Sie uns Ihre Anfrage per E-Mail: hosting@openslides.com'
+                        'Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte senden Sie uns Ihre Anfrage per E-Mail: hosting@openslides.com'
                     );
                     break;
                 default:
