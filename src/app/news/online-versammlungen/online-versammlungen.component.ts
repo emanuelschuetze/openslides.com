@@ -4,6 +4,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
     selector: 'app-online-versammlungen',
     templateUrl: './online-versammlungen.component.html',
     styleUrls: ['./online-versammlungen.component.scss'],
-    encapsulation: ViewEncapsulation.None,
+    encapsulation: ViewEncapsulation.None
 })
 export class ArticleOnlineMeetingComponent {}
