@@ -37,6 +37,7 @@ export class OrderComponent implements OnInit {
     ) {
         this.orderForm = this.fb.group({
             package: ['', [Validators.required, Validators.pattern(/^(meeting|conference|congress)$/)]],
+            running_time: ['', [Validators.required]],
             domain: ['', [Validators.required, Validators.pattern(/^[a-zA-Z0-9\-\.]+$/)]],
             services: this.fb.group(Object.keys(this.services).mapToObject(service => ({ [service]: [false, []] }))),
             event_name: ['', [Validators.required, this.standard]],
@@ -82,6 +83,7 @@ export class OrderComponent implements OnInit {
                 case 502:
                 case 504:
                     this.error = _(
+                        // tslint:disable-next-line
                         'Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte senden Sie uns Ihre Anfrage per E-Mail: hosting@openslides.com'
                     );
                     break;

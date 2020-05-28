@@ -45,8 +45,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { ReferenceContainerComponent } from './reference-container/reference-container.component';
 import { ReferencesComponent } from './references/references.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
-import { WrappableDirective } from './wrappable.directive';
 import { TranslateHtmlDirective } from './translate-html.directive';
+import { WrappableDirective } from './wrappable.directive';
 
 registerLocaleData(localeDe, 'de');
 

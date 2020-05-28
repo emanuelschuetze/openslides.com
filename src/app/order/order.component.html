@@ -20,7 +20,18 @@
                     {{ 'Kongress' | translate }} ({{ 'bis 1.000 TLN' | translate }} · 200€/{{ 'Monat' | translate }} {{ 'zzgl. USt' | translate }})
                 </mat-option>
             </mat-select>
-        </mat-form-field><br>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>
+                <span translate>Hostinglaufzeit</span>
+            </mat-label>
+            <mat-select formControlName="running_time" required>
+                <mat-option value="unlimited"><span translate>unbegrenzt</span></mat-option>
+                <mat-option *ngFor="let _ of [].constructor(10), let i = index" [value]="i + 3">
+                    {{ i + 3 }} {{ 'Monate' | translate }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
         <mat-form-field class="mb-1">
             <input required type="text" matInput formControlName="domain" placeholder="{{ 'Wunschdomain' | translate }}">
             <span matSuffix>.openslides.com</span>

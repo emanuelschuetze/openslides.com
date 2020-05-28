@@ -22,16 +22,30 @@ standard_pattern = r"^[A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]
 standard_pattern_no_number = r"^[A-Za-z\u00C0-\u00FF][A-Za-z\u00C0-\u00FF\'\-\.\,\#]+([\ A-Za-z\u00C0-\u00FF][A-Za-z\u00C0-\u00FF\'\-\.\,\#]+)*$"
 domain_regex = r"^[a-zA-Z0-9\-\.]+$"
 
-services = ["evoting", "audio", "video", "saml"]
+packages = {
+    "meeting": "Sitzung",
+    "conference": "Tagung",
+    "congress": "Kongress",
+}
+services = {
+    "evoting": "eVoting",
+    "audio": "Audiokonferenz via Jitsi",
+    "video": "Video-Livestream",
+    "saml": "Single Sign-On via SAML",
+}
 
 order_schema = {
     "type": "object",
     "properties": {
-        "package": {"type": "string", "enum": ["meeting", "conference", "congress"]},
+        "package": {"type": "string", "enum": list(packages.keys())},
+        "running_time": {
+            "type": "string",
+            "enum": ["unlimited"] + [str(i + 3) for i in range(10)],
+        },
         "domain": {"type": "string", "pattern": domain_regex},
         "services": {
             "type": "object",
-            "properties": {service: {"type": "boolean"} for service in services},
+            "properties": {service: {"type": "boolean"} for service in services.keys()},
         },
         "event_name": {"type": "string", "pattern": standard_pattern},
         "event_location": {"type": "string", "pattern": standard_pattern},
@@ -57,6 +71,7 @@ order_schema = {
     },
     "required": [
         "package",
+        "running_time",
         "domain",
         "event_name",
         "event_location",
@@ -112,8 +127,9 @@ def order():
     request_str = dedent(
         """\
         _Hostingauswahl
-        Hostingpaket: {package}
-        Wunschdomain: {domain}
+        Hostingpaket: {package_str}
+        Hostinglaufzeit: {running_time_str}
+        Wunschdomain: https://{domain}.openslides.com/
         Zusatzfunktionen: {services_str}
 
         _Veranstaltungsdetails
@@ -127,6 +143,9 @@ def order():
 
         _Rechnungsadresse
         {billing_address}
+
+        _Weitere Anmerkungen
+        {comment}
     """
     ).format(
         contact_person_str=dedent(
@@ -137,9 +156,13 @@ def order():
                 Telefon: {phone}
             """
         ).format(**contact_person),
+        package_str=packages[data["package"]],
         services_str=", ".join(
-            service for service, status in data["services"].items() if status
+            services[service] for service, status in data["services"].items() if status
         ),
+        running_time_str=data["running_time"] + " Monate"
+        if data["running_time"] != "unlimited"
+        else "unbegrenzt",
         **data
     )
 
@@ -170,7 +193,7 @@ def order():
         Ihre Angaben:
 
         {}
-    """
+    """  # noqa: E501
     ).format(contact_person["name"], request_str)
     try_send_mail(msg)
 
