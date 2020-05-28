@@ -39,8 +39,8 @@ order_schema = {
     "properties": {
         "package": {"type": "string", "enum": list(packages.keys())},
         "running_time": {
-            "type": "string",
-            "enum": ["unlimited"] + [str(i + 3) for i in range(10)],
+            "type": ["string", "integer"],
+            "enum": ["unlimited"] + [i + 3 for i in range(10)],
         },
         "domain": {"type": "string", "pattern": domain_regex},
         "services": {
@@ -61,7 +61,7 @@ order_schema = {
                     "type": "string",
                     "pattern": r"^(0|\+(9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42"
                     + r"\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|"
-                    + r"4[987654310]|3[9643210]|2[70]|7|1))\d{1,14}$",
+                    + r"4[987654310]|3[9643210]|2[70]|7|1))[\d\-/ ]{1,20}$",
                 },
             },
             "required": ["name", "email", "phone"],
@@ -160,7 +160,7 @@ def order():
         services_str=", ".join(
             services[service] for service, status in data["services"].items() if status
         ),
-        running_time_str=data["running_time"] + " Monate"
+        running_time_str=str(data["running_time"]) + " Monate"
         if data["running_time"] != "unlimited"
         else "unbegrenzt",
         **data
