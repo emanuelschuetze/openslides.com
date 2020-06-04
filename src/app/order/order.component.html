@@ -101,7 +101,7 @@
             </mat-form-field>
         </div>
 
-        <button type="submit" [disabled]="!orderForm.valid" mat-flat-button class="os-button">
+        <button type="submit" [disabled]="!orderForm.valid && false" mat-flat-button class="os-button">
             <span translate>Anfrage absenden</span>
         </button>
         <div class="error-div mt-1" *ngIf="error">

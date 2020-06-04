@@ -1,0 +1,115 @@
+# Translations template for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-06-04 15:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+msgid "Konfigurationsfehler: Keine E-Mail-Empfänger"
+msgstr ""
+
+msgid "Ihre Anfrage bei OpenSlides"
+msgstr ""
+
+msgid "Der Server ist nicht korrekt konfiguriert"
+msgstr ""
+
+msgid "Konnte E-Mail nicht versenden an:"
+msgstr ""
+
+msgid "Monate"
+msgstr ""
+
+msgid "unbegrenzt"
+msgstr ""
+
+msgid "Diese E-Mail-Adresse ist ungültig"
+msgstr ""
+
+msgid "Diese E-Mail-Adresse ist bereits registriert"
+msgstr ""
+
+#, python-format
+msgid ""
+"Sehr geehrte/r %(name)s,\n"
+"\n"
+"Vielen Dank für Ihre Hosting-Anfrage bei OpenSlides! Wir werden Ihre "
+"Nachricht schnellstmöglich bearbeiten.\n"
+"\n"
+"Unten stehend finden Sie noch einmal Ihre Angaben. Sollten Sie noch "
+"Korrekturen oder Änderungswünsche haben, antworten Sie einfach auf diese "
+"E-Mail.\n"
+"\n"
+"Sollten Sie diese Anfrage nicht gesendet haben, melden Sie sich bitte bei"
+" uns, um die Anfrage zu stornieren.\n"
+"\n"
+"Mit besten Grüßen,\n"
+"Ihr OpenSlides-Team\n"
+msgstr ""
+
+msgid "Ihre Angaben"
+msgstr ""
+
+msgid "Hostingauswahl"
+msgstr ""
+
+msgid "Hostingpaket"
+msgstr ""
+
+msgid "Hostinglaufzeit"
+msgstr ""
+
+msgid "Wunschdomain"
+msgstr ""
+
+msgid "Zusatzfunktionen"
+msgstr ""
+
+msgid "Veranstaltungsdetails"
+msgstr ""
+
+msgid "Veranstaltungsname"
+msgstr ""
+
+msgid "Veranstaltungsort"
+msgstr ""
+
+msgid "Veranstaltungszeitraum"
+msgstr ""
+
+msgid "Erwartete Teilnehmeranzahl"
+msgstr ""
+
+msgid "Ansprechpartner"
+msgstr ""
+
+msgid "Veranstalter"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "E-Mail"
+msgstr ""
+
+msgid "Telefon"
+msgstr ""
+
+msgid "Rechnungsadresse"
+msgstr ""
+
+msgid "Weitere Anmerkungen"
+msgstr ""
+

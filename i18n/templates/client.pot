@@ -1,0 +1,1064 @@
+msgid ""
+msgstr ""
+"mime-version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Tagesordnung"
+msgstr ""
+
+msgid ""
+"Bleiben Sie flexibel: Ergänzen, ändern oder verschieben Sie "
+"Tagesordnungspunkte im laufenden Betrieb."
+msgstr ""
+
+msgid "Redelisten für jeden Tagesordnungspunkt"
+msgstr ""
+
+msgid "Flexibles Hinzufügen von Tagesordnungspunkten für jegliche Inhalte"
+msgstr ""
+
+msgid ""
+"Die aktuelle Redeliste stets im Blick (als Überblendung oder auf einem 2. "
+"Projektor)"
+msgstr ""
+
+msgid "Countdowns zur Redezeitbeschränkung"
+msgstr ""
+
+msgid "Automatische Nummerierung von Tagesordnungspunkten"
+msgstr ""
+
+msgid "Zeitplanung: Dauer pro Tagesordnungspunkt schätzen"
+msgstr ""
+
+msgid ""
+"Inoffizielle Tagesordnungspunkte (z. B. Pausen) in die Tagesordnung "
+"integrieren"
+msgstr ""
+
+msgid "Abgeschlossene Tagesordnungspunkte markieren und verstecken"
+msgstr ""
+
+msgid "Individuelle Sichtbarkeiten für jeden Tagesordnungspunkt"
+msgstr ""
+
+msgid "Tagesordnung als PDF exportieren"
+msgstr ""
+
+msgid "Tagesordnung per Drag&Drop sortieren"
+msgstr ""
+
+msgid "Anträge"
+msgstr ""
+
+msgid ""
+"Sparen Sie Papier: Erfassen und verwalten Sie Anträge und "
+"Abstimmungsergebnisse digital."
+msgstr ""
+
+msgid "Anpassbare Antrag-Statusmeldungen und -Arbeitsabläufe"
+msgstr ""
+
+msgid "Anträge in Antragsblöcken und Schlagwörter verwalten"
+msgstr ""
+
+msgid "Anträge automatisch nummerieren in Sachgebieten und Untersachgebieten"
+msgstr ""
+
+msgid "Sortierung von Anträgen in einer Aufrufliste"
+msgstr ""
+
+msgid "Erforderliche Unterstützern pro Antrag definieren"
+msgstr ""
+
+msgid ""
+"Änderungsanträge und Änderungsempfehlungen auf Basis von Zeilennummern "
+"erstellen"
+msgstr ""
+
+msgid "Unterstützung von Satzungsanträgen"
+msgstr ""
+
+msgid "Anzeigen/Verstecken von Anträgen in der Tagesordnung"
+msgstr ""
+
+msgid "HTML-Inline-Editor zum Formatieren von Antragstext und -begründung"
+msgstr ""
+
+msgid "Kommentarfelder für Anträge erlauben"
+msgstr ""
+
+msgid "Abstimmungsergebnisse erfassen"
+msgstr ""
+
+msgid "Anträge als PDF, CSV und XLSX exportieren"
+msgstr ""
+
+msgid "Wahlen"
+msgstr ""
+
+msgid ""
+"Beschleunigen Sie das Prozedere: Generieren Sie ad-hoc Stimmzettel für Ihre "
+"geheime Wahlen."
+msgstr ""
+
+msgid "Kandidaten aus der Teilnehmenden-Liste vorschlagen"
+msgstr ""
+
+msgid "Personalisierte Wahlscheine für geheime Wahlen drucken"
+msgstr ""
+
+msgid "Unterstützte Wahlverfahren: Ja/Nein/Enthaltung oder eine Stimme pro Kandidat"
+msgstr ""
+
+msgid "Wahlergebnisse auf Grundlage verschiedener 100%-Basen"
+msgstr ""
+
+msgid "Mehrere Wahlgänge"
+msgstr ""
+
+msgid "Wahlergebnisse eingeben und mit Diagramm projizieren"
+msgstr ""
+
+msgid "Wahlen (mit allen Ergebnissen) als PDF exportieren"
+msgstr ""
+
+msgid "Projektoren"
+msgstr ""
+
+msgid ""
+"Live dabei: Zeigen Sie den Teilnehmenden gerade diskutierte Inhalte auf den "
+"Projektionsflächen."
+msgstr ""
+
+msgid "Sofortige Aktualisierung bei Änderungen"
+msgstr ""
+
+msgid "Unterstützung mehrerer Projektoren"
+msgstr ""
+
+msgid "Individuelle Projektorgestaltung mit eigenem Logo und Farben"
+msgstr ""
+
+msgid "Anordnen von Inhalten in einer Warteschlange"
+msgstr ""
+
+msgid "Projektionshistorie durch einen Verlauf im Überblick behalten"
+msgstr ""
+
+msgid "Unterstützung verschiedener Auflösungen"
+msgstr ""
+
+msgid "Projektion von PDF- oder Bilddateien"
+msgstr ""
+
+msgid "Weitere Funktionen"
+msgstr ""
+
+msgid ""
+"Seien Sie neugierig: Entdecken Sie noch viele weitere Funktionen von "
+"OpenSlides."
+msgstr ""
+
+msgid "Live-Änderungen direkt miterleben"
+msgstr ""
+
+msgid "Teilnehmende, Gruppen und Berechtigungen verwalten"
+msgstr ""
+
+msgid "CSV-Import und -Export für Teilnehmende"
+msgstr ""
+
+msgid "Umfangreiche Dateiverwaltung mit Zugriffsberechtigungen pro Datei und Ordner"
+msgstr ""
+
+msgid "Globale Chronik auf Basis von Snapshots"
+msgstr ""
+
+msgid "Globale Volltextsuche"
+msgstr ""
+
+msgid "Umfangreiche Sortier- und Filtermöglichkeiten aller Listen"
+msgstr ""
+
+msgid "Konfigurierbares Design sowie Erstellung eigener Designs auf Anfrage"
+msgstr ""
+
+msgid ""
+"Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, "
+"Portugiesisch, Spanisch und Russisch)"
+msgstr ""
+
+msgid "Responsive Design"
+msgstr ""
+
+msgid ""
+"Plattformunabhängige Webanwendung basierend auf Python 3 und Angular 8 im "
+"modernen Material Design"
+msgstr ""
+
+msgid ""
+"Progressive WebApp mit clientseitigem Caching und Lazy Loading für kurze "
+"Ladezeiten"
+msgstr ""
+
+msgid "OpenSlides: das digitale Antrags- und Versammlungssystem"
+msgstr ""
+
+msgid "Sie müssen dieses Feld ausfüllen"
+msgstr ""
+
+msgid "Keine gültige Email-Adresse"
+msgstr ""
+
+msgid ""
+"Der Server ist momentan nicht erreichbar. Bitte versuchen Sie es später "
+"nochmal."
+msgstr ""
+
+msgid "Ein unbekannter Fehler ist aufgetreten."
+msgstr ""
+
+msgid "eVoting"
+msgstr ""
+
+msgid "Audiokonferenz via Jitsi"
+msgstr ""
+
+msgid "Video-Livestream"
+msgstr ""
+
+msgid "Single Sign-On via SAML"
+msgstr ""
+
+msgid ""
+"Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte "
+"senden Sie uns Ihre Anfrage per E-Mail: hosting@openslides.com"
+msgstr ""
+
+msgid "Gewerkschaften"
+msgstr ""
+
+msgid "Parteien"
+msgstr ""
+
+msgid "Gesundheitswesen"
+msgstr ""
+
+msgid "Verbände, Vereine und mehr"
+msgstr ""
+
+msgid "Treten Sie mit uns in Kontakt"
+msgstr ""
+
+msgid ""
+"Sollten Sie Fragen zu OpenSlides haben oder eine persönliche Beratung "
+"wünschen – wir unterstützen Sie gern."
+msgstr ""
+
+msgid "Allgemeine Anfragen"
+msgstr ""
+
+msgid "Hosting"
+msgstr ""
+
+msgid "Technischer Kundensupport"
+msgstr ""
+
+msgid "Ihr Ansprechpartner für Beratung und individuelle Servicedienstleistungen"
+msgstr ""
+
+msgid "OpenSlides ist Freie Software, lizenziert unter MIT."
+msgstr ""
+
+msgid "OpenSlides-Team"
+msgstr ""
+
+msgid "Datenschutzerklärung"
+msgstr ""
+
+msgid "Impressum"
+msgstr ""
+
+msgid ""
+"Verantwortlich für den Inhalt dieser Seiten in Vertretung für die "
+"OpenSlides-Initiative:"
+msgstr ""
+
+msgid "Entwicklung und Redaktion:"
+msgstr ""
+
+msgid "Preise"
+msgstr ""
+
+msgid "Funktionen"
+msgstr ""
+
+msgid "Starten"
+msgstr ""
+
+msgid "Referenzen"
+msgstr ""
+
+msgid "News"
+msgstr ""
+
+msgid "Kontakt"
+msgstr ""
+
+msgid ""
+"OpenSlides ist die umfassende Lösung zur digitalen Organisation Ihrer "
+"Versammlungen und Konferenzen. Verwalten und projizieren Sie "
+"Tagesordnungen, Anträge, Wahlen, Dokumente, Redelisten und Teilnehmende. "
+"Webbasiert und immer auf dem neuesten Stand. "
+msgstr ""
+
+msgid ""
+"Schaffen Sie die Voraussetzungen für eine offene Kommunikation, ohne das "
+"Ziel aus den Augen zu verlieren. OpenSlides gibt Ihnen dafür ein modernes "
+"und mächtiges Werkzeug an die Hand. Erweitern Sie Ihre Tagungsordnung live, "
+"reagieren Sie auf Antragsänderungen in Echtzeit und geben Sie Ihren "
+"Delegierten kontrollierten Zugriff auf das System."
+msgstr ""
+
+msgid ""
+"Beziehen Sie das Plenum aktiv mit ein. Öffnen Sie den mobilen Zugriff auf "
+"OpenSlides – zur Einsicht wichtiger Dokumente, zum Einreichen von Anträgen "
+"oder Abrufen von Wahlergebnissen."
+msgstr ""
+
+msgid ""
+"Beschleunigen Sie Prozesse durch eine nahtlose Steuerung mit nur einer "
+"Software. OpenSlides strafft das Verfahren – von der Vorbereitung über "
+"Anträge und Wahlen bis zum Beschlussprotokoll."
+msgstr ""
+
+msgid ""
+"Machen Sie OpenSlides zu Ihrer zentralen Schnittstelle für die Verwaltung "
+"und Veröffentlichung aller relevanten Versammlungsinhalte auf Leinwand, "
+"Notebook oder Smartphone."
+msgstr ""
+
+msgid ""
+"Ergänzen, ändern oder verschieben Sie automatisch nummerierte "
+"Tagesordnungspunkte per Drag & Drop im laufenden Betrieb. Verknüpfen Sie "
+"die einzelnen Punkte mit Redelisten sowie Redezeiten und integrieren Sie "
+"für eine bessere Zeitplanung auch inoffizielle Einträge wie Pausen."
+msgstr ""
+
+msgid ""
+"Erfassen Sie Anträge mit Antragsteller und Antragstext. Ordnen Sie "
+"Sachgebiete und Antragsnummer zu. Protokollieren Sie Beschluss und "
+"Abstimmungsergebnis während der Antragsberatung. Die flexible Filterung der "
+"Liste hilft bei der Suche in allen Anträgen und ihren Änderungen."
+msgstr ""
+
+msgid ""
+"Schlagen Sie Kandidat/innen aus der Liste der Teilnehmenden vor. Generieren "
+"Sie ad-hoc personalisierte Stimmzettel für geheime Wahlen. Protokollieren "
+"und projizieren Sie die ausgezählten Stimmen – für jeden Teilnehmenden "
+"nachzulesen in OpenSlides."
+msgstr ""
+
+msgid ""
+"OpenSlides ist für die Arbeit mit multiplen Bildschirmen konzipiert und mit "
+"einer mächtigen Projektorsteuerung versehen. Das Webinterface erlaubt das "
+"Projizieren und Bearbeitung der Folien, während die Projektoren in Vollbild "
+"laufen."
+msgstr ""
+
+msgid ""
+"Die Verwaltung der Delegierten und ihrer Anwesenheit sowie das ausgefeilte "
+"Rechtemanagement sind unkompliziert und intuitiv. Jeder Bereich von "
+"OpenSlides kann für einzelne Nutzergruppen freigeschalten werden."
+msgstr ""
+
+msgid ""
+"Egal ob Dateiablage oder Kommentarfunktion – OpenSlides ist mit einer "
+"Vielzahl praxistauglicher Detailwerkzeuge ausgestattet. Darüber hinaus "
+"entwickeln wir für Kunden auch maßgeschneiderte Lösungen."
+msgstr ""
+
+msgid ""
+"Sie wollen OpenSlides für ihre nächste Veranstaltung nutzen, aber sich "
+"nicht um die technischen Details kümmern? Bestellen Sie jetzt ein passendes "
+"Hosting-Paket!"
+msgstr ""
+
+msgid ""
+"Sie benötigen individuellen Support vor Ort und professionelle Beratung vom "
+"OpenSlides-Entwickerteam? Ihnen fehlen spezielle Funktionen oder Sie haben "
+"Anpassungsbedarf? Vereinbaren Sie eine kostenfreie Erstberatung! Unsere "
+"kostenpflichtigen Serviceleistungen:"
+msgstr ""
+
+msgid ""
+"Wir haben uns zu den Grundsätzen eines quelloffenen, freien und kostenlosen "
+"Austauschs unserer Software verpflichtet und tragen diesen Anspruch auch im "
+"Namen. OpenSlides wird unter MIT-Lizenz zur Verfügung gestellt. Hilf mit, "
+"den Quellcode weiter zu verbessern."
+msgstr ""
+
+msgid ""
+"Erhalten Sie Neuigkeiten und Bekanntmachungen über neue "
+"OpenSlides-Entwicklungen. Tragen Sie sich hier in unseren Verteiler ein:"
+msgstr ""
+
+msgid "Managen Sie Veranstaltungen digital"
+msgstr ""
+
+msgid "Demo"
+msgstr ""
+
+msgid "Hosting starten"
+msgstr ""
+
+msgid "Maximale Flexibilität und Transparenz"
+msgstr ""
+
+msgid "Einfache Interaktion"
+msgstr ""
+
+msgid "Schnelle Ergebnisse"
+msgstr ""
+
+msgid "Papierlos"
+msgstr ""
+
+msgid "Mehr erfahren"
+msgstr ""
+
+msgid "Vielseitig und responsiv"
+msgstr ""
+
+msgid "Mehr Funktionen"
+msgstr ""
+
+msgid "Hosting bestellen"
+msgstr ""
+
+msgid "Paket wählen"
+msgstr ""
+
+msgid "Servicedienstleistungen"
+msgstr ""
+
+msgid "Programmvorstellung und Beratung"
+msgstr ""
+
+msgid "Schulung"
+msgstr ""
+
+msgid "Vor-Ort-Service"
+msgstr ""
+
+msgid "Telefonrufbereitschaft"
+msgstr ""
+
+msgid "Weiterentwicklung und individuelle Anpassungen"
+msgstr ""
+
+msgid "Kontaktieren Sie uns"
+msgstr ""
+
+msgid "Selbst installieren"
+msgstr ""
+
+msgid ""
+"Sie möchten OpenSlides auf Ihrem eigenen Server installieren? Wir bieten "
+"unsere Software als PyPI-Paket und als Quellcode an. Bitte haben Sie "
+"Verständnis dafür, dass wir Supportleistungen nur für unsere "
+"Hosting-Lösungen anbieten."
+msgstr ""
+
+msgid "Installationsanleitung"
+msgstr ""
+
+msgid "Quellcode"
+msgstr ""
+
+msgid "OpenSlides ist Open Source"
+msgstr ""
+
+msgid "Weitere Referenzen"
+msgstr ""
+
+msgid "Alle News anzeigen"
+msgstr ""
+
+msgid "Online-Versammlungen mit OpenSlides effizient durchführen"
+msgstr ""
+
+msgid "Newsletter"
+msgstr ""
+
+msgid "Absenden"
+msgstr ""
+
+msgid "Sie haben sich erfolgreich für unseren Newsletter registriert!"
+msgstr ""
+
+msgid "Pressemitteilungen"
+msgstr ""
+
+msgid "Artikel und Publikationen"
+msgstr ""
+
+msgid "In den Medien"
+msgstr ""
+
+msgid ""
+"April 2020, von <a href=\"mailto:eric.lanfer@openslides.com\">Eric "
+"Lanfer</a> und <a href=\"mailto:emanuel.schuetze@openslides.com\">Emanuel "
+"Schütze</a>"
+msgstr ""
+
+msgid ""
+"In Zeiten der COVID-19-Pandemie können viele Sitzungen und Versammlungen "
+"von Organisationen nicht wie gewohnt stattfinden. Es geht beispielsweise um "
+"Mitgliederversammlungen von Vereinen, Hauptversammlungen von Unternehmen, "
+"Vollversammlungen von Genossenschaften und Stiftungen, "
+"Wohnungseigentümerversammlungen und diverse Sitzungen von Vorständen und "
+"anderen Gremien."
+msgstr ""
+
+msgid ""
+"Um Abhilfe zu schaffen wurde von Bundesrat und Bundestag Ende März 2020 ein "
+"neues Gesetz beschlossen, um Versammlungen virtuell durchführen zu können. "
+"Die rechtlichen Aspekte und Neuerungen haben wir in einem <a "
+"class=\"inline\" routerLink=\"/news/online-versammlungen-basis\">separaten "
+"Artikel</a> beleuchtet und technische Minimalanforderungen zur "
+"Kommunikation beschrieben."
+msgstr ""
+
+msgid ""
+"In diesem Artikel wird beschrieben, wie <strong>OpenSlides</strong> zur "
+"effizienten Unterstützung in virtuellen Versammlungen eingesetzt werden "
+"kann. Ein Kernvorteil von OpenSlides sei vorweg genannt: Der "
+"<strong>virtuelle Projektor</strong>, der sämtlichen Teilnehmenden einer "
+"Versammlung zur Verfügung steht und somit eine gute visuelle Orientierung "
+"für das Verfolgen der Veranstaltung bietet. Auf dem Projektor können "
+"Redelisten, Tagesordnungspunkte, Anträge und vieles mehr eingeblendet "
+"werden."
+msgstr ""
+
+msgid "Virtuelle Anwesenheit erfassen"
+msgstr ""
+
+msgid ""
+"Eine zentrale Bedeutung bei virtuellen Versammlungen spielt die "
+"Anwesenheitserfassung. Nur anwesende Nutzer dürfen beispielsweise "
+"abstimmen. Mit OpenSlides lässt sich eine virtuelle Anwesenheitsliste "
+"führen. Alle Teilnehmende erhalten einen persönlichen Zugang zu OpenSlides "
+"und können sich darüber zu Beginn der Sitzung als \"anwesend\" melden. Dies "
+"ist vergleichbar mit der Eintragung in eine analoge Anwesenheitsliste. Für "
+"Mitglieder ist die Anwesenheitsmeldung (wie in folgender Abbildung "
+"markiert) nur ein einfacher Klick auf \"Anwesend\":"
+msgstr ""
+
+msgid ""
+"Im Sinne einer doppelten Absicherung kann die Sitzungsleitung zu Beginn der "
+"virtuellen Versammlung die Anwesenheitsliste einsehen und prüfen, welche "
+"Mitglieder bereits als anwesend gemeldet sind. Alternativ wäre es auch "
+"möglich, dass die Sitzungsleitung die Überprüfung und Markierung der "
+"Anwesenheit vollständig übernimmt."
+msgstr ""
+
+msgid "Wortmeldungen in Redelisten organisieren"
+msgstr ""
+
+msgid ""
+"Virtuelle Sitzungen können bereits in kleiner Personenanzahl ohne "
+"Moderation schnell anstrengend und chaotisch werden. Redelisten helfen "
+"dabei Struktur reinzubekommen. In OpenSlides können sich Teilnehmende per "
+"Klick auf eine Redeliste setzen. Jeder Tagesordnungspunkt und jeder Antrag "
+"hat seine eigene Redeliste. Damit können Mitglieder bereits im Voraus "
+"Wortbeiträge zu bestimmten TOPs/Anträgen anmelden."
+msgstr ""
+
+msgid ""
+"Die Redeliste zur aktuellen Debatte lässt sich auf einen virtuellen "
+"Projektor anzeigen, wenn gewünscht mit einem Countdown zur "
+"Redezeitbegrenzung."
+msgstr ""
+
+msgid ""
+"Die Sitzungsleitung steuert das Starten und Stoppen der Wortbeiträge in "
+"OpenSlides. Auch ein Zurückziehen oder Vorziehen von Redner*innen ist "
+"problemlos möglich. Aktuell wird an einer Integration der "
+"Audio/Video-Konferenzlösungen Jitsi in OpenSlides gearbeitet."
+msgstr ""
+
+msgid "Digitale Antragsberatung"
+msgstr ""
+
+msgid ""
+"Das Herzstück von OpenSlides ist die digitale Antragsverwaltung. Es lassen "
+"sich sehr komplexe Abläufe von der Antragsstellung bis zum Beschluss "
+"abbilden. Auch Beschlussvorlagen in Sitzungen können in OpenSlides "
+"komfortabel organisiert werden. In diesem Artikel werden nur die "
+"wichtigsten Antragsfunktionen erwähnt."
+msgstr ""
+
+msgid "Antragsübersicht"
+msgstr ""
+
+msgid ""
+"Die Antragsliste bietet einen strukturierten Überblick über alle "
+"vorliegenden Anträge und deren Status. Per Klick öffnet sich ein Antrag mit "
+"allen Detailinformationen. Teilnehmende können vorgeschlagene Änderungen "
+"und Begründungen nachlesen und die passende Redeliste mitverfolgen. Ebenso "
+"sind persönliche Notizen zu jedem Antrag möglich. Ein vollständiges "
+"Antragsbuch lässt sich jederzeit als PDF generieren, um z. B. am Ende ein "
+"fertiges Beschlussbuch zu erstellen."
+msgstr ""
+
+msgid "Anträge stellen"
+msgstr ""
+
+msgid ""
+"Jeder antragsberechtigte Teilnehmende kann in OpenSlides selbständig einen "
+"Antrag einreichen. Dabei muss nur ein Antragstitel und der zu beschließende "
+"Text eingegeben werden, optional eine Begründung. Das Antragsformular zum "
+"Einreichen ist dabei sehr einfach gehalten:"
+msgstr ""
+
+msgid "Änderungsanträge"
+msgstr ""
+
+msgid ""
+"Zu einem bestehenden Antrag lassen sich leicht Änderungsanträge erstellen. "
+"Dazu wird der zu ändernde Absatz ausgewählt und modifiziert. Der Antrag "
+"erscheint in Änderungsdarstellung (rot=Streichung, grün=Ergänzung). Damit "
+"sind die Änderungen für alle transparent und sofort ersichtlich. Bei "
+"Annahme des Änderungsantrags wird die Änderung direkt in den "
+"Ursprungsantrag übernommen."
+msgstr ""
+
+msgid ""
+"Auch Satzungsänderungsanträge sind mit OpenSlides möglich. Dazu wird vorher "
+"die komplette Satzung in einzelne Abschnitte hinterlegt. Nach Auswahl eines "
+"Abschnitts wird der Text modifiziert und als neuer Satzungsantrag gestellt "
+"- mit automatischer Änderungsdarstellung."
+msgstr ""
+
+msgid "Änderungsempfehlungen"
+msgstr ""
+
+msgid ""
+"Mündliche Änderungsanträge oder andere ad-hoc-Änderungen eines "
+"Antragstextes lassen sich in OpenSlides in Form von sogenannten "
+"\"Änderungsempfehlungen\" visualisieren. Dazu hinterlegt der "
+"Antragsverwalter zu einer bestimmten Zeile eine Modifizierung. Diese "
+"Änderung ist sofort für alle Teilnehmende in der Antragsansicht sichtbar. "
+"Auch ein Wechsel zwischen der Originalfassung und der Änderungsfassung ist "
+"jederzeit möglich."
+msgstr ""
+
+msgid "Elektronische Abstimmungen und Wahlen"
+msgstr ""
+
+msgid ""
+"Entscheidend für virtuelle Versammlungen ist die Möglichkeit der sicheren, "
+"elektronischen Stimmabgabe. Dazu bietet OpenSlides ab Version 3.2 ein "
+"Live-Voting für Anträge und Wahlen. Die Sitzungsleitung kann zwischen "
+"namentlicher und nicht namentlicher Stimmabgabe wählen."
+msgstr ""
+
+msgid ""
+"In beiden Fällen nutzen die stimmberechtigten Teilnehmenden ihren "
+"persönlichen OpenSlides-Login zur Stimmabgabe. Damit wird sichergestellt, "
+"dass nur die Personen abstimmen dürfen, die auch stimmberechtigt sind. Und "
+"dass jeder dieser Personen nur einmal abstimmen darf. Auch eine "
+"individuelle Stimmgewichtung pro Stimmberechtigten ist mit OpenSlides "
+"möglich."
+msgstr ""
+
+msgid "Namentliche Stimmabgabe"
+msgstr ""
+
+msgid ""
+"Bei der namentlichen Stimmabgabe werden die einzelnen, abgegebenen Stimmen "
+"zusammen mit dem jeweiligen Account gespeichert. D. h. nach Ende der "
+"Stimmabgabe ist für alle erkennbar wer wie abgestimmt hat. Dieser "
+"sogenannte \"Einzelstimmennachweis\" listet in einer Tabelle alle Stimmen "
+"mit dem jeweiligen Votum auf und bietet damit volle Transparenz und "
+"Nachvollziehbarkeit über eine offen Abstimmung. Die Namenszuordnung ist "
+"später für das Archiv, bei Bedarf, anonymisierbar. Die nachfolgende "
+"Abbildung zeigt ein Ergebnis einer namentlichen Antragsabstimmung mit "
+"Einzelstimmennachweis."
+msgstr ""
+
+msgid ""
+"Für eine nicht-namentliche Abstimmung, bei der Mitglieder ihre eigene "
+"abgegebene Stimme nachvollziehen können, wäre eine namentliche Abstimmung "
+"mit pseudonymen Accounts möglich. Diese Möglichkeit wird bei der "
+"nicht-namentlichen Stimmabgabe erläutert."
+msgstr ""
+
+msgid "Nicht-namentliche Stimmabgabe"
+msgstr ""
+
+msgid ""
+"Bei der nicht-namentlichen Stimmabgabe wird nur abgespeichert wer seine "
+"Stimme abgegeben hat. Zusätzlich werden in einer virtuellen Wahlurne alle "
+"abgegebenen Stimmen gezählt. Es wird aber nicht gespeichert wer wie "
+"abgestimmt/gewählt hat. Es existiert also keine zuordenbare Liste mit Namen "
+"und Votum. Eine direkte Nachvollziehbarkeit der elektronischen Stimmabgabe "
+"in OpenSlides ist also nicht möglich. Die nachfolgende Abbildung zeigt das "
+"Ergebnis einer nicht-namentlichen Antragsabstimmung (ohne "
+"Einzelstimmennachweis)."
+msgstr ""
+
+msgid ""
+"<strong>Wichtig anzumerken:</strong> Eine nicht-namentliche Stimmabgabe in "
+"OpenSlides erfüllt <em>nicht</em> die Ansprüche einer geheimen Wahl, da "
+"Administratoren (also Personen mit Administrationsrechten auf dem "
+"OpenSlides-Server und hinreichend technischem Verständnis bei der "
+"Auswertung von Serverlogs) den Eingang der Einzelstimmen nachvollziehen "
+"könnten und u.U. das übermittelte Votum einer Session-ID und damit einem "
+"Namen zuordnen könnten. Dies resultiert aus der Voraussetzung, dass geprüft "
+"werden muss, ob Nutzer*innen stimmberechtigt sind. Dies kann nur anhand "
+"eines gültigen Logins ausgemacht werden. Zudem muss nachgehalten werden, ob "
+"Teilnehmende schon ihre Stimme abgegeben haben, um Doppelabstimmungen zu "
+"verhindern."
+msgstr ""
+
+msgid ""
+"Eine Alternative ist die <strong>pseudonyme Stimmabgabe</strong>: Dabei "
+"erhalten Mitglieder zwei Zugänge zu OpenSlides – einen personalisierten "
+"Zugang, um sich auf die Redeliste zu setzen oder Anträge zu stellen und "
+"einen pseudonymen Zugang, um anonym abstimmen und wählen zu können. Die "
+"pseudonymen Zugänge haben dabei zufällig generierte Benutzernamen und "
+"werden an die Mitglieder gelost. Für die Stimmabgabe ist dann nur die "
+"Gruppe der pseudonymen Zugänge zugelassen. Dieses Vorgehen hat den Vorteil, "
+"dass die eigene Stimmabgabe nur für den Stimmberechtigte durch das eigene "
+"Pseudonym nachvollziehbar und überprüfbar ist. Ein Rückschluss, wer wie "
+"abgestimmt hat ist durch die Nutzung von Pseudonymen deutlich schwieriger "
+"möglich. Es sei jedoch nochmals explizit darauf hingewiesen, dass dies ein "
+"pseudonymes Verfahren ist und dadurch keine absolute Anonymität der Stimmen "
+"sichergestellt ist. Wie in den <a class=\"inline\" "
+"routerLink=\"/news/online-versammlungen-basis\">rechtlichen Grundlagen</a> "
+"erläutert: falls eine geheime Wahl erforderlich ist, sollte das Verfahren "
+"der Briefwahl (gem. §32 Abs. 2 BGB) in Betracht gezogen werden."
+msgstr ""
+
+msgid "Beratung, Bereitstellung und Unterstützung"
+msgstr ""
+
+msgid ""
+"Bei der Planung und Durchführung von virtuellen Versammlungen unterstützen "
+"und beraten wir Sie gerne persönlich. Wenden Sie sich am besten per Mail an "
+"<a href=\"mailto:info@openslides.com\">info@openslides.com</a> und "
+"beschreiben Sie Ihr Vorhaben."
+msgstr ""
+
+msgid "Vielen Dank für Ihre Anfrage!"
+msgstr ""
+
+msgid ""
+"Wir werden diese schnellstmöglich bearbeiten und uns dann zeitnah bei Ihnen "
+"melden."
+msgstr ""
+
+msgid "Sitzung"
+msgstr ""
+
+msgid "bis 50 TLN"
+msgstr ""
+
+msgid "Monat"
+msgstr ""
+
+msgid "zzgl. USt"
+msgstr ""
+
+msgid "Tagung"
+msgstr ""
+
+msgid "bis 500 TLN"
+msgstr ""
+
+msgid "Kongress"
+msgstr ""
+
+msgid "bis 1.000 TLN"
+msgstr ""
+
+msgid "Monate"
+msgstr ""
+
+msgid "Wunschdomain"
+msgstr ""
+
+msgid "Veranstaltungsname"
+msgstr ""
+
+msgid "Veranstaltungsort"
+msgstr ""
+
+msgid "Veranstaltungszeitraum"
+msgstr ""
+
+msgid "Erwartete Teilnehmeranzahl"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Organisation"
+msgstr ""
+
+msgid "E-Mail"
+msgstr ""
+
+msgid "Telefon"
+msgstr ""
+
+msgid "Rechnungsadresse"
+msgstr ""
+
+msgid "Ihre Anmerkungen und Wünsche"
+msgstr ""
+
+msgid ""
+"Senden Sie uns das ausgefüllte Formular. Mit unserer Bestätigung starten "
+"wir i.d.R. innerhalb eines Tages das Hosting."
+msgstr ""
+
+msgid "Hostingauswahl"
+msgstr ""
+
+msgid "OpenSlides-Hostingpaket"
+msgstr ""
+
+msgid "Hostinglaufzeit"
+msgstr ""
+
+msgid "unbegrenzt"
+msgstr ""
+
+msgid "Zusatzfunktionen"
+msgstr ""
+
+msgid "Veranstaltungsdetails"
+msgstr ""
+
+msgid "Ansprechpartner"
+msgstr ""
+
+msgid "Zusätzliche Angaben"
+msgstr ""
+
+msgid "Anfrage absenden"
+msgstr ""
+
+msgid "Fehler:"
+msgstr ""
+
+msgid "Wählen Sie das Hostingpaket passend zu Ihrer Veranstaltungsgröße"
+msgstr ""
+
+msgid "inkl."
+msgstr ""
+
+msgid "USt."
+msgstr ""
+
+msgid "5% Rabatt bei Vorauszahlung von 12 Monaten."
+msgstr ""
+
+msgid "Wählen Sie praktische Zusatzfunktionen"
+msgstr ""
+
+msgid ""
+"Corona-Aktionspreis: 0 € für die ersten 3 Monate (nur im Hostingpaket "
+"\"Sitzung\")"
+msgstr ""
+
+msgid "bis 50 Teilnehmende"
+msgstr ""
+
+msgid ""
+"Wir betreiben OpenSlides für Sie datenschutzkonform auf unseren Servern in "
+"Deutschland."
+msgstr ""
+
+msgid "für kleine (virtuelle) Gremien<br>mit wiederkehrenden Sitzungen"
+msgstr ""
+
+msgid "bis <b>50</b> Teilnehmende"
+msgstr ""
+
+msgid "ab"
+msgstr ""
+
+msgid "Mindestlaufzeit: 3 Monate"
+msgstr ""
+
+msgid "Jetzt bestellen"
+msgstr ""
+
+msgid "für mittelgroße (virtuelle) Versammlungen"
+msgstr ""
+
+msgid "bis <b>500</b> Teilnehmende"
+msgstr ""
+
+msgid "für große (virtuelle) Konferenzen"
+msgstr ""
+
+msgid "bis <b>1.000</b> Teilnehmende"
+msgstr ""
+
+msgid "Hinweise zur Auswahl:"
+msgstr ""
+
+msgid ""
+"Für jedes eigenständige Gremium/Organ (z.B. Vorstand, Beirat, "
+"Mitgliederversammlung) benötigen Sie je eine separate OpenSlides-Instanz."
+msgstr ""
+
+msgid ""
+"Innerhalb einer OpenSlides-Instanz können Sie beliebig viele wiederkehrende "
+"Sitzungen in der Hostinglaufzeit abhalten. Abgerechnet wird pro Monat."
+msgstr ""
+
+msgid ""
+"Wunsch-URL pro OpenSlides-Instanz nach Verfügbarkeit (z.B. "
+"https://meine-versammlung.openslides.com)"
+msgstr ""
+
+msgid "Beispiele"
+msgstr ""
+
+msgid ""
+"A) Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung "
+"mit 12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 "
+"Teilnehmde nutzen. Dafür sind zwei Hostingpakete nötig: »Sitzung« und "
+"»Tagung«."
+msgstr ""
+
+msgid ""
+"B) Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 "
+"Landesverbände OpenSlides nutzen (je &lt;50 Personen). Dafür sind 16 "
+"einzelne OpenSlides-Instanzen (Hostingpaket »Sitzung«) nötig."
+msgstr ""
+
+msgid "Für alle Hosting-Pakete gelten folgende Leistungen:"
+msgstr ""
+
+msgid "kontinuierliche Updates"
+msgstr ""
+
+msgid "Versand von Einladungs-E-Mails"
+msgstr ""
+
+msgid ""
+"individueller Support nach Aufwand (125 € / Stunde, halbstundengenaue "
+"Abrechnung)"
+msgstr ""
+
+msgid "sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten"
+msgstr ""
+
+msgid "sichere Daten: Abschluss einer Vereinbarung zur Auftragsverarbeitung"
+msgstr ""
+
+msgid ""
+"sicherer Betrieb: jede Veranstaltung läuft als abgekapselte "
+"OpenSlides-Instanz mit eigener Datenbank"
+msgstr ""
+
+msgid "eVoting – unerlässlich für Online-Versammlungen mit Live-Voting"
+msgstr ""
+
+msgid ""
+"Erweitern Sie OpenSlides um ein integriertes elektronisches "
+"Abstimmungssystem. Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in "
+"OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen "
+"abstimmen. Möglich sind namentliche oder nicht-namentliche "
+"Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen "
+"sind möglich.<br> Testen Sie die elektronische Stimmabgabe in der <a "
+"class=\"inline\" href=\"https://demo.openslides.org/\" "
+"target=\"_blank\">Online-Demo</a>."
+msgstr ""
+
+msgid "Audiokonferenz – ideal zum Austausch für kleine virtuelle Gremiensitzung"
+msgstr ""
+
+msgid ""
+"Verwenden Sie OpenSlides mit integrierter Audiokonferenz. Über unseren "
+"exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle "
+"Teilnehmende direkt miteinander - geschützt in einem Passwort-gesicherten "
+"Audio-Konferenzraum. Jede/r verbindet sich automatisch nach dem Login in "
+"OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und "
+"auschalten."
+msgstr ""
+
+msgid "Video-Livestream – für große virtuelle Versammlungen und Parteitage"
+msgstr ""
+
+msgid ""
+"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
+"OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
+"OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese "
+"selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit "
+"automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die "
+"Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum "
+"und verfolgt wieder den Livestream."
+msgstr ""
+
+msgid ""
+"Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen "
+"Videokonferenzen) und erlaubt eine große Skalierung an Teilnehmerzahlen. "
+"Virtuelle Veranstaltungen mit mehreren hundert Personen sind damit kein "
+"Problem mehr. Hinzu kommt, dass die meisten Teilnehmenden eine "
+"Veranstaltung nur \"konsumierend\" verfolgen, d.h. nur ein kleiner "
+"Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden. "
+"Setzen Sie auf erprobte Broadcast-Streaming-Lösung – intelligent gekoppelt "
+"mit der OpenSlides-Redelistenfunktion."
+msgstr ""
+
+msgid ""
+"Kontaktieren Sie uns! Wir finden die passende Streaming-Lösung für Ihre "
+"Veranstaltung."
+msgstr ""
+
+msgid "Preis auf Anfrage · ab 50 Teilnehmende"
+msgstr ""
+
+msgid "Single Sign-On via SAML – für Organisationen mit zentralem Mitgliedsserver"
+msgstr ""
+
+msgid ""
+"Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten "
+"Mitgliedsaccounts in OpenSlides anzumelden. OpenSlides unterstützt den "
+"Standard \"SAML\" (Security Assertion Markup Language) für Single Sign-On "
+"(SSO). Ersparen Sie sich damit die Teilnehmerverwaltung in OpenSlides. Und "
+"Ihre Mitglieder brauchen sich keinen extra OpenSlides-Login merken."
+msgstr ""
+
+msgid "Alle Preise zzgl. der gesetzlich gültigen Umsatzsteuer."
+msgstr ""
+
+msgid "Noch Fragen?"
+msgstr ""
+
+msgid ""
+"Sind noch Fragen offen? Haben Sie individuelle Wünsche? Schreiben Sie uns "
+"an <a class=\"inline\" "
+"href=\"mailto:hosting@openslides.com\">hosting@openslides.com</a>!"
+msgstr ""
+
+msgid ""
+"OpenSlides ist Freie Software (Open Source) und kann – mit einigen "
+"administrativen Kenntnissen – auch selbständig auf dem eigenen Server "
+"installiert werden."
+msgstr ""
+
+msgid ""
+"OpenSlides war bereits auf zahlreichen Veranstaltungen erfolgreich im "
+"Einsatz. Hier eine Auswahl an Referenzen."
+msgstr ""

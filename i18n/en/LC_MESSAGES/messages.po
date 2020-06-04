@@ -1,16 +1,25 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # jsangmeister <joshua.sangmeister@gmail.com>, 2020
 # 
+#, fuzzy
 msgid ""
 msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-04 15:57+0200\n"
+"PO-Revision-Date: 2020-05-14 10:26+0000\n"
 "Last-Translator: jsangmeister <joshua.sangmeister@gmail.com>, 2020\n"
 "Language-Team: English (https://www.transifex.com/openslides/teams/14270/en/)\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"mime-version: 1.0\n"
 
 msgid "Tagesordnung"
 msgstr "Agenda"
@@ -990,6 +999,9 @@ msgstr "Congress"
 msgid "bis 1.000 TLN"
 msgstr "up to 1.000 Ps."
 
+msgid "Monate"
+msgstr "Months"
+
 msgid "Wunschdomain"
 msgstr "Preferred domain"
 
@@ -1035,6 +1047,12 @@ msgstr "Hosting selection"
 
 msgid "OpenSlides-Hostingpaket"
 msgstr "OpenSlides hosting package"
+
+msgid "Hostinglaufzeit"
+msgstr "Hosting duration"
+
+msgid "unbegrenzt"
+msgstr "unlimited"
 
 msgid "Zusatzfunktionen"
 msgstr "Additional services"
@@ -1320,3 +1338,57 @@ msgid ""
 msgstr ""
 "OpenSlides was already used successfully on a multitude of different events."
 " Here is a selection of references."
+
+msgid "Konfigurationsfehler: Keine E-Mail-Empfänger"
+msgstr "Configuration error: No order mail recipients"
+
+msgid "Ihre Anfrage bei OpenSlides"
+msgstr "Your inquiry for OpenSlides"
+
+msgid "Der Server ist nicht korrekt konfiguriert"
+msgstr "The server is not configured correctly"
+
+msgid "Konnte E-Mail nicht versenden an:"
+msgstr "Could not send email to:"
+
+msgid "Diese E-Mail-Adresse ist ungültig"
+msgstr "The email address is not valid"
+
+msgid "Diese E-Mail-Adresse ist bereits registriert"
+msgstr "Address already exists"
+
+#, python-format
+msgid ""
+"Sehr geehrte/r %(name)s,\n"
+"\n"
+"Vielen Dank für Ihre Hosting-Anfrage bei OpenSlides! Wir werden Ihre Nachricht schnellstmöglich bearbeiten.\n"
+"\n"
+"Unten stehend finden Sie noch einmal Ihre Angaben. Sollten Sie noch Korrekturen oder Änderungswünsche haben, antworten Sie einfach auf diese E-Mail.\n"
+"\n"
+"Sollten Sie diese Anfrage nicht gesendet haben, melden Sie sich bitte bei uns, um die Anfrage zu stornieren.\n"
+"\n"
+"Mit besten Grüßen,\n"
+"Ihr OpenSlides-Team\n"
+msgstr ""
+"Dear %(name)s,\n"
+"\n"
+"thank you for your hosting inquiry at OpenSlides! We will process your message as fast as possible.\n"
+"\n"
+"Below you see your information again. If you want to correct or add something, just write an answer to this email.\n"
+"\n"
+"If you didn't send this inquiry, please get in contact with us to cancel it.\n"
+"\n"
+"Best regards,\n"
+"You OpenSlides team\n"
+
+msgid "Ihre Angaben"
+msgstr "Your information"
+
+msgid "Hostingpaket"
+msgstr "Hosting package"
+
+msgid "Veranstalter"
+msgstr "Organizer"
+
+msgid "Weitere Anmerkungen"
+msgstr "Additional remarks"
