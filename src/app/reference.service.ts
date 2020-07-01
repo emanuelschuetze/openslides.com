@@ -181,7 +181,16 @@ export class ReferenceService {
                     src: 'amnesty-logo.png',
                     frontpage: true
                 },
-
+                {
+                    name: 'Bundesverband WindEndergie',
+                    event: '(virtuelle) Delegiertenversammlung 2020',
+                    src: 'bwe-logo.png'
+                },
+                {
+                    name: 'Bundesjugendwerk der AWO',
+                    event: '(virtuelle) Bundesjugendwerkskonferenz 2020',
+                    src: 'bujw-logo.png'
+                },
                 {
                     name: 'Deutsche Pfadfinderschaft Sankt Georg (DPSG)',
                     event: 'Bundesversammlungen',
@@ -199,8 +208,8 @@ export class ReferenceService {
                 },
                 {
                     name: 'Bund der Deutschen Katholischen Jugend',
-                    event: 'Diözesanversammlung Diözesanverband Osnabrück',
-                    src: 'bdkj-os-logo.png'
+                    event: 'Osnabrück, Trier, München, ...',
+                    src: 'bdkj-logo.png'
                 },
                 {
                     name: 'Arbeitsgemeinschaft der Evangelischen Jugend in Deutschland e. V. (aej)',
@@ -231,6 +240,11 @@ export class ReferenceService {
                     name: 'Mensa in Deutschland e.V.',
                     event: 'Mitgliederversammlungen',
                     src: 'mensa-logo.png'
+                },
+                {
+                    name: 'Volleyball Bundesliga GmbH',
+                    event: 'Bundesligaversammlung',
+                    src: 'vbl-logo.png'
                 },
                 {
                     name: 'Deutscher Verband für Neuro-Linguistisches Programmieren e.V.',
