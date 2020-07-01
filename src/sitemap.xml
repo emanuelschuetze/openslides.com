@@ -1,181 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
     <loc>https://openslides.com/</loc>
-    <changefreq>weekly</changefreq>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/"/>
 </url>
-
 <url>
-    <loc>https://openslides.com/de/feature/agenda</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://openslides.com/en/</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/"/>
 </url>
-
 <url>
-    <loc>https://openslides.com/de/feature/elections</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/feature/miscellaneous</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/feature/motions</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/feature/projectors</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/news</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/news/20121119</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/news/20141125</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/news/dgb-bundeskongress2018</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/pricing</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/pricing/order?package=conference</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/pricing/order?package=congress</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/pricing/order?package=meeting</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/de/references</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/feature/agenda</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/feature/elections</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/feature/miscellaneous</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/feature/motions</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/feature/projectors</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/news</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/news/20121119</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/news/20141125</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/news/dgb-bundeskongress2018</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/pricing</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/pricing/order?package=conference</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/pricing/order?package=congress</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/pricing/order?package=meeting</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/en/references</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/feature/agenda</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/feature/elections</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/feature/miscellaneous</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/feature/motions</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/feature/projectors</loc>
-    <changefreq>weekly</changefreq>
-</url>
-
-<url>
-    <loc>https://openslides.com/legalnotice</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://openslides.com/de/</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/"/>
 </url>
 
 <url>
     <loc>https://openslides.com/pricing</loc>
-    <changefreq>weekly</changefreq>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/pricing"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/pricing"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/pricing"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/pricing</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/pricing"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/pricing"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/pricing"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/pricing</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/pricing"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/pricing"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/pricing"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/news</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/news</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/news</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/references</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/references"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/references"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/references"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/references</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/references"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/references"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/references"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/references</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/references"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/references"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/references"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/feature/agenda</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/agenda"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/agenda"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/agenda"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/feature/agenda</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/agenda"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/agenda"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/agenda"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/feature/agenda</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/agenda"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/agenda"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/agenda"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/feature/elections</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/elections"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/elections"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/elections"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/feature/elections</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/elections"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/elections"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/elections"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/feature/elections</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/elections"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/elections"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/elections"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/feature/miscellaneous</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/miscellaneous"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/miscellaneous"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/miscellaneous"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/feature/miscellaneous</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/miscellaneous"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/miscellaneous"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/miscellaneous"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/feature/miscellaneous</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/miscellaneous"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/miscellaneous"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/miscellaneous"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/feature/motions</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/motions"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/motions"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/motions"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/feature/motions</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/motions"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/motions"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/motions"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/feature/motions</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/motions"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/motions"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/motions"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/feature/projectors</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/projectors"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/projectors"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/projectors"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/feature/projectors</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/projectors"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/projectors"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/projectors"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/feature/projectors</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/feature/projectors"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/feature/projectors"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/feature/projectors"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/news/20121119</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/20121119"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/20121119"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/20121119"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/news/20121119</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/20121119"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/20121119"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/20121119"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/news/20121119</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/20121119"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/20121119"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/20121119"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/news/20141125</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/20141125"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/20141125"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/20141125"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/news/20141125</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/20141125"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/20141125"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/20141125"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/news/20141125</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/20141125"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/20141125"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/20141125"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/news/dgb-bundeskongress2018</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/dgb-bundeskongress2018"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/dgb-bundeskongress2018"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/dgb-bundeskongress2018"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/news/dgb-bundeskongress2018</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/dgb-bundeskongress2018"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/dgb-bundeskongress2018"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/dgb-bundeskongress2018"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/news/dgb-bundeskongress2018</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/dgb-bundeskongress2018"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/dgb-bundeskongress2018"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/dgb-bundeskongress2018"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/news/online-versammlungen-basis</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/online-versammlungen-basis"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/online-versammlungen-basis"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/online-versammlungen-basis"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/news/online-versammlungen-basis</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/online-versammlungen-basis"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/online-versammlungen-basis"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/online-versammlungen-basis"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/news/online-versammlungen-basis</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/online-versammlungen-basis"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/online-versammlungen-basis"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/online-versammlungen-basis"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/news/online-versammlungen</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/online-versammlungen"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/online-versammlungen"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/online-versammlungen"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/news/online-versammlungen</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/online-versammlungen"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/online-versammlungen"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/online-versammlungen"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/news/online-versammlungen</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/news/online-versammlungen"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/news/online-versammlungen"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/news/online-versammlungen"/>
+</url>
+
+<url>
+    <loc>https://openslides.com/pricing/order</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/pricing/order"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/pricing/order"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/pricing/order"/>
+</url>
+<url>
+    <loc>https://openslides.com/en/pricing/order</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/pricing/order"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/pricing/order"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/pricing/order"/>
+</url>
+<url>
+    <loc>https://openslides.com/de/pricing/order</loc>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="x-default"
+        href="https://openslides.com/pricing/order"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="en"
+        href="https://openslides.com/en/pricing/order"/>
+    <xhtml:link 
+        rel="alternate"
+        hreflang="de"
+        href="https://openslides.com/de/pricing/order"/>
 </url>
 </urlset>
