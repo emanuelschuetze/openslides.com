@@ -187,6 +187,11 @@ export class ReferenceService {
                     src: 'bwe-logo.png'
                 },
                 {
+                    name: 'VDI Verein Deutscher Ingenieure e.V.',
+                    event: 'Vorstandsversammlung',
+                    src: 'vdi-logo.png'
+                },
+                {
                     name: 'Bundesjugendwerk der AWO',
                     event: '(virtuelle) Bundesjugendwerkskonferenz 2020',
                     src: 'bujw-logo.png'
