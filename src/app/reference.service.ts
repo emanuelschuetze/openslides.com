@@ -173,24 +173,8 @@ export class ReferenceService {
             ]
         },
         {
-            name: _('Verbände, Vereine und mehr'),
+            name: _('Jugendverbände'),
             refs: [
-                {
-                    name: 'Amnesty International',
-                    event: 'Jahresversammlung 2018',
-                    src: 'amnesty-logo.png',
-                    frontpage: true
-                },
-                {
-                    name: 'Bundesverband WindEndergie',
-                    event: '(virtuelle) Delegiertenversammlung 2020',
-                    src: 'bwe-logo.png'
-                },
-                {
-                    name: 'VDI Verein Deutscher Ingenieure e.V.',
-                    event: 'Vorstandsversammlung',
-                    src: 'vdi-logo.png'
-                },
                 {
                     name: 'Bundesjugendwerk der AWO',
                     event: '(virtuelle) Bundesjugendwerkskonferenz 2020',
@@ -222,9 +206,9 @@ export class ReferenceService {
                     src: 'aej-logo.png'
                 },
                 {
-                    name: 'Evangelische StudentInnengemeinde in der Bundesrepublik Deutschland (ESG)',
-                    event: 'Bundesversammlungen',
-                    src: 'esg-logo.png'
+                    name: 'Evangelische Jugend in Bayern',
+                    event: 'Vollversammlung Landesjugendkonvent',
+                    src: 'ejb-logo.png'
                 },
                 {
                     name: 'Stipendiatinnen und Stipendiaten des Cusanuswerks',
@@ -232,19 +216,35 @@ export class ReferenceService {
                     src: 'cusaner-logo.png'
                 },
                 {
-                    name: 'AStA der Universität des Saarlandes',
-                    event: 'Studierendenparlament',
-                    src: 'asta-uni-saarland-logo.png'
+                    name: 'Evangelische StudentInnengemeinde in der Bundesrepublik Deutschland (ESG)',
+                    event: 'Bundesversammlungen',
+                    src: 'esg-logo.png'
                 },
                 {
-                    name: 'Opennet Initiative e.V.',
-                    event: 'Jahresversammlung',
-                    src: 'opennet-logo.png'
+                    name: 'Junge Europäische Föderalisten Deutschland e.V.',
+                    event: 'Bundeskongress',
+                    src: 'jef-logo.png'
+                },
+            ]
+        },
+        {
+            name: _('Weitere Verbände, Vereine und Organisationen'),
+            refs: [
+                {
+                    name: 'Amnesty International',
+                    event: 'Jahresversammlung 2018',
+                    src: 'amnesty-logo.png',
+                    frontpage: true
                 },
                 {
-                    name: 'Mensa in Deutschland e.V.',
-                    event: 'Mitgliederversammlungen',
-                    src: 'mensa-logo.png'
+                    name: 'Bundesverband WindEndergie',
+                    event: '(virtuelle) Delegiertenversammlung 2020',
+                    src: 'bwe-logo.png'
+                },
+                {
+                    name: 'VDI Verein Deutscher Ingenieure e.V.',
+                    event: 'Vorstandsversammlung',
+                    src: 'vdi-logo.png'
                 },
                 {
                     name: 'Volleyball Bundesliga GmbH',
@@ -252,14 +252,24 @@ export class ReferenceService {
                     src: 'vbl-logo.png'
                 },
                 {
+                    name: 'AStA der Universität des Saarlandes',
+                    event: 'Studierendenparlament',
+                    src: 'asta-uni-saarland-logo.png'
+                },
+                {
                     name: 'Deutscher Verband für Neuro-Linguistisches Programmieren e.V.',
                     event: 'Mitgliederversammlungen',
                     src: 'dvnlp-logo.png'
                 },
                 {
-                    name: 'Junge Europäische Föderalisten Deutschland e.V.',
-                    event: 'Bundeskongress',
-                    src: 'jef-logo.png'
+                    name: 'Mensa in Deutschland e.V.',
+                    event: 'Mitgliederversammlungen',
+                    src: 'mensa-logo.png'
+                },
+                {
+                    name: 'Opennet Initiative e.V.',
+                    event: 'Jahresversammlung',
+                    src: 'opennet-logo.png'
                 },
                 {
                     name: 'Evangelischer Kirchenkreis Krefeld-Viersen',
