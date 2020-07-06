@@ -181,6 +181,11 @@ export class ReferenceService {
                     src: 'bujw-logo.png'
                 },
                 {
+                    name: 'Landesjugendring Rheinland-Pfalz',
+                    event: '(virtuelle) Vollversammlung 2020',
+                    src: 'ljrrlp-logo.png'
+                },
+                {
                     name: 'Deutsche Pfadfinderschaft Sankt Georg (DPSG)',
                     event: 'Bundesversammlungen',
                     src: 'dpsg-logo.png'
