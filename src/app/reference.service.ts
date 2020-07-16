@@ -186,6 +186,11 @@ export class ReferenceService {
                     src: 'ljrrlp-logo.png'
                 },
                 {
+                    name: 'Landesjugendring Niedersachsen',
+                    event: 'Vollversammlung 2020',
+                    src: 'ljrnds-logo.png'
+                },                
+                {
                     name: 'Deutsche Pfadfinderschaft Sankt Georg (DPSG)',
                     event: 'Bundesversammlungen',
                     src: 'dpsg-logo.png'
