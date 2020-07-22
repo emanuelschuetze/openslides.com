@@ -33,7 +33,7 @@
     "@biesbjerg/ngx-translate-extract-marker": "^1.0.0",
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "moment": "^2.25.3",
     "ng-simple-slideshow": "^1.2.9",
     "rxjs": "~6.5.5",
