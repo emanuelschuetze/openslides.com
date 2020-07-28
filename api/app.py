@@ -27,6 +27,11 @@ packages = {
     "conference": "Tagung",
     "congress": "Kongress",
 }
+package_sizes = {
+    "meeting": 50,
+    "conference": 500,
+    "congress": 1000,
+}
 services = {
     "evoting": "eVoting",
     "audio": "Audiokonferenz via Jitsi",
@@ -165,13 +170,29 @@ def order():
         else "unbegrenzt",
         **data
     )
+    metadata_str = dedent(
+        """
+
+        METADATA:
+
+        ACCOUNTS: {package_size}
+        EXTRAS: {raw_services_str}
+        # CONFERENCE: TODO
+    """
+    ).format(
+        package_size=package_sizes[data["package"]],
+        raw_services_str=",".join(
+            service for service, status in data["services"].items() if status
+        ),
+    )
 
     if not app.config.get("ORDER_MAIL_RECIPIENTS"):
         raise ViewError("Configuration error: No order mail recipients")
 
     # admin message
-    msg = Message("OpenSlides-Anfrage", recipients=app.config["ORDER_MAIL_RECIPIENTS"])
-    msg.body = request_str
+    title = "OpenSlides-Anfrage für " + data["domain"] + ".openslides.com"
+    msg = Message(title, recipients=app.config["ORDER_MAIL_RECIPIENTS"])
+    msg.body = request_str + metadata_str
     try_send_mail(msg)
 
     # customer message
