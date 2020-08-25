@@ -1,0 +1,9 @@
+_{{ _("Kostenübersicht") }}:
+{% for row in overview_data["positions"] %}
+{{ row["name"] }}: {{ row["base_price"]|currency }} {{ row["multiplier"] }} {% if row["monthly"] %} = {{ row["total"]|currency }}{% endif %}{% endfor %}
+{{ _("Summe Netto") }}: {{ overview_data["total"]|currency }}
+{{ _("zzgl. USt") }}: {{ (overview_data["total"] * VAT_PERCENTAGE)|currency }}
+{{ _("Gesamtsumme") }}: {{ (overview_data["total"] * (1 + VAT_PERCENTAGE))|currency }} {% if overview_data["isUnlimited"] %}**{% endif %}
+
+{% if data["extra_functions"]["video"] %}* {{ _("Preis abhängig von Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt unter Vorbehalt, wir kommen mit dem finalen Angebot nach Rücksprache auf Sie zu.") }}{% endif %}
+{% if overview_data["isUnlimited"] %}** {{ _("Preis für 12 Monate, beliebig verlängerbar.") }}{% endif %}

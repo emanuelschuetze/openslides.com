@@ -1,7 +1,7 @@
 #!/bin/bash
 
 curl --header "Content-Type: application/json" -e https://www.openslides.com/de/order -d '{
-    "mode": "order",
+    "mode": "offer",
     "package": "conference",
     "running_time": "unlimited",
     "domain": "xyz",
@@ -20,6 +20,14 @@ curl --header "Content-Type: application/json" -e https://www.openslides.com/de/
         "name": "name",
         "email": "joshua@intevation.de",
         "phone": "+490"
+    },
+    "services": {
+        "intro": true,
+        "schooling": false,
+        "local_service": true,
+        "support": false,
+        "phone": true,
+        "individual": true
     },
     "billing_address": "address",
     "comment": "comment"

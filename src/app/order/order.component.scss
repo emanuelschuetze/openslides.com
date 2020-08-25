@@ -10,18 +10,114 @@
         width: 100%;
     }
 
-    .details-link {
-        float: right;
-        font-size: smaller;
-        color: #666;
+    .extra-functions-container {
+        .suffix-container {
+            margin-left: auto;
+
+            .price {
+                margin-right: 45px;
+                position: relative;
+
+                .extra-functions-icon {
+                    right: -26px;
+                    position: absolute;
+                }
+            }
+
+            .details-link {
+                font-size: smaller;
+                color: #666;
+            }
+        }
+    }
+}
+
+.extra-functions-tooltip {
+    font-size: 15px;
+}
+
+.overviewTable {
+    width: 100%;
+    background-color: inherit;
+    font-family: Roboto, Helvetica Neue, sans-serif;
+    border-spacing: 0;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+
+    tr.overview-position {
+        height: auto;
+
+        td {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        }
     }
 
-    .error-div {
-        border-radius: 4px;
-        border: 1px solid red;
-        color: red;
-        padding: 10px 20px;
+    tr.first-non-position {
+        height: 48px;
+
+        td {
+            padding-top: 10px;
+            border-top: 1px solid rgba(0, 0, 0, 0.12);
+        }
     }
+
+    tr.total-row {
+        font-weight: bold;
+    }
+
+    tr.button-row {
+        height: 60px;
+        vertical-align: bottom;
+    }
+
+    tr {
+        height: 38px;
+
+        td {
+            padding: 0;
+
+            &:first-of-type {
+                padding-left: 24px;
+            }
+        }
+    }
+
+    td.right {
+        text-align: right;
+        padding-right: 10px !important;
+    }
+
+    // tr:nth-last-child(4) td {
+    //     border-bottom-width: 2px;
+    // }
+
+    // tr:nth-last-child(3) td {
+    //     padding-top: 10px;
+    // }
+
+    // tr:nth-last-child(-n+2) {
+    //     height: 38px;
+    // }
+
+    // tr:nth-last-child(-n+3) td {
+    //     border: none;
+    // }
+}
+
+.footer-row {
+    margin: 30px;
+
+    .align-right {
+        margin-left: auto;
+    }
+}
+
+.error-div {
+    border-radius: 4px;
+    border: 1px solid red;
+    color: red;
+    padding: 10px 20px;
 }
 
 ::ng-deep {
