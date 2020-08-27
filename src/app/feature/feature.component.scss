@@ -50,6 +50,10 @@ slideshow {
     }
 }
 
+.features-list mat-icon {
+    transform: translateY(-5px);
+}
+
 @media (min-width: $breakpoint-lg-up) {
     .features-list {
         width: 33%;

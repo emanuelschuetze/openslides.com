@@ -190,6 +190,10 @@ p {
     padding: 25px;
 }
 
+.services-list mat-icon {
+    transform: translateY(-5px);
+}
+
 img.screenshot {
     width: 100%;
     box-shadow: 0 0 5px 1px rgba(50, 120, 150, 0.5);

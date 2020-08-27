@@ -155,6 +155,46 @@
                 </div>
             </div>
         </div>
+        <div class="container section center-mobile">
+            <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
+                <div>
+                    <a routerLink="./feature/evoting">
+                        <img class="screenshot"
+                            src="assets/img/online_conference_article/named_vote_detail_view.png">
+                    </a>
+                </div>
+                <div>
+                    <h1 class="lh-1" translate>Elektronische Stimmabgabe</h1>
+                    <p>
+                        {{ "Erweitern Sie OpenSlides um ein integriertes elektronisches Abstimmungssystem. Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. Möglich sind namentliche oder nicht-namentliche Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen sind möglich." | translate }}
+                    </p>
+                    <a routerLink="./feature/evoting" mat-flat-button class="os-button">
+                        <span translate>Mehr erfahren</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section flex center-mobile text-right">
+            <div class="container">
+                <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
+                    <div class="switch-flex-order">
+                        <h1 class="lh-1" translate>Video-Livestream</h1>
+                        <p>
+                            {{ "Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum und verfolgt wieder den Livestream." | translate }}
+                        </p>
+                        <a routerLink="./feature/livestream" mat-flat-button class="os-button">
+                            <span translate>Mehr erfahren</span>
+                        </a>
+                    </div>
+                    <div class="switch-flex-order">
+                        <a routerLink="./feature/livestream">
+                            <img class="screenshot"
+                                src="assets/img/features/livestream/livestream_dummy_{{ translate.currentLang }}.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container section big center-mobile">
             <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
                 <div>
@@ -197,7 +237,7 @@
                         <p>
                             {{ "Sie benötigen individuellen Support vor Ort und professionelle Beratung vom OpenSlides-Entwickerteam? Ihnen fehlen spezielle Funktionen oder Sie haben Anpassungsbedarf? Vereinbaren Sie eine kostenfreie Erstberatung! Unsere kostenpflichtigen Serviceleistungen:" | translate }}
                         </p>
-                        <mat-list class="mb-0 no-padding">
+                        <mat-list class="mb-0 no-padding services-list">
                             <mat-list-item>
                                 <mat-icon matListIcon>arrow_right</mat-icon>
                                 <span translate>Programmvorstellung und Beratung</span>
@@ -236,8 +276,8 @@
                     <div>
                         <h1 class="lh-1" translate>Selbst installieren</h1>
                         <p>
-                            <span translate>
-                                Sie möchten OpenSlides auf Ihrem eigenen Server installieren? Wir bieten unsere Software als PyPI-Paket und als Quellcode an. Bitte haben Sie Verständnis dafür, dass wir Supportleistungen nur für unsere Hosting-Lösungen anbieten.
+                            <span>
+                                {{ "Sie möchten OpenSlides auf Ihrem eigenen Server installieren? Wir bieten unsere Software als PyPI-Paket und als Quellcode an. Bitte haben Sie Verständnis dafür, dass wir Supportleistungen nur für unsere Hosting-Lösungen anbieten." | translate }}
                             </span>
                             <br>
                             <a href="https://github.com/OpenSlides/OpenSlides/blob/master/README.rst#installation"

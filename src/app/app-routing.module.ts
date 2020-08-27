@@ -4,6 +4,7 @@ import { ExtraOptions, RouterModule, Routes, UrlSegment } from '@angular/router'
 import { ArticlePaperlessComponent } from './news/article-paperless/article-paperless.component';
 import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
+import { FeaturesByRoute } from './feature/feature-data';
 import { FeatureComponent } from './feature/feature.component';
 import { LanguageService, LanguageUrlMatcher } from './language.service';
 import { ImpressumComponent } from './legal-notice/legal-notice.component';
@@ -18,7 +19,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { ReferencesComponent } from './references/references.component';
 
 export function FeatureUrlMatcher(url: UrlSegment[]): { consumed: UrlSegment[] } | null {
-    return url.length && url[0].path.match('agenda|motions|elections|projectors|miscellaneous')
+    return url.length && url[0].path.match(Object.keys(FeaturesByRoute).join('|'))
         ? { consumed: url.slice(0, 1) }
         : null;
 }

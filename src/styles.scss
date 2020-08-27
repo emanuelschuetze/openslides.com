@@ -504,6 +504,10 @@ h2 {
             max-width: 940px;
         }
     }
+
+    .hide-xl-up {
+        display: none !important;
+    }
 }
 
 @media (min-width: 1400px) {
