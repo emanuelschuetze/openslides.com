@@ -189,7 +189,7 @@ export class ReferenceService {
                     name: 'Landesjugendring Niedersachsen',
                     event: 'Vollversammlung 2020',
                     src: 'ljrnds-logo.png'
-                },                
+                },
                 {
                     name: 'Deutsche Pfadfinderschaft Sankt Georg (DPSG)',
                     event: 'Bundesversammlungen',
@@ -234,7 +234,7 @@ export class ReferenceService {
                     name: 'Junge Europäische Föderalisten Deutschland e.V.',
                     event: 'Bundeskongress',
                     src: 'jef-logo.png'
-                },
+                }
             ]
         },
         {

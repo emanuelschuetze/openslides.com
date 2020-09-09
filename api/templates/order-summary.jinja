@@ -1,8 +1,8 @@
 _{{ _("Hostingauswahl") }}
 {{ _("Hostingpaket") }}: {{ package_str }}
 {{ _("Hostinglaufzeit") }}: {{ running_time_str }}
-{{ _("Wunschdomain") }}: https://{{ domain }}.openslides.com/
-{{ _("Zusatzfunktionen") }}: {{ services_str }}
+{{ _("Wunschdomain") }}: {% if domain %}https://{{ domain }}.openslides.com/{% else %}-{% endif %}
+{{ _("Zusatzfunktionen") }}: {% if extra_functions_str %}{{ extra_functions_str }}{% else %}{{ _("keine") }}{% endif %}
 
 _{{ _("Veranstaltungsdetails") }}
 {{ _("Veranstaltungsname") }}: {{ event_name }}
@@ -15,7 +15,10 @@ _{{ _("Ansprechpartner") }}
 {{ _("Name") }}: {{ name }}
 {{ _("E-Mail") }}: {{ email }}
 {{ _("Telefon") }}: {{ phone }}
-
+{% if services_str %}
+_{{ _("Services") }}
+{{ services_str }}
+{% endif %}
 _{{ _("Rechnungsadresse") }}
 {{ billing_address }}
 

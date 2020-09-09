@@ -246,7 +246,10 @@ msgstr ""
 msgid "Gesundheitswesen"
 msgstr ""
 
-msgid "Verbände, Vereine und mehr"
+msgid "Jugendverbände"
+msgstr ""
+
+msgid "Weitere Verbände, Vereine und Organisationen"
 msgstr ""
 
 msgid "Treten Sie mit uns in Kontakt"
@@ -266,7 +269,7 @@ msgstr ""
 msgid "Technischer Kundensupport"
 msgstr ""
 
-msgid "Ihr Ansprechpartner für Beratung und individuelle Servicedienstleistungen"
+msgid "Beratung und individuelle Servicedienstleistungen"
 msgstr ""
 
 msgid "OpenSlides ist Freie Software, lizenziert unter MIT."
@@ -312,6 +315,9 @@ msgid ""
 "Versammlungen und Konferenzen. Verwalten und projizieren Sie "
 "Tagesordnungen, Anträge, Wahlen, Dokumente, Redelisten und Teilnehmende. "
 "Webbasiert und immer auf dem neuesten Stand. "
+msgstr ""
+
+msgid "eVoting · integrierte Audio-/Videokonferenz · Video-Livestream"
 msgstr ""
 
 msgid ""
@@ -873,8 +879,8 @@ msgid "Wählen Sie praktische Zusatzfunktionen"
 msgstr ""
 
 msgid ""
-"Corona-Aktionspreis: 0 € für die ersten 3 Monate (nur im Hostingpaket "
-"\"Sitzung\")"
+"Corona-Aktionspreis bis 31.8.2020: 0 € für die ersten 3 Monate (nur im "
+"Hostingpaket \"Sitzung\")"
 msgstr ""
 
 msgid "bis 50 Teilnehmende"
@@ -985,6 +991,9 @@ msgid ""
 "target=\"_blank\">Online-Demo</a>."
 msgstr ""
 
+msgid "Mehr erfahren über Online-Versammlungen ..."
+msgstr ""
+
 msgid "Audiokonferenz – ideal zum Austausch für kleine virtuelle Gremiensitzung"
 msgstr ""
 
@@ -995,6 +1004,9 @@ msgid ""
 "Audio-Konferenzraum. Jede/r verbindet sich automatisch nach dem Login in "
 "OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und "
 "auschalten."
+msgstr ""
+
+msgid "» Mehr erfahren ..."
 msgstr ""
 
 msgid "Video-Livestream – für große virtuelle Versammlungen und Parteitage"
@@ -1026,7 +1038,7 @@ msgid ""
 "Veranstaltung."
 msgstr ""
 
-msgid "Preis auf Anfrage · ab 50 Teilnehmende"
+msgid "ab 750 € pro Veranstaltungstag · zzgl. technische Betreuung"
 msgstr ""
 
 msgid "Single Sign-On via SAML – für Organisationen mit zentralem Mitgliedsserver"

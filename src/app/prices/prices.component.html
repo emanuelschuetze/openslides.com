@@ -24,9 +24,14 @@
                     <p><small translate>Mindestlaufzeit: 3 Monate</small>
                     </p>
                     <mat-divider></mat-divider>
-                    <div class="text-center">
-                        <a routerLink="/order" [queryParams]="{package: 'meeting'}" mat-flat-button class="os-button filled bordered grey">
+                    <div class="text-center mb-0">
+                        <a routerLink="/order" [queryParams]="{package: 'meeting'}" mat-flat-button class="os-button filled bordered grey soft">
                             <span translate>Jetzt bestellen</span>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a routerLink="/order" [queryParams]="{package: 'meeting', offer: true}" mat-flat-button class="os-button filled bordered inverted grey soft">
+                            <span translate>Angebot anfordern</span>
                         </a>
                     </div>
                 </div>
@@ -48,9 +53,14 @@
                     <small>(116 € {{ 'inkl.' | translate }} 16% {{ 'USt.' | translate }})</small>
                     <p><small translate>Mindestlaufzeit: 3 Monate</small></p>
                     <mat-divider></mat-divider>
-                    <div class="text-center">
-                        <a routerLink="/order" [queryParams]="{package: 'conference'}" mat-flat-button class="os-button filled bordered blue">
+                    <div class="text-center mb-0">
+                        <a routerLink="/order" [queryParams]="{package: 'conference'}" mat-flat-button class="os-button filled bordered blue soft">
                             <span translate>Jetzt bestellen</span>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a routerLink="/order" [queryParams]="{package: 'conference', offer: true}" mat-flat-button class="os-button filled bordered inverted blue soft">
+                            <span translate>Angebot anfordern</span>
                         </a>
                     </div>
                 </div>
@@ -72,9 +82,14 @@
                     <small>(232 € {{ 'inkl.' | translate }} 16% {{ 'USt.' | translate }})</small>
                     <p><small translate>Mindestlaufzeit: 3 Monate</small></p>
                     <mat-divider></mat-divider>
-                    <div class="text-center">
-                        <a routerLink="/order" [queryParams]="{package: 'congress'}" mat-flat-button class="os-button filled bordered grey">
+                    <div class="text-center mb-0">
+                        <a routerLink="/order" [queryParams]="{package: 'congress'}" mat-flat-button class="os-button filled bordered grey soft">
                             <span translate>Jetzt bestellen</span>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <a routerLink="/order" [queryParams]="{package: 'congress', offer: true}" mat-flat-button class="os-button filled bordered inverted grey soft">
+                            <span translate>Angebot anfordern</span>
                         </a>
                     </div>
                 </div>
@@ -129,7 +144,7 @@
                     Erweitern Sie OpenSlides um ein integriertes elektronisches Abstimmungssystem. Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. Möglich sind namentliche oder nicht-namentliche Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen sind möglich.<br> Testen Sie die elektronische Stimmabgabe in der <a class="inline" href="https://demo.openslides.org/" target="_blank">Online-Demo</a>.
                 </span>
                 <br>
-                <a class="inline" routerLink="../news/online-versammlungen">» <span translate>Mehr erfahren über Online-Versammlungen ...</span></a>
+                <a class="inline" routerLink="../news/online-versammlungen" fragment="evoting">» <span translate>Mehr erfahren über Online-Versammlungen ...</span></a>
                 <br>
                 <b><i>50 € / {{ 'Monat' | translate }} <span style="color: red">&#8594; {{ 'Corona-Aktionspreis bis 31.8.2020: 0 € für die ersten 3 Monate (nur im Hostingpaket "Sitzung")' | translate }}</span></i></b><br>
             </li>

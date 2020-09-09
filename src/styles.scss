@@ -135,17 +135,74 @@ p, li {
         &.bordered {
             box-shadow: none;
             border: 1px solid $os-turquoise;
+
+            &.soft:hover {
+                color: #fff;
+            }
     
             &.light-grey {
                 border: 1px solid $os-light-grey;
+
+                &.inverted {
+                    &:not(:hover) {
+                        color: $os-light-grey;
+                    }
+                    &:hover {
+                        background-color: $os-light-grey;
+                    }
+                }
             }
     
             &.grey {
                 border: 1px solid $os-grey;
+
+                &.soft:hover {
+                    background-color: rgba($os-grey, 0.7);
+                }
+
+                &.inverted {
+                    &:not(:hover) {
+                        color: $os-grey;
+                    }
+                    &:hover {
+                        background-color: $os-grey;
+
+                        &.soft {
+                            color: $os-grey;
+                            background-color: rgba($os-grey, 0.2);
+                        }
+                    }
+                }
             }
     
             &.blue {
                 border: 1px solid $os-blue;
+
+                &.soft:hover {
+                    background-color: rgba($os-blue, 0.7);
+                }
+
+                &.inverted {
+                    &:not(:hover) {
+                        color: $os-blue;
+                    }
+                    &:hover {
+                        background-color: $os-blue;
+
+                        &.soft {
+                            color: $os-blue;
+                            background-color: rgba($os-blue, 0.2);
+                        }
+                    }
+                }
+            }
+
+            &.inverted {
+                background-color: #fff;
+
+                &:hover {
+                    color: #fff;
+                }
             }
         }
 
@@ -212,6 +269,8 @@ p, li {
     }
 }
 
+.align
+
 h1 {
     font-size: 40px;
     font-weight: normal;
@@ -276,6 +335,19 @@ h2 {
         }
         &.col {
             align-items: center;
+        }
+    }
+}
+
+.text-right {
+    text-align: right;
+
+    &.flex {
+        &:not(.col) {
+            justify-content: flex-end;
+        }
+        &.col {
+            align-items: flex-end;
         }
     }
 }

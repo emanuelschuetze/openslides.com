@@ -1,7 +1,7 @@
 import { registerLocaleData } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import localeDe from '@angular/common/locales/de';
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { LOCALE_ID, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import {
@@ -15,9 +15,11 @@ import {
     MatListModule,
     MatMenuModule,
     MatSelectModule,
+    MatTableModule,
     MatToolbarModule
 } from '@angular/material';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -115,9 +117,17 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
         MatInputModule,
         MatSelectModule,
         MatDatepickerModule,
-        MatMomentDateModule
+        MatMomentDateModule,
+        MatTableModule,
+        MatTooltipModule
     ],
-    providers: [{ provide: MAT_DATE_FORMATS, useValue: MOMENT_FORMATS }],
+    providers: [
+        { provide: MAT_DATE_FORMATS, useValue: MOMENT_FORMATS },
+        {
+            provide: LOCALE_ID,
+            useValue: 'de-DE'
+        }
+    ],
     schemas: [NO_ERRORS_SCHEMA],
     bootstrap: [AppComponent]
 })

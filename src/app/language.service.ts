@@ -77,7 +77,11 @@ export class LanguageService implements CanActivate {
                     .split(/#|\?/)[0]
                     .split('/')
                     .slice(2)
-            )
+            ),
+            {
+                preserveQueryParams: true,
+                preserveFragment: true
+            }
         ); // slice(2) cause the url is /xx/page so the array is ["", "xx", "page"] and we only want to keep the page, not the language
     }
 
