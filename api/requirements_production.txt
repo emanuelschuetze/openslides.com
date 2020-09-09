@@ -1,6 +1,5 @@
 flask
 flask_mail
 flask_babel
-jsonschema
 jsonschema[format_nongpl]
 uwsgi
