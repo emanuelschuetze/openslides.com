@@ -273,7 +273,7 @@ export class OrderComponent implements OnInit {
                 case 504:
                     this.error = _(
                         // tslint:disable-next-line
-                        'Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte senden Sie uns Ihre Anfrage per E-Mail: hosting@openslides.com'
+                        'Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte senden Sie uns Ihre Anfrage per E-Mail: info@openslides.com'
                     );
                     break;
                 default:
