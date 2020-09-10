@@ -3,7 +3,6 @@ import re
 import smtplib
 import sqlite3 as sql
 from shutil import copyfile
-from textwrap import dedent
 
 from flask import Flask, render_template, request
 from flask_babel import Babel
@@ -225,13 +224,18 @@ def order():
         admin_mail = join_mail_bodies(summary, metadata)
 
     # admin message, always in german
-    msg = Message("OpenSlides-Anfrage", recipients=app.config["ORDER_MAIL_RECIPIENTS"])
+    subject = "Angebotsanfrage" if data["mode"] == "offer" else "Bestellung"
+    msg = Message(
+        f"OpenSlides {subject} {data['contact_person']['organisation']}",
+        recipients=app.config["ORDER_MAIL_RECIPIENTS"],
+    )
     msg.body = admin_mail
     try_send_mail(msg)
 
     # customer message
     msg = Message(
-        _("Ihre Anfrage bei OpenSlides"), recipients=[data["contact_person"]["email"]]
+        _(f"Ihre {subject} bei OpenSlides"),
+        recipients=[data["contact_person"]["email"]],
     )
     if data["mode"] == "order":
         msg.body = join_mail_bodies(

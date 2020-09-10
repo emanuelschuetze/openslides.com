@@ -22,12 +22,9 @@ curl --header "Content-Type: application/json" -e https://www.openslides.com/de/
         "phone": "+490"
     },
     "services": {
-        "intro": true,
         "schooling": false,
         "local_service": true,
-        "support": false,
-        "phone": true,
-        "individual": true
+        "phone": true
     },
     "billing_address": "address",
     "comment": "comment"
