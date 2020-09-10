@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-08-25 14:56+0200\n"
+"POT-Creation-Date: 2020-09-10 15:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,30 +17,103 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
+#: api/app.py:36
 msgid "Konfigurationsfehler: Keine E-Mail-Empfänger"
 msgstr ""
 
-msgid "Ihre Anfrage bei OpenSlides"
+#: api/app.py:70
+msgid "Ihre Angebotsanfrage bei OpenSlides"
 msgstr ""
 
-msgid "Der Server ist nicht korrekt konfiguriert"
+#: api/app.py:72
+msgid "Ihre Bestellung bei OpenSlides"
 msgstr ""
 
-msgid "Konnte E-Mail nicht versenden an:"
+#: api/app.py:77 api/app.py:81
+msgid "Ihre Angaben:"
 msgstr ""
 
+#: api/app.py:109 api/app.py:169
 msgid "Monate"
 msgstr ""
 
+#: api/app.py:111
 msgid "unbegrenzt"
 msgstr ""
 
+#: api/app.py:139 api/src/templates/order-summary.jinja:2
+msgid "Hostingpaket"
+msgstr ""
+
+#: api/app.py:169
+msgid "Monat"
+msgstr ""
+
+#: api/app.py:182
 msgid "Diese E-Mail-Adresse ist ungültig"
 msgstr ""
 
+#: api/app.py:193
 msgid "Diese E-Mail-Adresse ist bereits registriert"
 msgstr ""
 
+#: api/src/data.py:8
+msgid "Sitzung"
+msgstr ""
+
+#: api/src/data.py:9
+msgid "Tagung"
+msgstr ""
+
+#: api/src/data.py:10
+msgid "Kongress"
+msgstr ""
+
+#: api/src/data.py:17
+msgid "eVoting"
+msgstr ""
+
+#: api/src/data.py:21
+msgid "Audiokonferenz via Jitsi"
+msgstr ""
+
+#: api/src/data.py:25
+msgid "Video-Livestream"
+msgstr ""
+
+#: api/src/data.py:28
+msgid "Einheit"
+msgstr ""
+
+#: api/src/data.py:28
+msgid "Einheiten"
+msgstr ""
+
+#: api/src/data.py:31
+msgid "Single Sign-On via SAML"
+msgstr ""
+
+#: api/src/data.py:39
+msgid "Schulung"
+msgstr ""
+
+#: api/src/data.py:40
+msgid "Technische Begleitung der Veranstaltung (virtuell oder Vor-Ort)"
+msgstr ""
+
+#: api/src/data.py:43
+msgid "Telefonrufbereitschaft"
+msgstr ""
+
+#: api/src/mail.py:17
+msgid "Der Server ist nicht korrekt konfiguriert"
+msgstr ""
+
+#: api/src/mail.py:24
+msgid "Konnte E-Mail nicht versenden an:"
+msgstr ""
+
+#: api/src/templates/confirmation-email.jinja:1
 #, python-format
 msgid ""
 "Sehr geehrte/r %(name)s,\n"
@@ -59,57 +132,108 @@ msgid ""
 "Ihr OpenSlides-Team\n"
 msgstr ""
 
-msgid "Ihre Angaben"
-msgstr ""
-
+#: api/src/templates/order-summary.jinja:1
 msgid "Hostingauswahl"
 msgstr ""
 
-msgid "Hostingpaket"
-msgstr ""
-
+#: api/src/templates/order-summary.jinja:3
 msgid "Hostinglaufzeit"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:4
 msgid "Wunschdomain"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:5
 msgid "Zusatzfunktionen"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:5
+msgid "keine"
+msgstr ""
+
+#: api/src/templates/order-summary.jinja:7
 msgid "Veranstaltungsdetails"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:8
 msgid "Veranstaltungsname"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:9
 msgid "Veranstaltungsort"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:10
 msgid "Veranstaltungszeitraum"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:11
 msgid "Erwartete Teilnehmeranzahl"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:13
 msgid "Ansprechpartner"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:14
 msgid "Veranstalter"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:15
 msgid "Name"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:16
 msgid "E-Mail"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:17
 msgid "Telefon"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:19
+msgid "Services"
+msgstr ""
+
+#: api/src/templates/order-summary.jinja:22
 msgid "Rechnungsadresse"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:24
+msgid "Umsatzsteuer-ID"
+msgstr ""
+
+#: api/src/templates/order-summary.jinja:26
 msgid "Weitere Anmerkungen"
+msgstr ""
+
+#: api/src/templates/prices-overview.jinja:1
+msgid "Kostenübersicht"
+msgstr ""
+
+#: api/src/templates/prices-overview.jinja:4
+msgid "Summe Netto"
+msgstr ""
+
+#: api/src/templates/prices-overview.jinja:5
+msgid "zzgl. USt"
+msgstr ""
+
+#: api/src/templates/prices-overview.jinja:6
+msgid "Gesamtsumme"
+msgstr ""
+
+#: api/src/templates/prices-overview.jinja:8
+msgid ""
+"Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro"
+" Veranstaltungstag und zzgl. technische Betreuung der Streamingtechnik, "
+"abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung "
+"erfolgt unter Vorbehalt. Wir melden uns mit einem konkreten Angebot bei "
+"Ihnen."
+msgstr ""
+
+#: api/src/templates/prices-overview.jinja:9
+msgid "Preis für 12 Monate, beliebig verlängerbar."
 msgstr ""
 

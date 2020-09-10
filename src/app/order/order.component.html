@@ -51,7 +51,7 @@
                             <span>{{ extraFunction.value.base_price | currency:"EUR" }} / {{ extraFunction.value.units_desc[0] | translate }}</span>
                             <mat-icon
                                 *ngIf="extraFunction.value.extra_infos"
-                                [matTooltip]="extraFunction.value.extra_infos"
+                                matTooltip="{{ extraFunction.value.extra_infos | translate }}"
                                 matTooltipClass="extra-functions-tooltip"
                                 class="extra-functions-icon"
                                 [inline]="true"
