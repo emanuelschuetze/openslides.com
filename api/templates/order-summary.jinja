@@ -21,6 +21,7 @@ _{{ _("Services") }}
 {% endif %}
 _{{ _("Rechnungsadresse") }}
 {{ billing_address }}
+{% if tax_id %}{{ _("Umsatzsteuer-ID") }}: {{ tax_id }}{% endif %}
 
 _{{ _("Weitere Anmerkungen") }}
 {{ comment }}

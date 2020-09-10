@@ -22,5 +22,6 @@ curl --header "Content-Type: application/json" -e https://www.openslides.com/de/
         "phone": "+490"
     },
     "billing_address": "address",
+    "tax_id": "TAXID",
     "comment": "comment"
 }' http://localhost:5000/order

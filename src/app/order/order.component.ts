@@ -136,9 +136,9 @@ export class OrderComponent implements OnInit {
             units_func: (_m, users) => Math.ceil(users / 250),
             units_desc: [_('Einheit'), _('Einheiten')],
             extra_infos: _(
-                'Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro Veranstaltungstag und zzgl. technische Betreuung der Streamingtechnik, ' +
-                    'abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt unter Vorbehalt. ' +
-                    'Wir melden uns mit einem konkreten Angebot bei Ihnen.'
+                'Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro Veranstaltungstag und zzgl. technische ' +
+                    'Betreuung der Streamingtechnik, abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt unter ' +
+                    'Vorbehalt. Wir melden uns mit einem konkreten Angebot bei Ihnen.'
             )
         },
         saml: {
@@ -226,6 +226,7 @@ export class OrderComponent implements OnInit {
         } else {
             domainValidators.push(Validators.required);
             this.orderForm.controls.billing_address.setValidators([Validators.required]);
+            this.orderForm.addControl('tax_id', this.fb.control('', Validators.required));
         }
         this.orderForm.controls.domain.setValidators(domainValidators);
     }

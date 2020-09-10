@@ -119,6 +119,16 @@
                     placeholder="{{ 'Rechnungsadresse' | translate }}"
                 ></textarea>
             </mat-form-field>
+            <mat-form-field *ngIf="!isOffer">
+                <textarea 
+                    required 
+                    type="text"
+                    matInput
+                    cdkTextareaAutosize
+                    formControlName="tax_id"
+                    placeholder="{{ 'Umsatzsteuer-ID' | translate }}"
+                ></textarea>
+            </mat-form-field>
             <mat-form-field>
                 <textarea 
                     type="text"
