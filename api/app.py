@@ -142,9 +142,9 @@ order_schema = {
     "type": "object",
     "properties": {
         "domain": {"type": "string", "minLength": 1},
-        "tax_id": {"type": "string", "minLength": 1},
+        "tax_id": {"type": "string"},
     },
-    "required": ["domain", "billing_address", "tax_id"],
+    "required": ["domain", "billing_address"],
 }
 offer_schema = {
     "type": "object",

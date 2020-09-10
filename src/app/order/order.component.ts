@@ -226,7 +226,7 @@ export class OrderComponent implements OnInit {
         } else {
             domainValidators.push(Validators.required);
             this.orderForm.controls.billing_address.setValidators([Validators.required]);
-            this.orderForm.addControl('tax_id', this.fb.control('', Validators.required));
+            this.orderForm.addControl('tax_id', this.fb.control(''));
         }
         this.orderForm.controls.domain.setValidators(domainValidators);
     }
