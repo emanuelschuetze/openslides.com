@@ -3,6 +3,7 @@ import re
 import smtplib
 import sqlite3 as sql
 from shutil import copyfile
+from textwrap import dedent
 
 from flask import Flask, render_template, request
 from flask_babel import Babel
@@ -51,32 +52,24 @@ packages = {
 }
 
 
-def default_price_function(months, users):
-    return months * 50
-
-
 extra_functions = {
     "evoting": {
         "name": _("eVoting"),
         "base_price": 50,
-        "price_func": default_price_function,
-        "monthly": True,
     },
     "audio": {
         "name": _("Audiokonferenz via Jitsi"),
         "base_price": 50,
-        "price_func": default_price_function,
-        "monthly": True,
     },
     "video": {
         "name": _("Video-Livestream"),
-        "price_func": lambda months, users: math.ceil(users / 250) * 750,
+        "base_price": 750,
+        "units_func": lambda _, users: math.ceil(users / 250),
+        "units_desc": [_("Einheit"), _("Einheiten")],
     },
     "saml": {
         "name": _("Single Sign-On via SAML"),
         "base_price": 50,
-        "price_func": default_price_function,
-        "monthly": True,
     },
 }
 services = {
@@ -287,9 +280,7 @@ def join_mail_bodies(*bodies):
 def get_summary_data(data):
     contact_person = data["contact_person"]
     package = data["package"]
-    summary_data = {
-        **data,
-        **contact_person,
+    extra_data = {
         "package_str": _(packages[package]["name"]),
         "extra_functions_str": ", ".join(
             _(extra_functions[extra_function]["name"])
@@ -307,7 +298,11 @@ def get_summary_data(data):
         if data["running_time"] != "unlimited"
         else _("unbegrenzt"),
     }
-    return summary_data
+    return merge(data, contact_person, extra_data)
+
+
+def merge(*dicts):
+    return dict(kv for d in dicts for kv in d.items())
 
 
 def get_prices_overview_str(data):
@@ -329,42 +324,40 @@ def get_overview_data(data):
     users = data["expected_users"]
     positions = [
         {
-            "name": _("Hostingpaket") + " " + _(package["name"]),
+            "name": _("Hostingpaket") + ' "' + _(package["name"]) + '"',
             "base_price": package["price"],
-            "monthly": True,
-            "total": months * package["price"],
         }
     ]
     for function_key, function in extra_functions.items():
         if data["extra_functions"][function_key]:
-            function_total = function["price_func"](months, users)
             positions.append(
-                {
-                    "name": _(function["name"]),
-                    "base_price": function.get("base_price") or function_total,
-                    "monthly": function.get("monthly") or False,
-                    "total": function_total,
-                }
+                merge(
+                    {
+                        "key": function_key,
+                    },
+                    function,
+                )
             )
 
     total = 0
     for entry in positions:
-        if entry["monthly"]:
-            entry["multiplier"] = "x " + str(months) + " " + _("Monate")
-        else:
-            entry["multiplier"] = (
-                "("
-                + _("pro Veranstaltungstag")
-                + ", "
-                + _("zzgl. Techniksupport")
-                + ")*"
-            )
-        total += entry["total"]
+        setDefaultsOnUnitDescriptor(entry)
+        entry["units"] = entry["units_func"](months, users)
+        total += entry["base_price"] * entry["units"]
+
     return {
         "positions": positions,
         "total": total,
         "isUnlimited": isUnlimited,
     }
+
+
+def setDefaultsOnUnitDescriptor(descriptor):
+    if not descriptor.get("units_desc"):
+        descriptor["units_desc"] = [_("Monat"), _("Monate")]
+    if not descriptor.get("units_func"):
+        descriptor["units_func"] = lambda months, _: months
+    return descriptor
 
 
 @app.template_filter()

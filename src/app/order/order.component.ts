@@ -204,18 +204,6 @@ export class OrderComponent implements OnInit {
         for (const extraFunction of Object.values(this.extraFunctions)) {
             this.setDefaultsOnUnitDescriptor(extraFunction);
         }
-        // DEBUG
-        // this.isOverviewStep = true;
-        // this.orderForm.patchValue({
-        //     running_time: "unlimited",
-        //     expected_users: 1,
-        //     extra_functions: {
-        //         evoting: true,
-        //         audio: false,
-        //         video: true,
-        //         saml: false
-        //     }
-        // });
     }
 
     public ngOnInit(): void {
