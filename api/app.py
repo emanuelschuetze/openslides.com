@@ -229,7 +229,7 @@ def order():
     # admin message, always in german
     subject = "Angebotsanfrage" if data["mode"] == "offer" else "Bestellung"
     msg = Message(
-        'OpenSlides ' + subject + ' ' + data['contact_person']['organisation'],
+        "OpenSlides " + subject + " " + data['contact_person']['organisation'],
         recipients=app.config["ORDER_MAIL_RECIPIENTS"],
     )
     msg.body = admin_mail
@@ -237,7 +237,7 @@ def order():
 
     # customer message
     msg = Message(
-        _(f"Ihre {subject} bei OpenSlides"),
+        "Ihre " + subject + " bei OpenSlides",
         recipients=[data["contact_person"]["email"]],
     )
     if data["mode"] == "order":
