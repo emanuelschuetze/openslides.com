@@ -1,9 +1,9 @@
 _{{ _("Kostenübersicht") }}:
 {% for row in overview_data["positions"] %}
-{{ row["name"] }}: {{ row["base_price"]|currency }} {{ row["multiplier"] }} {% if row["monthly"] %} = {{ row["total"]|currency }}{% endif %}{% endfor %}
+{{ row["name"] }}: {{ row["base_price"]|currency }} x {{ row["units"] }} {{ row["units_desc"][0 if row["units"] == 1 else 1] }}{% if row["key"] == "video" %} *{% endif %} = {{ (row["units"] * row["base_price"])|currency }}{% endfor %}
 {{ _("Summe Netto") }}: {{ overview_data["total"]|currency }}
 {{ _("zzgl. USt") }}: {{ (overview_data["total"] * VAT_PERCENTAGE)|currency }}
 {{ _("Gesamtsumme") }}: {{ (overview_data["total"] * (1 + VAT_PERCENTAGE))|currency }} {% if overview_data["isUnlimited"] %}**{% endif %}
 
-{% if data["extra_functions"]["video"] %}* {{ _("Preis abhängig von Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt unter Vorbehalt, wir kommen mit dem finalen Angebot nach Rücksprache auf Sie zu.") }}{% endif %}
+{% if data["extra_functions"]["video"] %}* {{ _("Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro Veranstaltungstag und zzgl. technische Betreuung der Streamingtechnik, abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt unter Vorbehalt. Wir melden uns mit einem konkreten Angebot bei Ihnen.") }}{% endif %}
 {% if overview_data["isUnlimited"] %}** {{ _("Preis für 12 Monate, beliebig verlängerbar.") }}{% endif %}
