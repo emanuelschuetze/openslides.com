@@ -3,7 +3,6 @@ import re
 import smtplib
 import sqlite3 as sql
 from shutil import copyfile
-from textwrap import dedent
 
 from flask import Flask, render_template, request
 from flask_babel import Babel
@@ -141,8 +140,11 @@ base_schema = Draft7Validator(
 )
 order_schema = {
     "type": "object",
-    "properties": {"domain": {"type": "string", "minLength": 1}},
-    "required": ["domain", "billing_address"],
+    "properties": {
+        "domain": {"type": "string", "minLength": 1},
+        "tax_id": {"type": "string", "minLength": 1},
+    },
+    "required": ["domain", "billing_address", "tax_id"],
 }
 offer_schema = {
     "type": "object",
