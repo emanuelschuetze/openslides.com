@@ -136,9 +136,8 @@ export class OrderComponent implements OnInit {
             units_func: (_m, users) => Math.ceil(users / 250),
             units_desc: [_('Einheit'), _('Einheiten')],
             extra_infos: _(
-                'Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro Veranstaltungstag und zzgl. technische ' +
-                    'Betreuung der Streamingtechnik, abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt unter ' +
-                    'Vorbehalt. Wir melden uns mit einem konkreten Angebot bei Ihnen.'
+                // tslint:disable-next-line
+                'Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro Veranstaltungstag und zzgl. technische Betreuung der Streamingtechnik, abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt unter Vorbehalt. Wir melden uns mit einem konkreten Angebot bei Ihnen.'
             )
         },
         saml: {
@@ -260,10 +259,11 @@ export class OrderComponent implements OnInit {
             switch (error.status) {
                 case 502:
                 case 504:
-                    this.error = _(
-                        // tslint:disable-next-line
-                        'Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte senden Sie uns Ihre Anfrage per E-Mail: info@openslides.com'
-                    );
+                    this.error =
+                        _(
+                            // tslint:disable-next-line
+                            'Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte senden Sie uns Ihre Anfrage per E-Mail:'
+                        ) + 'info@openslides.com';
                     break;
                 default:
                     this.error = error.error.error || _('Ein unbekannter Fehler ist aufgetreten.');

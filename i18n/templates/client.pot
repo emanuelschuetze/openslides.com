@@ -220,21 +220,52 @@ msgstr ""
 msgid "Ein unbekannter Fehler ist aufgetreten."
 msgstr ""
 
+msgid "Hostingpaket"
+msgstr ""
+
+msgid "Sitzung"
+msgstr ""
+
+msgid "Tagung"
+msgstr ""
+
+msgid "Kongress"
+msgstr ""
+
 msgid "eVoting"
 msgstr ""
 
-msgid "Audiokonferenz via Jitsi"
+msgid "Audiokonferenz"
 msgstr ""
 
 msgid "Video-Livestream"
 msgstr ""
 
+msgid "Einheit"
+msgstr ""
+
+msgid "Einheiten"
+msgstr ""
+
+msgid ""
+"Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro "
+"Veranstaltungstag und zzgl. technische Betreuung der Streamingtechnik, "
+"abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt "
+"unter Vorbehalt. Wir melden uns mit einem konkreten Angebot bei Ihnen."
+msgstr ""
+
 msgid "Single Sign-On via SAML"
+msgstr ""
+
+msgid "Monat"
+msgstr ""
+
+msgid "Monate"
 msgstr ""
 
 msgid ""
 "Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte "
-"senden Sie uns Ihre Anfrage per E-Mail: hosting@openslides.com"
+"senden Sie uns Ihre Anfrage per E-Mail:"
 msgstr ""
 
 msgid "Gewerkschaften"
@@ -261,9 +292,6 @@ msgid ""
 msgstr ""
 
 msgid "Allgemeine Anfragen"
-msgstr ""
-
-msgid "Hosting"
 msgstr ""
 
 msgid "Technischer Kundensupport"
@@ -768,31 +796,24 @@ msgid ""
 "melden."
 msgstr ""
 
-msgid "Sitzung"
+msgid "Senden Sie uns das ausgefüllte Formular."
 msgstr ""
 
-msgid "bis 50 TLN"
+msgid ""
+"Mit unserer Bestätigung starten wir i.d.R. innerhalb eines Tages das "
+"Hosting."
 msgstr ""
 
-msgid "Monat"
+msgid "Wir werden uns zeitnah mit einem konkreten Angebot bei Ihnen melden."
+msgstr ""
+
+msgid "bis"
+msgstr ""
+
+msgid "TLN"
 msgstr ""
 
 msgid "zzgl. USt"
-msgstr ""
-
-msgid "Tagung"
-msgstr ""
-
-msgid "bis 500 TLN"
-msgstr ""
-
-msgid "Kongress"
-msgstr ""
-
-msgid "bis 1.000 TLN"
-msgstr ""
-
-msgid "Monate"
 msgstr ""
 
 msgid "Wunschdomain"
@@ -825,12 +846,22 @@ msgstr ""
 msgid "Rechnungsadresse"
 msgstr ""
 
+msgid "Umsatzsteuer-ID"
+msgstr ""
+
 msgid "Ihre Anmerkungen und Wünsche"
 msgstr ""
 
-msgid ""
-"Senden Sie uns das ausgefüllte Formular. Mit unserer Bestätigung starten "
-"wir i.d.R. innerhalb eines Tages das Hosting."
+msgid "Summe Netto"
+msgstr ""
+
+msgid "Gesamtsumme"
+msgstr ""
+
+msgid "Angebot anfordern"
+msgstr ""
+
+msgid "Bestellen"
 msgstr ""
 
 msgid "Hostingauswahl"
@@ -848,6 +879,9 @@ msgstr ""
 msgid "Zusatzfunktionen"
 msgstr ""
 
+msgid "Serviceleistungen"
+msgstr ""
+
 msgid "Veranstaltungsdetails"
 msgstr ""
 
@@ -857,7 +891,25 @@ msgstr ""
 msgid "Zusätzliche Angaben"
 msgstr ""
 
-msgid "Anfrage absenden"
+msgid "weiter zur Übersicht"
+msgstr ""
+
+msgid "Anfrage senden"
+msgstr ""
+
+msgid "Bestellübersicht"
+msgstr ""
+
+msgid "Preis für 12 Monate, beliebig verlängerbar."
+msgstr ""
+
+msgid "zurück"
+msgstr ""
+
+msgid "Jetzt kostenpflichtig bestellen"
+msgstr ""
+
+msgid "Jetzt Anfrage senden"
 msgstr ""
 
 msgid "Fehler:"
@@ -879,11 +931,50 @@ msgid "Wählen Sie praktische Zusatzfunktionen"
 msgstr ""
 
 msgid ""
-"Corona-Aktionspreis bis 31.8.2020: 0 € für die ersten 3 Monate (nur im "
-"Hostingpaket \"Sitzung\")"
+"Verwenden Sie OpenSlides mit integrierter Audiokonferenz. Über unseren "
+"exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle "
+"Teilnehmende direkt miteinander - geschützt in einem Passwort-gesicherten "
+"Audio-Konferenzraum. Jede/r verbindet sich automatisch nach dem Login in "
+"OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und "
+"ausschalten."
 msgstr ""
 
 msgid "bis 50 Teilnehmende"
+msgstr ""
+
+msgid ""
+"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
+"OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
+"OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese "
+"selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit "
+"automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die "
+"Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum "
+"und verfolgt wieder den Livestream."
+msgstr ""
+
+msgid ""
+"Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen "
+"Videokonferenzen) und erlaubt eine große Skalierung an Teilnehmerzahlen. "
+"Virtuelle Veranstaltungen mit mehreren hundert Personen sind damit kein "
+"Problem mehr. Hinzu kommt, dass die meisten Teilnehmenden eine "
+"Veranstaltung nur \"konsumierend\" verfolgen, d.h. nur ein kleiner "
+"Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden. "
+"Setzen Sie auf erprobte Broadcast-Streaming-Lösung – intelligent gekoppelt "
+"mit der OpenSlides-Redelistenfunktion."
+msgstr ""
+
+msgid ""
+"Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten "
+"Mitgliedsaccounts in OpenSlides anzumelden. OpenSlides unterstützt den "
+"Standard \"SAML\" (Security Assertion Markup Language) für Single Sign-On "
+"(SSO). Ersparen Sie sich damit die Teilnehmerverwaltung in OpenSlides. Und "
+"Ihre Mitglieder brauchen sich keinen extra OpenSlides-Login merken."
+msgstr ""
+
+msgid ""
+"OpenSlides ist Freie Software (Open Source) und kann – mit einigen "
+"administrativen Kenntnissen – auch selbständig auf dem eigenen Server "
+"installiert werden."
 msgstr ""
 
 msgid ""
@@ -997,40 +1088,7 @@ msgstr ""
 msgid "Audiokonferenz – ideal zum Austausch für kleine virtuelle Gremiensitzung"
 msgstr ""
 
-msgid ""
-"Verwenden Sie OpenSlides mit integrierter Audiokonferenz. Über unseren "
-"exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle "
-"Teilnehmende direkt miteinander - geschützt in einem Passwort-gesicherten "
-"Audio-Konferenzraum. Jede/r verbindet sich automatisch nach dem Login in "
-"OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und "
-"auschalten."
-msgstr ""
-
-msgid "» Mehr erfahren ..."
-msgstr ""
-
 msgid "Video-Livestream – für große virtuelle Versammlungen und Parteitage"
-msgstr ""
-
-msgid ""
-"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
-"OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
-"OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese "
-"selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit "
-"automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die "
-"Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum "
-"und verfolgt wieder den Livestream."
-msgstr ""
-
-msgid ""
-"Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen "
-"Videokonferenzen) und erlaubt eine große Skalierung an Teilnehmerzahlen. "
-"Virtuelle Veranstaltungen mit mehreren hundert Personen sind damit kein "
-"Problem mehr. Hinzu kommt, dass die meisten Teilnehmenden eine "
-"Veranstaltung nur \"konsumierend\" verfolgen, d.h. nur ein kleiner "
-"Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden. "
-"Setzen Sie auf erprobte Broadcast-Streaming-Lösung – intelligent gekoppelt "
-"mit der OpenSlides-Redelistenfunktion."
 msgstr ""
 
 msgid ""
@@ -1044,14 +1102,6 @@ msgstr ""
 msgid "Single Sign-On via SAML – für Organisationen mit zentralem Mitgliedsserver"
 msgstr ""
 
-msgid ""
-"Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten "
-"Mitgliedsaccounts in OpenSlides anzumelden. OpenSlides unterstützt den "
-"Standard \"SAML\" (Security Assertion Markup Language) für Single Sign-On "
-"(SSO). Ersparen Sie sich damit die Teilnehmerverwaltung in OpenSlides. Und "
-"Ihre Mitglieder brauchen sich keinen extra OpenSlides-Login merken."
-msgstr ""
-
 msgid "Alle Preise zzgl. der gesetzlich gültigen Umsatzsteuer."
 msgstr ""
 
@@ -1061,13 +1111,7 @@ msgstr ""
 msgid ""
 "Sind noch Fragen offen? Haben Sie individuelle Wünsche? Schreiben Sie uns "
 "an <a class=\"inline\" "
-"href=\"mailto:hosting@openslides.com\">hosting@openslides.com</a>!"
-msgstr ""
-
-msgid ""
-"OpenSlides ist Freie Software (Open Source) und kann – mit einigen "
-"administrativen Kenntnissen – auch selbständig auf dem eigenen Server "
-"installiert werden."
+"href=\"mailto:info@openslides.com\">info@openslides.com</a>!"
 msgstr ""
 
 msgid ""

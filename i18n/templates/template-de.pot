@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 14:56+0200\n"
+"POT-Creation-Date: 2020-09-10 15:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,21 +235,64 @@ msgstr ""
 msgid "Ein unbekannter Fehler ist aufgetreten."
 msgstr ""
 
+#: api/app.py:139 api/src/templates/order-summary.jinja:2
+msgid "Hostingpaket"
+msgstr ""
+
+#: api/src/data.py:8
+msgid "Sitzung"
+msgstr ""
+
+#: api/src/data.py:9
+msgid "Tagung"
+msgstr ""
+
+#: api/src/data.py:10
+msgid "Kongress"
+msgstr ""
+
+#: api/src/data.py:17
 msgid "eVoting"
 msgstr ""
 
-msgid "Audiokonferenz via Jitsi"
+msgid "Audiokonferenz"
 msgstr ""
 
+#: api/src/data.py:25
 msgid "Video-Livestream"
 msgstr ""
 
+#: api/src/data.py:28
+msgid "Einheit"
+msgstr ""
+
+#: api/src/data.py:28
+msgid "Einheiten"
+msgstr ""
+
+#: api/src/templates/prices-overview.jinja:8
+msgid ""
+"Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro "
+"Veranstaltungstag und zzgl. technische Betreuung der Streamingtechnik, "
+"abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt "
+"unter Vorbehalt. Wir melden uns mit einem konkreten Angebot bei Ihnen."
+msgstr ""
+
+#: api/src/data.py:31
 msgid "Single Sign-On via SAML"
+msgstr ""
+
+#: api/app.py:169
+msgid "Monat"
+msgstr ""
+
+#: api/app.py:109 api/app.py:169
+msgid "Monate"
 msgstr ""
 
 msgid ""
 "Bei der Übermittlung des Formulars ist leider ein Fehler aufgetreten. Bitte "
-"senden Sie uns Ihre Anfrage per E-Mail: hosting@openslides.com"
+"senden Sie uns Ihre Anfrage per E-Mail:"
 msgstr ""
 
 msgid "Gewerkschaften"
@@ -276,9 +319,6 @@ msgid ""
 msgstr ""
 
 msgid "Allgemeine Anfragen"
-msgstr ""
-
-msgid "Hosting"
 msgstr ""
 
 msgid "Technischer Kundensupport"
@@ -468,12 +508,14 @@ msgstr ""
 msgid "Programmvorstellung und Beratung"
 msgstr ""
 
+#: api/src/data.py:39
 msgid "Schulung"
 msgstr ""
 
 msgid "Vor-Ort-Service"
 msgstr ""
 
+#: api/src/data.py:43
 msgid "Telefonrufbereitschaft"
 msgstr ""
 
@@ -777,96 +819,139 @@ msgid ""
 "melden."
 msgstr ""
 
-msgid "Sitzung"
+msgid "Senden Sie uns das ausgefüllte Formular."
 msgstr ""
 
-msgid "bis 50 TLN"
+msgid ""
+"Mit unserer Bestätigung starten wir i.d.R. innerhalb eines Tages das Hosting."
 msgstr ""
 
-msgid "Monat"
+msgid "Wir werden uns zeitnah mit einem konkreten Angebot bei Ihnen melden."
 msgstr ""
 
+msgid "bis"
+msgstr ""
+
+msgid "TLN"
+msgstr ""
+
+#: api/src/templates/prices-overview.jinja:5
 msgid "zzgl. USt"
 msgstr ""
 
-msgid "Tagung"
-msgstr ""
-
-msgid "bis 500 TLN"
-msgstr ""
-
-msgid "Kongress"
-msgstr ""
-
-msgid "bis 1.000 TLN"
-msgstr ""
-
-msgid "Monate"
-msgstr ""
-
+#: api/src/templates/order-summary.jinja:4
 msgid "Wunschdomain"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:8
 msgid "Veranstaltungsname"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:9
 msgid "Veranstaltungsort"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:10
 msgid "Veranstaltungszeitraum"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:11
 msgid "Erwartete Teilnehmeranzahl"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:15
 msgid "Name"
 msgstr ""
 
 msgid "Organisation"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:16
 msgid "E-Mail"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:17
 msgid "Telefon"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:22
 msgid "Rechnungsadresse"
+msgstr ""
+
+#: api/src/templates/order-summary.jinja:24
+msgid "Umsatzsteuer-ID"
 msgstr ""
 
 msgid "Ihre Anmerkungen und Wünsche"
 msgstr ""
 
-msgid ""
-"Senden Sie uns das ausgefüllte Formular. Mit unserer Bestätigung starten wir "
-"i.d.R. innerhalb eines Tages das Hosting."
+#: api/src/templates/prices-overview.jinja:4
+msgid "Summe Netto"
 msgstr ""
 
+#: api/src/templates/prices-overview.jinja:6
+msgid "Gesamtsumme"
+msgstr ""
+
+msgid "Angebot anfordern"
+msgstr ""
+
+msgid "Bestellen"
+msgstr ""
+
+#: api/src/templates/order-summary.jinja:1
 msgid "Hostingauswahl"
 msgstr ""
 
 msgid "OpenSlides-Hostingpaket"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:3
 msgid "Hostinglaufzeit"
 msgstr ""
 
+#: api/app.py:111
 msgid "unbegrenzt"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:5
 msgid "Zusatzfunktionen"
 msgstr ""
 
+msgid "Serviceleistungen"
+msgstr ""
+
+#: api/src/templates/order-summary.jinja:7
 msgid "Veranstaltungsdetails"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:13
 msgid "Ansprechpartner"
 msgstr ""
 
 msgid "Zusätzliche Angaben"
 msgstr ""
 
-msgid "Anfrage absenden"
+msgid "weiter zur Übersicht"
+msgstr ""
+
+msgid "Anfrage senden"
+msgstr ""
+
+msgid "Bestellübersicht"
+msgstr ""
+
+#: api/src/templates/prices-overview.jinja:9
+msgid "Preis für 12 Monate, beliebig verlängerbar."
+msgstr ""
+
+msgid "zurück"
+msgstr ""
+
+msgid "Jetzt kostenpflichtig bestellen"
+msgstr ""
+
+msgid "Jetzt Anfrage senden"
 msgstr ""
 
 msgid "Fehler:"
@@ -888,11 +973,50 @@ msgid "Wählen Sie praktische Zusatzfunktionen"
 msgstr ""
 
 msgid ""
-"Corona-Aktionspreis bis 31.8.2020: 0 € für die ersten 3 Monate (nur im "
-"Hostingpaket \"Sitzung\")"
+"Verwenden Sie OpenSlides mit integrierter Audiokonferenz. Über unseren "
+"exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle "
+"Teilnehmende direkt miteinander - geschützt in einem Passwort-gesicherten "
+"Audio-Konferenzraum. Jede/r verbindet sich automatisch nach dem Login in "
+"OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und "
+"ausschalten."
 msgstr ""
 
 msgid "bis 50 Teilnehmende"
+msgstr ""
+
+msgid ""
+"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
+"OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
+"OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese "
+"selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit "
+"automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die "
+"Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum und "
+"verfolgt wieder den Livestream."
+msgstr ""
+
+msgid ""
+"Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen "
+"Videokonferenzen) und erlaubt eine große Skalierung an Teilnehmerzahlen. "
+"Virtuelle Veranstaltungen mit mehreren hundert Personen sind damit kein "
+"Problem mehr. Hinzu kommt, dass die meisten Teilnehmenden eine Veranstaltung "
+"nur \"konsumierend\" verfolgen, d.h. nur ein kleiner Personenkreis möchte "
+"sich aktiv mit Mikrofon und Kamera zu Wort melden. Setzen Sie auf erprobte "
+"Broadcast-Streaming-Lösung – intelligent gekoppelt mit der OpenSlides-"
+"Redelistenfunktion."
+msgstr ""
+
+msgid ""
+"Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten Mitgliedsaccounts "
+"in OpenSlides anzumelden. OpenSlides unterstützt den Standard \"SAML"
+"\" (Security Assertion Markup Language) für Single Sign-On (SSO). Ersparen "
+"Sie sich damit die Teilnehmerverwaltung in OpenSlides. Und Ihre Mitglieder "
+"brauchen sich keinen extra OpenSlides-Login merken."
+msgstr ""
+
+msgid ""
+"OpenSlides ist Freie Software (Open Source) und kann – mit einigen "
+"administrativen Kenntnissen – auch selbständig auf dem eigenen Server "
+"installiert werden."
 msgstr ""
 
 msgid ""
@@ -1007,40 +1131,7 @@ msgid ""
 "Audiokonferenz – ideal zum Austausch für kleine virtuelle Gremiensitzung"
 msgstr ""
 
-msgid ""
-"Verwenden Sie OpenSlides mit integrierter Audiokonferenz. Über unseren "
-"exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle "
-"Teilnehmende direkt miteinander - geschützt in einem Passwort-gesicherten "
-"Audio-Konferenzraum. Jede/r verbindet sich automatisch nach dem Login in "
-"OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und "
-"auschalten."
-msgstr ""
-
-msgid "» Mehr erfahren ..."
-msgstr ""
-
 msgid "Video-Livestream – für große virtuelle Versammlungen und Parteitage"
-msgstr ""
-
-msgid ""
-"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
-"OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
-"OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese "
-"selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit "
-"automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die "
-"Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum und "
-"verfolgt wieder den Livestream."
-msgstr ""
-
-msgid ""
-"Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen "
-"Videokonferenzen) und erlaubt eine große Skalierung an Teilnehmerzahlen. "
-"Virtuelle Veranstaltungen mit mehreren hundert Personen sind damit kein "
-"Problem mehr. Hinzu kommt, dass die meisten Teilnehmenden eine Veranstaltung "
-"nur \"konsumierend\" verfolgen, d.h. nur ein kleiner Personenkreis möchte "
-"sich aktiv mit Mikrofon und Kamera zu Wort melden. Setzen Sie auf erprobte "
-"Broadcast-Streaming-Lösung – intelligent gekoppelt mit der OpenSlides-"
-"Redelistenfunktion."
 msgstr ""
 
 msgid ""
@@ -1055,14 +1146,6 @@ msgid ""
 "Single Sign-On via SAML – für Organisationen mit zentralem Mitgliedsserver"
 msgstr ""
 
-msgid ""
-"Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten Mitgliedsaccounts "
-"in OpenSlides anzumelden. OpenSlides unterstützt den Standard \"SAML"
-"\" (Security Assertion Markup Language) für Single Sign-On (SSO). Ersparen "
-"Sie sich damit die Teilnehmerverwaltung in OpenSlides. Und Ihre Mitglieder "
-"brauchen sich keinen extra OpenSlides-Login merken."
-msgstr ""
-
 msgid "Alle Preise zzgl. der gesetzlich gültigen Umsatzsteuer."
 msgstr ""
 
@@ -1071,14 +1154,8 @@ msgstr ""
 
 msgid ""
 "Sind noch Fragen offen? Haben Sie individuelle Wünsche? Schreiben Sie uns an "
-"<a class=\"inline\" href=\"mailto:hosting@openslides.com"
-"\">hosting@openslides.com</a>!"
-msgstr ""
-
-msgid ""
-"OpenSlides ist Freie Software (Open Source) und kann – mit einigen "
-"administrativen Kenntnissen – auch selbständig auf dem eigenen Server "
-"installiert werden."
+"<a class=\"inline\" href=\"mailto:info@openslides.com\">info@openslides.com</"
+"a>!"
 msgstr ""
 
 msgid ""
@@ -1086,24 +1163,47 @@ msgid ""
 "Einsatz. Hier eine Auswahl an Referenzen."
 msgstr ""
 
+#: api/app.py:36
 msgid "Konfigurationsfehler: Keine E-Mail-Empfänger"
 msgstr ""
 
-msgid "Ihre Anfrage bei OpenSlides"
+#: api/app.py:70
+msgid "Ihre Angebotsanfrage bei OpenSlides"
 msgstr ""
 
-msgid "Der Server ist nicht korrekt konfiguriert"
+#: api/app.py:72
+msgid "Ihre Bestellung bei OpenSlides"
 msgstr ""
 
-msgid "Konnte E-Mail nicht versenden an:"
+#: api/app.py:77 api/app.py:81
+msgid "Ihre Angaben:"
 msgstr ""
 
+#: api/app.py:182
 msgid "Diese E-Mail-Adresse ist ungültig"
 msgstr ""
 
+#: api/app.py:193
 msgid "Diese E-Mail-Adresse ist bereits registriert"
 msgstr ""
 
+#: api/src/data.py:21
+msgid "Audiokonferenz via Jitsi"
+msgstr ""
+
+#: api/src/data.py:40
+msgid "Technische Begleitung der Veranstaltung (virtuell oder Vor-Ort)"
+msgstr ""
+
+#: api/src/mail.py:17
+msgid "Der Server ist nicht korrekt konfiguriert"
+msgstr ""
+
+#: api/src/mail.py:24
+msgid "Konnte E-Mail nicht versenden an:"
+msgstr ""
+
+#: api/src/templates/confirmation-email.jinja:1
 #, python-format
 msgid ""
 "Sehr geehrte/r %(name)s,\n"
@@ -1122,14 +1222,22 @@ msgid ""
 "Ihr OpenSlides-Team\n"
 msgstr ""
 
-msgid "Ihre Angaben"
+#: api/src/templates/order-summary.jinja:5
+msgid "keine"
 msgstr ""
 
-msgid "Hostingpaket"
-msgstr ""
-
+#: api/src/templates/order-summary.jinja:14
 msgid "Veranstalter"
 msgstr ""
 
+#: api/src/templates/order-summary.jinja:19
+msgid "Services"
+msgstr ""
+
+#: api/src/templates/order-summary.jinja:26
 msgid "Weitere Anmerkungen"
+msgstr ""
+
+#: api/src/templates/prices-overview.jinja:1
+msgid "Kostenübersicht"
 msgstr ""

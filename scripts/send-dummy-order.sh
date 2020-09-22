@@ -1,6 +1,11 @@
 #!/bin/bash
 
-curl --header "Content-Type: application/json" -e https://www.openslides.com/de/order -d '{
+if [ -n "$1" ]; then
+    lang="en"
+else
+    lang="de"
+fi
+curl --header "Content-Type: application/json" -e "https://www.openslides.com/$lang/order" -d '{
     "mode": "order",
     "package": "conference",
     "running_time": "unlimited",
