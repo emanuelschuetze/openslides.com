@@ -4,6 +4,10 @@
     font-family: 'Fira Sans Condensed';
 }
 
+.align-baseline.mat-list-base .mat-list-item .mat-list-item-content {
+    align-items: baseline !important;
+}
+
 .price-col {
     display: flex;
     flex-direction: column;
