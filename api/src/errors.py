@@ -12,6 +12,7 @@ class ViewError(Exception):
 
 @app.errorhandler(ViewError)
 def handle_view_error(error):
+    app.logger.error(error.message)
     return {"error": error.message}, error.status_code
 
 

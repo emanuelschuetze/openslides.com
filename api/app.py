@@ -199,5 +199,11 @@ def add_newsletter():
     return {}
 
 
+@app.route("/api/health", methods=["GET"])
+@app.route("/health", methods=["GET"])
+def health():
+    return {"healthy": True}
+
+
 if __name__ == "__main__":
     app.run()
