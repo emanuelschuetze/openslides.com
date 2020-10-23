@@ -84,7 +84,7 @@ export class ReferenceService {
                 },
                 {
                     name: 'FDP',
-                    event: 'Landesparteitag Schleswig-Holstein',
+                    event: 'Bundesparteitag 2020, Landesparteitage',
                     src: 'fdp-logo.png',
                     frontpage: true
                 },
