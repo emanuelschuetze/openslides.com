@@ -14,6 +14,7 @@ MAIL_DEFAULT_SENDER = ""
 
 # Send order emails to
 ORDER_MAIL_RECIPIENTS = []
+OFFER_MAIL_RECIPIENTS = []
 
 # babel settings
 BABEL_DEFAULT_LOCALE = "de"

@@ -13,24 +13,15 @@ def get_packages():
 
 def get_extra_functions():
     return {
-        "evoting": {
-            "name": _("eVoting"),
-            "base_price": 50,
-        },
-        "audio": {
-            "name": _("Audiokonferenz via Jitsi"),
-            "base_price": 50,
-        },
+        "evoting": {"name": _("eVoting"), "base_price": 50},
+        "audio": {"name": _("Audiokonferenz via Jitsi"), "base_price": 50},
         "video": {
             "name": _("Video-Livestream"),
             "base_price": 750,
             "units_func": lambda _, users: math.ceil(users / 250),
             "units_desc": [_("Einheit"), _("Einheiten")],
         },
-        "saml": {
-            "name": _("Single Sign-On via SAML"),
-            "base_price": 50,
-        },
+        "saml": {"name": _("Single Sign-On via SAML"), "base_price": 50},
     }
 
 

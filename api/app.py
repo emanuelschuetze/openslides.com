@@ -27,26 +27,28 @@ VAT_PERCENTAGE = 0.16
 def order():
     data = request.json
     base_schema.validate(data)
-    if data["mode"] == "order":
+    mode = data["mode"]
+
+    if mode == "order":
         validate(data, order_schema)
+        mode_verbose = "Bestellung"
+        customer_subject = _("Ihre Bestellung bei OpenSlides")
+        recipients = app.config["ORDER_MAIL_RECIPIENTS"]
     else:
         validate(data, offer_schema)
+        mode_verbose = "Angebotsanfrage"
+        customer_subject = _("Ihre Angebotsanfrage bei OpenSlides")
+        recipients = app.config["OFFER_MAIL_RECIPIENTS"]
 
     if not app.config.get("ORDER_MAIL_RECIPIENTS"):
         raise ViewError(_("Konfigurationsfehler: Keine E-Mail-Empfänger"))
 
-    confirmation_mail = render_template(
-        "confirmation-email.jinja", name=data["contact_person"]["name"]
-    )
-    price_overview = get_prices_overview_str(data)
-    data_customer = render_template("order-summary.jinja", **get_summary_data(data))
-
     # since the user might have another language selected, but the admin mail should be in german,
     # we have to hack it like this to enforce the language we want
     with UseDefaultLanguageContext():
-        summary = render_template("order-summary.jinja", **get_summary_data(data))
-        metadata = render_template(
-            "metadata.jinja",
+        admin_mail = render_template(
+            "admin-email.jinja",
+            **get_summary_data(data),
             package_size=get_packages()[data["package"]]["max_users"],
             raw_functions_str=",".join(
                 function
@@ -54,45 +56,43 @@ def order():
                 if status
             ),
         )
-        admin_mail = join_mail_bodies(summary, metadata)
 
     # admin message, always in german
-    subject = "Angebotsanfrage" if data["mode"] == "offer" else "Bestellung"
-    msg = Message(
-        "OpenSlides " + subject + " " + data["contact_person"]["organisation"],
-        recipients=app.config["ORDER_MAIL_RECIPIENTS"],
+    admin_subject = " ".join(
+        ["OpenSlides", mode_verbose, data["contact_person"]["organisation"]]
     )
-    msg.body = admin_mail
+    msg = Message(
+        subject=admin_subject,
+        recipients=recipients,
+        body=admin_mail,
+        sender=data["contact_person"]["email"],
+    )
     try_send_mail(msg)
 
     # customer message
-    msg = Message(
-        _("Ihre Angebotsanfrage bei OpenSlides")
-        if data["mode"] == "offer"
-        else _("Ihre Bestellung bei OpenSlides"),
-        recipients=[data["contact_person"]["email"]],
+    customer_mail = render_template(
+        f"confirmation-email-{mode}.jinja",
+        data=data,
+        overview_data=get_overview_data(data),
+        VAT_PERCENTAGE=VAT_PERCENTAGE,
+        **get_summary_data(data),
     )
-    if data["mode"] == "order":
-        msg.body = join_mail_bodies(
-            confirmation_mail, price_overview, "\n" + _("Ihre Angaben:"), data_customer
-        )
-    else:
-        msg.body = join_mail_bodies(
-            confirmation_mail, "\n" + _("Ihre Angaben:"), data_customer
-        )
+    msg = Message(
+        subject=customer_subject,
+        recipients=[data["contact_person"]["email"]],
+        body=customer_mail,
+    )
     try_send_mail(msg)
 
     return {}
 
 
-def join_mail_bodies(*bodies):
-    return "\n\n".join(bodies)
-
-
 def get_summary_data(data):
     contact_person = data["contact_person"]
     package = data["package"]
-    extra_data = {
+    summary_data = {
+        **data,
+        **contact_person,
         "package_str": get_packages()[package]["name"],
         "extra_functions_str": ", ".join(
             get_extra_functions()[extra_function]["name"]
@@ -110,21 +110,7 @@ def get_summary_data(data):
         if data["running_time"] != "unlimited"
         else _("unbegrenzt"),
     }
-    return merge(data, contact_person, extra_data)
-
-
-def merge(*dicts):
-    return dict(kv for d in dicts for kv in d.items())
-
-
-def get_prices_overview_str(data):
-    overview_data = get_overview_data(data)
-    return render_template(
-        "prices-overview.jinja",
-        data=data,
-        overview_data=overview_data,
-        VAT_PERCENTAGE=VAT_PERCENTAGE,
-    )
+    return summary_data
 
 
 def get_overview_data(data):
@@ -142,14 +128,7 @@ def get_overview_data(data):
     ]
     for function_key, function in get_extra_functions().items():
         if data["extra_functions"][function_key]:
-            positions.append(
-                merge(
-                    {
-                        "key": function_key,
-                    },
-                    function,
-                )
-            )
+            positions.append({"key": function_key, **function})
 
     total = 0
     for entry in positions:
