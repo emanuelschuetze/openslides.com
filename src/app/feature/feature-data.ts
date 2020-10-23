@@ -5,8 +5,7 @@ export interface FeatureDescription {
     icon?: string;
     intro: string;
     image_names: string[];
-    details: string[];
-}
+    details: string[];}
 
 export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
     agenda: {
@@ -47,6 +46,7 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
             _('HTML-Inline-Editor zum Formatieren von Antragstext und -begründung'),
             _('Kommentarfelder für Anträge erlauben'),
             _('Abstimmungsergebnisse erfassen'),
+            _('elektronische Stimmabgabe möglich'),
             _('Anträge als PDF, CSV und XLSX exportieren')
         ]
     },
@@ -62,6 +62,7 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
             _('Wahlergebnisse auf Grundlage verschiedener 100%-Basen'),
             _('Mehrere Wahlgänge'),
             _('Wahlergebnisse eingeben und mit Diagramm projizieren'),
+            _('elektronische Stimmabgabe möglich'),
             _('Wahlen (mit allen Ergebnissen) als PDF exportieren')
         ]
     },
@@ -82,25 +83,27 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
     },
     evoting: {
         title: _('Elektronische Stimmabgabe'),
-        intro: _('Erweitern Sie OpenSlides um ein integriertes elektronisches Abstimmungssystem.'),
-        image_names: ["dummy", "dummy2"],
+        intro: _('Erweitern Sie OpenSlides um ein integriertes Live-Voting-System.'),
+        image_names: ["motion-active-voting", "motion-singlevotes", "election-active-voting", "election-voting-detail-page"],
         details: [
-            _('Antragsabstimmungen und Personenwahlen möglich'),
-            _('Namentliche und nicht-namentliche Abstimmungen'),
-            _('Stimmberechtigte Nutzergruppe festlegen'),
+            _('rechtssichere Antragsabstimmungen (Ja/Nein/Enthaltung) und Personenwahlen (1-aus-n oder n-aus-m) möglich'),
+            _('namentliche (wer hat wie abgestimmt) und nicht-namentliche (anonyme) Stimmabgaben möglich'),
+            _('stimmberechtigte Nutzergruppe(n) pro Abstimmung/Wahlgang festlegbar'),
             _('Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen'),
-            _('Individuelle Stimmgewichtungen der Nutzer'),
-            _('Abstimmungsergebnisse auf Grundlage verschiedener 100%-Basen')
+            _('Individuelle Stimmgewichtungen pro Nutzer aktivierbar'),
+            _('Stimmrechtsübertragungen (Vollmachtgeber und Vollmachtnehmer) einstellbar'),
+            _('Einzelstimmennachweise für namentliche Stimmabgaben')
         ]
     },
     livestream: {
         title: _('Video-Livestream'),
         intro: _('Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in OpenSlides.'),
-        image_names: ["dummy", "dummy2"],
+        image_names: ["autopilot", "jitsi-dialog"],
         details: [
-            _('Jederzeit sichtbares Stream-Overlay'),
-            _('Koppelung mit Redeliste'),
-            _('Automatische Übertragung des aktuellen Redners')
+            _('Anzeige des Livesstreams im Vordergrund (auch minimierbar oder im Vollbild nutzbar'),
+            _('Automatische Übertragung des aktuellen Redners in den Livestream'),
+            _('intelligente Koppelung mit der Redeliste (nur Personen auf der Redeliste dürfen in die Videokonferenz eintreten)'),
+            _('bankbreitenschonende Broadcast-Technik (auch für sehr große virtuelle Veranstaltungen nutzbar)')            
         ]
     },
     miscellaneous: {
@@ -119,7 +122,7 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
             _('Konfigurierbares Design sowie Erstellung eigener Designs auf Anfrage'),
             _('Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, Portugiesisch, Spanisch und Russisch)'),
             _('Responsive Design'),
-            _('Plattformunabhängige Webanwendung basierend auf Python 3 und Angular 8 im modernen Material Design'),
+            _('Plattformunabhängige Webanwendung basierend auf Python 3 und Angular im modernen Material Design'),
             _('Progressive WebApp mit clientseitigem Caching und Lazy Loading für kurze Ladezeiten')
         ]
     }

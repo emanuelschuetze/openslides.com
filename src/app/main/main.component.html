@@ -21,7 +21,7 @@
     <div class="bottom-banner">
         <div class="inner-banner-container flex" appWrappable>
             <div class="banner-text">
-                <strong>+++ Auch für virtuelle Mitgliderversammlungen, Hauptversammlungen und Parteitage +++</strong><br>
+                <strong>+++ Auch für virtuelle Mitgliederversammlungen, Hauptversammlungen und Parteitage +++</strong><br>
                 {{ "eVoting · integrierte Audio-/Videokonferenz · Video-Livestream" | translate }}
             </div>
         </div>
@@ -160,13 +160,13 @@
                 <div>
                     <a routerLink="./feature/evoting">
                         <img class="screenshot"
-                            src="assets/img/online_conference_article/named_vote_detail_view.png">
+                            src="assets/img/features/evoting/evoting_motion-singlevotes_{{ translate.currentLang }}.png">
                     </a>
                 </div>
                 <div>
                     <h1 class="lh-1" translate>Elektronische Stimmabgabe</h1>
                     <p>
-                        {{ "Erweitern Sie OpenSlides um ein integriertes elektronisches Abstimmungssystem. Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. Möglich sind namentliche oder nicht-namentliche Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen sind möglich." | translate }}
+                        {{ "Nutzen Sie Live-Voting für Anträge und Wahlen. Die stimmberechtigte Nutzergruppe lässt sich pro Antrag/Wahl festlegen. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. Möglich sind namentliche oder nicht-namentliche (anonyme) sAntragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen und Stimmrechtsübertragungen sind möglich." | translate }}
                     </p>
                     <a routerLink="./feature/evoting" mat-flat-button class="os-button">
                         <span translate>Mehr erfahren</span>
@@ -189,7 +189,7 @@
                     <div class="switch-flex-order">
                         <a routerLink="./feature/livestream">
                             <img class="screenshot"
-                                src="assets/img/features/livestream/livestream_dummy_{{ translate.currentLang }}.png">
+                                src="assets/img/features/livestream/livestream_autopilot_{{ translate.currentLang }}.png">
                         </a>
                     </div>
                 </div>
@@ -330,9 +330,11 @@
             </a>
         </div>
 
+        <!-- disabled quotes
         <slideshow class="quote-slideshow" minHeight="300px" [autoPlay]="true" autoPlayInterval="10000"
             [imageUrls]="quotes" captionBackground="transparent" captionColor="#000">
         </slideshow>
+        -->
     </div>
 
 
