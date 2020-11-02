@@ -191,6 +191,11 @@ export class ReferenceService {
                     src: 'ljrnds-logo.png'
                 },
                 {
+                    name: 'Landesjugendring Brandenburg',
+                    event: 'Vollversammlung 2020',
+                    src: 'ljrbbg-logo.png'
+                },
+                {
                     name: 'Deutsche Pfadfinderschaft Sankt Georg (DPSG)',
                     event: 'Bundesversammlungen',
                     src: 'dpsg-logo.png'
@@ -250,6 +255,11 @@ export class ReferenceService {
                     name: 'Bundesverband WindEndergie',
                     event: '(virtuelle) Delegiertenversammlung 2020',
                     src: 'bwe-logo.png'
+                },
+                {
+                    name: 'Allgemeiner Deutscher Fahrrad-Club e. V. (ADFC)',
+                    event: 'Bund-Länder-Rat',
+                    src: 'adfc-logo.png'
                 },
                 {
                     name: 'VDI Verein Deutscher Ingenieure e.V.',
