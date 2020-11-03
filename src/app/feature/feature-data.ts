@@ -5,7 +5,8 @@ export interface FeatureDescription {
     icon?: string;
     intro: string;
     image_names: string[];
-    details: string[];}
+    details: string[];
+}
 
 export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
     agenda: {
@@ -84,9 +85,16 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
     evoting: {
         title: _('Elektronische Stimmabgabe'),
         intro: _('Erweitern Sie OpenSlides um ein integriertes Live-Voting-System.'),
-        image_names: ["motion-active-voting", "motion-singlevotes", "election-active-voting", "election-voting-detail-page"],
+        image_names: [
+            'motion-active-voting',
+            'motion-singlevotes',
+            'election-active-voting',
+            'election-voting-detail-page'
+        ],
         details: [
-            _('rechtssichere Antragsabstimmungen (Ja/Nein/Enthaltung) und Personenwahlen (1-aus-n oder n-aus-m) möglich'),
+            _(
+                'rechtssichere Antragsabstimmungen (Ja/Nein/Enthaltung) und Personenwahlen (1-aus-n oder n-aus-m) möglich'
+            ),
             _('namentliche (wer hat wie abgestimmt) und nicht-namentliche (anonyme) Stimmabgaben möglich'),
             _('stimmberechtigte Nutzergruppe(n) pro Abstimmung/Wahlgang festlegbar'),
             _('Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen'),
@@ -98,12 +106,14 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
     livestream: {
         title: _('Video-Livestream'),
         intro: _('Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in OpenSlides.'),
-        image_names: ["autopilot", "jitsi-dialog"],
+        image_names: ['autopilot', 'jitsi-dialog'],
         details: [
             _('Anzeige des Livesstreams im Vordergrund (auch minimierbar oder im Vollbild nutzbar'),
             _('Automatische Übertragung des aktuellen Redners in den Livestream'),
-            _('intelligente Koppelung mit der Redeliste (nur Personen auf der Redeliste dürfen in die Videokonferenz eintreten)'),
-            _('bankbreitenschonende Broadcast-Technik (auch für sehr große virtuelle Veranstaltungen nutzbar)')            
+            _(
+                'intelligente Koppelung mit der Redeliste (nur Personen auf der Redeliste dürfen in die Videokonferenz eintreten)'
+            ),
+            _('bankbreitenschonende Broadcast-Technik (auch für sehr große virtuelle Veranstaltungen nutzbar)')
         ]
     },
     miscellaneous: {

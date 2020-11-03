@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DateAdapter } from '@angular/material';
+import { DateAdapter } from '@angular/material/core';
 import { Router } from '@angular/router';
 
 import { LanguageService } from './language.service';

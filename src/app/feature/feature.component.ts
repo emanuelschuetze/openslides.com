@@ -21,7 +21,7 @@ interface CurrentImagesCache {
     encapsulation: ViewEncapsulation.None
 })
 export class FeatureComponent implements OnInit {
-    @ViewChild('slideshow', { static: false }) public slideshow: any;
+    @ViewChild('slideshow') public slideshow: any;
 
     private img_path = 'assets/img/features/';
     public activeRoute = '';
