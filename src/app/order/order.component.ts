@@ -199,6 +199,7 @@ export class OrderComponent implements OnInit {
             billing_address: ['', [Validators.required]],
             comment: ['', []]
         });
+
         // add defaults to extra funtions
         for (const extraFunction of Object.values(this.extraFunctions)) {
             this.setDefaultsOnUnitDescriptor(extraFunction);

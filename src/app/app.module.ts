@@ -24,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { SlideshowModule } from 'ng-simple-slideshow';
+import { TrimValueAccessorModule } from 'ng-trim-value-accessor';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -97,6 +98,7 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
         ReactiveFormsModule,
         SlideshowModule,
         HttpClientModule,
+        TrimValueAccessorModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,

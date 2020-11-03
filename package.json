@@ -34,6 +34,7 @@
     "lodash": "^4.17.19",
     "moment": "^2.25.3",
     "ng-simple-slideshow": "^1.3.0-beta.11",
+    "ng-trim-value-accessor": "^3.0.2",
     "rxjs": "~6.5.5",
     "shelljs": "^0.8.4",
     "tslib": "^2.0.0",
