@@ -2,6 +2,7 @@ import { KeyValue } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatCheckboxChange } from '@angular/material/checkbox';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
@@ -14,9 +15,13 @@ interface UnitDescriptor {
 
 type UnitsFunction = (months: number, users: number) => number;
 interface ExtraFunctionsEntry extends UnitDescriptor {
+    hidden?: boolean;
     name: string;
     base_price: number;
     extra_infos?: string;
+    parent?: string;
+    child?: string;
+    disabled?: () => boolean;
 }
 interface ExtraFunctionsMap {
     [key: string]: ExtraFunctionsEntry;
@@ -37,11 +42,10 @@ interface ServiceMap {
     };
 }
 
-interface OverviewTableEntry extends UnitDescriptor {
+interface OverviewTableEntry extends UnitDescriptor, ExtraFunctionsEntry {
     key?: string;
-    name: string;
-    base_price: number;
     units: number;
+    total?: number;
 }
 interface OverviewData {
     positions: OverviewTableEntry[];
@@ -86,19 +90,31 @@ export class OrderComponent implements OnInit {
                 units: months
             } as OverviewTableEntry)
         ];
-        let total = pkg.price * months;
+
+        const pushPosition = (functionKey: string) => {
+            const extraFunction = this.extraFunctions[functionKey];
+            const units = extraFunction.units_func ? extraFunction.units_func(months, users) : 1;
+            const entry: OverviewTableEntry = {
+                key: functionKey,
+                name: this.translate.instant(extraFunction.name),
+                units,
+                ...extraFunction
+            };
+            positions.push(entry);
+        };
+
         for (const functionKey in this.extraFunctions) {
             if (this.orderForm.controls.extra_functions.value[functionKey]) {
-                const extraFunction = this.extraFunctions[functionKey];
-                const entry = {
-                    key: functionKey,
-                    name: this.translate.instant(extraFunction.name),
-                    units: extraFunction.units_func(months, users),
-                    ...extraFunction
-                };
-                positions.push(entry);
-                total += entry.units * entry.base_price;
+                pushPosition(functionKey);
+                if (functionKey === 'video' && users > 250) {
+                    pushPosition('video-additional-units');
+                }
             }
+        }
+        let total = 0;
+        for (const entry of positions) {
+            entry.total = entry.units * entry.base_price;
+            total += entry.total;
         }
         return { positions, total, isUnlimited };
     }
@@ -128,21 +144,48 @@ export class OrderComponent implements OnInit {
         },
         audio: {
             name: _('Audiokonferenz'),
-            base_price: 50
+            base_price: 50,
+            disabled: () => this.orderForm.controls.package.value !== 'meeting'
         },
         video: {
             name: _('Video-Livestream'),
-            base_price: 750,
-            units_func: (_m, users) => Math.ceil(users / 250),
+            base_price: 1750,
+            units_func: null,
+            units_desc: null,
+            extra_infos: _(
+                // tslint:disable-next-line
+                'Der Preis gilt pro Veranstaltungstag und ist abhängig vom Veranstaltungstag und Verfügbarkeiten.'
+            ),
+            child: 'external_video'
+        },
+        'video-additional-units': {
+            hidden: true,
+            name: _('Zusätzliche Livestream-Einheit'),
+            base_price: 1500,
+            units_func: (_m, users) => Math.ceil(users / 250) - 1,
             units_desc: [_('Einheit'), _('Einheiten')],
             extra_infos: _(
                 // tslint:disable-next-line
-                'Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro Veranstaltungstag und zzgl. technische Betreuung der Streamingtechnik, abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt unter Vorbehalt. Wir melden uns mit einem konkreten Angebot bei Ihnen.'
+                'Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Pro 250 Nutzer ist somit eine zusätzliche Streaming-Einheit nötig.'
             )
+        },
+        external_video: {
+            name: _('externer Livestream'),
+            base_price: 750,
+            parent: 'video',
+            units_func: null,
+            units_desc: null,
+            disabled: () => !this.orderForm.controls.extra_functions.value.video
         },
         saml: {
             name: _('Single Sign-On via SAML'),
             base_price: 50
+        },
+        service: {
+            name: _('Service-Pauschale'),
+            base_price: 750,
+            units_func: null,
+            units_desc: null
         }
     };
 
@@ -160,6 +203,12 @@ export class OrderComponent implements OnInit {
 
     public get hasLivestream(): boolean {
         return this.orderForm.controls.extra_functions.value.video;
+    }
+
+    public get hasExtraLivestream(): boolean {
+        return (
+            this.orderForm.controls.extra_functions.value.video && this.orderForm.controls.expected_users.value > 250
+        );
     }
 
     public constructor(
@@ -232,10 +281,10 @@ export class OrderComponent implements OnInit {
     }
 
     public setDefaultsOnUnitDescriptor<T extends UnitDescriptor>(descriptor: T): T {
-        if (!descriptor.units_desc) {
+        if (descriptor.units_desc === undefined) {
             descriptor.units_desc = [_('Monat'), _('Monate')];
         }
-        if (!descriptor.units_func) {
+        if (descriptor.units_func === undefined) {
             descriptor.units_func = months => months;
         }
         return descriptor;
@@ -250,10 +299,23 @@ export class OrderComponent implements OnInit {
         }
     }
 
+    public onChangeExtraFunction(e: MatCheckboxChange, key: string): void {
+        const extraFunction = this.extraFunctions[key];
+        if (!e.checked && extraFunction.child) {
+            this.orderForm.controls.extra_functions.patchValue({ [extraFunction.child]: false });
+        }
+    }
+
+    public onPackageChange(): void {
+        if (this.orderForm.controls.package.value !== 'meeting') {
+            this.orderForm.controls.extra_functions.patchValue({ audio: false });
+        }
+    }
+
     public async order(): Promise<void> {
         const data = this.orderForm.value;
         // I guess angular 10 introduced this error, but I couldn't find anything about it...
-        data.expected_users = parseInt(data.expected_users);
+        data.expected_users = parseInt(data.expected_users, 10);
 
         try {
             await this.http.post<void>('/api/order', data).toPromise();
