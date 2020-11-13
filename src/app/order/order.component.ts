@@ -252,6 +252,8 @@ export class OrderComponent implements OnInit {
 
     public async order(): Promise<void> {
         const data = this.orderForm.value;
+        // I guess angular 10 introduced this error, but I couldn't find anything about it...
+        data.expected_users = parseInt(data.expected_users);
 
         try {
             await this.http.post<void>('/api/order', data).toPromise();
