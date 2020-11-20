@@ -22,10 +22,11 @@ base_schema = Draft7Validator(
             "extra_functions": {
                 "type": "object",
                 "properties": {
-                    function: {"type": "boolean"}
-                    for function in get_extra_functions().keys()
+                    function_key: {"type": "boolean"}
+                    for function_key, function in get_extra_functions().items()
+                    if not function.get("hidden")
                 },
-                "required": list(get_extra_functions().keys()),
+                "required": list(key for key, function in get_extra_functions().items() if not function.get("hidden")),
             },
             "event_name": {"type": "string", "pattern": standard_pattern},
             "event_location": {"type": "string", "pattern": standard_pattern},

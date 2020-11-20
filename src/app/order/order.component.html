@@ -16,7 +16,11 @@
             <mat-label>
                 <span translate>OpenSlides-Hostingpaket</span>
             </mat-label>
-            <mat-select formControlName="package" required>
+            <mat-select
+                required
+                formControlName="package"
+                (selectionChange)="onPackageChange()"
+            >
                 <mat-option *ngFor="let package of packages | keyvalue: originalOrder" [value]="package.key">
                     {{ package.value.name | translate }}
                     ({{ 'bis' | translate }} {{ package.value.max_users }} {{ 'TLN' | translate }} ·
@@ -44,11 +48,21 @@
         <b translate>Zusatzfunktionen</b>
         <div formGroupName="extra_functions" class="extra-functions-container">
             <ng-container *ngFor="let extraFunction of extraFunctions | keyvalue: originalOrder">
-                <div class="valign-wrapper">
-                    <mat-checkbox [formControlName]="extraFunction.key">{{ extraFunction.value.name | translate }}</mat-checkbox>
+                <div *ngIf="!extraFunction.value.hidden" class="valign-wrapper">
+                    <mat-checkbox
+                        [formControlName]="extraFunction.key"
+                        [class.indented]="!!extraFunction.value.parent"
+                        [disabled]="extraFunction.value.disabled && extraFunction.value.disabled()"
+                        (change)="onChangeExtraFunction($event, extraFunction.key)"
+                    >
+                        {{ extraFunction.value.name | translate }}
+                    </mat-checkbox>
                     <div class="suffix-container valign-wrapper">
                         <span class="price">
-                            <span>{{ extraFunction.value.base_price | currency:"EUR" }} / {{ extraFunction.value.units_desc[0] | translate }}</span>
+                            <span>{{ extraFunction.value.base_price | currency:"EUR" }}</span>
+                            <ng-container *ngIf="extraFunction.value.units_desc">
+                                <span> / {{ extraFunction.value.units_desc[0] | translate }}</span>
+                            </ng-container>
                             <mat-icon
                                 *ngIf="extraFunction.value.extra_infos"
                                 matTooltip="{{ extraFunction.value.extra_infos | translate }}"
@@ -150,16 +164,27 @@
 
         <table class="overviewTable">
             <tr class="overview-position" *ngFor="let row of overviewData.positions">
-                <td>{{ row.name }}</td>
-                <td class="right">{{ row.base_price | currency:"EUR" }}</td>
-                <td>x</td>
                 <td>
-                    <span>{{ row.units }} </span>
-                    <span *ngIf="row.units == 1">{{ row.units_desc[0] | translate }}</span>
-                    <span *ngIf="row.units != 1">{{ row.units_desc[1] | translate }}</span>
+                    <span>{{ row.name }}</span>
                     <span *ngIf="row.key === 'video'"> *</span>
                 </td>
-                <td class="right">{{ (row.base_price * row.units) | currency:"EUR" }}</td>
+                <td class="right">
+                    <ng-container *ngIf="row.units_desc">
+                        {{ row.base_price | currency:"EUR" }}
+                    </ng-container>
+                </td>
+                <td>
+                    <ng-container *ngIf="row.units_desc">x</ng-container>
+                </td>
+                <td>
+                    <ng-container *ngIf="row.units_desc">
+                        <span>{{ row.units }} </span>
+                        <span *ngIf="row.units == 1">{{ row.units_desc[0] | translate }}</span>
+                        <span *ngIf="row.units != 1">{{ row.units_desc[1] | translate }}</span>
+                        <span *ngIf="row.key === 'video-additional-units'"> **</span>
+                    </ng-container>
+                </td>
+                <td class="right">{{ row.total | currency:"EUR" }}</td>
             </tr>
             <tr class="first-non-position">
                 <td colspan="3"></td>
@@ -176,7 +201,7 @@
                 <td>{{ "Gesamtsumme" | translate }}:</td>
                 <td class="right">
                     {{ overviewData.total * (1 + VAT_PERCENTAGE) | currency:"EUR" }}
-                    <span *ngIf="overviewData.isUnlimited">**</span>
+                    <span *ngIf="overviewData.isUnlimited">***</span>
                 </td>
             </tr>
             <tr *ngIf="hasLivestream">
@@ -185,9 +210,15 @@
                     <i>{{ extraFunctions["video"].extra_infos | translate }}</i>
                 </td>
             </tr>
+            <tr *ngIf="hasExtraLivestream">
+                <td colspan="5">
+                    **&nbsp;
+                    <i>{{ extraFunctions["video-additional-units"].extra_infos | translate }}</i>
+                </td>
+            </tr>
             <tr *ngIf="overviewData.isUnlimited">
                 <td colspan="5">
-                    **&nbsp;<i translate>Preis für 12 Monate, beliebig verlängerbar.</i>
+                    ***&nbsp;<i translate>Preis für 12 Monate, beliebig verlängerbar.</i>
                 </td>
             </tr>
             <tr class="button-row">
@@ -198,8 +229,7 @@
                 </td>
                 <td colspan="2">
                     <button mat-flat-button class="os-button" (click)="order()">
-                        <span *ngIf="!hasLivestream" translate>Jetzt kostenpflichtig bestellen</span>
-                        <span *ngIf="hasLivestream" translate>Jetzt Anfrage senden</span>
+                        <span translate>Jetzt kostenpflichtig bestellen</span>
                     </button>
                 </td>
             </tr>

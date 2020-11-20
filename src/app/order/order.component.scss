@@ -11,6 +11,10 @@
     }
 
     .extra-functions-container {
+        mat-checkbox.indented {
+            margin-left: 20px;
+        }
+
         .suffix-container {
             margin-left: auto;
 

@@ -127,13 +127,17 @@ def get_overview_data(data):
         }
     ]
     for function_key, function in get_extra_functions().items():
-        if data["extra_functions"][function_key]:
+        if data["extra_functions"].get(function_key) or (
+            function_key == "video-additional-units"
+            and data["extra_functions"]["video"]
+            and users > 250
+        ):
             positions.append({"key": function_key, **function})
 
     total = 0
     for entry in positions:
         setDefaultsOnUnitDescriptor(entry)
-        entry["units"] = entry["units_func"](months, users)
+        entry["units"] = entry["units_func"](months, users) if entry.get("units_func") else 1
         total += entry["base_price"] * entry["units"]
 
     return {
@@ -144,9 +148,9 @@ def get_overview_data(data):
 
 
 def setDefaultsOnUnitDescriptor(descriptor):
-    if not descriptor.get("units_desc"):
+    if "units_desc" not in descriptor:
         descriptor["units_desc"] = [_("Monat"), _("Monate")]
-    if not descriptor.get("units_func"):
+    if "units_func" not in descriptor:
         descriptor["units_func"] = lambda months, _: months
     return descriptor
 

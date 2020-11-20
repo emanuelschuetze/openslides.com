@@ -17,11 +17,30 @@ def get_extra_functions():
         "audio": {"name": _("Audiokonferenz via Jitsi"), "base_price": 50},
         "video": {
             "name": _("Video-Livestream"),
+            "base_price": 1750,
+            "units_func": None,
+            "units_desc": None,
+        },
+        "video-additional-units": {
+            "hidden": True,
+            "name": _('Zusätzliche Livestream-Einheit'),
+            "base_price": 1500,
+            "units_func": lambda _m, users: math.ceil(users / 250) - 1,
+            "units_desc": [_('Einheit'), _('Einheiten')],
+        },
+        "external_video": {
+            "name": _('externer Livestream'),
             "base_price": 750,
-            "units_func": lambda _, users: math.ceil(users / 250),
-            "units_desc": [_("Einheit"), _("Einheiten")],
+            "units_func": None,
+            "units_desc": None,
         },
         "saml": {"name": _("Single Sign-On via SAML"), "base_price": 50},
+        "service": {
+            "name": _('Service-Pauschale'),
+            "base_price": 750,
+            "units_func": None,
+            "units_desc": None,
+        },
     }
 
 
