@@ -1,7 +1,7 @@
 _{{ _("Kostenübersicht") }}:
 {% for row in overview_data["positions"] %}
 {{ row["name"] }}{% if row["key"] == "video" %} *{% endif %}: {% if row["units_desc"] %}{{ row["base_price"]|currency }} x {{ row["units"] }} {{ row["units_desc"][0 if row["units"] == 1 else 1] }}{% if row["key"] == "video-additional-units" %} **{% endif %} = {% endif %}{{ (row["units"] * row["base_price"])|currency }}{% endfor %}
-{{ _("Summe Netto") }}: {{ overview_data["total"]|currency }}
+{{ _("Summe netto") }}: {{ overview_data["total"]|currency }}
 {{ _("zzgl. USt") }}: {{ (overview_data["total"] * VAT_PERCENTAGE)|currency }}
 {{ _("Gesamtsumme") }}: {{ (overview_data["total"] * (1 + VAT_PERCENTAGE))|currency }} {% if overview_data["isUnlimited"] %}***{% endif %}
 

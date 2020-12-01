@@ -34,8 +34,9 @@
             </mat-label>
             <mat-select formControlName="running_time" required>
                 <mat-option value="unlimited"><span translate>unbegrenzt</span></mat-option>
-                <mat-option *ngFor="let _ of [].constructor(10), let i = index" [value]="i + 3">
-                    {{ i + 3 }} {{ 'Monate' | translate }}
+                <mat-option [value]="0 + 1">1 <span translate>Monat</span></mat-option>
+                <mat-option *ngFor="let _ of [].constructor(10), let i = index" [value]="i + 2">
+                    {{ i + 2 }} {{ 'Monate' | translate }}
                 </mat-option>
             </mat-select>
         </mat-form-field>
@@ -59,7 +60,7 @@
                     </mat-checkbox>
                     <div class="suffix-container valign-wrapper">
                         <span class="price">
-                            <span>{{ extraFunction.value.base_price | currency:"EUR" }}</span>
+                            <span>{{ extraFunction.value.base_price | currency:"EUR":'symbol':'1.0-0' }}</span>
                             <ng-container *ngIf="extraFunction.value.units_desc">
                                 <span> / {{ extraFunction.value.units_desc[0] | translate }}</span>
                             </ng-container>
@@ -73,7 +74,6 @@
                                 help_outline
                             </mat-icon>
                         </span>
-                        <a class="details-link" target="_blank" routerLink="/pricing" [fragment]="extraFunction.key">Details</a>
                     </div>
                 </div>
                 <!-- {{ log(extraFunction) }} -->
@@ -188,7 +188,7 @@
             </tr>
             <tr class="first-non-position">
                 <td colspan="3"></td>
-                <td>{{ "Summe Netto" | translate }}:</td>
+                <td>{{ "Summe netto" | translate }}:</td>
                 <td class="right">{{ overviewData.total | currency:"EUR" }}</td>
             </tr>
             <tr>

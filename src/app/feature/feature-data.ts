@@ -84,7 +84,12 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
     },
     evoting: {
         title: _('Elektronische Stimmabgabe'),
-        intro: _('Erweitern Sie OpenSlides um ein integriertes Live-Voting-System.'),
+        intro: _('Erweitern Sie OpenSlides um ein integriertes elektronisches Abstimmungssystem.\
+        Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen.\
+        Möglich sind namentliche oder nicht-namentliche Antragsabstimmungen und Personenwahlen.\
+        Auch individuelle Stimmgewichtungen sind möglich.\
+        <p>» Testen Sie die elektronische Stimmabgabe in der <a class="inline" href="https://demo.openslides.org/" target="_blank">Online-Demo</a>.<br>\
+        » Erfahren Sie mehr über <a class="inline" href="/news/online-versammlungen" fragment="evoting">Online-Versammlungen.</a>'),
         image_names: [
             'motion-active-voting',
             'motion-singlevotes',
@@ -105,7 +110,17 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
     },
     livestream: {
         title: _('Video-Livestream'),
-        intro: _('Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in OpenSlides.'),
+        intro: _('Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in OpenSlides.\
+        Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit automatisch in einen Jitsi-Videokonferenzraum.\
+        Der Livestream überträgt die Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum und verfolgt wieder den Livestream.\
+        <p>Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen Videokonferenzen) und erlaubt eine große Skalierung an Teilnehmerzahlen.\
+        Virtuelle Veranstaltungen mit mehreren hundert Personen sind damit kein Problem mehr.\
+        Hinzu kommt, dass die meisten Teilnehmenden eine Veranstaltung nur "konsumierend" verfolgen, d.h. nur ein kleiner Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden.\
+        Setzen Sie auf erprobte Broadcast-Streaming-Lösung – intelligent gekoppelt mit der OpenSlides-Redelistenfunktion.\
+        <p>Die Audiokonferenz - ideal zum Austausch für kleine virtuelle Gremiensitzung (bis 50 Teilnehmende)<br>\
+        Verwenden Sie OpenSlides mit integrierter Audiokonferenz. Über unseren exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle Teilnehmende direkt miteinander - geschützt in einem Passwort-gesicherten Audio-Konferenzraum. Jede/r verbindet sich automatisch nach dem Login in OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und ausschalten.\
+        <p>Funktionsweise in Kurzanimation: <a href="https://files.openslides.org/press/3.2/OpenSlides3.2-Audiokonferenz.gif" class="inline">Audiokonferenz</a>\
+        · <a href="https://files.openslides.org/press/3.2/OpenSlides3.2-Videokonferenz.gif" class="inline">Video-Livestream</a>'),
         image_names: ['autopilot', 'jitsi-dialog'],
         details: [
             _('Anzeige des Livesstreams im Vordergrund (auch minimierbar oder im Vollbild nutzbar'),

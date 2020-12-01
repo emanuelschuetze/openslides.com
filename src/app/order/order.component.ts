@@ -123,44 +123,46 @@ export class OrderComponent implements OnInit {
         meeting: {
             name: _('Sitzung'),
             max_users: 50,
-            price: 50
+            price: 250
         },
         conference: {
             name: _('Tagung'),
-            max_users: 500,
-            price: 100
+            max_users: 250,
+            price: 500
         },
         congress: {
             name: _('Kongress'),
-            max_users: 1000,
-            price: 200
+            max_users: 500,
+            price: 1000
         }
     };
 
     public extraFunctions: ExtraFunctionsMap = {
-        evoting: {
-            name: _('eVoting'),
-            base_price: 50
-        },
-        audio: {
-            name: _('Audiokonferenz'),
-            base_price: 50,
-            disabled: () => this.orderForm.controls.package.value !== 'meeting'
+        service: {
+            name: _('Supportpauschale'),
+            base_price: 750,
+            units_func: null,
+            units_desc: null,
+            extra_infos: _(
+                // tslint:disable-next-line
+                'Zur individuellen Basisunterstützung in der Vor- und Nachbereitung Ihrer Veranstaltung - per E-Mail und Telefon.'
+            )
         },
         video: {
-            name: _('Video-Livestream'),
+            name: _('Video-Livestream mit Jitsi-Videokonferenz'),
             base_price: 1750,
             units_func: null,
             units_desc: null,
             extra_infos: _(
                 // tslint:disable-next-line
-                'Der Preis gilt pro Veranstaltungstag und ist abhängig vom Veranstaltungstag und Verfügbarkeiten.'
+                'Bereitstellung und Integration eines Video-Livestreams in OpenSlides, Bereitstellung eines Jitsi-Videokonferenzraums, Koppelung mit der aktuellen Redeliste. - Der Preis gilt pauschal pro Veranstaltungstag für die ersten 250 Streaminnutzer. Abhängig vom Veranstaltungstag und Verfügbarkeiten.'
             ),
+            disabled: () => this.orderForm.controls.package.value == 'meeting',
             child: 'external_video'
         },
         'video-additional-units': {
             hidden: true,
-            name: _('Zusätzliche Livestream-Einheit'),
+            name: _('zusätzliche Streamingnutzer'),
             base_price: 1500,
             units_func: (_m, users) => Math.ceil(users / 250) - 1,
             units_desc: [_('Einheit'), _('Einheiten')],
@@ -175,26 +177,38 @@ export class OrderComponent implements OnInit {
             parent: 'video',
             units_func: null,
             units_desc: null,
+            extra_infos: _(
+                // tslint:disable-next-line
+                'Einrichtung eines RTMP-Streaming-Uploads für einen vor Ort produzierten Video-Livestream. Koordination der Schnittstellen mit Ihrem Streaming-Dienstleister (hybrides Veranstaltungsformat).'
+            ),
             disabled: () => !this.orderForm.controls.extra_functions.value.video
+        },
+        audio: {
+            name: _('Audio-/Videokonferenz'),
+            base_price: 100,
+            extra_infos: _(
+                // tslint:disable-next-line
+                'Integrierte Jitsi-Videokonferenz mit Jitsi - ohne Livestream. Ideal zum direkten Austausch für kleine virtuelle Gremiensitzung (bis max 50 Teilnehmende).'
+            ),
+            disabled: () => this.orderForm.controls.package.value !== 'meeting'
         },
         saml: {
             name: _('Single Sign-On via SAML'),
-            base_price: 50
-        },
-        service: {
-            name: _('Service-Pauschale'),
-            base_price: 750,
-            units_func: null,
-            units_desc: null
+            base_price: 200,
+            extra_infos: _(
+                // tslint:disable-next-line
+                'Zur Anbindung eines bereits existierenden SAML-Mitgliedsservers.'
+            ),
+            disabled: () => this.orderForm.controls.package.value !== 'congress'
         }
     };
 
     public services: ServiceMap = {
         schooling: {
-            name: 'Schulung'
+            name: 'Online-Schulung'
         },
         local_service: {
-            name: 'Technische Begleitung der Veranstaltung (virtuell oder Vor-Ort)'
+            name: 'Technische Begleitung Ihrer Veranstaltung (virtuell oder Vor-Ort)'
         },
         phone: {
             name: 'Telefonrufbereitschaft'

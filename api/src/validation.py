@@ -16,7 +16,7 @@ base_schema = Draft7Validator(
             "package": {"type": "string", "enum": list(get_packages().keys())},
             "running_time": {
                 "type": ["string", "integer"],
-                "enum": ["unlimited"] + [i + 3 for i in range(10)],
+                "enum": ["unlimited"] + [i + 1 for i in range(10)],
             },
             "domain": {"type": "string", "pattern": domain_regex},
             "extra_functions": {

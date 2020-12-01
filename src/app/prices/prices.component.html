@@ -19,20 +19,33 @@
                     <p translate translateHtml>
                         bis <b>50</b> Teilnehmende
                     </p>
-                    <h1><small translate>ab</small> 50 € <small>/ <span translate>Monat</span></small></h1>
-                    <small>(58 € {{ 'inkl.' | translate }} 16% {{ 'USt.' | translate }})</small>
-                    <p><small translate>Mindestlaufzeit: 3 Monate</small>
-                    </p>
-                    <mat-divider></mat-divider>
+                    <h1>250 € <small>/ <span translate>Monat</span></small></h1>
+                    <small>(290 € {{ 'inkl.' | translate }} 16% {{ 'USt.' | translate }})</small>
+                    <p><small translate>Mindestlaufzeit: 1 Monat</small></p>
+
                     <div class="text-center mb-0">
                         <a routerLink="/order" [queryParams]="{package: 'meeting'}" mat-flat-button class="os-button filled bordered grey soft">
                             <span translate>Jetzt bestellen</span>
                         </a>
                     </div>
-                    <div class="text-center">
-                        <a routerLink="/order" [queryParams]="{package: 'meeting', offer: true}" mat-flat-button class="os-button filled bordered inverted grey soft">
-                            <span translate>Angebot anfordern</span>
-                        </a>
+
+                    <mat-divider></mat-divider>
+                    <div class="description small">
+                        <strong>Basisfunktionen:</strong>
+                        <ul class="check">
+                            <li><a routerLink="../feature/evoting" class="hover" translate>NEU: eVoting (jetzt integriert!)</a></li>
+                            <li translate>Tagesordnung mit Redeliste</li>
+                            <li translate>Anträge und Wahlen</li>
+                            <li translate>Teilnehmende</li>
+                            <li translate>Projektoren</li>
+                            <li translate>u.v.m</li>
+                        </ul>
+
+                        <strong>Zusatzfunktionen:</strong>
+                        <ul class="arrow">
+                            <li translate>Audio-/Videokonferenz (mit Jitsi)</li>
+                            <li translate>Support via FAQs</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -40,21 +53,47 @@
         <div class="price-col blue">
             <div class="price-col-header">
                 <h2 translate>Tagung</h2>
-                <p translate>für mittelgroße (virtuelle) Versammlungen</p>
+                <p translate>für kleine (virtuelle) Versammlungen</p>
             </div>
             <div class="price-col-body">
                 <div class="price-col-price">
                     <p translate translateHtml>
-                        bis <b>500</b> Teilnehmende
+                        bis <b>250</b> Teilnehmende
                     </p>
-                    <h1><small translate>ab</small> 100 € <small>/ <span translate>Monat</span></small></h1>
-                    <small>(116 € {{ 'inkl.' | translate }} 16% {{ 'USt.' | translate }})</small>
-                    <p><small translate>Mindestlaufzeit: 3 Monate</small></p>
-                    <mat-divider></mat-divider>
+                    <h1>500 € <small>/ <span translate>Monat</span></small></h1>
+                    <small>(580 € {{ 'inkl.' | translate }} 16% {{ 'USt.' | translate }})</small>
+                    <p><small translate>Mindestlaufzeit: 1 Monat</small></p>
+
                     <div class="text-center mb-0">
                         <a routerLink="/order" [queryParams]="{package: 'conference'}" mat-flat-button class="os-button filled bordered blue soft">
                             <span translate>Jetzt bestellen</span>
                         </a>
+                    </div>
+                    <mat-divider></mat-divider>
+                    <div class="description small">
+                        <p><strong>Basisfunktionen:</strong></p>
+                        <ul class="check">
+                            <li><a routerLink="../feature/evoting" class="hover" translate>NEU: eVoting (jetzt integriert!)</a></li>
+                            <li translate>Tagesordnung mit Redeliste</li>
+                            <li translate>Anträge und Wahlen</li>
+                            <li translate>Teilnehmende</li>
+                            <li translate>Projektoren</li>
+                            <li translate>u.v.m</li>
+                        </ul>
+
+                        <strong>Zusatzfunktionen:</strong>
+                        <ul class="arrow">
+                            <li><a routerLink="../feature/livestream" class="hover">{{ 'Videokonferenz mit Livestream' | translate }}</a></li>
+                            <li translate>individueller Support via E-Mail/Telefon</li>
+                            <li class="empty">&nbsp;<br>&nbsp;</li>
+                        </ul>
+
+                        <strong>optionale Serviceleistungen:</strong>
+                        <ul class="arrow">
+                            <li translate>Online-Schulung</li>
+                            <li translate>Technische Begleitung Ihrer Veranstaltung<br>
+                            (vor Ort, virtuell oder per Rufbereitschaft)</li>
+                        </ul>
                     </div>
                     <div class="text-center">
                         <a routerLink="/order" [queryParams]="{package: 'conference', offer: true}" mat-flat-button class="os-button filled bordered inverted blue soft">
@@ -67,22 +106,52 @@
         <div class="price-col grey">
             <div class="price-col-header">
                 <h2 translate>Kongress</h2>
-                <p translate>für große (virtuelle) Konferenzen</p>
+                <p translate>für große (virtuelle) Tagungen und Konferenzen</p>
             </div>
             <div class="price-col-body">
                 <div class="price-col-price">
                     <p translate translateHtml>
-                        bis <b>1.000</b> Teilnehmende
+                        bis <b>500</b> Teilnehmende
                     </p>
-                    <h1><small translate>ab</small> 200 € <small>/ <span translate>Monat</span></small></h1>
-                    <small>(232 € {{ 'inkl.' | translate }} 16% {{ 'USt.' | translate }})</small>
-                    <p><small translate>Mindestlaufzeit: 3 Monate</small></p>
-                    <mat-divider></mat-divider>
+                    <h1>1.000 € <small>/ <span translate>Monat</span></small></h1>
+                    <small>(1.160 € {{ 'inkl.' | translate }} 16% {{ 'USt.' | translate }})</small>
+                    <p><small>
+                        {{ 'Mindestlaufzeit: 1 Monat' | translate }}
+                    </small></p>
+
                     <div class="text-center mb-0">
                         <a routerLink="/order" [queryParams]="{package: 'congress'}" mat-flat-button class="os-button filled bordered grey soft">
                             <span translate>Jetzt bestellen</span>
                         </a>
                     </div>
+
+                    <mat-divider></mat-divider>
+                    <div class="description small">
+                        <strong>Basisfunktionen:</strong>
+                        <ul class="check">
+                            <li><a routerLink="../feature/evoting" class="hover" translate>NEU: eVoting (jetzt integriert!)</a></li>
+                            <li translate>Tagesordnung mit Redeliste</li>
+                            <li translate>Anträge und Wahlen</li>
+                            <li translate>Teilnehmende</li>
+                            <li translate>Projektoren</li>
+                            <li translate>u.v.m</li>
+                        </ul>
+
+                        <strong>Zusatzfunktionen:</strong>
+                        <ul class="arrow">
+                            <li><a routerLink="../feature/livestream" class="hover">{{ 'Videokonferenz mit Livestream' | translate }}</a></li>
+                            <li translate>individueller Support via E-Mail/Telefon</li>
+                            <li translate>Single Sign-On via SAML (für Organisationen mit zentralem SAML-Mitgliedsserver)</li>
+                        </ul>
+
+                        <strong>optionale Serviceleistungen:</strong>
+                        <ul class="arrow">
+                            <li translate>Online-Schulung</li>
+                            <li translate>Technische Begleitung Ihrer Veranstaltung<br>
+                            (vor Ort, virtuell oder per Rufbereitschaft)</li>
+                        </ul>
+                    </div>
+
                     <div class="text-center">
                         <a routerLink="/order" [queryParams]="{package: 'congress', offer: true}" mat-flat-button class="os-button filled bordered inverted grey soft">
                             <span translate>Angebot anfordern</span>
@@ -94,97 +163,34 @@
     </div>
     <p>
         <small>
-            {{ '5% Rabatt bei Vorauszahlung von 12 Monaten.' | translate }}
+            {{ 'Jahrespreise sowie Hosting ab 500 Teilnehmende auf Anfrage.' | translate }}
         </small>
     </p>
 
-    <div class="mt-1">
-        <b><small translate>Hinweise zur Auswahl:</small></b>
-     </div>
-    <ul>
-        <li translate>Für jedes eigenständige Gremium/Organ (z.B. Vorstand, Beirat, Mitgliederversammlung) benötigen Sie je eine separate OpenSlides-Instanz.</li>
-        <li translate>Innerhalb einer OpenSlides-Instanz können Sie beliebig viele wiederkehrende Sitzungen in der Hostinglaufzeit abhalten. Abgerechnet wird pro Monat.</li>
-        <li translate>Wunsch-URL pro OpenSlides-Instanz nach Verfügbarkeit (z.B. https://meine-versammlung.openslides.com)</li>
-    </ul>
-        <!--Inhaltlich eigenständige Organe/Gremien benötigen jeweil-->
-    <p>
-        <small>
-            <span translate>Beispiele</span>:<br>
-            <span translate>A) Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung mit 12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 Teilnehmde nutzen. Dafür sind zwei Hostingpakete nötig: »Sitzung« und »Tagung«.</span><br>
-            <span translate translateHtml>B) Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 Landesverbände OpenSlides nutzen (je &lt;50 Personen). Dafür sind 16 einzelne OpenSlides-Instanzen (Hostingpaket »Sitzung«) nötig.</span>
-        </small>
-    </p>
 
-    <div class="mt-1">
-       <b><small translate>Für alle Hosting-Pakete gelten folgende Leistungen:</small></b>
-    </div>
-    <mat-list fxLayout="row" class="wrap-mobile mt-0 mb-1 align-baseline">
-        <div>
-            <mat-list-item>&#10003; <span translate>kontinuierliche Updates</span></mat-list-item>
-            <mat-list-item>&#10003; <span translate>Versand von Einladungs-E-Mails</span></mat-list-item>
-            <mat-list-item>&#10003; <span translate>individueller Support nach Aufwand (125 € / Stunde, halbstundengenaue Abrechnung)</span></mat-list-item>
-        </div>
-        <div>
-            <mat-list-item>&#10003; <span translate>sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten</span></mat-list-item>
-            <mat-list-item>&#10003; <span translate>sichere Daten: Abschluss einer Vereinbarung zur Auftragsverarbeitung</span></mat-list-item>
-            <mat-list-item>&#10003; <span translate>sicherer Betrieb: jede Veranstaltung läuft als abgekapselte OpenSlides-Instanz mit eigener Datenbank</span></mat-list-item>
-        </div>
-    </mat-list>
+    <div class="mt-1 small">
+        <b translate>Hinweise zur Auswahl:</b>
 
-    <div class="mt-2 mb-2 blue-links">
-        <h2>{{ 'Wählen Sie praktische Zusatzfunktionen' | translate }}</h2>
-        <ul>
-            <li id="evoting">
-                <u><b translate>eVoting – unerlässlich für Online-Versammlungen mit Live-Voting</b></u><br>
-                <span translate translateHtml>
-                    Erweitern Sie OpenSlides um ein integriertes elektronisches Abstimmungssystem. Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. Möglich sind namentliche oder nicht-namentliche Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen sind möglich.<br> Testen Sie die elektronische Stimmabgabe in der <a class="inline" href="https://demo.openslides.org/" target="_blank">Online-Demo</a>.
-                </span>
-                <br>
-                <a class="inline" routerLink="../news/online-versammlungen" fragment="evoting">» <span translate>Mehr erfahren über Online-Versammlungen ...</span></a>
-                <br>
-                <b><i>50 € / {{ 'Monat' | translate }}</i></b><br>
-            </li>
-        
-            <li id="audio">
-                <u><b translate>Audiokonferenz – ideal zum Austausch für kleine virtuelle Gremiensitzung</b></u>
-                <br>
-                <span>
-                    {{ "Verwenden Sie OpenSlides mit integrierter Audiokonferenz. Über unseren exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle Teilnehmende direkt miteinander - geschützt in einem Passwort-gesicherten Audio-Konferenzraum. Jede/r verbindet sich automatisch nach dem Login in OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und ausschalten." | translate }}
-                </span>
-                <a href="https://files.openslides.org/press/3.2/OpenSlides3.2-Audiokonferenz.gif">
-                    » {{ "Mehr erfahren" | translate }} ...
-                </a>
-                <br>
-                <b><i>50 € / {{ 'Monat' | translate }} · {{ 'bis 50 Teilnehmende' | translate }}</i></b>
-            </li>
-        
-            <li id="video">
-                <u><b translate>Video-Livestream – für große virtuelle Versammlungen und Parteitage</b></u><br>
-                <span>
-                    {{ "Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum und verfolgt wieder den Livestream." | translate }}
-                </span>
-                <br>
-                <span>
-                    {{ 'Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen Videokonferenzen) und erlaubt eine große Skalierung an Teilnehmerzahlen. Virtuelle Veranstaltungen mit mehreren hundert Personen sind damit kein Problem mehr. Hinzu kommt, dass die meisten Teilnehmenden eine Veranstaltung nur "konsumierend" verfolgen, d.h. nur ein kleiner Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden. Setzen Sie auf erprobte Broadcast-Streaming-Lösung – intelligent gekoppelt mit der OpenSlides-Redelistenfunktion.' | translate }}
-                </span>
-                <a href="https://files.openslides.org/press/3.2/OpenSlides3.2-Videokonferenz.gif">
-                    » {{ "Mehr erfahren" | translate }} ...
-                </a>
-                <br>
-                <span translate>Kontaktieren Sie uns! Wir finden die passende Streaming-Lösung für Ihre Veranstaltung.</span>
-                <br><b><i translate>ab 1.750 € pro Veranstaltungstag</i></b>
-            </li>
-                
-            <li id="saml">
-                <u><b translate>Single Sign-On via SAML – für Organisationen mit zentralem Mitgliedsserver</b></u><br>
-                <span>
-                    {{ 'Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten Mitgliedsaccounts in OpenSlides anzumelden. OpenSlides unterstützt den Standard "SAML" (Security Assertion Markup Language) für Single Sign-On (SSO). Ersparen Sie sich damit die Teilnehmerverwaltung in OpenSlides. Und Ihre Mitglieder brauchen sich keinen extra OpenSlides-Login merken.' | translate }}
-                </span>
-                <br><b><i>50 € / {{ 'Monat' | translate }}</i></b>
-            </li>
+        <ul class="arrow">
+            <li translate>Für jedes eigenständige Gremium/Organ (z.B. Vorstand, Beirat, Mitgliederversammlung) benötigen Sie je eine separate OpenSlides-Instanz.</li>
+            <li translate>Innerhalb einer OpenSlides-Instanz können Sie beliebig viele wiederkehrende Sitzungen in der Hostinglaufzeit abhalten. Abgerechnet wird pro Monat.</li>
+            <li translate>Wunsch-URL pro OpenSlides-Instanz nach Verfügbarkeit (z.B. https://meine-versammlung.openslides.com)</li>
         </ul>
-        
-        <small translate>Alle Preise zzgl. der gesetzlich gültigen Umsatzsteuer.</small>
+
+        <b translate>Beispiele:</b>
+        <ol class="arrow">
+            <li translate>Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung mit 12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 Teilnehmde nutzen. Dafür sind zwei Hostingpakete nötig: »Sitzung« und »Tagung«.</li>
+            <li translate translateHtml>Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 Landesverbände OpenSlides nutzen (je &lt;50 Personen). Dafür sind 16 einzelne OpenSlides-Instanzen (Hostingpaket »Sitzung«) nötig.</li>
+        </ol>
+
+        <b translate>Für alle Hosting-Pakete gelten folgende Leistungen:</b>
+        <ul class="arrow">
+            <li translate>sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten</li>
+            <li translate>sichere Daten: Abschluss einer Vereinbarung zur Auftragsverarbeitung</li>
+            <li translate>sicherer Betrieb: jede Veranstaltung läuft als abgekapselte OpenSlides-Instanz mit eigener Datenbank</li>
+            <li translate>Wer betreiben OpenSlides für Sie datenschutzkonform auf Servern in Deutschland.</li>
+            <li translate>Mindestlaufzeit: 1 Monat, monatlich kündbar</li>
+        </ul>
     </div>
 
     <div class="mt-2 mb-2 blue-links">

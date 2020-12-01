@@ -16,7 +16,7 @@
     <h1 class="valign-wrapper title">
         <span>{{ currentFeature.title | translate }}</span>
     </h1>
-    <p>{{ currentFeature.intro | translate }}</p>
+    <p [innerHTML]="currentFeature.intro | translate "></p>
     <div class="flex wrap-tablet" [class.lightbox]="true">
         <mat-list class="mb-1 features-list">
             <mat-list-item *ngFor="let detail of currentFeature.details">
