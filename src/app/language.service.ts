@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { DateAdapter } from '@angular/material/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRouteSnapshot, CanActivate, NavigationEnd, Router, UrlSegment } from '@angular/router';
 
@@ -33,13 +34,22 @@ export function LanguageUrlMatcher(url: UrlSegment[]): { consumed: UrlSegment[] 
 export class LanguageService implements CanActivate {
     private title_string = _('OpenSlides: das digitale Antrags- und Versammlungssystem');
 
-    public constructor(protected translate: TranslateService, private router: Router, private title: Title) {
+    public constructor(
+        protected translate: TranslateService,
+        private router: Router,
+        private title: Title,
+        private dateAdapter: DateAdapter<any>
+    ) {
         this.translate.addLangs(languages.map(e => e.code));
         this.translate.setDefaultLang('de'); // german is default language
+        this.dateAdapter.setLocale('de');
+
+        // set language after each page load
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
                 const lang = this.getCurrentLanguage();
                 this.translate.use(lang).subscribe();
+                this.dateAdapter.setLocale(lang);
             }
         });
 

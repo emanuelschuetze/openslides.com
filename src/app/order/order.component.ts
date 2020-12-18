@@ -13,7 +13,7 @@ interface UnitDescriptor {
     units_desc?: [string, string];
 }
 
-type UnitsFunction = (months: number, users: number) => number;
+type UnitsFunction = (data: any) => number;
 interface ExtraFunctionsEntry extends UnitDescriptor {
     hidden?: boolean;
     name: string;
@@ -93,7 +93,7 @@ export class OrderComponent implements OnInit {
 
         const pushPosition = (functionKey: string) => {
             const extraFunction = this.extraFunctions[functionKey];
-            const units = extraFunction.units_func ? extraFunction.units_func(months, users) : 1;
+            const units = extraFunction.units_func ? extraFunction.units_func(this.orderForm.value) : 1;
             const entry: OverviewTableEntry = {
                 key: functionKey,
                 name: this.translate.instant(extraFunction.name),
@@ -151,20 +151,20 @@ export class OrderComponent implements OnInit {
         video: {
             name: _('Video-Livestream mit Jitsi-Videokonferenz'),
             base_price: 1750,
-            units_func: null,
-            units_desc: null,
+            units_func: data => data.event_to.diff(data.event_from, 'days') + 1, // add one because we want the number of days, not the diff
+            units_desc: [_('Tag'), _('Tage')],
             extra_infos: _(
                 // tslint:disable-next-line
-                'Bereitstellung und Integration eines Video-Livestreams in OpenSlides, Bereitstellung eines Jitsi-Videokonferenzraums, Koppelung mit der aktuellen Redeliste. - Der Preis gilt pauschal pro Veranstaltungstag für die ersten 250 Streaminnutzer. Abhängig vom Veranstaltungstag und Verfügbarkeiten.'
+                'Bereitstellung und Integration eines Video-Livestreams in OpenSlides, Bereitstellung eines Jitsi-Videokonferenzraums, Koppelung mit der aktuellen Redeliste. - Der Preis gilt pauschal pro Veranstaltungstag für die ersten 250 Streamingnutzer. Abhängig vom Veranstaltungstag und Verfügbarkeiten.'
             ),
-            disabled: () => this.orderForm.controls.package.value == 'meeting',
+            disabled: () => this.orderForm.controls.package.value === 'meeting',
             child: 'external_video'
         },
         'video-additional-units': {
             hidden: true,
             name: _('zusätzliche Streamingnutzer'),
             base_price: 1500,
-            units_func: (_m, users) => Math.ceil(users / 250) - 1,
+            units_func: data => Math.ceil(data.expected_users / 250) - 1,
             units_desc: [_('Einheit'), _('Einheiten')],
             extra_infos: _(
                 // tslint:disable-next-line
@@ -242,7 +242,8 @@ export class OrderComponent implements OnInit {
             ),
             event_name: ['', [Validators.required, this.standard]],
             event_location: ['', [Validators.required, this.standard]],
-            event_date: ['', [Validators.required, this.standard]],
+            event_from: ['', [Validators.required]],
+            event_to: ['', [Validators.required]],
             expected_users: ['', [Validators.required, Validators.min(0)]],
             contact_person: this.fb.group({
                 organisation: ['', [Validators.required, this.standard]],
@@ -259,7 +260,14 @@ export class OrderComponent implements OnInit {
                     ]
                 ]
             }),
-            billing_address: ['', [Validators.required]],
+            billing_address: this.fb.group({
+                name: ['', [Validators.required, this.standard]],
+                extra: ['', [this.standard]],
+                street: ['', [Validators.required, this.standard]],
+                zip: ['', [Validators.required, this.standard]],
+                city: ['', [Validators.required, this.standard]],
+                country: ['', [Validators.required, this.standard]]
+            }),
             comment: ['', []]
         });
 
@@ -299,7 +307,7 @@ export class OrderComponent implements OnInit {
             descriptor.units_desc = [_('Monat'), _('Monate')];
         }
         if (descriptor.units_func === undefined) {
-            descriptor.units_func = months => months;
+            descriptor.units_func = data => (data.running_time === 'unlimited' ? 12 : data.running_time);
         }
         return descriptor;
     }
@@ -330,6 +338,10 @@ export class OrderComponent implements OnInit {
         const data = this.orderForm.value;
         // I guess angular 10 introduced this error, but I couldn't find anything about it...
         data.expected_users = parseInt(data.expected_users, 10);
+        // format dates as YYYY-MM-DD
+        for (const field of ['event_from', 'event_to']) {
+            data[field] = data[field].format('YYYY-MM-DD');
+        }
 
         try {
             await this.http.post<void>('/api/order', data).toPromise();

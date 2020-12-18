@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { DateAdapter } from '@angular/material/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { LanguageService } from './language.service';
@@ -21,19 +20,14 @@ declare global {
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
     public currentYear = new Date().getFullYear();
 
     public constructor(
-        private dateAdapter: DateAdapter<any>,
         public router: Router,
-        public languageService: LanguageService
+        public languageService: LanguageService // initialize language service
     ) {
         this.overloadArrayFunctions();
-    }
-
-    public ngOnInit(): void {
-        this.dateAdapter.setLocale('en');
     }
 
     private overloadArrayFunctions(): void {

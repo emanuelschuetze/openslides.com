@@ -1,13 +1,13 @@
 import { registerLocaleData } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import localeDe from '@angular/common/locales/de';
+import localeEn from '@angular/common/locales/en';
 import { LOCALE_ID, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MAT_DATE_FORMATS } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
@@ -50,18 +50,8 @@ import { TranslateHtmlDirective } from './translate-html.directive';
 import { WrappableDirective } from './wrappable.directive';
 
 registerLocaleData(localeDe, 'de');
+registerLocaleData(localeEn, 'en');
 
-export const MOMENT_FORMATS = {
-    parse: {
-        dateInput: 'DD.MM.YYYY'
-    },
-    display: {
-        dateInput: 'DD.MM.YYYY',
-        monthYearLabel: 'MMM YYYY',
-        dateA11yLabel: 'DD.MM.YYYY',
-        monthYearA11yLabel: 'MMMM YYYY'
-    }
-};
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -122,7 +112,6 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
         MatTooltipModule
     ],
     providers: [
-        { provide: MAT_DATE_FORMATS, useValue: MOMENT_FORMATS },
         {
             provide: LOCALE_ID,
             useValue: 'de-DE'

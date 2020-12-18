@@ -7,7 +7,7 @@ _{{ _("Hostingauswahl") }}
 _{{ _("Veranstaltungsdetails") }}
 {{ _("Veranstaltungsname") }}: {{ event_name }}
 {{ _("Veranstaltungsort") }}: {{ event_location }}
-{{ _("Veranstaltungszeitraum") }}: {{ event_date }}
+{{ _("Veranstaltungszeitraum") }}: {{ event_from }} - {{ event_to }}
 {{ _("Erwartete Teilnehmeranzahl") }}: {{ expected_users }}
 
 _{{ _("Ansprechpartner") }}
@@ -20,7 +20,13 @@ _{{ _("Services") }}
 {{ services_str }}
 {% endif %}
 _{{ _("Rechnungsadresse") }}
-{{ billing_address }}
+{{ _("Name") }}: {{ billing_address["name"] }}
+{{ _("Zusatz") }}: {{ billing_address["extra"] }}
+{{ _("Straße + Hausnummer") }}: {{ billing_address["street"] }}
+{{ _("PLZ") }}: {{ billing_address["zip"] }}
+{{ _("Ort") }}: {{ billing_address["city"] }}
+{{ _("Land") }}: {{ billing_address["country"] }}
+
 {% if tax_id %}{{ _("Umsatzsteuer-ID") }}: {{ tax_id }}
 {% endif %}
 _{{ _("Weitere Anmerkungen") }}

@@ -6,6 +6,7 @@ from .data import get_extra_functions, get_packages, get_services
 standard_pattern = r"^[A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]+([\ A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]+)*$"
 standard_pattern_no_number = r"^[A-Za-z\u00C0-\u00FF][A-Za-z\u00C0-\u00FF\'\-\.\,\#]+([\ A-Za-z\u00C0-\u00FF][A-Za-z\u00C0-\u00FF\'\-\.\,\#]+)*$"
 domain_regex = r"^[a-zA-Z0-9\-\.]*$"
+date_regex = r"^\d{4}-\d{2}-\d{2}$"
 
 
 base_schema = Draft7Validator(
@@ -26,11 +27,16 @@ base_schema = Draft7Validator(
                     for function_key, function in get_extra_functions().items()
                     if not function.get("hidden")
                 },
-                "required": list(key for key, function in get_extra_functions().items() if not function.get("hidden")),
+                "required": list(
+                    key
+                    for key, function in get_extra_functions().items()
+                    if not function.get("hidden")
+                ),
             },
             "event_name": {"type": "string", "pattern": standard_pattern},
             "event_location": {"type": "string", "pattern": standard_pattern},
-            "event_date": {"type": "string", "pattern": standard_pattern},
+            "event_from": {"type": "string", "pattern": date_regex},
+            "event_to": {"type": "string", "pattern": date_regex},
             "expected_users": {"type": "integer", "min": 0},
             "contact_person": {
                 "type": "object",
@@ -54,7 +60,18 @@ base_schema = Draft7Validator(
                 },
                 "required": list(get_services().keys()),
             },
-            "billing_address": {"type": "string"},
+            "billing_address": {
+                "type": "object",
+                "properties": {
+                    "name": {"type": "string", "pattern": standard_pattern},
+                    "extra": {"type": "string", "pattern": standard_pattern},
+                    "street": {"type": "string", "pattern": standard_pattern},
+                    "zip": {"type": "string", "pattern": standard_pattern},
+                    "city": {"type": "string", "pattern": standard_pattern},
+                    "country": {"type": "string", "pattern": standard_pattern},
+                },
+                "required": ["name", "street", "zip", "city", "country"],
+            },
             "comment": {"type": "string"},
         },
         "required": [
@@ -64,7 +81,8 @@ base_schema = Draft7Validator(
             "extra_functions",
             "event_name",
             "event_location",
-            "event_date",
+            "event_from",
+            "event_to",
             "expected_users",
             "contact_person",
         ],

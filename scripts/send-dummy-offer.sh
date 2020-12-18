@@ -6,14 +6,16 @@ curl --header "Content-Type: application/json" -e https://www.openslides.com/de/
     "running_time": "unlimited",
     "domain": "xyz",
     "extra_functions": {
-        "evoting": true,
         "audio": false,
         "video": true,
-        "saml": false
+        "external_video": false,
+        "saml": false,
+        "service": true
     },
     "event_name": "name",
     "event_location": "location",
-    "event_date": "01.01.2022 bis 01.03.2022, vllt länger",
+    "event_from": "2022-01-01",
+    "event_to": "2022-01-08",
     "expected_users": 750,
     "contact_person": {
         "organisation": "organisation",
@@ -26,6 +28,13 @@ curl --header "Content-Type: application/json" -e https://www.openslides.com/de/
         "local_service": true,
         "phone": true
     },
-    "billing_address": "address",
+    "billing_address": {
+        "name": "name",
+        "extra": "extra",
+        "street": "street 1",
+        "zip": "12345",
+        "city": "city",
+        "country": "germany",
+    },
     "comment": "comment"
 }' http://localhost:5000/order
