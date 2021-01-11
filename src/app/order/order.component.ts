@@ -61,7 +61,7 @@ interface OverviewData {
 })
 export class OrderComponent implements OnInit {
     // the applied VAT percentage
-    public readonly VAT_PERCENTAGE = 0.16;
+    public readonly VAT_PERCENTAGE = 0.19;
 
     private standard = Validators.pattern(
         /^[A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]+([\ A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]+)*$/

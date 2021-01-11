@@ -19,7 +19,7 @@ from src.mail import try_send_mail
 from src.validation import base_schema, mail_schema, offer_schema, order_schema
 
 
-VAT_PERCENTAGE = 0.16
+VAT_PERCENTAGE = 0.19
 
 
 @app.route("/api/order", methods=["POST"])
