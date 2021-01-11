@@ -137,7 +137,9 @@ def get_overview_data(data):
     total = 0
     for entry in positions:
         setDefaultsOnUnitDescriptor(entry)
-        entry["units"] = entry["units_func"](months, users) if entry.get("units_func") else 1
+        entry["units"] = (
+            entry["units_func"](months, users) if entry.get("units_func") else 1
+        )
         total += entry["base_price"] * entry["units"]
 
     return {

@@ -2,4 +2,4 @@ METADATA:
 
 ACCOUNTS: {{ package_size }}
 EXTRAS: {{ raw_functions_str }}
-# CONFERENCE: TODO
+CONFERENCE: {{ event_from }}{% if event_from != event_to %} THROUGH {{ event_to }}{% endif %}

@@ -76,7 +76,6 @@
                         </span>
                     </div>
                 </div>
-                <!-- {{ log(extraFunction) }} -->
             </ng-container>
         </div>
 
@@ -97,7 +96,13 @@
             <input required type="text" matInput formControlName="event_location" placeholder="{{ 'Veranstaltungsort' | translate}}">
         </mat-form-field>
         <mat-form-field>
-            <input required type="text" matInput formControlName="event_date" placeholder="{{ 'Veranstaltungszeitraum' | translate }}">
+            <mat-label>{{ 'Veranstaltungstag(e)' | translate }}</mat-label>
+            <mat-date-range-input [rangePicker]="picker">
+                <input matStartDate class="ng-trim-ignore" formControlName="event_from" readonly (focus)="picker.open()" (click)="picker.open()" placeholder="{{ 'Startdatum' | translate}}">
+                <input matEndDate class="ng-trim-ignore" formControlName="event_to" readonly (focus)="picker.open()" (click)="picker.open()" placeholder="{{ 'Enddatum' | translate }}">
+            </mat-date-range-input>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
         </mat-form-field>
         <mat-form-field>
             <input required type="number" matInput min="0" formControlName="expected_users" placeholder="{{ 'Erwartete Teilnehmeranzahl' | translate }}">
@@ -121,18 +126,32 @@
             </div>
         </div>
 
+        <h3 class="mb-0" translate>Rechnungsadresse</h3>
+        <div formGroupName="billing_address" class="mb-1">
+            <mat-form-field>
+                <input [required]="!isOffer" type="text" matInput formControlName="name" placeholder="{{ 'Name' | translate }}">
+            </mat-form-field>
+            <mat-form-field>
+                <input type="text" matInput formControlName="extra" placeholder="{{ 'Zusatz (optional)' | translate }}">
+            </mat-form-field>
+            <mat-form-field>
+                <input [required]="!isOffer" type="text" matInput formControlName="street" placeholder="{{ 'Straße + Hausnummer' | translate }}">
+            </mat-form-field>
+            <div fxLayout="row wrap" appWrappable wrapMargin="4%">
+                <mat-form-field fxFlex.gt-sm="24">
+                    <input [required]="!isOffer" type="text" matInput formControlName="zip" placeholder="{{ 'PLZ' | translate }}">
+                </mat-form-field>
+                <mat-form-field fxFlex.gt-sm="68">
+                    <input [required]="!isOffer" type="text" matInput formControlName="city" placeholder="{{ 'Ort' | translate }}">
+                </mat-form-field>
+            </div>
+            <mat-form-field>
+                <input [required]="!isOffer" type="text" matInput formControlName="country" placeholder="{{ 'Land' | translate }}">
+            </mat-form-field>
+        </div>
+
         <h3 class="mb-0" translate>Zusätzliche Angaben</h3>
         <div class="mb-1">
-            <mat-form-field>
-                <textarea 
-                    [required]="!isOffer" 
-                    type="text"
-                    matInput
-                    cdkTextareaAutosize
-                    formControlName="billing_address"
-                    placeholder="{{ 'Rechnungsadresse' | translate }}"
-                ></textarea>
-            </mat-form-field>
             <mat-form-field *ngIf="!isOffer">
                 <textarea
                     type="text"
