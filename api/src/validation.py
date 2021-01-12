@@ -64,7 +64,7 @@ base_schema = Draft7Validator(
                 "type": "object",
                 "properties": {
                     "name": {"type": "string", "pattern": standard_pattern},
-                    "extra": {"type": "string", "pattern": standard_pattern},
+                    "extra": {"type": "string"},
                     "street": {"type": "string", "pattern": standard_pattern},
                     "zip": {"type": "string", "pattern": standard_pattern},
                     "city": {"type": "string", "pattern": standard_pattern},
