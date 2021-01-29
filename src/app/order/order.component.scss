@@ -1,8 +1,8 @@
-#order-form {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block !important; // whyever it is flex...
+form {
+    // max-width: 600px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // display: block !important; // whyever it is flex...
 
     input,
     select,
@@ -107,6 +107,11 @@
     // tr:nth-last-child(-n+3) td {
     //     border: none;
     // }
+}
+
+#price-overview {
+    position: sticky;
+    top: 80px;
 }
 
 .footer-row {

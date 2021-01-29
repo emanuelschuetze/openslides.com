@@ -18,14 +18,13 @@ _{{ _("Ansprechpartner") }}
 {% if services_str %}
 _{{ _("Services") }}
 {{ services_str }}
-{% endif %}
+{% endif %}{% if billing_address %}
 _{{ _("Rechnungsadresse") }}
-{{ _("Name") }}: {{ billing_address["name"] }}
-{{ _("Zusatz") }}: {{ billing_address["extra"] }}
-{{ _("Straße + Hausnummer") }}: {{ billing_address["street"] }}
-{{ _("PLZ") }}: {{ billing_address["zip"] }}
-{{ _("Ort") }}: {{ billing_address["city"] }}
-{{ _("Land") }}: {{ billing_address["country"] }}
+{% if billing_address["name"] %}{{ billing_address["name"] }}
+{% endif %}{% if billing_address["extra"] %}{{ billing_address["extra"] }}
+{% endif %}{% if billing_address["street"] %}{{ billing_address["street"] }}
+{% endif %}{% if billing_address["zip"] %}{{ billing_address["zip"] }} {% endif %}{% if billing_address["city"] %}{{ billing_address["city"] }}
+{% endif %}{% if billing_address["country"] %}{{ billing_address["country"] }}{% endif %}{% endif %}
 
 {% if tax_id %}{{ _("Umsatzsteuer-ID") }}: {{ tax_id }}
 {% endif %}

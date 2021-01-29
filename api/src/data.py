@@ -13,12 +13,17 @@ def get_packages():
 
 def get_extra_functions():
     return {
-        "audio": {"name": _("Audio-/Videokonferenz"), "base_price": 100},
+        "audio": {
+            "name": _("Audio-/Videokonferenz"),
+            "base_price": 100,
+            "disabled": lambda data: data["package"] != "meeting",
+        },
         "video": {
             "name": _("Video-Livestream"),
             "base_price": 1750,
             "units_func": None,
             "units_desc": None,
+            "disabled": lambda data: data["package"] == "meeting",
         },
         "video-additional-units": {
             "hidden": True,
@@ -32,8 +37,13 @@ def get_extra_functions():
             "base_price": 750,
             "units_func": None,
             "units_desc": None,
+            "disabled": lambda data: not data["extra_functions"]["video"],
         },
-        "saml": {"name": _("Single Sign-On via SAML"), "base_price": 200},
+        "saml": {
+            "name": _("Single Sign-On via SAML"),
+            "base_price": 200,
+            "disabled": lambda data: data["package"] != "congress",
+        },
         "service": {
             "name": _("Supportpauschale"),
             "base_price": 750,
