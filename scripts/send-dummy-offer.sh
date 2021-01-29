@@ -30,11 +30,8 @@ curl --header "Content-Type: application/json" -e https://www.openslides.com/de/
     },
     "billing_address": {
         "name": "name",
-        "extra": "extra",
-        "street": "street 1",
-        "zip": "12345",
         "city": "city",
-        "country": "germany",
+        "country": "germany"
     },
     "comment": "comment"
 }' http://localhost:5000/order

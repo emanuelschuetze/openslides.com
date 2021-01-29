@@ -17,7 +17,7 @@ base_schema = Draft7Validator(
             "package": {"type": "string", "enum": list(get_packages().keys())},
             "running_time": {
                 "type": ["string", "integer"],
-                "enum": ["unlimited"] + [i + 1 for i in range(10)],
+                "enum": ["unlimited"] + list(range(1, 13)),
             },
             "domain": {"type": "string", "pattern": domain_regex},
             "extra_functions": {
@@ -70,7 +70,6 @@ base_schema = Draft7Validator(
                     "city": {"type": "string", "pattern": standard_pattern},
                     "country": {"type": "string", "pattern": standard_pattern},
                 },
-                "required": ["name", "street", "zip", "city", "country"],
             },
             "comment": {"type": "string"},
         },
@@ -85,6 +84,7 @@ base_schema = Draft7Validator(
             "event_to",
             "expected_users",
             "contact_person",
+            "services",
         ],
     },
     format_checker=draft7_format_checker,
@@ -94,12 +94,12 @@ order_schema = {
     "properties": {
         "domain": {"type": "string", "minLength": 1},
         "tax_id": {"type": "string"},
+        "billing_address": {
+            "type": "object",
+            "required": ["name", "street", "zip", "city", "country"],
+        },
     },
     "required": ["domain", "billing_address"],
-}
-offer_schema = {
-    "type": "object",
-    "required": ["services"],
 }
 
 mail_schema = Draft7Validator(

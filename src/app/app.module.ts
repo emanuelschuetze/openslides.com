@@ -2,11 +2,12 @@ import { registerLocaleData } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import localeDe from '@angular/common/locales/de';
 import localeEn from '@angular/common/locales/en';
-import { LOCALE_ID, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDividerModule } from '@angular/material/divider';
@@ -98,6 +99,7 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
         }),
 
         MatButtonModule,
+        MatCardModule,
         MatCheckboxModule,
         MatToolbarModule,
         MatIconModule,
@@ -117,7 +119,6 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
             useValue: 'de-DE'
         }
     ],
-    schemas: [NO_ERRORS_SCHEMA],
     bootstrap: [AppComponent]
 })
 export class AppModule {}

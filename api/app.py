@@ -16,7 +16,7 @@ from src.errors import (  # noqa:F401
 )
 from src.i18n import UseDefaultLanguageContext, get_locale  # noqa:F401
 from src.mail import try_send_mail
-from src.validation import base_schema, mail_schema, offer_schema, order_schema
+from src.validation import base_schema, mail_schema, order_schema
 
 
 VAT_PERCENTAGE = 0.19
@@ -35,13 +35,15 @@ def order():
         customer_subject = _("Ihre Bestellung bei OpenSlides")
         recipients = app.config["ORDER_MAIL_RECIPIENTS"]
     else:
-        validate(data, offer_schema)
+        # no additional validation needed
         mode_verbose = "Angebotsanfrage"
         customer_subject = _("Ihre Angebotsanfrage bei OpenSlides")
         recipients = app.config["OFFER_MAIL_RECIPIENTS"]
 
     if not app.config.get("ORDER_MAIL_RECIPIENTS"):
         raise ViewError(_("Konfigurationsfehler: Keine E-Mail-Empfänger"))
+
+    overview_data = get_overview_data(data)
 
     # since the user might have another language selected, but the admin mail should be in german,
     # we have to hack it like this to enforce the language we want
@@ -73,7 +75,7 @@ def order():
     customer_mail = render_template(
         f"confirmation-email-{mode}.jinja",
         data=data,
-        overview_data=get_overview_data(data),
+        overview_data=overview_data,
         VAT_PERCENTAGE=VAT_PERCENTAGE,
         **get_summary_data(data),
     )
@@ -132,6 +134,12 @@ def get_overview_data(data):
             and data["extra_functions"]["video"]
             and users > 250
         ):
+            if "disabled" in function and function["disabled"](data):
+                raise ViewError(
+                    _(
+                        f"Mit diesen Einstellungen kann {function['name']} nicht ausgewählt werden."
+                    )
+                )
             positions.append({"key": function_key, **function})
 
     total = 0
