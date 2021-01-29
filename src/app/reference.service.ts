@@ -120,9 +120,9 @@ export class ReferenceService {
                     src: 'piraten-logo.png'
                 },
                 {
-                    name: 'Junge Generation in der SPÖ Wien',
-                    event: 'Landeskonferenz',
-                    src: 'jgspoe-logo.png'
+                    name: 'SPÖ',
+                    event: 'Landesparteitag Oberösterreich, Bundeskonferenz JG',
+                    src: 'spoe-logo.png'
                 },
                 {
                     name: 'Piraten ohne Grenzen',
@@ -136,38 +136,38 @@ export class ReferenceService {
             refs: [
                 {
                     name: 'Marburger Bund',
-                    event: 'Hauptversammlungen',
+                    event: 'Hauptversammlung',
                     src: 'mb-logo.png',
                     frontpage: true
                 },
                 {
                     name: 'Sächsische Landesärztekammer',
-                    event: 'Kammerversammlungen',
+                    event: 'Kammerversammlung',
                     src: 'slaek-logo.png'
                 },
                 {
                     name: 'Landesärztekammer Hessen',
-                    event: 'Delegiertenversammlungen',
+                    event: 'Delegiertenversammlung',
                     src: 'laekh-logo.png'
                 },
                 {
                     name: 'Ärztekammer Saarland',
-                    event: 'Vertreterversammlungen',
+                    event: 'Vertreterversammlung',
                     src: 'aeksaar-logo.png'
                 },
                 {
                     name: 'Landesärztekammer Brandenburg',
-                    event: 'Kammerversammlungen',
+                    event: 'Kammerversammlung',
                     src: 'laekb-logo.png'
                 },
                 {
                     name: 'Berufsverband der Kinder- und Jugendärzte e.V.',
-                    event: 'Delegiertenversammlungen',
+                    event: 'Delegiertenversammlung',
                     src: 'bvkj-logo.png'
                 },
                 {
                     name: 'Deutscher Hebammenverband',
-                    event: 'Bundesdelegiertentagung 2018',
+                    event: 'Bundesdelegiertentagung',
                     src: 'dhv-logo.png'
                 }
             ]
@@ -177,27 +177,27 @@ export class ReferenceService {
             refs: [
                 {
                     name: 'Bundesjugendwerk der AWO',
-                    event: '(virtuelle) Bundesjugendwerkskonferenz 2020',
+                    event: '(virtuelle) Bundesjugendwerkskonferenz',
                     src: 'bujw-logo.png'
                 },
                 {
                     name: 'Landesjugendring Rheinland-Pfalz',
-                    event: '(virtuelle) Vollversammlung 2020',
+                    event: '(virtuelle) Vollversammlung',
                     src: 'ljrrlp-logo.png'
                 },
                 {
                     name: 'Landesjugendring Niedersachsen',
-                    event: 'Vollversammlung 2020',
+                    event: 'Vollversammlung',
                     src: 'ljrnds-logo.png'
                 },
                 {
                     name: 'Landesjugendring Brandenburg',
-                    event: 'Vollversammlung 2020',
+                    event: 'Vollversammlung',
                     src: 'ljrbbg-logo.png'
                 },
                 {
                     name: 'Deutsche Pfadfinderschaft Sankt Georg (DPSG)',
-                    event: 'Bundesversammlungen',
+                    event: 'Bundesversammlung',
                     src: 'dpsg-logo.png'
                 },
                 {
@@ -207,12 +207,12 @@ export class ReferenceService {
                 },
                 {
                     name: 'Katholische junge Gemeinde',
-                    event: 'Bundeskonferenzen',
+                    event: 'Bundeskonferenz',
                     src: 'kjg-logo.png'
                 },
                 {
                     name: 'Bund der Deutschen Katholischen Jugend',
-                    event: 'Osnabrück, Trier, München, ...',
+                    event: 'Osnabrück, Trier, München, Berlin, ...',
                     src: 'bdkj-logo.png'
                 },
                 {
@@ -232,7 +232,7 @@ export class ReferenceService {
                 },
                 {
                     name: 'Evangelische StudentInnengemeinde in der Bundesrepublik Deutschland (ESG)',
-                    event: 'Bundesversammlungen',
+                    event: 'Bundesversammlung',
                     src: 'esg-logo.png'
                 },
                 {
@@ -247,13 +247,13 @@ export class ReferenceService {
             refs: [
                 {
                     name: 'Amnesty International',
-                    event: 'Jahresversammlung 2018',
+                    event: 'Jahresversammlung',
                     src: 'amnesty-logo.png',
                     frontpage: true
                 },
                 {
                     name: 'Bundesverband WindEndergie',
-                    event: '(virtuelle) Delegiertenversammlung 2020',
+                    event: '(virtuelle) Delegiertenversammlung',
                     src: 'bwe-logo.png'
                 },
                 {
@@ -262,9 +262,24 @@ export class ReferenceService {
                     src: 'adfc-logo.png'
                 },
                 {
+                    name: 'Verkehrsclub Deutschland e.V.',
+                    event: 'Delegiertenversammlung',
+                    src: 'vcd-logo.png'
+                },
+                {
                     name: 'VDI Verein Deutscher Ingenieure e.V.',
                     event: 'Vorstandsversammlung',
                     src: 'vdi-logo.png'
+                },
+                {
+                    name: 'Verband der Automobilindustrie',
+                    event: 'Mitgliederversammlung',
+                    src: 'vda-logo.png'
+                },
+                {
+                    name: 'Evangelisch-Lutherische Kirche in Norddeutschland',
+                    event: 'Landessynode',
+                    src: 'nordkirche-logo.png'
                 },
                 {
                     name: 'Volleyball Bundesliga GmbH',
@@ -278,12 +293,12 @@ export class ReferenceService {
                 },
                 {
                     name: 'Deutscher Verband für Neuro-Linguistisches Programmieren e.V.',
-                    event: 'Mitgliederversammlungen',
+                    event: 'Mitgliederversammlung',
                     src: 'dvnlp-logo.png'
                 },
                 {
                     name: 'Mensa in Deutschland e.V.',
-                    event: 'Mitgliederversammlungen',
+                    event: 'Mitgliederversammlung',
                     src: 'mensa-logo.png'
                 },
                 {
@@ -293,7 +308,7 @@ export class ReferenceService {
                 },
                 {
                     name: 'Evangelischer Kirchenkreis Krefeld-Viersen',
-                    event: 'Kreissynoden',
+                    event: 'Kreissynode',
                     src: 'ev-kirche-krefeld-viersen-logo.png'
                 },
                 {
