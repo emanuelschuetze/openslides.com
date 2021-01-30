@@ -86,8 +86,8 @@
                     </ng-container>
                 </div>
 
-                <h3 class="mb-0" translate>Serviceleistungen</h3>
-                <span translate>Unsere individuellen Unterstützungsleistungen für Sie auf Anfrage!</span>
+                <h3 class="mb-0" translate>Serviceleistungen (auf Anfrage)</h3>
+                <span translate>Sie benötigen eine Rund-um-Betreuung? Wir senden Ihnen gerne ein Angebot zu folgenden Leistungen: </span>
                 <div formGroupName="services" class="services-container">
                     <div *ngFor="let service of services | keyvalue: originalOrder" class="valign-wrapper">
                         <mat-checkbox [formControlName]="service.key" [checked]="service.value.default">{{ service.value.name | translate }}</mat-checkbox>
