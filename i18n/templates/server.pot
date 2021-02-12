@@ -1,14 +1,14 @@
 # Translations template for PROJECT.
-# Copyright (C) 2020 ORGANIZATION
+# Copyright (C) 2021 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-09-10 15:42+0200\n"
+"POT-Creation-Date: 2021-02-12 10:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,43 +17,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: api/app.py:36
-msgid "Konfigurationsfehler: Keine E-Mail-Empfänger"
-msgstr ""
-
-#: api/app.py:70
-msgid "Ihre Angebotsanfrage bei OpenSlides"
-msgstr ""
-
-#: api/app.py:72
+#: api/app.py:35
 msgid "Ihre Bestellung bei OpenSlides"
 msgstr ""
 
-#: api/app.py:77 api/app.py:81
-msgid "Ihre Angaben:"
+#: api/app.py:40
+msgid "Ihre Angebotsanfrage bei OpenSlides"
 msgstr ""
 
-#: api/app.py:109 api/app.py:169
+#: api/app.py:44
+msgid "Konfigurationsfehler: Keine E-Mail-Empfänger"
+msgstr ""
+
+#: api/app.py:111 api/app.py:160
 msgid "Monate"
 msgstr ""
 
-#: api/app.py:111
+#: api/app.py:113
 msgid "unbegrenzt"
 msgstr ""
 
-#: api/app.py:139 api/src/templates/order-summary.jinja:2
+#: api/app.py:127 api/src/templates/order-summary.jinja:2
 msgid "Hostingpaket"
 msgstr ""
 
-#: api/app.py:169
+#: api/app.py:139
+msgid "Ungültige Auswahl mit den gegebenen Daten:"
+msgstr ""
+
+#: api/app.py:160
 msgid "Monat"
 msgstr ""
 
-#: api/app.py:182
+#: api/app.py:173
 msgid "Diese E-Mail-Adresse ist ungültig"
 msgstr ""
 
-#: api/app.py:193
+#: api/app.py:184
 msgid "Diese E-Mail-Adresse ist bereits registriert"
 msgstr ""
 
@@ -70,38 +70,46 @@ msgid "Kongress"
 msgstr ""
 
 #: api/src/data.py:17
-msgid "eVoting"
+msgid "Audio-/Videokonferenz"
 msgstr ""
 
-#: api/src/data.py:21
-msgid "Audiokonferenz via Jitsi"
-msgstr ""
-
-#: api/src/data.py:25
+#: api/src/data.py:22
 msgid "Video-Livestream"
 msgstr ""
 
-#: api/src/data.py:28
+#: api/src/data.py:30
+msgid "zusätzliche Streamingnutzer"
+msgstr ""
+
+#: api/src/data.py:33
 msgid "Einheit"
 msgstr ""
 
-#: api/src/data.py:28
+#: api/src/data.py:33
 msgid "Einheiten"
 msgstr ""
 
-#: api/src/data.py:31
-msgid "Single Sign-On via SAML"
-msgstr ""
-
-#: api/src/data.py:39
-msgid "Schulung"
-msgstr ""
-
-#: api/src/data.py:40
-msgid "Technische Begleitung der Veranstaltung (virtuell oder Vor-Ort)"
+#: api/src/data.py:36
+msgid "externer Livestream"
 msgstr ""
 
 #: api/src/data.py:43
+msgid "Single Sign-On via SAML"
+msgstr ""
+
+#: api/src/data.py:48
+msgid "Supportpauschale"
+msgstr ""
+
+#: api/src/data.py:58
+msgid "Online-Schulung"
+msgstr ""
+
+#: api/src/data.py:59
+msgid "Technische Begleitung Ihrer Veranstaltung (virtuell oder Vor-Ort)"
+msgstr ""
+
+#: api/src/data.py:62
 msgid "Telefonrufbereitschaft"
 msgstr ""
 
@@ -113,12 +121,12 @@ msgstr ""
 msgid "Konnte E-Mail nicht versenden an:"
 msgstr ""
 
-#: api/src/templates/confirmation-email.jinja:1
+#: api/src/templates/confirmation-email-offer.jinja:1
 #, python-format
 msgid ""
 "Sehr geehrte/r %(name)s,\n"
 "\n"
-"Vielen Dank für Ihre Hosting-Anfrage bei OpenSlides! Wir werden Ihre "
+"Vielen Dank für Ihre Angebotsanfrage bei OpenSlides! Wir werden Ihre "
 "Nachricht schnellstmöglich bearbeiten.\n"
 "\n"
 "Untenstehend finden Sie noch einmal Ihre Angaben. Sollten Sie noch "
@@ -126,7 +134,31 @@ msgid ""
 "E-Mail.\n"
 "\n"
 "Sollten Sie diese Anfrage nicht gesendet haben, melden Sie sich bitte bei"
-" uns, um die Anfrage zu stornieren.\n"
+" uns.\n"
+"\n"
+"Mit besten Grüßen,\n"
+"Ihr OpenSlides-Team\n"
+msgstr ""
+
+#: api/src/templates/confirmation-email-offer.jinja:14
+#: api/src/templates/confirmation-email-order.jinja:17
+msgid "Ihre Angaben:"
+msgstr ""
+
+#: api/src/templates/confirmation-email-order.jinja:1
+#, python-format
+msgid ""
+"Sehr geehrte/r %(name)s,\n"
+"\n"
+"Vielen Dank für Ihre Hosting-Bestellung bei OpenSlides! Wir werden Ihre "
+"Nachricht schnellstmöglich bearbeiten.\n"
+"\n"
+"Untenstehend finden Sie noch einmal Ihre Angaben. Sollten Sie noch "
+"Korrekturen oder Änderungswünsche haben, antworten Sie einfach auf diese "
+"E-Mail.\n"
+"\n"
+"Sollten Sie die Bestellung nicht gesendet haben, melden Sie sich bitte "
+"bei uns, um diese zu stornieren.\n"
 "\n"
 "Mit besten Grüßen,\n"
 "Ihr OpenSlides-Team\n"
@@ -200,11 +232,11 @@ msgstr ""
 msgid "Rechnungsadresse"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:24
+#: api/src/templates/order-summary.jinja:29
 msgid "Umsatzsteuer-ID"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:26
+#: api/src/templates/order-summary.jinja:31
 msgid "Weitere Anmerkungen"
 msgstr ""
 
@@ -213,7 +245,7 @@ msgid "Kostenübersicht"
 msgstr ""
 
 #: api/src/templates/prices-overview.jinja:4
-msgid "Summe Netto"
+msgid "Summe netto"
 msgstr ""
 
 #: api/src/templates/prices-overview.jinja:5
@@ -226,14 +258,17 @@ msgstr ""
 
 #: api/src/templates/prices-overview.jinja:8
 msgid ""
-"Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro"
-" Veranstaltungstag und zzgl. technische Betreuung der Streamingtechnik, "
-"abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung "
-"erfolgt unter Vorbehalt. Wir melden uns mit einem konkreten Angebot bei "
-"Ihnen."
+"Der Preis gilt pro Veranstaltungstag und ist abhängig vom "
+"Veranstaltungstag und Verfügbarkeiten."
 msgstr ""
 
 #: api/src/templates/prices-overview.jinja:9
+msgid ""
+"Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Pro 250 Nutzer ist"
+" somit eine zusätzliche Streaming-Einheit nötig."
+msgstr ""
+
+#: api/src/templates/prices-overview.jinja:10
 msgid "Preis für 12 Monate, beliebig verlängerbar."
 msgstr ""
 

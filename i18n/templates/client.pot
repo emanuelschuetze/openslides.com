@@ -92,6 +92,9 @@ msgstr ""
 msgid "Abstimmungsergebnisse erfassen"
 msgstr ""
 
+msgid "elektronische Stimmabgabe möglich"
+msgstr ""
+
 msgid "Anträge als PDF, CSV und XLSX exportieren"
 msgstr ""
 
@@ -153,6 +156,101 @@ msgstr ""
 msgid "Projektion von PDF- oder Bilddateien"
 msgstr ""
 
+msgid "Elektronische Stimmabgabe"
+msgstr ""
+
+msgid ""
+"Erweitern Sie OpenSlides um ein integriertes elektronisches "
+"Abstimmungssystem.        Legen Sie die stimmberechtigte Nutzergruppe fest. "
+"Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende "
+"dürfen abstimmen.        Möglich sind namentliche oder nicht-namentliche "
+"Antragsabstimmungen und Personenwahlen.        Auch individuelle "
+"Stimmgewichtungen sind möglich.        <p>» Testen Sie die elektronische "
+"Stimmabgabe in der <a class=\"inline\" "
+"href=\"https://demo.openslides.org/\" "
+"target=\"_blank\">Online-Demo</a>.<br>        » Erfahren Sie mehr über <a "
+"class=\"inline\" href=\"/news/online-versammlungen\" "
+"fragment=\"evoting\">Online-Versammlungen.</a>"
+msgstr ""
+
+msgid ""
+"rechtssichere Antragsabstimmungen (Ja/Nein/Enthaltung) und Personenwahlen "
+"(1-aus-n oder n-aus-m) möglich"
+msgstr ""
+
+msgid ""
+"namentliche (wer hat wie abgestimmt) und nicht-namentliche (anonyme) "
+"Stimmabgaben möglich"
+msgstr ""
+
+msgid "stimmberechtigte Nutzergruppe(n) pro Abstimmung/Wahlgang festlegbar"
+msgstr ""
+
+msgid ""
+"Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende "
+"dürfen abstimmen"
+msgstr ""
+
+msgid "Individuelle Stimmgewichtungen pro Nutzer aktivierbar"
+msgstr ""
+
+msgid "Stimmrechtsübertragungen (Vollmachtgeber und Vollmachtnehmer) einstellbar"
+msgstr ""
+
+msgid "Einzelstimmennachweise für namentliche Stimmabgaben"
+msgstr ""
+
+msgid "Video-Livestream"
+msgstr ""
+
+msgid ""
+"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
+"OpenSlides.        Alle Teilnehmenden verfolgen den Stream jederzeit "
+"sichtbar in OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich "
+"diese selbständig auf die aktuelle Redeliste in OpenSlides und wechselt "
+"damit automatisch in einen Jitsi-Videokonferenzraum.        Der Livestream "
+"überträgt die Videokonferenz. Nach Ende der Wortmeldung verlässt man den "
+"Konferenzraum und verfolgt wieder den Livestream.        <p>Dieses "
+"Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen "
+"Videokonferenzen) und erlaubt eine große Skalierung an Teilnehmerzahlen.    "
+"    Virtuelle Veranstaltungen mit mehreren hundert Personen sind damit kein "
+"Problem mehr.        Hinzu kommt, dass die meisten Teilnehmenden eine "
+"Veranstaltung nur \"konsumierend\" verfolgen, d.h. nur ein kleiner "
+"Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden.     "
+"   Setzen Sie auf erprobte Broadcast-Streaming-Lösung – intelligent "
+"gekoppelt mit der OpenSlides-Redelistenfunktion.        <p>Die "
+"Audiokonferenz - ideal zum Austausch für kleine virtuelle Gremiensitzung "
+"(bis 50 Teilnehmende)<br>        Verwenden Sie OpenSlides mit integrierter "
+"Audiokonferenz. Über unseren exklusiv für OpenSlides betriebenen "
+"Jitsi-Server kommunizieren alle Teilnehmende direkt miteinander - geschützt "
+"in einem Passwort-gesicherten Audio-Konferenzraum. Jede/r verbindet sich "
+"automatisch nach dem Login in OpenSlides mit der Audiokonferenz und darf "
+"das eigene Mikrofon ein- und ausschalten.        <p>Funktionsweise in "
+"Kurzanimation: <a "
+"href=\"https://files.openslides.org/press/3.2/OpenSlides3.2-Audiokonferenz."
+"gif\" class=\"inline\">Audiokonferenz</a>        · <a "
+"href=\"https://files.openslides.org/press/3.2/OpenSlides3.2-Videokonferenz."
+"gif\" class=\"inline\">Video-Livestream</a>"
+msgstr ""
+
+msgid ""
+"Anzeige des Livesstreams im Vordergrund (auch minimierbar oder im Vollbild "
+"nutzbar"
+msgstr ""
+
+msgid "Automatische Übertragung des aktuellen Redners in den Livestream"
+msgstr ""
+
+msgid ""
+"intelligente Koppelung mit der Redeliste (nur Personen auf der Redeliste "
+"dürfen in die Videokonferenz eintreten)"
+msgstr ""
+
+msgid ""
+"bankbreitenschonende Broadcast-Technik (auch für sehr große virtuelle "
+"Veranstaltungen nutzbar)"
+msgstr ""
+
 msgid "Weitere Funktionen"
 msgstr ""
 
@@ -194,7 +292,7 @@ msgid "Responsive Design"
 msgstr ""
 
 msgid ""
-"Plattformunabhängige Webanwendung basierend auf Python 3 und Angular 8 im "
+"Plattformunabhängige Webanwendung basierend auf Python 3 und Angular im "
 "modernen Material Design"
 msgstr ""
 
@@ -220,9 +318,6 @@ msgstr ""
 msgid "Ein unbekannter Fehler ist aufgetreten."
 msgstr ""
 
-msgid "Hostingpaket"
-msgstr ""
-
 msgid "Sitzung"
 msgstr ""
 
@@ -232,13 +327,31 @@ msgstr ""
 msgid "Kongress"
 msgstr ""
 
-msgid "eVoting"
+msgid "Supportpauschale"
 msgstr ""
 
-msgid "Audiokonferenz"
+msgid ""
+"Zur individuellen Basisunterstützung in der Vor- und Nachbereitung Ihrer "
+"Veranstaltung - per E-Mail und Telefon."
 msgstr ""
 
-msgid "Video-Livestream"
+msgid "Video-Livestream mit Jitsi-Videokonferenz"
+msgstr ""
+
+msgid "Tag"
+msgstr ""
+
+msgid "Tage"
+msgstr ""
+
+msgid ""
+"Bereitstellung und Integration eines Video-Livestreams in OpenSlides, "
+"Bereitstellung eines Jitsi-Videokonferenzraums, Koppelung mit der aktuellen "
+"Redeliste. - Der Preis gilt pauschal pro Veranstaltungstag für die ersten "
+"250 Streamingnutzer. Abhängig vom Veranstaltungstag und Verfügbarkeiten."
+msgstr ""
+
+msgid "zusätzliche Streamingnutzer"
 msgstr ""
 
 msgid "Einheit"
@@ -248,13 +361,37 @@ msgid "Einheiten"
 msgstr ""
 
 msgid ""
-"Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro "
-"Veranstaltungstag und zzgl. technische Betreuung der Streamingtechnik, "
-"abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt "
-"unter Vorbehalt. Wir melden uns mit einem konkreten Angebot bei Ihnen."
+"Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Pro 250 Nutzer ist "
+"somit eine zusätzliche Streaming-Einheit nötig."
+msgstr ""
+
+msgid "externer Livestream"
+msgstr ""
+
+msgid ""
+"Einrichtung eines RTMP-Streaming-Uploads für einen vor Ort produzierten "
+"Video-Livestream. Koordination der Schnittstellen mit Ihrem "
+"Streaming-Dienstleister (hybrides Veranstaltungsformat)."
+msgstr ""
+
+msgid "Audio-/Videokonferenz"
+msgstr ""
+
+msgid ""
+"Integrierte Jitsi-Videokonferenz mit Jitsi - ohne Livestream. Ideal zum "
+"direkten Austausch für kleine virtuelle Gremiensitzung (bis max 50 "
+"Teilnehmende, nur im Hostingpaket \"Sitzung\")."
 msgstr ""
 
 msgid "Single Sign-On via SAML"
+msgstr ""
+
+msgid ""
+"Zur Anbindung eines bereits existierenden SAML-Mitgliedsservers. Nur "
+"verfügbar für das Hostingpaket \"Kongress\""
+msgstr ""
+
+msgid "Hostingpaket"
 msgstr ""
 
 msgid "Monat"
@@ -289,6 +426,16 @@ msgstr ""
 msgid ""
 "Sollten Sie Fragen zu OpenSlides haben oder eine persönliche Beratung "
 "wünschen – wir unterstützen Sie gern."
+msgstr ""
+
+msgid ""
+"Zur Zeit gibt es ein erhöhtes Anfrageaufkommen.\n"
+"                    Um Ihnen und Anderen schneller weiterhelfen zu können, "
+"schauen Sie bitte zuerst in unsere\n"
+"                    <strong><a "
+"href=\"https://support.openslides.com/help/de-de\">FAQs</a></strong>\n"
+"                    und nutzen dann bevorzugt die Möglichkeit uns eine "
+"E-Mail zu senden."
 msgstr ""
 
 msgid "Allgemeine Anfragen"
@@ -403,6 +550,25 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Nutzen Sie Live-Voting für Anträge und Wahlen. Die stimmberechtigte "
+"Nutzergruppe lässt sich pro Antrag/Wahl festlegen. Nur in OpenSlides auf "
+"anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. "
+"Möglich sind namentliche oder nicht-namentliche (anonyme) "
+"sAntragsabstimmungen und Personenwahlen. Auch individuelle "
+"Stimmgewichtungen und Stimmrechtsübertragungen sind möglich."
+msgstr ""
+
+msgid ""
+"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
+"OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
+"OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese "
+"selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit "
+"automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die "
+"Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum "
+"und verfolgt wieder den Livestream."
+msgstr ""
+
+msgid ""
 "Die Verwaltung der Delegierten und ihrer Anwesenheit sowie das ausgefeilte "
 "Rechtemanagement sind unkompliziert und intuitiv. Jeder Bereich von "
 "OpenSlides kann für einzelne Nutzergruppen freigeschalten werden."
@@ -428,6 +594,13 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Sie möchten OpenSlides auf Ihrem eigenen Server installieren? Wir bieten "
+"unsere Software als PyPI-Paket und als Quellcode an. Bitte haben Sie "
+"Verständnis dafür, dass wir Supportleistungen nur für unsere "
+"Hosting-Lösungen anbieten."
+msgstr ""
+
+msgid ""
 "Wir haben uns zu den Grundsätzen eines quelloffenen, freien und kostenlosen "
 "Austauschs unserer Software verpflichtet und tragen diesen Anspruch auch im "
 "Namen. OpenSlides wird unter MIT-Lizenz zur Verfügung gestellt. Hilf mit, "
@@ -446,6 +619,9 @@ msgid "Demo"
 msgstr ""
 
 msgid "Hosting starten"
+msgstr ""
+
+msgid "FAQ"
 msgstr ""
 
 msgid "Maximale Flexibilität und Transparenz"
@@ -497,13 +673,6 @@ msgid "Kontaktieren Sie uns"
 msgstr ""
 
 msgid "Selbst installieren"
-msgstr ""
-
-msgid ""
-"Sie möchten OpenSlides auf Ihrem eigenen Server installieren? Wir bieten "
-"unsere Software als PyPI-Paket und als Quellcode an. Bitte haben Sie "
-"Verständnis dafür, dass wir Supportleistungen nur für unsere "
-"Hosting-Lösungen anbieten."
 msgstr ""
 
 msgid "Installationsanleitung"
@@ -796,15 +965,9 @@ msgid ""
 "melden."
 msgstr ""
 
-msgid "Senden Sie uns das ausgefüllte Formular."
-msgstr ""
-
 msgid ""
-"Mit unserer Bestätigung starten wir i.d.R. innerhalb eines Tages das "
-"Hosting."
-msgstr ""
-
-msgid "Wir werden uns zeitnah mit einem konkreten Angebot bei Ihnen melden."
+"Berechnen Sie Ihren individuellen Hostingpreis! Im nächsten Schritt können "
+"Sie direkt bestellen oder unverbindlich ein Angebot anfordern."
 msgstr ""
 
 msgid "bis"
@@ -816,7 +979,16 @@ msgstr ""
 msgid "zzgl. USt"
 msgstr ""
 
-msgid "Wunschdomain"
+msgid "Veranstaltungstag(e)"
+msgstr ""
+
+msgid "Startdatum"
+msgstr ""
+
+msgid "Enddatum"
+msgstr ""
+
+msgid "Erwartete Teilnehmeranzahl"
 msgstr ""
 
 msgid "Veranstaltungsname"
@@ -825,10 +997,7 @@ msgstr ""
 msgid "Veranstaltungsort"
 msgstr ""
 
-msgid "Veranstaltungszeitraum"
-msgstr ""
-
-msgid "Erwartete Teilnehmeranzahl"
+msgid "Wunschdomain"
 msgstr ""
 
 msgid "Name"
@@ -843,7 +1012,19 @@ msgstr ""
 msgid "Telefon"
 msgstr ""
 
-msgid "Rechnungsadresse"
+msgid "Zusatz (optional)"
+msgstr ""
+
+msgid "Straße + Hausnummer"
+msgstr ""
+
+msgid "PLZ"
+msgstr ""
+
+msgid "Ort"
+msgstr ""
+
+msgid "Land"
 msgstr ""
 
 msgid "Umsatzsteuer-ID"
@@ -852,16 +1033,19 @@ msgstr ""
 msgid "Ihre Anmerkungen und Wünsche"
 msgstr ""
 
-msgid "Summe Netto"
+msgid "Summe netto"
 msgstr ""
 
 msgid "Gesamtsumme"
 msgstr ""
 
+msgid "Preiskalkulator"
+msgstr ""
+
 msgid "Angebot anfordern"
 msgstr ""
 
-msgid "Bestellen"
+msgid "Hostingpaket bestellen"
 msgstr ""
 
 msgid "Hostingauswahl"
@@ -879,7 +1063,12 @@ msgstr ""
 msgid "Zusatzfunktionen"
 msgstr ""
 
-msgid "Serviceleistungen"
+msgid "Serviceleistungen (auf Anfrage)"
+msgstr ""
+
+msgid ""
+"Sie benötigen eine Rund-um-Betreuung? Wir senden Ihnen gerne ein Angebot zu "
+"folgenden Leistungen:"
 msgstr ""
 
 msgid "Veranstaltungsdetails"
@@ -888,28 +1077,28 @@ msgstr ""
 msgid "Ansprechpartner"
 msgstr ""
 
+msgid "Rechnungsadresse"
+msgstr ""
+
 msgid "Zusätzliche Angaben"
-msgstr ""
-
-msgid "weiter zur Übersicht"
-msgstr ""
-
-msgid "Anfrage senden"
 msgstr ""
 
 msgid "Bestellübersicht"
 msgstr ""
 
-msgid "Preis für 12 Monate, beliebig verlängerbar."
+msgid "Jetzt bestellen"
 msgstr ""
 
 msgid "zurück"
 msgstr ""
 
+msgid "Unverbindliches Angebot anfordern"
+msgstr ""
+
 msgid "Jetzt kostenpflichtig bestellen"
 msgstr ""
 
-msgid "Jetzt Anfrage senden"
+msgid "Preis für 12 Monate, beliebig verlängerbar."
 msgstr ""
 
 msgid "Fehler:"
@@ -924,51 +1113,13 @@ msgstr ""
 msgid "USt."
 msgstr ""
 
-msgid "5% Rabatt bei Vorauszahlung von 12 Monaten."
+msgid "Videokonferenz mit Livestream"
 msgstr ""
 
-msgid "Wählen Sie praktische Zusatzfunktionen"
+msgid "Mindestlaufzeit: 1 Monat"
 msgstr ""
 
-msgid ""
-"Verwenden Sie OpenSlides mit integrierter Audiokonferenz. Über unseren "
-"exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle "
-"Teilnehmende direkt miteinander - geschützt in einem Passwort-gesicherten "
-"Audio-Konferenzraum. Jede/r verbindet sich automatisch nach dem Login in "
-"OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und "
-"ausschalten."
-msgstr ""
-
-msgid "bis 50 Teilnehmende"
-msgstr ""
-
-msgid ""
-"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
-"OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
-"OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese "
-"selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit "
-"automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die "
-"Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum "
-"und verfolgt wieder den Livestream."
-msgstr ""
-
-msgid ""
-"Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen "
-"Videokonferenzen) und erlaubt eine große Skalierung an Teilnehmerzahlen. "
-"Virtuelle Veranstaltungen mit mehreren hundert Personen sind damit kein "
-"Problem mehr. Hinzu kommt, dass die meisten Teilnehmenden eine "
-"Veranstaltung nur \"konsumierend\" verfolgen, d.h. nur ein kleiner "
-"Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden. "
-"Setzen Sie auf erprobte Broadcast-Streaming-Lösung – intelligent gekoppelt "
-"mit der OpenSlides-Redelistenfunktion."
-msgstr ""
-
-msgid ""
-"Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten "
-"Mitgliedsaccounts in OpenSlides anzumelden. OpenSlides unterstützt den "
-"Standard \"SAML\" (Security Assertion Markup Language) für Single Sign-On "
-"(SSO). Ersparen Sie sich damit die Teilnehmerverwaltung in OpenSlides. Und "
-"Ihre Mitglieder brauchen sich keinen extra OpenSlides-Login merken."
+msgid "Jahrespreise sowie Hosting ab 500 Teilnehmende auf Anfrage."
 msgstr ""
 
 msgid ""
@@ -988,25 +1139,53 @@ msgstr ""
 msgid "bis <b>50</b> Teilnehmende"
 msgstr ""
 
-msgid "ab"
+msgid "NEU: eVoting (jetzt integriert!)"
 msgstr ""
 
-msgid "Mindestlaufzeit: 3 Monate"
+msgid "Tagesordnung mit Redeliste"
 msgstr ""
 
-msgid "Jetzt bestellen"
+msgid "Anträge und Wahlen"
 msgstr ""
 
-msgid "für mittelgroße (virtuelle) Versammlungen"
+msgid "Teilnehmende"
+msgstr ""
+
+msgid "u.v.m"
+msgstr ""
+
+msgid "Audio-/Videokonferenz (mit Jitsi)"
+msgstr ""
+
+msgid "Support via FAQs"
+msgstr ""
+
+msgid "für kleine (virtuelle) Versammlungen"
+msgstr ""
+
+msgid "bis <b>250</b> Teilnehmende"
+msgstr ""
+
+msgid "individueller Support via E-Mail/Telefon"
+msgstr ""
+
+msgid "Online-Schulung"
+msgstr ""
+
+msgid ""
+"Technische Begleitung Ihrer Veranstaltung<br>\n"
+"                            (vor Ort, virtuell oder per Rufbereitschaft)"
+msgstr ""
+
+msgid "für große (virtuelle) Tagungen und Konferenzen"
 msgstr ""
 
 msgid "bis <b>500</b> Teilnehmende"
 msgstr ""
 
-msgid "für große (virtuelle) Konferenzen"
-msgstr ""
-
-msgid "bis <b>1.000</b> Teilnehmende"
+msgid ""
+"Single Sign-On via SAML (für Organisationen mit zentralem "
+"SAML-Mitgliedsserver)"
 msgstr ""
 
 msgid "Hinweise zur Auswahl:"
@@ -1027,34 +1206,23 @@ msgid ""
 "https://meine-versammlung.openslides.com)"
 msgstr ""
 
-msgid "Beispiele"
+msgid "Beispiele:"
 msgstr ""
 
 msgid ""
-"A) Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung "
-"mit 12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 "
+"Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung mit "
+"12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 "
 "Teilnehmde nutzen. Dafür sind zwei Hostingpakete nötig: »Sitzung« und "
 "»Tagung«."
 msgstr ""
 
 msgid ""
-"B) Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 "
+"Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 "
 "Landesverbände OpenSlides nutzen (je &lt;50 Personen). Dafür sind 16 "
 "einzelne OpenSlides-Instanzen (Hostingpaket »Sitzung«) nötig."
 msgstr ""
 
 msgid "Für alle Hosting-Pakete gelten folgende Leistungen:"
-msgstr ""
-
-msgid "kontinuierliche Updates"
-msgstr ""
-
-msgid "Versand von Einladungs-E-Mails"
-msgstr ""
-
-msgid ""
-"individueller Support nach Aufwand (125 € / Stunde, halbstundengenaue "
-"Abrechnung)"
 msgstr ""
 
 msgid "sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten"
@@ -1068,41 +1236,12 @@ msgid ""
 "OpenSlides-Instanz mit eigener Datenbank"
 msgstr ""
 
-msgid "eVoting – unerlässlich für Online-Versammlungen mit Live-Voting"
-msgstr ""
-
 msgid ""
-"Erweitern Sie OpenSlides um ein integriertes elektronisches "
-"Abstimmungssystem. Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in "
-"OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen "
-"abstimmen. Möglich sind namentliche oder nicht-namentliche "
-"Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen "
-"sind möglich.<br> Testen Sie die elektronische Stimmabgabe in der <a "
-"class=\"inline\" href=\"https://demo.openslides.org/\" "
-"target=\"_blank\">Online-Demo</a>."
+"Wer betreiben OpenSlides für Sie datenschutzkonform auf Servern in "
+"Deutschland."
 msgstr ""
 
-msgid "Mehr erfahren über Online-Versammlungen ..."
-msgstr ""
-
-msgid "Audiokonferenz – ideal zum Austausch für kleine virtuelle Gremiensitzung"
-msgstr ""
-
-msgid "Video-Livestream – für große virtuelle Versammlungen und Parteitage"
-msgstr ""
-
-msgid ""
-"Kontaktieren Sie uns! Wir finden die passende Streaming-Lösung für Ihre "
-"Veranstaltung."
-msgstr ""
-
-msgid "ab 750 € pro Veranstaltungstag · zzgl. technische Betreuung"
-msgstr ""
-
-msgid "Single Sign-On via SAML – für Organisationen mit zentralem Mitgliedsserver"
-msgstr ""
-
-msgid "Alle Preise zzgl. der gesetzlich gültigen Umsatzsteuer."
+msgid "Mindestlaufzeit: 1 Monat, monatlich kündbar"
 msgstr ""
 
 msgid "Noch Fragen?"
