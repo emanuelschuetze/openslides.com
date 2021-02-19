@@ -136,9 +136,7 @@ def get_overview_data(data):
         ):
             if "disabled" in function and function["disabled"](data):
                 raise ViewError(
-                    _(
-                        f"Mit diesen Einstellungen kann {function['name']} nicht ausgewählt werden."
-                    )
+                    _("Ungültige Auswahl mit den gegebenen Daten:") + " " + function["name"]
                 )
             positions.append({"key": function_key, **function})
 
