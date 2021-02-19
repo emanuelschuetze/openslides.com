@@ -10,11 +10,12 @@ curl --header "Content-Type: application/json" -e "https://www.openslides.com/$l
     "package": "conference",
     "running_time": "unlimited",
     "domain": "xyz",
+    "hosting_start": "2022-01-01",
     "extra_functions": {
         "audio": false,
         "video": true,
         "external_video": false,
-        "saml": true,
+        "saml": false,
         "service": true
     },
     "services": {

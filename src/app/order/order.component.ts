@@ -7,6 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
 import { TranslateService } from '@ngx-translate/core';
+import * as moment from 'moment';
 
 import { extraFunctions, ExtraFunctionsEntry, packages, services, UnitDescriptor } from './order-data';
 
@@ -42,7 +43,8 @@ export class OrderComponent implements OnInit {
     public detailsForm: FormGroup;
     public error = null;
     public step = 1;
-    public tomorrow = new Date();
+    public today = moment();
+    public tomorrow = moment().add(1, 'days');
 
     public packages = packages;
     public services = services;
@@ -118,7 +120,6 @@ export class OrderComponent implements OnInit {
         private router: Router,
         private translate: TranslateService
     ) {
-        this.tomorrow.setDate(this.tomorrow.getDate() + 1);
         this.hostingDataForm = this.fb.group({
             package: ['', [Validators.required, Validators.pattern(Object.keys(this.packages).join('|'))]],
             running_time: ['', [Validators.required]],
@@ -191,16 +192,29 @@ export class OrderComponent implements OnInit {
         this.step = nextStep;
         window.scroll(0, 0);
 
+        const billing_address_fields = ['name', 'street', 'zip', 'city', 'country'];
+        const billing_address_validators = [this.standard];
         const domainValidators = [Validators.pattern(/^[a-zA-Z0-9\-\.]+$/)];
         if (this.step === 3) {
             this.detailsForm.controls.mode.setValue('offer');
-            this.detailsForm.controls.billing_address.clearValidators();
+            this.detailsForm.removeControl('tax_id');
+            this.detailsForm.removeControl('hosting_start');
         } else {
+            this.detailsForm.controls.mode.setValue('order');
             domainValidators.push(Validators.required);
+            billing_address_validators.push(Validators.required);
             this.detailsForm.controls.billing_address.setValidators([Validators.required]);
+            this.detailsForm.controls.billing_address.updateValueAndValidity();
             this.detailsForm.addControl('tax_id', this.fb.control(''));
+            this.detailsForm.addControl('hosting_start', this.fb.control(moment(), Validators.required));
+        }
+        for (const field of billing_address_fields) {
+            const control = this.detailsForm.get(['billing_address', field]);
+            control.setValidators(billing_address_validators);
+            control.updateValueAndValidity();
         }
         this.detailsForm.controls.domain.setValidators(domainValidators);
+        this.detailsForm.controls.domain.updateValueAndValidity();
     }
 
     public onChangeExtraFunction(e: MatCheckboxChange, key: string): void {
@@ -223,8 +237,10 @@ export class OrderComponent implements OnInit {
         // I guess angular 10 introduced this error, but I couldn't find anything about it...
         data.expected_users = parseInt(data.expected_users, 10);
         // format dates as YYYY-MM-DD
-        for (const field of ['event_from', 'event_to']) {
-            data[field] = data[field].format('YYYY-MM-DD');
+        for (const field of ['event_from', 'event_to', 'hosting_start']) {
+            if (data[field]) {
+                data[field] = data[field].format('YYYY-MM-DD');
+            }
         }
 
         try {

@@ -3,7 +3,7 @@ from jsonschema import Draft7Validator, draft7_format_checker
 from .data import get_extra_functions, get_packages, get_services
 
 
-standard_pattern = r"^[A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]+([\ A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]+)*$"
+standard_pattern = r"^([A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]+([\ A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]+)*)?$"
 standard_pattern_no_number = r"^[A-Za-z\u00C0-\u00FF][A-Za-z\u00C0-\u00FF\'\-\.\,\#]+([\ A-Za-z\u00C0-\u00FF][A-Za-z\u00C0-\u00FF\'\-\.\,\#]+)*$"
 domain_regex = r"^[a-zA-Z0-9\-\.]*$"
 date_regex = r"^\d{4}-\d{2}-\d{2}$"
@@ -33,16 +33,32 @@ base_schema = Draft7Validator(
                     if not function.get("hidden")
                 ),
             },
-            "event_name": {"type": "string", "pattern": standard_pattern},
-            "event_location": {"type": "string", "pattern": standard_pattern},
+            "event_name": {
+                "type": "string",
+                "pattern": standard_pattern,
+                "minLength": 1,
+            },
+            "event_location": {
+                "type": "string",
+                "pattern": standard_pattern,
+                "minLength": 1,
+            },
             "event_from": {"type": "string", "pattern": date_regex},
             "event_to": {"type": "string", "pattern": date_regex},
             "expected_users": {"type": "integer", "min": 0},
             "contact_person": {
                 "type": "object",
                 "properties": {
-                    "organisation": {"type": "string", "pattern": standard_pattern},
-                    "name": {"type": "string", "pattern": standard_pattern_no_number},
+                    "organisation": {
+                        "type": "string",
+                        "pattern": standard_pattern,
+                        "minLength": 1,
+                    },
+                    "name": {
+                        "type": "string",
+                        "pattern": standard_pattern_no_number,
+                        "minLength": 1,
+                    },
                     "email": {"type": "string", "format": "email"},
                     "phone": {
                         "type": "string",
@@ -96,10 +112,18 @@ order_schema = {
         "tax_id": {"type": "string"},
         "billing_address": {
             "type": "object",
+            "properties": {
+                "name": {"type": "string", "minLength": 1},
+                "street": {"type": "string", "minLength": 1},
+                "zip": {"type": "string", "minLength": 1},
+                "city": {"type": "string", "minLength": 1},
+                "country": {"type": "string", "minLength": 1},
+            },
             "required": ["name", "street", "zip", "city", "country"],
         },
+        "hosting_start": {"type": "string", "pattern": date_regex},
     },
-    "required": ["domain", "billing_address"],
+    "required": ["domain", "billing_address", "hosting_start"],
 }
 
 mail_schema = Draft7Validator(
