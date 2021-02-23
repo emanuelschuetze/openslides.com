@@ -90,10 +90,20 @@ export class ReferenceService {
                 },
                 {
                     name: 'DIE LINKE.',
-                    event: 'Kreisparteitag Görlitz',
+                    event: 'Landes- und Kreisparteitage',
                     src: 'linke-logo.png'
                 },
-
+                {
+                    name: 'CDU',
+                    event: 'Landesparteitag BaWü',
+                    src: 'cdu-logo.png',
+                    frontpage: true
+                },
+                {
+                    name: 'SPÖ',
+                    event: 'Landesparteitag Oberösterreich, Bundeskonferenz JG',
+                    src: 'spoe-logo.png'
+                },
                 {
                     name: 'Grüne Jugend',
                     event: 'Bundeskongress',
@@ -101,7 +111,7 @@ export class ReferenceService {
                 },
                 {
                     name: 'Jusos',
-                    event: 'Bezirk Hessen Süd / Kreis Nordfriesland / Ortsgruppe Föhr',
+                    event: 'Bundeskongress',
                     src: 'jusos-logo.png'
                 },
                 {
@@ -120,11 +130,6 @@ export class ReferenceService {
                     src: 'piraten-logo.png'
                 },
                 {
-                    name: 'SPÖ',
-                    event: 'Landesparteitag Oberösterreich, Bundeskonferenz JG',
-                    src: 'spoe-logo.png'
-                },
-                {
                     name: 'Piraten ohne Grenzen',
                     event: 'Piratenversammlungen',
                     src: 'pog-logo.png'
@@ -137,8 +142,7 @@ export class ReferenceService {
                 {
                     name: 'Marburger Bund',
                     event: 'Hauptversammlung',
-                    src: 'mb-logo.png',
-                    frontpage: true
+                    src: 'mb-logo.png'
                 },
                 {
                     name: 'Sächsische Landesärztekammer',
