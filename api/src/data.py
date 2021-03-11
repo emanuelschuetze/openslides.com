@@ -39,6 +39,14 @@ def get_extra_functions():
             "units_desc": None,
             "disabled": lambda data: not data["extra_functions"]["video"],
         },
+        "jitsi_phone": {
+            "name": _("Jitsi-Telefoneinwahl"),
+            "base_price": 100,
+            "units_func": None,
+            "units_desc": None,
+            "disabled": lambda data: not data["extra_functions"]["audio"]
+            and not data["extra_functions"]["video"],
+        },
         "saml": {
             "name": _("Single Sign-On via SAML"),
             "base_price": 200,
@@ -47,6 +55,12 @@ def get_extra_functions():
         "service": {
             "name": _("Supportpauschale"),
             "base_price": 750,
+            "units_func": None,
+            "units_desc": None,
+        },
+        "chat": {
+            "name": _("Chat"),
+            "base_price": 250,
             "units_func": None,
             "units_desc": None,
         },

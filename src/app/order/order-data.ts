@@ -110,6 +110,14 @@ export const extraFunctions: ExtraFunctionsMap = {
         ),
         disabled: data => data.package !== 'meeting'
     },
+    jitsi_phone: {
+        name: _('Jitsi-Telefoneinwahl'),
+        base_price: 100,
+        units_func: null,
+        units_desc: null,
+        extra_infos: _('Einrichtung einer Festnetz-Rufnummer zur telefonischen Einwahl in die Jitsi-Videokonferenz'),
+        disabled: data => !data.extra_functions.audio && !data.extra_functions.video
+    },
     saml: {
         name: _('Single Sign-On via SAML'),
         base_price: 200,
@@ -118,6 +126,13 @@ export const extraFunctions: ExtraFunctionsMap = {
             'Zur Anbindung eines bereits existierenden SAML-Mitgliedsservers. Nur verfügbar für das Hostingpaket "Kongress"'
         ),
         disabled: data => data.package !== 'congress'
+    },
+    chat: {
+        name: _('Chat'),
+        base_price: 250,
+        units_func: null,
+        units_desc: null,
+        extra_infos: _('Bereitstellung und Integration eines Chats, mehrere Gruppenräume konfigurierbar.')
     }
 };
 
