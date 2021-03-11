@@ -16,7 +16,9 @@ curl --header "Content-Type: application/json" -e "https://www.openslides.com/$l
         "video": true,
         "external_video": false,
         "saml": false,
-        "service": true
+        "service": true,
+        "chat": true,
+        "jitsi_phone": true
     },
     "services": {
         "schooling": false,
