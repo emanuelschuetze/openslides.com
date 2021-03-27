@@ -17,6 +17,7 @@ import { OrderComponent } from './order/order.component';
 import { PricesComponent } from './prices/prices.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ReferencesComponent } from './references/references.component';
+import { EmergencyComponent } from './emergency/emergency.component';
 
 export function FeatureUrlMatcher(url: UrlSegment[]): { consumed: UrlSegment[] } | null {
     return url.length && url[0].path.match(Object.keys(FeaturesByRoute).join('|'))
@@ -32,6 +33,7 @@ const routes: Routes = [
         children: [
             { path: '', component: MainComponent, pathMatch: 'full' },
             { path: 'legalnotice', component: ImpressumComponent },
+            { path: 'notfall', component: EmergencyComponent },
             {
                 path: 'news',
                 children: [
