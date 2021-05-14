@@ -15,8 +15,10 @@
                     class="os-button transparent-btn blue"><span translate>Demo</span></a>
                 <a routerLink="/" fragment="getting-started" mat-flat-button
                     class="os-button transparent-btn green"><span translate>Hosting starten</span></a>
-                <a href="https://support.openslides.com/help/" target="_blank" rel="noreferrer" mat-flat-button
-                   class="os-button transparent-btn blue"><span translate>FAQ</span></a>
+                <a *ngIf="translate.currentLang == 'de'" href="https://support.openslides.com/help/de-de" target="_blank" rel="noreferrer" mat-flat-button
+                    class="os-button transparent-btn blue"><span translate>FAQ</span></a>
+                <a *ngIf="translate.currentLang != 'de'" href="https://support.openslides.com/help/en-gb" target="_blank" rel="noreferrer" mat-flat-button
+                    class="os-button transparent-btn blue"><span translate>FAQ</span></a>
             </div>
         </div>
     </div>
@@ -360,25 +362,6 @@
                         href="https://files.openslides.org/press/3.2/PM-OpenSlides-3.2.pdf">
                         <mat-icon style="vertical-align: bottom;">picture_as_pdf</mat-icon>
                         OpenSlides 3.2 als Komplettlösung für virtuelle Versammlungen</a>
-                </div>
-                <div><i>{{ "2020-04-14" | localizedDate }}:</i> <a class="hover"
-                        routerLink="./news/online-versammlungen">
-                        <mat-icon style="vertical-align: bottom;">dashboard</mat-icon>
-                        <span translate>Online-Versammlungen mit OpenSlides effizient durchführen</span>
-                    </a>
-                </div>
-                <div><i>{{ "2020-04-14" | localizedDate }}:</i> <a class="hover"
-                        routerLink="./news/online-versammlungen-basis">
-                        <mat-icon style="vertical-align: bottom;">dashboard</mat-icon>
-                        Versammlungen und Sitzungen virtuell abhalten – rechtliche und organisatorische Möglichkeiten
-                    </a>
-                </div>
-                <div><i>{{ "2020-03-21" | localizedDate }}:</i>
-                    <a href="https://twitter.com/openslides/status/1241310398466461696" target=_blank rel="noreferrer" class="hover">
-                        <mat-icon style="vertical-align: bottom;">public</mat-icon>
-                        OpenSlides ab sofort bereit für Online-Versammlungen - jetzt mit integriertem Live-Voting für
-                        Anträge und Wahlen!
-                    </a>
                 </div>
             </div>
         </div>

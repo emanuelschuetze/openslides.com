@@ -78,19 +78,19 @@ export class ReferenceService {
                 },
                 {
                     name: 'SPD',
-                    event: 'Landes-, Bezirks- und Kreisparteitage',
+                    event: 'Bundesparteitag, Landes-, Bezirks- und Kreisparteitage',
                     src: 'spd-logo.png',
                     frontpage: true
                 },
                 {
                     name: 'FDP',
-                    event: 'Bundesparteitag 2020, Landesparteitage',
+                    event: 'Bundes- und Landesparteitage',
                     src: 'fdp-logo.png',
                     frontpage: true
                 },
                 {
                     name: 'DIE LINKE.',
-                    event: 'Landes- und Kreisparteitage',
+                    event: 'Bundes-, Landes- und Kreisparteitage',
                     src: 'linke-logo.png'
                 },
                 {
@@ -121,7 +121,7 @@ export class ReferenceService {
                 },
                 {
                     name: 'Linksjugend',
-                    event: 'Landesjugendplenum Sachsen',
+                    event: 'Bundeskongress, Landesmitgliederversammlungen',
                     src: 'linksjugend-logo.png'
                 },
                 {
