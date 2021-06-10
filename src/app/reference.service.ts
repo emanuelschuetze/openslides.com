@@ -311,6 +311,11 @@ export class ReferenceService {
                     src: 'opennet-logo.png'
                 },
                 {
+                    name: 'Deutsche Schäferhunde (SV) e.V.',
+                    event: 'Bundesversammlung',
+                    src: 'schaeferhunde-logo.png'
+                },
+                {
                     name: 'Evangelischer Kirchenkreis Krefeld-Viersen',
                     event: 'Kreissynode',
                     src: 'ev-kirche-krefeld-viersen-logo.png'
